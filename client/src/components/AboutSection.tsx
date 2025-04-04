@@ -34,10 +34,6 @@ export function AboutSection() {
           <h2 className="font-sans text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Nuestros Servicios Principales
           </h2>
-          <p className="text-gray-600">
-            Ofrecemos dos plataformas especializadas diseñadas para satisfacer sus necesidades específicas:
-            NFLOW para apoyo emocional inteligente y JOBDA para gestión efectiva de su carrera profesional.
-          </p>
         </motion.div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -58,7 +54,7 @@ export function AboutSection() {
                     {index !== 1 ? (
                       <a 
                         href={index === 0 ? "https://mental-chat-ai-rmportbou.replit.app/" : "https://ejobs-spain-rmportbou.replit.app/"} 
-                        className={`hover:underline ${index === 0 ? "text-primary" : "text-accent"}`}
+                        className={`hover:underline ${index === 0 ? "text-primary" : "text-secondary-600"}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
