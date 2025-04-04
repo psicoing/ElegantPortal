@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { Star, Heart, Users, User } from "lucide-react";
+import { GraduationCap, Users, Building2, Briefcase } from "lucide-react";
 
 const categories = [
   {
-    icon: <Star className="h-8 w-8 text-white" />,
+    icon: <GraduationCap className="h-8 w-8 text-white" />,
     title: "Adolescentes",
     description: "Apoyo para gestionar emociones, estrés escolar y relaciones sociales"
   },
   {
-    icon: <Heart className="h-8 w-8 text-white" />,
+    icon: <Users className="h-8 w-8 text-white" />,
     title: "Padres y Madres",
     description: "Orientación para comprender y apoyar el desarrollo emocional de tus hijos"
   },
   {
-    icon: <Users className="h-8 w-8 text-white" />,
+    icon: <Building2 className="h-8 w-8 text-white" />,
     title: "Empresas",
     description: "Recursos para mejorar la comunicación y fortalecer el clima laboral"
   },
   {
-    icon: <User className="h-8 w-8 text-white" />,
+    icon: <Briefcase className="h-8 w-8 text-white" />,
     title: "Salud Laboral",
     description: "Soporte para el manejo del estrés, ansiedad y desafíos en el entorno profesional"
   }
