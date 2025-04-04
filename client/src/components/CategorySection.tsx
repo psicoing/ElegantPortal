@@ -14,13 +14,13 @@ const categories = [
   },
   {
     icon: <Users className="h-8 w-8 text-white" />,
-    title: "Familia",
-    description: "Recursos para mejorar la comunicación y fortalecer los lazos familiares"
+    title: "Empresas",
+    description: "Recursos para mejorar la comunicación y fortalecer el clima laboral"
   },
   {
     icon: <User className="h-8 w-8 text-white" />,
-    title: "Adultos",
-    description: "Soporte para el manejo del estrés, ansiedad y desafíos de la vida cotidiana"
+    title: "Salud Laboral",
+    description: "Soporte para el manejo del estrés, ansiedad y desafíos en el entorno profesional"
   }
 ];
 
