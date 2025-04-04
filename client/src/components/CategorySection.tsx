@@ -15,7 +15,7 @@ const categories = [
   {
     icon: <Building2 className="h-8 w-8 text-white" />,
     title: "Empresas",
-    description: "Recursos para mejorar la comunicación y fortalecer el clima laboral"
+    description: "Gestión de ofertas laborables"
   },
   {
     icon: <Briefcase className="h-8 w-8 text-white" />,
