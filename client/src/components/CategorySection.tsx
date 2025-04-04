@@ -15,7 +15,7 @@ const categories = [
   {
     icon: <Building2 className="h-8 w-8 text-white" />,
     title: "Empresas",
-    description: "Gestión de ofertas laborables"
+    description: "Gestión de ofertas laborables y rastreJOBS de toda EU"
   },
   {
     icon: <Briefcase className="h-8 w-8 text-white" />,
