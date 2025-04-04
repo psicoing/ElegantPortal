@@ -19,7 +19,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Soluciones innovadoras para sus necesidades
+            NFLOW - JOBDA
           </motion.h1>
           
           <motion.p 
