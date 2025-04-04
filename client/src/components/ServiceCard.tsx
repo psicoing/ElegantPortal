@@ -54,17 +54,37 @@ export function ServiceCard({
             ))}
           </div>
           
-          <Button 
-            className={`w-full ${isPrimary 
-              ? 'bg-primary hover:bg-primary/90' 
-              : 'bg-secondary-600 hover:bg-secondary-700'} 
-              text-white !important font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1`}
-            asChild
-          >
-            <a href={url} target="_blank" rel="noopener noreferrer" className="text-white">
-              Acceder a {title}
-            </a>
-          </Button>
+          {isPrimary ? (
+            // Botón NFLOW con estilo normal
+            <Button 
+              className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+              asChild
+            >
+              <a 
+                href={url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Acceder a {title}
+              </a>
+            </Button>
+          ) : (
+            // Botón JOBDA con fondo oscuro y texto explícitamente blanco
+            <Button 
+              className="w-full bg-black hover:bg-gray-800 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+              asChild
+            >
+              <a 
+                href={url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white hover:text-white"
+                style={{ color: 'white' }}
+              >
+                <span className="text-white">Acceder a {title}</span>
+              </a>
+            </Button>
+          )}
         </CardContent>
       </Card>
     </motion.div>

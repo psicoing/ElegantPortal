@@ -38,11 +38,17 @@ export function CTASection() {
               >
                 <Button
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white/10 font-sans font-semibold rounded-lg"
+                  className="border-2 border-black bg-black hover:bg-gray-800 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://ejobs-spain-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-white">
-                    Ir a JOBDA
+                  <a 
+                    href="https://ejobs-spain-rmportbou.replit.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-white hover:text-white"
+                    style={{ color: 'white' }}
+                  >
+                    <span className="text-white">Ir a JOBDA</span>
                   </a>
                 </Button>
               </motion.div>

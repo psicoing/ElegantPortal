@@ -11,3 +11,40 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+/* Estilos personalizados para los botones */
+.service-button-jobda {
+  color: white !important;
+}
+
+.service-button-jobda a {
+  color: white !important;
+}
+
+.cta-button-jobda {
+  color: white !important;
+}
+
+.cta-button-jobda a {
+  color: white !important;
+}
+
+/* Estilos específicos para botones de JOBDA por URL */
+a[href="https://ejobs-spain-rmportbou.replit.app/"] {
+  color: white !important;
+}
+
+/* Regla especial para los botones secundarios */
+.bg-secondary-600 a {
+  color: white !important;
+}
+
+/* Aplicar color blanco al texto dentro de botones con la clase service-button-jobda */
+[class*="service-button-jobda"] * {
+  color: white !important;
+}
+
+/* Aplicar color blanco al texto dentro de botones con la clase cta-button-jobda */
+[class*="cta-button-jobda"] * {
+  color: white !important;
+}
