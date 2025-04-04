@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 
 import { ServiceSection } from "@/components/ServiceSection";
+import { CategorySection } from "@/components/CategorySection";
 import { CTASection } from "@/components/CTASection";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -27,6 +28,7 @@ export default function Home() {
       <main>
         <Hero />
         <ServiceSection />
+        <CategorySection />
         <CTASection />
         <TestimonialSection />
         <ContactSection />
