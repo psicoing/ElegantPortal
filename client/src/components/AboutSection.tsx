@@ -1,22 +1,22 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { CloudLightning, ShieldCheck, Cloud } from "lucide-react";
+import { MessageCircle, ShieldCheck, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: <CloudLightning className="h-8 w-8 text-primary" />,
-    title: "Eficiencia",
-    description: "Optimizamos cada proceso para ahorrarle tiempo y recursos."
+    icon: <MessageCircle className="h-8 w-8 text-primary" />,
+    title: "NFLOW",
+    description: "Asistencia emocional inteligente que optimiza su bienestar mental a través de conversaciones con IA."
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-secondary-600" />,
     title: "Seguridad",
-    description: "Protegemos su información con los más altos estándares de seguridad."
+    description: "Protegemos su información con los más altos estándares para garantizar privacidad en ambos servicios."
   },
   {
-    icon: <Cloud className="h-8 w-8 text-accent" />,
-    title: "Innovación",
-    description: "Constantemente desarrollamos nuevas soluciones para adaptarnos a sus necesidades."
+    icon: <Briefcase className="h-8 w-8 text-accent" />,
+    title: "JOBDA",
+    description: "Plataforma de empleo que optimiza su búsqueda laboral conectándole con oportunidades relevantes."
   }
 ];
 
@@ -32,11 +32,11 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-sans text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Acerca de nuestra plataforma
+            Nuestros Servicios Principales
           </h2>
           <p className="text-gray-600">
-            Nuestra plataforma está diseñada para ofrecer servicios especializados que satisfacen necesidades específicas. 
-            Le proporcionamos herramientas potentes y fáciles de usar para mejorar su experiencia y eficiencia.
+            Ofrecemos dos plataformas especializadas diseñadas para satisfacer sus necesidades específicas:
+            NFLOW para apoyo emocional inteligente y JOBDA para gestión efectiva de su carrera profesional.
           </p>
         </motion.div>
         
@@ -54,8 +54,31 @@ export function AboutSection() {
                   <div className={`rounded-full ${index === 0 ? 'bg-primary/10' : index === 1 ? 'bg-secondary-100' : 'bg-accent/20'} w-16 h-16 flex items-center justify-center mx-auto mb-4`}>
                     {feature.icon}
                   </div>
-                  <h3 className="font-sans font-semibold text-lg mb-2">{feature.title}</h3>
+                  <h3 className="font-sans font-semibold text-lg mb-2">
+                    {index !== 1 ? (
+                      <a 
+                        href={index === 0 ? "https://mental-chat-ai-rmportbou.replit.app/" : "https://ejobs-spain-rmportbou.replit.app/"} 
+                        className={`hover:underline ${index === 0 ? "text-primary" : "text-accent"}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {feature.title}
+                      </a>
+                    ) : (
+                      feature.title
+                    )}
+                  </h3>
                   <p className="text-gray-600 text-sm">{feature.description}</p>
+                  {index !== 1 && (
+                    <a 
+                      href={index === 0 ? "https://mental-chat-ai-rmportbou.replit.app/" : "https://ejobs-spain-rmportbou.replit.app/"} 
+                      className={`mt-4 text-sm font-medium ${index === 0 ? "text-primary" : "text-secondary-600"} hover:underline`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {index === 0 ? "Acceder a NFLOW →" : "Acceder a JOBDA →"}
+                    </a>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
