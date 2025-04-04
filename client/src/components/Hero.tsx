@@ -28,7 +28,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Bienvenido a nuestra plataforma de servicios. Ofrecemos soluciones especializadas para ayudarle a alcanzar sus objetivos.
+            Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral. Además, te invitamos a descubrir nuestro servicio de empleo.
           </motion.p>
           
           <motion.div
