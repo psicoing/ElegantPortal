@@ -26,7 +26,7 @@ export function CTASection() {
                   className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://mental-chat-ai-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://mental-chat-ai-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     Ir a NFLOW
                   </a>
                 </Button>
@@ -41,7 +41,7 @@ export function CTASection() {
                   className="border-2 border-white text-white hover:bg-white/10 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://ejobs-spain-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://ejobs-spain-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-white">
                     Ir a JOBDA
                   </a>
                 </Button>

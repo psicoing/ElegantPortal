@@ -58,10 +58,10 @@ export function ServiceCard({
             className={`w-full ${isPrimary 
               ? 'bg-primary hover:bg-primary/90' 
               : 'bg-secondary-600 hover:bg-secondary-700'} 
-              text-white font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1`}
+              text-white !important font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1`}
             asChild
           >
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            <a href={url} target="_blank" rel="noopener noreferrer" className="text-white">
               Acceder a {title}
             </a>
           </Button>
