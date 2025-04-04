@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { AboutSection } from "@/components/AboutSection";
+
 import { ServiceSection } from "@/components/ServiceSection";
 import { CTASection } from "@/components/CTASection";
 import { TestimonialSection } from "@/components/TestimonialSection";
@@ -26,7 +26,6 @@ export default function Home() {
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
         <Hero />
-        <AboutSection />
         <ServiceSection />
         <CTASection />
         <TestimonialSection />
