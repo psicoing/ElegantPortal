@@ -1,34 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { ContactDialog } from "./ContactDialog";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real implementation, this would send the data to a server
-    toast({
-      title: "Mensaje enviado",
-      description: "Gracias por contactarnos. Nos pondremos en contacto contigo pronto.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
     <section id="contact" className="py-16 bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -54,59 +29,51 @@ export function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div>
-              <Label htmlFor="name" className="text-sm font-medium text-gray-700 mb-1">
-                Nombre
-              </Label>
-              <Input 
-                type="text" 
-                id="name" 
-                name="name" 
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition" 
-                placeholder="Tu nombre"
-              />
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="text-center">
+              <p className="text-gray-700 mb-6">
+                Haz clic en el botón de contacto para ver nuestra información de contacto detallada.
+              </p>
             </div>
             
-            <div>
-              <Label htmlFor="email" className="text-sm font-medium text-gray-700 mb-1">
-                Email
-              </Label>
-              <Input 
-                type="email" 
-                id="email" 
-                name="email" 
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition" 
-                placeholder="tu@email.com"
-              />
+            <ContactDialog>
+              <Button 
+                type="button" 
+                className="bg-primary hover:bg-primary/90 text-white font-sans font-semibold rounded-lg py-3 px-6 shadow-md transition"
+              >
+                Información de contacto
+              </Button>
+            </ContactDialog>
+
+            <div className="w-full max-w-sm mt-8 grid grid-cols-3 gap-4">
+              <div className="text-center">
+                <ContactDialog>
+                  <button className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors">
+                    <Mail className="w-6 h-6" />
+                  </button>
+                </ContactDialog>
+                <p className="mt-2 text-sm text-gray-600">Email</p>
+              </div>
+              
+              <div className="text-center">
+                <ContactDialog>
+                  <button className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors">
+                    <Phone className="w-6 h-6" />
+                  </button>
+                </ContactDialog>
+                <p className="mt-2 text-sm text-gray-600">Teléfono</p>
+              </div>
+              
+              <div className="text-center">
+                <ContactDialog>
+                  <button className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors">
+                    <MapPin className="w-6 h-6" />
+                  </button>
+                </ContactDialog>
+                <p className="mt-2 text-sm text-gray-600">Ubicación</p>
+              </div>
             </div>
-            
-            <div>
-              <Label htmlFor="message" className="text-sm font-medium text-gray-700 mb-1">
-                Mensaje
-              </Label>
-              <Textarea 
-                id="message" 
-                name="message" 
-                value={formData.message}
-                onChange={handleChange}
-                rows={4} 
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition" 
-                placeholder="¿En qué podemos ayudarte?"
-              />
-            </div>
-            
-            <Button 
-              type="submit" 
-              className="w-full bg-primary hover:bg-primary/90 text-white font-sans font-semibold rounded-lg py-3 px-6 shadow-md transition"
-            >
-              Enviar mensaje
-            </Button>
-          </form>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { ContactDialog } from "./ContactDialog";
 
 interface HeaderProps {
   toggleMobileMenu: () => void;
@@ -19,9 +20,11 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
           <a href="#services" className="font-sans font-medium text-gray-600 hover:text-primary transition">
             Servicios
           </a>
-          <a href="#contact" className="font-sans font-medium text-gray-600 hover:text-primary transition">
-            Contacto
-          </a>
+          <ContactDialog>
+            <button className="font-sans font-medium text-gray-600 hover:text-primary transition">
+              Contacto
+            </button>
+          </ContactDialog>
         </nav>
         <Button 
           variant="ghost"

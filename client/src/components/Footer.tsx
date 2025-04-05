@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { ContactDialog } from "./ContactDialog";
 
 export function Footer() {
   return (
@@ -101,10 +102,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group">
-                  <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
-                  <span>Contacto</span>
-                </a>
+                <ContactDialog>
+                  <button className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group">
+                    <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
+                    <span>Contacto</span>
+                  </button>
+                </ContactDialog>
               </li>
             </ul>
           </div>

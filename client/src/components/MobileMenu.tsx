@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ContactDialog } from "./ContactDialog";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -59,13 +60,14 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
             >
               Servicios
             </a>
-            <a 
-              href="#contact" 
-              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2"
-              onClick={handleLinkClick}
-            >
-              Contacto
-            </a>
+            <ContactDialog>
+              <button
+                className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full"
+                onClick={() => closeMobileMenu()}
+              >
+                Contacto
+              </button>
+            </ContactDialog>
           </nav>
         </motion.div>
       )}
