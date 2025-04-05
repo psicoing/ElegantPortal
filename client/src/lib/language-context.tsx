@@ -273,8 +273,11 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
   // Función para cambiar el idioma y guardarlo en localStorage
   const setLanguage = (newLanguage: Language) => {
+    console.log(`Changing language to: ${newLanguage}`);
     localStorage.setItem('language', newLanguage);
     setLanguageState(newLanguage);
+    // Forzar la recarga para actualizar todos los componentes con el nuevo idioma
+    window.location.reload();
   };
 
   // Función para obtener la traducción de una clave
