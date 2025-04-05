@@ -14,7 +14,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
           <div className="text-2xl font-bold text-primary font-sans">NFLOW - JOBDA</div>
         </div>
         <nav className="hidden md:flex space-x-6">
-          <a href="#about" className="font-sans font-medium text-gray-600 hover:text-primary transition">
+          <a href="#acerca-de" className="font-sans font-medium text-gray-600 hover:text-primary transition">
             Acerca de
           </a>
           <a href="#services" className="font-sans font-medium text-gray-600 hover:text-primary transition">

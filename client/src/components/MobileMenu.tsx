@@ -47,7 +47,7 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
           
           <nav className="flex flex-col space-y-4">
             <a 
-              href="#about" 
+              href="#acerca-de" 
               className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
               onClick={handleLinkClick}
             >
