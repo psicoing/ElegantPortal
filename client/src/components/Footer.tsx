@@ -109,6 +109,24 @@ export function Footer() {
                   </button>
                 </ContactDialog>
               </li>
+              <li>
+                <a 
+                  href="/privacy" 
+                  className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group"
+                >
+                  <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
+                  <span>Política de Privacidad</span>
+                </a>
+              </li>
+              <li>
+                <button 
+                  onClick={() => window.openCookiePreferences?.()}
+                  className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group cursor-pointer"
+                >
+                  <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
+                  <span>Preferencias de Cookies</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
