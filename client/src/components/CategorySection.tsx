@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Users, Building2, Briefcase } from "lucide-react";
+import { Brain, Users, Building2, HeartPulse, GraduationCap, Briefcase } from "lucide-react";
 
 const categories = [
   {
-    icon: <GraduationCap className="h-8 w-8 text-white" />,
+    icon: <Brain className="h-8 w-8 text-white" />,
     title: "Adolescentes",
     description: "Apoyo para gestionar emociones, estrés escolar y relaciones sociales"
   },
@@ -18,7 +18,7 @@ const categories = [
     description: "Gestión de ofertas laborables y RASTREAJOBS de toda EU"
   },
   {
-    icon: <Briefcase className="h-8 w-8 text-white" />,
+    icon: <HeartPulse className="h-8 w-8 text-white" />,
     title: "Salud Laboral",
     description: "Soporte para el manejo del estrés, ansiedad y desafíos en el entorno profesional"
   }
