@@ -59,6 +59,7 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.tesla': 'Sorteamos 1 Tesla.',
     'rewards.house1': 'Sorteamos una casa en Palamós (Girona, España).',
     'rewards.house2': 'Sorteamos una casa ecológica de madera de Tu Casa Eco, para que la pongas donde tú quieras.',
+    'rewards.users': 'usuarios activos',
     'rewards.footer': 'Sigue invitando, creciendo y soñando. Estamos más cerca de los premios gracias a ti.',
     
     'about.title': '¿Quiénes somos?',
@@ -109,6 +110,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Serveis',
     'nav.contact': 'Contacte',
     'nav.rewards': 'Premis',
+    
+    'rewards.users': 'usuaris actius',
     
     'hero.title': 'Benvinguts a un entorn pensat per cuidar la teva salut mental i laboral',
     'hero.subtitle': 'A més, et convidem a descobrir el nostre servei d\'ocupació.',
@@ -196,6 +199,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Services',
     'nav.contact': 'Contact',
     'nav.rewards': 'Rewards',
+    
+    'rewards.users': 'active users',
     
     'hero.title': 'Welcome to an environment designed to care for your mental and work health',
     'hero.subtitle': 'Additionally, we invite you to discover our employment service.',

@@ -90,11 +90,14 @@ export function RewardsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`bg-gradient-to-b ${reward.color} rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow`}
             >
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-3">
                 <div className="bg-white rounded-full p-2 shadow-sm mr-3">
                   {reward.icon}
                 </div>
-                <span className="font-bold text-xl text-gray-900">{reward.users}</span>
+                <div>
+                  <span className="font-bold text-xl text-gray-900">{reward.users}</span>
+                  <span className="text-sm ml-1 text-gray-600">{t('rewards.users')}</span>
+                </div>
               </div>
               <p className="font-medium text-gray-800">{reward.reward}</p>
             </motion.div>
