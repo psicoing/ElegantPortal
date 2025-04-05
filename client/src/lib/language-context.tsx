@@ -21,6 +21,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.about': 'Acerca de',
     'nav.services': 'Servicios',
     'nav.contact': 'Contacto',
+    'nav.rewards': 'Premios',
     
     'hero.title': 'Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral',
     'hero.subtitle': 'Además, te invitamos a descubrir nuestro servicio de empleo.',
@@ -49,6 +50,15 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda.feature3': 'Orientación profesional continua',
     'service.jobda.badge': 'Gratuito',
     'service.jobda.button': 'Buscar empleo en JOBDA',
+    
+    'rewards.title': '¡Gana premios reales solo por formar parte!',
+    'rewards.subtitle': 'Haz clic aquí o descubre el globo flotante con nuestros premios.',
+    'rewards.discover': 'Descubrir premios',
+    'rewards.iphones': 'Sorteamos 10 iPhones entre toda la comunidad.',
+    'rewards.tesla': 'Sorteamos 1 Tesla.',
+    'rewards.house1': 'Sorteamos una casa en Palamós (Girona, España).',
+    'rewards.house2': 'Sorteamos una casa ecológica de madera de Tu Casa Eco, para que la pongas donde tú quieras.',
+    'rewards.footer': 'Sigue invitando, creciendo y soñando. Estamos más cerca de los premios gracias a ti.',
     
     'about.title': '¿Quiénes somos?',
     'about.subtitle': 'Conoce nuestra historia y visión',
@@ -97,6 +107,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.about': 'Sobre nosaltres',
     'nav.services': 'Serveis',
     'nav.contact': 'Contacte',
+    'nav.rewards': 'Premis',
     
     'hero.title': 'Benvinguts a un entorn pensat per cuidar la teva salut mental i laboral',
     'hero.subtitle': 'A més, et convidem a descobrir el nostre servei d\'ocupació.',
@@ -125,6 +136,15 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda.feature3': 'Orientació professional contínua',
     'service.jobda.badge': 'Gratuït',
     'service.jobda.button': 'Buscar feina a JOBDA',
+    
+    'rewards.title': 'Guanya premis reals només per formar part!',
+    'rewards.subtitle': 'Fes clic aquí o descobreix el globus flotant amb els nostres premis.',
+    'rewards.discover': 'Descobrir premis',
+    'rewards.iphones': 'Sortegem 10 iPhones entre tota la comunitat.',
+    'rewards.tesla': 'Sortegem 1 Tesla.',
+    'rewards.house1': 'Sortegem una casa a Palamós (Girona, Espanya).',
+    'rewards.house2': 'Sortegem una casa ecològica de fusta de Tu Casa Eco, perquè la posis on tu vulguis.',
+    'rewards.footer': 'Segueix convidant, creixent i somiant. Estem més a prop dels premis gràcies a tu.',
     
     'about.title': 'Qui som?',
     'about.subtitle': 'Coneix la nostra història i visió',
@@ -173,6 +193,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.about': 'About',
     'nav.services': 'Services',
     'nav.contact': 'Contact',
+    'nav.rewards': 'Rewards',
     
     'hero.title': 'Welcome to an environment designed to care for your mental and work health',
     'hero.subtitle': 'Additionally, we invite you to discover our employment service.',
@@ -201,6 +222,15 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda.feature3': 'Continuous professional guidance',
     'service.jobda.badge': 'Free',
     'service.jobda.button': 'Search jobs on JOBDA',
+    
+    'rewards.title': 'Win real prizes just for being part of it!',
+    'rewards.subtitle': 'Click here or discover the floating balloon with our prizes.',
+    'rewards.discover': 'Discover prizes',
+    'rewards.iphones': 'We raffle 10 iPhones among the entire community.',
+    'rewards.tesla': 'We raffle 1 Tesla.',
+    'rewards.house1': 'We raffle a house in Palamós (Girona, Spain).',
+    'rewards.house2': 'We raffle an ecological wooden house from Tu Casa Eco, so you can put it wherever you want.',
+    'rewards.footer': 'Keep inviting, growing and dreaming. We are closer to the prizes thanks to you.',
     
     'about.title': 'Who We Are',
     'about.subtitle': 'Learn about our history and vision',

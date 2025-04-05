@@ -8,6 +8,7 @@ import { TestimonialSection } from "@/components/TestimonialSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
+import { RewardsSection } from "@/components/RewardsSection";
 import { useState } from "react";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <Hero />
         <CategorySection />
         <ServiceSection />
+        <RewardsSection />
         <AboutSection />
         <TestimonialSection />
         <CTASection />

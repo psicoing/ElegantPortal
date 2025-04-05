@@ -64,6 +64,13 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
             >
               {t('nav.services')}
             </a>
+            <a 
+              href="#rewards" 
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+              onClick={handleLinkClick}
+            >
+              {t('nav.rewards')}
+            </a>
             <ContactDialog>
               <button
                 className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"

@@ -24,6 +24,9 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
           <a href="#services" className="font-sans font-medium text-gray-600 hover:text-primary transition">
             {t('nav.services')}
           </a>
+          <a href="#rewards" className="font-sans font-medium text-gray-600 hover:text-primary transition">
+            {t('nav.rewards')}
+          </a>
           <ContactDialog>
             <button className="font-sans font-medium text-gray-600 hover:text-primary transition">
               {t('nav.contact')}
