@@ -66,8 +66,11 @@ export function RewardsSection() {
           <h2 className="font-sans text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             {t('rewards.title')}
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-2">
             {t('rewards.subtitle')}
+          </p>
+          <p className="text-gray-700 font-medium mb-6">
+            {t('rewards.milestones')}
           </p>
           <Button 
             className="bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-2 px-6 shadow-md transition transform hover:-translate-y-1"

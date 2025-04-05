@@ -53,6 +53,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'rewards.title': '¡Gana premios reales solo por formar parte!',
     'rewards.subtitle': 'Haz clic aquí o descubre el globo flotante con nuestros premios.',
+    'rewards.milestones': 'Premios por hitos de usuarios activos mensuales:',
     'rewards.discover': 'Descubrir premios',
     'rewards.iphones': 'Sorteamos 10 iPhones entre toda la comunidad.',
     'rewards.tesla': 'Sorteamos 1 Tesla.',
@@ -139,6 +140,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'rewards.title': 'Guanya premis reals només per formar part!',
     'rewards.subtitle': 'Fes clic aquí o descobreix el globus flotant amb els nostres premis.',
+    'rewards.milestones': 'Premis per fites d\'usuaris actius mensuals:',
     'rewards.discover': 'Descobrir premis',
     'rewards.iphones': 'Sortegem 10 iPhones entre tota la comunitat.',
     'rewards.tesla': 'Sortegem 1 Tesla.',
@@ -225,6 +227,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'rewards.title': 'Win real prizes just for being part of it!',
     'rewards.subtitle': 'Click here or discover the floating balloon with our prizes.',
+    'rewards.milestones': 'Prizes for monthly active user milestones:',
     'rewards.discover': 'Discover prizes',
     'rewards.iphones': 'We raffle 10 iPhones among the entire community.',
     'rewards.tesla': 'We raffle 1 Tesla.',
