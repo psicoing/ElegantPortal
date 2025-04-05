@@ -27,8 +27,8 @@ export default function Home() {
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
         <Hero />
-        <ServiceSection />
         <CategorySection />
+        <ServiceSection />
         <CTASection />
         <TestimonialSection />
         <ContactSection />
