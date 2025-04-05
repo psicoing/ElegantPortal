@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Privacy from "@/pages/Privacy";
 import { CookieBanner } from "@/components/CookieBanner";
+import { LanguageProvider } from "./lib/language-context";
 
 function Router() {
   return (
@@ -19,11 +20,13 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Router />
-      <CookieBanner />
-      <Toaster />
-    </QueryClientProvider>
+    <LanguageProvider>
+      <QueryClientProvider client={queryClient}>
+        <Router />
+        <CookieBanner />
+        <Toaster />
+      </QueryClientProvider>
+    </LanguageProvider>
   );
 }
 

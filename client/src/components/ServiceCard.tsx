@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import { useLanguage } from "@/lib/language-context";
 
 interface ServiceCardProps {
   icon: ReactNode;
@@ -24,6 +25,7 @@ export function ServiceCard({
   badgeText,
   variant 
 }: ServiceCardProps) {
+  const { t } = useLanguage();
   const isPrimary = variant === "primary";
   
   return (
@@ -65,7 +67,7 @@ export function ServiceCard({
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                Acceder a {title}
+                {isPrimary ? t('service.nflow.button') : t('service.jobda.button')}
               </a>
             </Button>
           ) : (
@@ -81,7 +83,7 @@ export function ServiceCard({
                 className="text-white hover:text-white"
                 style={{ color: 'white' }}
               >
-                <span className="text-white">Acceder a {title}</span>
+                <span className="text-white">{isPrimary ? t('service.nflow.button') : t('service.jobda.button')}</span>
               </a>
             </Button>
           )}

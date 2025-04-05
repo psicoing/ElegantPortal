@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ContactDialog } from "./ContactDialog";
+import { LanguageSelector } from "./LanguageSelector";
+import { useLanguage } from "@/lib/language-context";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -9,6 +11,8 @@ interface MobileMenuProps {
 }
 
 export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
+  const { t } = useLanguage();
+  
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const href = e.currentTarget.getAttribute('href');
@@ -51,23 +55,27 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
               className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
               onClick={handleLinkClick}
             >
-              Acerca de
+              {t('nav.about')}
             </a>
             <a 
               href="#services" 
               className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
               onClick={handleLinkClick}
             >
-              Servicios
+              {t('nav.services')}
             </a>
             <ContactDialog>
               <button
-                className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full"
+                className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"
                 onClick={() => closeMobileMenu()}
               >
-                Contacto
+                {t('nav.contact')}
               </button>
             </ContactDialog>
+            <div className="py-2">
+              <div className="mb-2 font-sans font-medium text-gray-600">Idioma / Language:</div>
+              <LanguageSelector />
+            </div>
           </nav>
         </motion.div>
       )}
