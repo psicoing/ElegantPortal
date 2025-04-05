@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Brain, Users, Building2, HeartPulse, GraduationCap, Briefcase } from "lucide-react";
+import { School, Users, Building2, HeartPulse, GraduationCap, Briefcase } from "lucide-react";
 
 const categories = [
   {
-    icon: <Brain className="h-8 w-8 text-white" />,
+    icon: <School className="h-8 w-8 text-white" />,
     title: "Adolescentes",
     description: "Apoyo para gestionar emociones, estrés escolar y relaciones sociales"
   },
