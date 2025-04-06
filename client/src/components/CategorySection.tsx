@@ -3,6 +3,7 @@ import { School, Users, Building2, HeartPulse, GraduationCap, Briefcase } from "
 import nflowAdolescenteImage from "../assets/nflow_adolescente_girl.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import nflowPadresMadresImage from "../assets/nflow_padres_madres.png";
+import nflowSaludLaboralImage from "../assets/nflow_salud_laboral.png";
 
 const categories = [
   {
@@ -30,8 +31,8 @@ const categories = [
     icon: <HeartPulse className="h-8 w-8 text-white" />,
     title: "Salud Laboral",
     description: "Soporte para el manejo del estrés, ansiedad y desafíos en el entorno profesional",
-    image: null,
-    imageAlt: ""
+    image: nflowSaludLaboralImage,
+    imageAlt: "NFLOW Salud Mental Laboral"
   }
 ];
 
