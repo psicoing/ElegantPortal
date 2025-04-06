@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { MessageCircle, Briefcase } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 
+// Importar las imágenes
+import nflowTeensImage from "../assets/nflow_adolescentes.png";
+import nflowDigitalImage from "../assets/nflow_terapia_digital.png";
+import jobdaHealthImage from "../assets/jobda_salud_laboral.png";
+import nflowFamiliarImage from "../assets/nflow_familiar.png";
+
 export function ServiceSection() {
   const { t } = useLanguage();
   
@@ -18,7 +24,8 @@ export function ServiceSection() {
     ],
     url: "https://mental-chat-ai-rmportbou.replit.app/",
     badgeText: t('service.nflow.badge'),
-    variant: "primary" as const
+    variant: "primary" as const,
+    imageSrc: nflowDigitalImage
   };
 
   const jobda = {
@@ -32,7 +39,8 @@ export function ServiceSection() {
     ],
     url: "https://ejobs-spain-rmportbou.replit.app/",
     badgeText: t('service.jobda.badge'),
-    variant: "secondary" as const
+    variant: "secondary" as const,
+    imageSrc: jobdaHealthImage
   };
 
   const services = [nflow, jobda];
@@ -72,6 +80,7 @@ export function ServiceSection() {
                 url={service.url}
                 badgeText={service.badgeText}
                 variant={service.variant}
+                imageSrc={service.imageSrc}
               />
             </motion.div>
           ))}

@@ -14,6 +14,7 @@ interface ServiceCardProps {
   url: string;
   badgeText: string;
   variant: "primary" | "secondary";
+  imageSrc?: string;
 }
 
 export function ServiceCard({ 
@@ -23,7 +24,8 @@ export function ServiceCard({
   features, 
   url, 
   badgeText,
-  variant 
+  variant,
+  imageSrc
 }: ServiceCardProps) {
   const { t } = useLanguage();
   const isPrimary = variant === "primary";
@@ -34,6 +36,15 @@ export function ServiceCard({
       transition={{ duration: 0.3 }}
     >
       <Card className={`overflow-hidden shadow-lg border border-gray-100 ${isPrimary ? 'card-gradient-1' : 'card-gradient-2'}`}>
+        {imageSrc && (
+          <div className="w-full h-64 overflow-hidden">
+            <img 
+              src={imageSrc} 
+              alt={title} 
+              className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        )}
         <CardContent className="p-6 md:p-8">
           <div className="flex justify-between items-start mb-6">
             <div className={`${isPrimary ? 'bg-primary/10' : 'bg-secondary-100'} rounded-lg p-3`}>

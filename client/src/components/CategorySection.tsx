@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { School, Users, Building2, HeartPulse, GraduationCap, Briefcase } from "lucide-react";
+import nflowAdolescenteImage from "../assets/nflow_adolescente_girl.png";
+import nflowFamiliarImage from "../assets/nflow_familiar.png";
 
 const categories = [
   {
@@ -35,6 +37,22 @@ export function CategorySection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <div className="flex flex-col md:flex-row items-center justify-between mb-12">
+            <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Categorías de Servicios</h2>
+              <p className="text-gray-300 mb-6">Nuestras soluciones están diseñadas para atender las necesidades específicas de diferentes grupos.</p>
+            </div>
+            <div className="md:w-1/2 flex justify-center">
+              <div className="relative w-64 h-64">
+                <img 
+                  src={nflowAdolescenteImage} 
+                  alt="NFLOW para adolescentes" 
+                  className="rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105"
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+              </div>
+            </div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {categories.map((category, index) => (
               <motion.div

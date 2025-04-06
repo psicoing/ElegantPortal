@@ -1,5 +1,6 @@
 import { Bookmark, Brain, Globe, HeartHandshake, Puzzle, Users } from "lucide-react";
 import { motion } from "framer-motion";
+import nflowFamiliarImage from "../assets/nflow_familiar.png";
 
 export function AboutSection() {
   return (
@@ -16,9 +17,17 @@ export function AboutSection() {
               ¿Quiénes somos?
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed mb-8">
               Conoce nuestra historia y visión
             </p>
+            <div className="max-w-md mx-auto">
+              <img 
+                src={nflowFamiliarImage} 
+                alt="NFLOW Salud Mental Familiar" 
+                className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
           </motion.div>
         </div>
 
