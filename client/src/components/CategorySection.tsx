@@ -4,6 +4,7 @@ import nflowAdolescenteImage from "../assets/nflow_adolescente_girl.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import nflowPadresMadresImage from "../assets/nflow_padres_madres.png";
 import nflowSaludLaboralImage from "../assets/nflow_salud_laboral.png";
+import jobdaEmpresasImage from "../assets/jobda_empresas.png";
 
 const categories = [
   {
@@ -24,8 +25,8 @@ const categories = [
     icon: <Building2 className="h-8 w-8 text-white" />,
     title: "Empresas",
     description: "Gestión de ofertas laborables y RASTREAJOBS de toda EU",
-    image: null,
-    imageAlt: ""
+    image: jobdaEmpresasImage,
+    imageAlt: "JOBDA Selección de Personal"
   },
   {
     icon: <HeartPulse className="h-8 w-8 text-white" />,
