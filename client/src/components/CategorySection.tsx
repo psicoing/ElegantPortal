@@ -65,7 +65,7 @@ export function CategorySection() {
                 className="flex flex-col items-center text-center"
               >
                 {category.image ? (
-                  <div className="w-36 h-36 mb-4 flex items-center justify-center">
+                  <div className="w-36 h-36 mb-6 flex items-center justify-center">
                     <img 
                       src={category.image} 
                       alt={category.imageAlt} 
@@ -83,8 +83,8 @@ export function CategorySection() {
                     {category.icon}
                   </div>
                 )}
-                <h3 className="text-xl font-bold mb-2">{category.title}</h3>
-                <p className="text-sm text-gray-300">{category.description}</p>
+                <h3 className="text-xl font-bold mb-3 mt-2">{category.title}</h3>
+                <p className="text-sm text-gray-300 px-2">{category.description}</p>
               </motion.div>
             ))}
           </div>
