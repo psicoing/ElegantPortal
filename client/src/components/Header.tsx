@@ -36,10 +36,14 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
               {t('nav.contact')}
             </button>
           </ContactDialog>
-          <LanguageSelector />
+          <div className="hidden md:block">
+            <LanguageSelector />
+          </div>
         </nav>
         <div className="flex items-center gap-2">
-          <LanguageSelector />
+          <div className="md:hidden">
+            <LanguageSelector />
+          </div>
           <Button 
             variant="ghost"
             size="icon"
