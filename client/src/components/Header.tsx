@@ -3,6 +3,7 @@ import { Menu } from "lucide-react";
 import { ContactDialog } from "./ContactDialog";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
+import { Link } from "wouter";
 
 interface HeaderProps {
   toggleMobileMenu: () => void;
@@ -27,6 +28,9 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
           <a href="#rewards" className="font-sans font-medium text-gray-600 hover:text-primary transition">
             {t('nav.rewards')}
           </a>
+          <Link href="/projects" className="font-sans font-medium text-gray-600 hover:text-primary transition">
+            {t('nav.projects')}
+          </Link>
           <ContactDialog>
             <button className="font-sans font-medium text-gray-600 hover:text-primary transition">
               {t('nav.contact')}

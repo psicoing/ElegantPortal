@@ -22,6 +22,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Servicios',
     'nav.contact': 'Contacto',
     'nav.rewards': 'Premios',
+    'nav.projects': 'Proyectos',
     
     'hero.title': 'Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral',
     'hero.subtitle': 'Además, te invitamos a descubrir nuestro servicio de empleo.',
@@ -107,6 +108,22 @@ const translations: Record<Language, Record<string, string>> = {
     'cookies.customize': 'Personalizar preferencias',
     'cookies.hide': 'Ocultar preferencias',
     'cookies.save': 'Guardar preferencias',
+    
+    'projects.title': 'Proyectos de Investigación y Desarrollo',
+    'projects.subtitle': 'Nuestro compromiso con la innovación y el desarrollo científico nos lleva a investigar constantemente nuevas formas de mejorar la salud mental y el bienestar. A continuación, presentamos nuestros proyectos de investigación en curso.',
+    'projects.hucof.title': 'Proyecto HUCOF',
+    'projects.hucof.description': 'Nueva teoría sobre seres vivos y su relación con el entorno',
+    'projects.hucof.content1': 'El proyecto HUCOF desarrolla una teoría innovadora sobre los seres vivos y su relación con el entorno. Esta investigación propone nuevas perspectivas sobre cómo interactuamos con nuestro ambiente y cómo esto afecta nuestra salud mental y física.',
+    'projects.hucof.content2': 'La teoría HUCOF explora la interconexión entre las personas y su entorno desde una perspectiva holística, considerando aspectos biológicos, psicológicos y sociales.',
+    'projects.hucof.link_text': 'Para acceder a la documentación completa del proyecto HUCOF, visite:',
+    'projects.hucof.folder': 'Carpeta de Google Drive - Proyecto HUCOF',
+    'projects.arco.title': 'Proyecto ARCO',
+    'projects.arco.description': 'Aplicaciones neurofeedback para mejora de la salud mental',
+    'projects.arco.content1': 'El Proyecto ARCO investiga y desarrolla aplicaciones avanzadas de neurofeedback para mejorar la salud mental y el bienestar cognitivo. Este innovador enfoque utiliza tecnología de vanguardia para ayudar a las personas a optimizar su funcionamiento cerebral.',
+    'projects.arco.content2': 'Nuestro equipo está desarrollando protocolos específicos de neurofeedback que pueden aplicarse en diversas áreas, desde el tratamiento del estrés y la ansiedad hasta la mejora del rendimiento cognitivo y la concentración.',
+    'projects.arco.link_text': 'Para acceder a la documentación completa del Proyecto ARCO, visite:',
+    'projects.arco.folder': 'Carpeta de Google Drive - Proyecto ARCO',
+    'projects.footer': 'Volver a la página principal',
   },
   
   ca: {
@@ -115,6 +132,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Serveis',
     'nav.contact': 'Contacte',
     'nav.rewards': 'Premis',
+    'nav.projects': 'Projectes',
     
     'rewards.users': 'usuaris actius',
     
@@ -201,6 +219,22 @@ const translations: Record<Language, Record<string, string>> = {
     'cookies.customize': 'Personalitzar preferències',
     'cookies.hide': 'Ocultar preferències',
     'cookies.save': 'Guardar preferències',
+    
+    'projects.title': 'Projectes de Recerca i Desenvolupament',
+    'projects.subtitle': 'El nostre compromís amb la innovació i el desenvolupament científic ens porta a investigar constantment noves formes de millorar la salut mental i el benestar. A continuació, presentem els nostres projectes de recerca en curs.',
+    'projects.hucof.title': 'Projecte HUCOF',
+    'projects.hucof.description': 'Nova teoria sobre éssers vius i la seva relació amb l\'entorn',
+    'projects.hucof.content1': 'El projecte HUCOF desenvolupa una teoria innovadora sobre els éssers vius i la seva relació amb l\'entorn. Aquesta investigació proposa noves perspectives sobre com interactuem amb el nostre ambient i com això afecta la nostra salut mental i física.',
+    'projects.hucof.content2': 'La teoria HUCOF explora la interconnexió entre les persones i el seu entorn des d\'una perspectiva holística, considerant aspectes biològics, psicològics i socials.',
+    'projects.hucof.link_text': 'Per accedir a la documentació completa del projecte HUCOF, visiteu:',
+    'projects.hucof.folder': 'Carpeta de Google Drive - Projecte HUCOF',
+    'projects.arco.title': 'Projecte ARCO',
+    'projects.arco.description': 'Aplicacions neurofeedback per a millora de la salut mental',
+    'projects.arco.content1': 'El Projecte ARCO investiga i desenvolupa aplicacions avançades de neurofeedback per millorar la salut mental i el benestar cognitiu. Aquest innovador enfocament utilitza tecnologia d\'avantguarda per ajudar les persones a optimitzar el seu funcionament cerebral.',
+    'projects.arco.content2': 'El nostre equip està desenvolupant protocols específics de neurofeedback que poden aplicar-se en diverses àrees, des del tractament de l\'estrès i l\'ansietat fins a la millora del rendiment cognitiu i la concentració.',
+    'projects.arco.link_text': 'Per accedir a la documentació completa del Projecte ARCO, visiteu:',
+    'projects.arco.folder': 'Carpeta de Google Drive - Projecte ARCO',
+    'projects.footer': 'Tornar a la pàgina principal',
   },
   
   en: {
@@ -209,6 +243,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Services',
     'nav.contact': 'Contact',
     'nav.rewards': 'Rewards',
+    'nav.projects': 'Projects',
     
     'rewards.users': 'active users',
     
@@ -295,6 +330,22 @@ const translations: Record<Language, Record<string, string>> = {
     'cookies.customize': 'Customize Preferences',
     'cookies.hide': 'Hide Preferences',
     'cookies.save': 'Save Preferences',
+    
+    'projects.title': 'Research and Development Projects',
+    'projects.subtitle': 'Our commitment to innovation and scientific development leads us to constantly investigate new ways to improve mental health and wellbeing. Below, we present our ongoing research projects.',
+    'projects.hucof.title': 'HUCOF Project',
+    'projects.hucof.description': 'New theory about living beings and their relationship with the environment',
+    'projects.hucof.content1': 'The HUCOF project develops an innovative theory about living beings and their relationship with the environment. This research proposes new perspectives on how we interact with our environment and how this affects our mental and physical health.',
+    'projects.hucof.content2': 'The HUCOF theory explores the interconnection between people and their environment from a holistic perspective, considering biological, psychological, and social aspects.',
+    'projects.hucof.link_text': 'To access the complete documentation of the HUCOF project, visit:',
+    'projects.hucof.folder': 'Google Drive Folder - HUCOF Project',
+    'projects.arco.title': 'ARCO Project',
+    'projects.arco.description': 'Neurofeedback applications for mental health improvement',
+    'projects.arco.content1': 'The ARCO Project researches and develops advanced neurofeedback applications to improve mental health and cognitive wellbeing. This innovative approach uses cutting-edge technology to help people optimize their brain functioning.',
+    'projects.arco.content2': 'Our team is developing specific neurofeedback protocols that can be applied in various areas, from stress and anxiety treatment to improving cognitive performance and concentration.',
+    'projects.arco.link_text': 'To access the complete documentation of the ARCO Project, visit:',
+    'projects.arco.folder': 'Google Drive Folder - ARCO Project',
+    'projects.footer': 'Return to main page',
   }
 };
 

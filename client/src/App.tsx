@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Privacy from "@/pages/Privacy";
+import Projects from "@/pages/Projects";
 import { CookieBanner } from "@/components/CookieBanner";
 import { LanguageProvider } from "./lib/language-context";
 
@@ -13,6 +14,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home}/>
       <Route path="/privacy" component={Privacy} />
+      <Route path="/projects" component={Projects} />
       <Route component={NotFound} />
     </Switch>
   );

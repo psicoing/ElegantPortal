@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ContactDialog } from "./ContactDialog";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
+import { Link } from "wouter";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -71,6 +72,12 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
             >
               {t('nav.rewards')}
             </a>
+            <Link href="/projects" 
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+              onClick={() => closeMobileMenu()}
+            >
+              {t('nav.projects')}
+            </Link>
             <ContactDialog>
               <button
                 className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"
