@@ -1,6 +1,7 @@
 import { Bookmark, Brain, Globe, HeartHandshake, Puzzle, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
+import nflowRobotAIImage from "../assets/nflow_robot_ai.png";
 
 export function AboutSection() {
   return (
@@ -164,6 +165,36 @@ export function AboutSection() {
             </div>
           </motion.div>
         </div>
+
+        {/* Imagen de NFLOW Robot IA al final de la sección */}
+        <motion.div 
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8"></div>
+          <div className="max-w-xs mx-auto">
+            <img 
+              src={nflowRobotAIImage} 
+              alt="NFLOW Salud Mental para Adolescentes y Adultos" 
+              className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
+              style={{ maxWidth: '100%', height: 'auto' }}
+            />
+            <p className="text-gray-600 mt-6 font-medium">
+              Colegiado-7851 · Colegio de Psicólogos de Catalunya
+            </p>
+            <a 
+              href="https://jobda.es" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 font-semibold mt-2 inline-block hover:text-blue-800 transition-colors"
+            >
+              jobda.es
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
