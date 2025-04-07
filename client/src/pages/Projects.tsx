@@ -64,7 +64,7 @@ export default function Projects() {
                 </p>
                 <div className="bg-blue-50 p-4 rounded-md">
                   <a 
-                    href="https://drive.google.com/drive/folders/1nvPYO7k6NvqAUKpkTuwZhLs5JbmhPv-C" 
+                    href="https://drive.google.com/drive/folders/13TRIPYf4MDMVFV4q2OXosZkwjH13cwbU?usp=sharing" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
@@ -102,7 +102,7 @@ export default function Projects() {
                 </p>
                 <div className="bg-blue-50 p-4 rounded-md">
                   <a 
-                    href="https://drive.google.com/drive/folders/1QIZuJzXWC3r23VpEj3GawQxGSoZCpB3s" 
+                    href="https://drive.google.com/drive/folders/13TRIPYf4MDMVFV4q2OXosZkwjH13cwbU?usp=sharing" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
