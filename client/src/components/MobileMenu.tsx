@@ -86,10 +86,6 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
                 {t('nav.contact')}
               </button>
             </ContactDialog>
-            <div className="py-2">
-              <div className="mb-2 font-sans font-medium text-gray-600">Idioma / Language:</div>
-              <LanguageSelector />
-            </div>
           </nav>
         </motion.div>
       )}
