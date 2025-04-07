@@ -56,7 +56,7 @@ export function CategorySection() {
               ofreciendo herramientas y recursos adaptados a cada situación.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
             {categories.map((category, index) => (
               <motion.div
                 key={index}
@@ -64,10 +64,10 @@ export function CategorySection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex flex-col items-center text-center"
+                className="flex flex-col items-center text-center pb-12 mb-8"
               >
                 {category.image ? (
-                  <div className="w-36 h-36 mb-10 flex items-center justify-center">
+                  <div className="w-36 h-36 mb-16 flex items-center justify-center">
                     <img 
                       src={category.image} 
                       alt={category.imageAlt} 
@@ -76,7 +76,7 @@ export function CategorySection() {
                     />
                   </div>
                 ) : (
-                  <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6" style={{
+                  <div className="w-20 h-20 rounded-full flex items-center justify-center mb-10" style={{
                     backgroundColor: index === 0 ? "#6C8EFF" : 
                                     index === 1 ? "#30C48D" : 
                                     index === 2 ? "#FFA83F" : 
@@ -85,8 +85,8 @@ export function CategorySection() {
                     {category.icon}
                   </div>
                 )}
-                <h3 className="text-xl font-bold mb-4 mt-3">{category.title}</h3>
-                <p className="text-sm text-gray-300 px-3">{category.description}</p>
+                <h3 className="text-xl font-bold mb-5 mt-4">{category.title}</h3>
+                <p className="text-sm text-gray-300 px-4 max-w-xs mx-auto">{category.description}</p>
               </motion.div>
             ))}
           </div>
