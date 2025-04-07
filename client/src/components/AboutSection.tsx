@@ -25,7 +25,7 @@ export function AboutSection() {
               <img 
                 src={nflowFamiliarImage} 
                 alt="NFLOW Salud Mental Familiar" 
-                className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
+                className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105 mb-4"
                 style={{ maxWidth: '100%', height: 'auto' }}
               />
             </div>
@@ -179,17 +179,17 @@ export function AboutSection() {
             <img 
               src={nflowRobotAIImage} 
               alt="NFLOW Salud Mental para Adolescentes y Adultos" 
-              className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105"
+              className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105 mb-6"
               style={{ maxWidth: '100%', height: 'auto' }}
             />
-            <p className="text-gray-600 mt-6 font-medium">
+            <p className="text-gray-600 mt-8 font-medium">
               Colegiado-7851 · Colegio de Psicólogos de Catalunya
             </p>
             <a 
               href="https://jobda.es" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-blue-600 font-semibold mt-2 inline-block hover:text-blue-800 transition-colors"
+              className="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800 transition-colors"
             >
               jobda.es
             </a>
