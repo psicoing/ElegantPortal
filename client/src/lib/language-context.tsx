@@ -24,6 +24,12 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.rewards': 'Premios',
     'nav.projects': 'Proyectos',
     
+    'founderTitle': 'Fundador y Director Ejecutivo',
+    'founderQuote': 'Con NFLOW y JOBDA, mi objetivo es ofrecer soluciones innovadoras para la salud mental y las oportunidades laborales en el mercado europeo, especialmente en nuestra región del Empordà. Creo firmemente en el poder de integrar tecnología y bienestar.',
+    'founderName': 'Roberto Martínez',
+    'founderRole': 'CEO y Fundador de EmpordaJobs SL',
+    'founderAlt': 'Foto de Roberto Martínez, CEO',
+    
     'hero.title': 'Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral',
     'hero.subtitle': 'Además, te invitamos a descubrir nuestro servicio de empleo.',
     'hero.cta': 'Descubre nuestros servicios',
@@ -133,6 +139,12 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacte',
     'nav.rewards': 'Premis',
     'nav.projects': 'Projectes',
+    
+    'founderTitle': 'Fundador i Director Executiu',
+    'founderQuote': 'Amb NFLOW i JOBDA, el meu objectiu és oferir solucions innovadores per a la salut mental i les oportunitats laborals al mercat europeu, especialment a la nostra regió de l\'Empordà. Crec fermament en el poder d\'integrar tecnologia i benestar.',
+    'founderName': 'Roberto Martínez',
+    'founderRole': 'CEO i Fundador d\'EmpordaJobs SL',
+    'founderAlt': 'Foto de Roberto Martínez, CEO',
     
     'rewards.users': 'usuaris actius',
     
@@ -244,6 +256,12 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     'nav.rewards': 'Rewards',
     'nav.projects': 'Projects',
+    
+    'founderTitle': 'Founder and Chief Executive Officer',
+    'founderQuote': 'With NFLOW and JOBDA, my goal is to offer innovative solutions for mental health and job opportunities in the European market, especially in our Empordà region. I firmly believe in the power of integrating technology and wellbeing.',
+    'founderName': 'Roberto Martínez',
+    'founderRole': 'CEO and Founder of EmpordaJobs SL',
+    'founderAlt': 'Photo of Roberto Martínez, CEO',
     
     'rewards.users': 'active users',
     

@@ -9,6 +9,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
 import { RewardsSection } from "@/components/RewardsSection";
+import { FounderTestimonial } from "@/components/FounderTestimonial";
 import { useState } from "react";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <ServiceSection />
         <RewardsSection />
         <AboutSection />
+        <FounderTestimonial />
         <TestimonialSection />
         <CTASection />
         <ContactSection />
