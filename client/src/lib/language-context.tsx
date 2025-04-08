@@ -56,7 +56,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda.feature1': 'Ofertas de empleo personalizadas',
     'service.jobda.feature2': 'Evaluación de entorno laboral',
     'service.jobda.feature3': 'Orientación profesional continua',
-    'service.jobda.badge': 'Gratuito',
+    'service.jobda.badge': 'Calidad empleo',
     'service.jobda.button': 'Buscar empleo en JOBDA',
     
     'rewards.title': '¡Gana premios reales solo por formar parte!',
@@ -175,7 +175,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda.feature1': 'Ofertes de feina personalitzades',
     'service.jobda.feature2': 'Avaluació d\'entorn laboral',
     'service.jobda.feature3': 'Orientació professional contínua',
-    'service.jobda.badge': 'Gratuït',
+    'service.jobda.badge': 'Qualitat ocupació',
     'service.jobda.button': 'Buscar feina a JOBDA',
     
     'rewards.title': 'Guanya premis reals només per formar part!',
@@ -293,7 +293,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda.feature1': 'Personalized job offers',
     'service.jobda.feature2': 'Work environment assessment',
     'service.jobda.feature3': 'Continuous professional guidance',
-    'service.jobda.badge': 'Free',
+    'service.jobda.badge': 'Quality employment',
     'service.jobda.button': 'Search jobs on JOBDA',
     
     'rewards.title': 'Win real prizes just for being part of it!',
