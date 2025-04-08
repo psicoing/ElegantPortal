@@ -27,7 +27,7 @@ const translations: Record<Language, Record<string, string>> = {
     'founderTitle': 'Fundador y Director Ejecutivo',
     'founderQuote': 'Con NFLOW y JOBDA, mi objetivo es ofrecer soluciones innovadoras para la salud mental y las oportunidades laborales en el mercado europeo, especialmente en nuestra región del Empordà. Creo firmemente en el poder de integrar tecnología y bienestar.',
     'founderName': 'Ramón Molons de San Román',
-    'founderRole': 'CEO y Fundador de EmpordaJobs SL',
+    'founderRole': 'CEO y Fundador de EmpordaJobs SL\nPsicólogo Clínico y Neuroingeniero en Telecomunicaciones',
     'founderAlt': 'Foto de Ramón Molons de San Román, CEO',
     
     'hero.title': 'Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral',
@@ -143,7 +143,7 @@ const translations: Record<Language, Record<string, string>> = {
     'founderTitle': 'Fundador i Director Executiu',
     'founderQuote': 'Amb NFLOW i JOBDA, el meu objectiu és oferir solucions innovadores per a la salut mental i les oportunitats laborals al mercat europeu, especialment a la nostra regió de l\'Empordà. Crec fermament en el poder d\'integrar tecnologia i benestar.',
     'founderName': 'Ramón Molons de San Román',
-    'founderRole': 'CEO i Fundador d\'EmpordaJobs SL',
+    'founderRole': 'CEO i Fundador d\'EmpordaJobs SL\nPsicòleg Clínic i Neuroenginyer en Telecomunicacions',
     'founderAlt': 'Foto de Ramón Molons de San Román, CEO',
     
     'rewards.users': 'usuaris actius',
@@ -260,7 +260,7 @@ const translations: Record<Language, Record<string, string>> = {
     'founderTitle': 'Founder and Chief Executive Officer',
     'founderQuote': 'With NFLOW and JOBDA, my goal is to offer innovative solutions for mental health and job opportunities in the European market, especially in our Empordà region. I firmly believe in the power of integrating technology and wellbeing.',
     'founderName': 'Ramón Molons de San Román',
-    'founderRole': 'CEO and Founder of EmpordaJobs SL',
+    'founderRole': 'CEO and Founder of EmpordaJobs SL\nClinical Psychologist and Telecommunication Neuroengineer',
     'founderAlt': 'Photo of Ramón Molons de San Román, CEO',
     
     'rewards.users': 'active users',
