@@ -31,6 +31,7 @@ export function FounderTestimonial() {
             <div className="text-white">
               <p className="font-bold text-xl">{t("founderName")}</p>
               <p className="text-blue-100">{t("founderRole")}</p>
+              <p className="text-blue-100 mt-1 italic">{t("founderProfession")}</p>
             </div>
           </div>
           
