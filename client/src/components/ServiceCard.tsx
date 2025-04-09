@@ -67,7 +67,17 @@ export function ServiceCard({
             ))}
           </div>
           
-          {isPrimary ? (
+          {url.startsWith("/") ? (
+            // Botón para rutas internas
+            <Button 
+              className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+              asChild
+            >
+              <a href={url}>
+                Más información
+              </a>
+            </Button>
+          ) : isPrimary ? (
             // Botón NFLOW con estilo normal
             <Button 
               className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
@@ -78,7 +88,7 @@ export function ServiceCard({
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                {isPrimary ? t('service.nflow.button') : t('service.jobda.button')}
+                {t('service.nflow.button')}
               </a>
             </Button>
           ) : (
@@ -94,7 +104,7 @@ export function ServiceCard({
                 className="text-white hover:text-white"
                 style={{ color: 'white' }}
               >
-                <span className="text-white">{isPrimary ? t('service.nflow.button') : t('service.jobda.button')}</span>
+                <span className="text-white">{t('service.jobda.button')}</span>
               </a>
             </Button>
           )}

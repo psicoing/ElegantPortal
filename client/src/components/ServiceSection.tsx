@@ -1,6 +1,6 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 
 // Importar las imágenes
@@ -43,7 +43,22 @@ export function ServiceSection() {
     imageSrc: jobdaHealthImage
   };
 
-  const services = [nflow, jobda];
+  const aiApps = {
+    icon: <Sparkles className="h-8 w-8 text-accent" />,
+    title: "Desarrollo de Apps con IA",
+    description: "Aplicaciones inteligentes 100% a medida con integración real de IA para empresas innovadoras.",
+    features: [
+      "IA personalizada entrenada para tu negocio",
+      "Backend con panel de control a medida",
+      "De 8.400 a 15.000€ de inversión inicial"
+    ],
+    url: "/ai-apps",
+    badgeText: "Innovación",
+    variant: "primary" as const,
+    imageSrc: undefined
+  };
+
+  const services = [nflow, jobda, aiApps];
 
   return (
     <section id="services" className="py-16 bg-gray-50">
@@ -63,7 +78,7 @@ export function ServiceSection() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <motion.div 
               key={index}
