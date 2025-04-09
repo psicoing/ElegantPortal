@@ -34,8 +34,9 @@ export function ServiceCard({
     <motion.div
       whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
       transition={{ duration: 0.3 }}
+      className="h-full"
     >
-      <Card className={`overflow-hidden shadow-lg border border-gray-100 ${isPrimary ? 'card-gradient-1' : 'card-gradient-2'}`}>
+      <Card className={`overflow-hidden shadow-lg border border-gray-100 h-full flex flex-col ${isPrimary ? 'card-gradient-1' : 'card-gradient-2'}`}>
         {imageSrc && (
           <div className="w-full h-64 overflow-hidden">
             <img 
@@ -45,7 +46,7 @@ export function ServiceCard({
             />
           </div>
         )}
-        <CardContent className="p-8 md:p-10">
+        <CardContent className="p-8 md:p-10 flex flex-col flex-grow">
           <div className="flex justify-between items-start mb-8">
             <div className={`${isPrimary ? 'bg-primary/10' : 'bg-secondary-100'} rounded-lg p-3`}>
               {icon}
@@ -58,7 +59,7 @@ export function ServiceCard({
           <h3 className="font-sans font-bold text-xl md:text-2xl text-gray-900 mb-5">{title}</h3>
           <p className="text-gray-600 mb-8 leading-relaxed">{description}</p>
           
-          <div className="space-y-4 mb-10">
+          <div className="space-y-4 mb-10 flex-grow">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start">
                 <Check className={`h-5 w-5 ${isPrimary ? 'text-primary' : 'text-secondary-500'} mr-3 mt-1 flex-shrink-0`} />
@@ -67,47 +68,49 @@ export function ServiceCard({
             ))}
           </div>
           
-          {url.startsWith("/") ? (
-            // Botón para rutas internas
-            <Button 
-              className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
-              asChild
-            >
-              <a href={url}>
-                Más información
-              </a>
-            </Button>
-          ) : isPrimary ? (
-            // Botón NFLOW con estilo normal
-            <Button 
-              className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
-              asChild
-            >
-              <a 
-                href={url} 
-                target="_blank" 
-                rel="noopener noreferrer"
+          <div className="mt-auto">
+            {url.startsWith("/") ? (
+              // Botón para rutas internas
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+                asChild
               >
-                {t('service.nflow.button')}
-              </a>
-            </Button>
-          ) : (
-            // Botón JOBDA con fondo oscuro y texto explícitamente blanco
-            <Button 
-              className="w-full bg-black hover:bg-gray-800 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
-              asChild
-            >
-              <a 
-                href={url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-white hover:text-white"
-                style={{ color: 'white' }}
+                <a href={url}>
+                  Más información
+                </a>
+              </Button>
+            ) : isPrimary ? (
+              // Botón NFLOW con estilo normal
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+                asChild
               >
-                <span className="text-white">{t('service.jobda.button')}</span>
-              </a>
-            </Button>
-          )}
+                <a 
+                  href={url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  {t('service.nflow.button')}
+                </a>
+              </Button>
+            ) : (
+              // Botón JOBDA con fondo oscuro y texto explícitamente blanco
+              <Button 
+                className="w-full bg-black hover:bg-gray-800 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+                asChild
+              >
+                <a 
+                  href={url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white hover:text-white"
+                  style={{ color: 'white' }}
+                >
+                  <span className="text-white">{t('service.jobda.button')}</span>
+                </a>
+              </Button>
+            )}
+          </div>
         </CardContent>
       </Card>
     </motion.div>

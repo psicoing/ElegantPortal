@@ -133,8 +133,8 @@ export default function AiApps() {
                 </Button>
                 <Button variant="outline" className="w-full sm:w-auto flex items-center gap-2" size="lg">
                   <Mail className="h-4 w-4" />
-                  <a href="mailto:contacto@jobda.es" className="text-primary">
-                    contacto@jobda.es
+                  <a href="mailto:empordajobs@gmail.com" className="text-primary">
+                    empordajobs@gmail.com
                   </a>
                 </Button>
               </div>
