@@ -71,7 +71,7 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://ejobs-spain-rmportbou.replit.app/" 
+                  href="https://ejobs.jobda.es/" 
                   className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group"
                   target="_blank"
                   rel="noopener noreferrer"

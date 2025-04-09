@@ -42,7 +42,7 @@ export function CTASection() {
                   asChild
                 >
                   <a 
-                    href="https://ejobs-spain-rmportbou.replit.app/" 
+                    href="https://ejobs.jobda.es/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-white hover:text-white"

@@ -138,8 +138,8 @@ export default function AiApps() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button className="w-full sm:w-auto flex items-center gap-2" size="lg">
                   <ExternalLink className="h-4 w-4" />
-                  <a href="https://jobda.es" target="_blank" rel="noopener noreferrer" className="text-white">
-                    jobda.es
+                  <a href="https://ejobs.jobda.es" target="_blank" rel="noopener noreferrer" className="text-white">
+                    ejobs.jobda.es
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full sm:w-auto flex items-center gap-2" size="lg">
