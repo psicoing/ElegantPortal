@@ -22,7 +22,7 @@ export function ServiceSection() {
       t('service.nflow.feature2'),
       t('service.nflow.feature3')
     ],
-    url: "https://mental-chat-ai-rmportbou.replit.app/",
+    url: "https://nflow.jobda.es/",
     badgeText: t('service.nflow.badge'),
     variant: "primary" as const,
     imageSrc: nflowDigitalImage
@@ -37,7 +37,7 @@ export function ServiceSection() {
       t('service.jobda.feature2'),
       t('service.jobda.feature3')
     ],
-    url: "https://ejobs-spain-rmportbou.replit.app/",
+    url: "https://ejobs.jobda.es/",
     badgeText: t('service.jobda.badge'),
     variant: "secondary" as const,
     imageSrc: jobdaHealthImage
