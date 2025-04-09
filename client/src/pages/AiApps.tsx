@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ArrowLeft, Mail, ExternalLink } from "lucide-react";
+import aiAppsIconImage from "../assets/ai_apps_icon.png";
 import { Link } from "wouter";
 
 export default function AiApps() {
@@ -32,17 +33,27 @@ export default function AiApps() {
               {t('common.back_to_home')}
             </Link>
             
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              🚀 Transforma tu empresa con una app inteligente 100% a medida (y con IA real)
-            </h1>
-            
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-8 shadow-sm">
-              <p className="text-gray-700 mb-4">
-                EmpordaJobs SL (B02701100), a través de JOBDA, desarrolla apps inteligentes con IA para empresas que buscan ir más allá.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Creamos soluciones reales, no plantillas. Aplicaciones que integran IA, base de datos, automatización y paneles de control. Adaptadas a tu sector, a tus flujos de trabajo, y sobre todo, a tus objetivos.
-              </p>
+            <div className="mb-8 flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/3">
+                <img 
+                  src={aiAppsIconImage} 
+                  alt="Desarrollo de Apps con IA" 
+                  className="max-w-full rounded-lg shadow-md"
+                />
+              </div>
+              <div className="md:w-2/3">
+                <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                  🚀 Transforma tu empresa con una app inteligente 100% a medida (y con IA real)
+                </h1>
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm">
+                  <p className="text-gray-700 mb-4">
+                    EmpordaJobs SL (B02701100), a través de JOBDA, desarrolla apps inteligentes con IA para empresas que buscan ir más allá.
+                  </p>
+                  <p className="text-gray-700">
+                    Creamos soluciones reales, no plantillas. Aplicaciones que integran IA, base de datos, automatización y paneles de control. Adaptadas a tu sector, a tus flujos de trabajo, y sobre todo, a tus objetivos.
+                  </p>
+                </div>
+              </div>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-10">

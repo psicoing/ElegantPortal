@@ -8,6 +8,8 @@ import nflowTeensImage from "../assets/nflow_adolescentes.png";
 import nflowDigitalImage from "../assets/nflow_terapia_digital.png";
 import jobdaHealthImage from "../assets/jobda_salud_laboral.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
+import servicesOverviewImage from "../assets/services_overview.png";
+import aiAppsIconImage from "../assets/ai_apps_icon.png";
 
 export function ServiceSection() {
   const { t } = useLanguage();
@@ -55,7 +57,7 @@ export function ServiceSection() {
     url: "/ai-apps",
     badgeText: "Innovación",
     variant: "primary" as const,
-    imageSrc: undefined
+    imageSrc: aiAppsIconImage
   };
 
   const services = [nflow, jobda, aiApps];
@@ -64,7 +66,7 @@ export function ServiceSection() {
     <section id="services" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
-          className="max-w-3xl mx-auto text-center mb-12"
+          className="mx-auto text-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -73,9 +75,25 @@ export function ServiceSection() {
           <h2 className="font-sans text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             {t('services.title')}
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
             {t('services.subtitle')}
           </p>
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-6xl mx-auto mb-12"
+        >
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src={servicesOverviewImage} 
+              alt="Nuestros servicios" 
+              className="w-full object-cover"
+            />
+          </div>
         </motion.div>
         
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
