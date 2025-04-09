@@ -37,7 +37,7 @@ export function ServiceSection() {
       t('service.jobda.feature2'),
       t('service.jobda.feature3')
     ],
-    url: "https://ejobs.jobda.es/",
+    url: "https://jobda.es/",
     badgeText: t('service.jobda.badge'),
     variant: "secondary" as const,
     imageSrc: jobdaHealthImage
