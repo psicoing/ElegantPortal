@@ -8,7 +8,6 @@ import nflowTeensImage from "../assets/nflow_adolescentes.png";
 import nflowDigitalImage from "../assets/nflow_terapia_digital.png";
 import jobdaHealthImage from "../assets/jobda_salud_laboral.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
-import servicesOverviewImage from "../assets/services_overview.png";
 import aiAppsIconImage from "../assets/ai_apps_icon.png";
 
 export function ServiceSection() {
@@ -78,22 +77,6 @@ export function ServiceSection() {
           <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
             {t('services.subtitle')}
           </p>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-6xl mx-auto mb-12"
-        >
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src={servicesOverviewImage} 
-              alt="Nuestros servicios" 
-              className="w-full object-cover"
-            />
-          </div>
         </motion.div>
         
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
