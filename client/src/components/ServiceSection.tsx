@@ -59,7 +59,7 @@ export function ServiceSection() {
     imageSrc: aiAppsIconImage
   };
 
-  const services = [nflow, jobda, aiApps];
+  const services = [nflow, aiApps];
 
   return (
     <section id="services" className="py-16 bg-gray-50">
@@ -79,7 +79,7 @@ export function ServiceSection() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <motion.div 
               key={index}
