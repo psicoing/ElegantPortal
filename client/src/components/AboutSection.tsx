@@ -53,10 +53,10 @@ export function AboutSection() {
                 lo que garantiza un ejercicio profesional riguroso, ético y basado en la evidencia científica.
               </p>
               <p>
-                Además, Jobda representa nuestra solución orientada al mundo laboral, incorporando 
-                procesos de selección justos, accesibles y orientados al bienestar. Con los años, este servicio 
-                ha evolucionado hasta convertirse en una plataforma integral que incorpora inteligencia 
-                artificial, la norma ISO 45003 y un enfoque psicosocial centrado en la persona y el entorno laboral.
+                Además, Appia representa nuestra división especializada en el desarrollo de aplicaciones web 
+                y móviles con inteligencia artificial. Creamos soluciones tecnológicas personalizadas para 
+                empresas que buscan transformar digitalmente sus procesos, con un enfoque en la usabilidad,
+                la eficiencia y el impacto real en los resultados de negocio.
               </p>
               <p>
                 Actualmente, como Nflow, ampliamos nuestra acción profesional hacia la formación en 
