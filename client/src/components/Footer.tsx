@@ -71,13 +71,11 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://ejobs.jobda.es/" 
+                  href="/ai-apps" 
                   className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
-                  <span>JOBDA</span>
+                  <span>APPIA</span>
                 </a>
               </li>
             </ul>

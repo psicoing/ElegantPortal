@@ -47,7 +47,7 @@ export default function AiApps() {
                 </h1>
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm">
                   <p className="text-gray-700 mb-4">
-                    JOBDA desarrolla apps inteligentes con IA para empresas que buscan ir más allá en su transformación digital.
+                    APPIA desarrolla apps inteligentes con IA para empresas que buscan ir más allá en su transformación digital.
                   </p>
                   <p className="text-gray-700">
                     Creamos soluciones reales, no plantillas. Aplicaciones que integran IA, base de datos, automatización y paneles de control. Adaptadas a tu sector, a tus flujos de trabajo, y sobre todo, a tus objetivos.

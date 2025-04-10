@@ -42,9 +42,7 @@ export function CTASection() {
                   asChild
                 >
                   <a 
-                    href="https://appia.jobda.es/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                    href="/ai-apps" 
                     className="text-white hover:text-white"
                     style={{ color: 'white' }}
                   >
