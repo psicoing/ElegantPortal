@@ -13,8 +13,8 @@ const testimonials = [
   {
     initials: "MR",
     name: "Miguel Rodríguez",
-    role: "Usuario de JOBDA",
-    comment: "Gracias a JOBDA pude encontrar mi empleo actual. La plataforma es intuitiva y las ofertas están muy bien organizadas por sectores.",
+    role: "Usuario de APPIA",
+    comment: "Gracias a APPIA hemos desarrollado soluciones de IA personalizadas para nuestra empresa. La plataforma es intuitiva y los resultados han superado nuestras expectativas.",
     rating: 5,
     color: "secondary"
   },
@@ -22,7 +22,7 @@ const testimonials = [
     initials: "CG",
     name: "Carmen García",
     role: "Usuaria de ambos servicios",
-    comment: "He utilizado tanto NFLOW como JOBDA. Ambas plataformas son excelentes, con interfaces limpias y funciones que realmente facilitan mi día a día.",
+    comment: "He utilizado tanto NFLOW como APPIA. Ambas plataformas son excelentes, con interfaces limpias y funciones que realmente facilitan mi día a día.",
     rating: 5,
     color: "accent"
   }
