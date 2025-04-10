@@ -42,13 +42,13 @@ export function CTASection() {
                   asChild
                 >
                   <a 
-                    href="https://ejobs.jobda.es/" 
+                    href="https://appia.jobda.es/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-white hover:text-white"
                     style={{ color: 'white' }}
                   >
-                    <span className="text-white">Ir a JOBDA</span>
+                    <span className="text-white">Ir a APPIA</span>
                   </a>
                 </Button>
               </motion.div>
