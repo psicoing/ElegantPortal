@@ -25,7 +25,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.projects': 'Proyectos',
     
     'founderTitle': 'Fundador y Director Ejecutivo',
-    'founderQuote': 'Con NFLOW y JOBDA, mi objetivo es ofrecer soluciones innovadoras para la salud mental y las oportunidades laborales en el mercado europeo, especialmente en nuestra región del Empordà. Creo firmemente en el poder de integrar tecnología y bienestar.',
+    'founderQuote': 'Con NFLOW y APPIA, mi objetivo es ofrecer soluciones innovadoras que integren salud mental y desarrollo laboral, alineadas con los principios de la normativa ISO 45003, centrada en el bienestar psicológico en el entorno de trabajo. NFLOW actúa como un recurso digital de apoyo emocional continuo, mientras que APPIA permite a cada organización desarrollar su propia inteligencia artificial personalizada, generando entornos altamente digitalizados y adaptativos, capaces de responder a los nuevos desafíos del ámbito corporativo.',
     'founderName': 'Ramón Molons de San Román',
     'founderRole': 'CEO y Fundador de EmpordaJobs SL',
     'founderProfession': 'Psicólogo Clínico y Neuroingeniero en Telecomunicaciones',
@@ -142,7 +142,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.projects': 'Projectes',
     
     'founderTitle': 'Fundador i Director Executiu',
-    'founderQuote': 'Amb NFLOW i JOBDA, el meu objectiu és oferir solucions innovadores per a la salut mental i les oportunitats laborals al mercat europeu, especialment a la nostra regió de l\'Empordà. Crec fermament en el poder d\'integrar tecnologia i benestar.',
+    'founderQuote': 'Amb NFLOW i APPIA, el meu objectiu és oferir solucions innovadores que integrin salut mental i desenvolupament laboral, alineades amb els principis de la normativa ISO 45003, centrada en el benestar psicològic en l\'entorn de treball. NFLOW actua com un recurs digital de suport emocional continu, mentre que APPIA permet a cada organització desenvolupar la seva pròpia intel·ligència artificial personalitzada, generant entorns altament digitalitzats i adaptatius, capaços de respondre als nous desafiaments de l\'àmbit corporatiu.',
     'founderName': 'Ramón Molons de San Román',
     'founderRole': 'CEO i Fundador d\'EmpordaJobs SL',
     'founderProfession': 'Psicòleg Clínic i Neuroenginyer en Telecomunicacions',
@@ -260,7 +260,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.projects': 'Projects',
     
     'founderTitle': 'Founder and Chief Executive Officer',
-    'founderQuote': 'With NFLOW and JOBDA, my goal is to offer innovative solutions for mental health and job opportunities in the European market, especially in our Empordà region. I firmly believe in the power of integrating technology and wellbeing.',
+    'founderQuote': 'With NFLOW and APPIA, my goal is to offer innovative solutions that integrate mental health and labor development, aligned with the principles of the ISO 45003 standard, focused on psychological well-being in the work environment. NFLOW acts as a digital resource for continuous emotional support, while APPIA allows each organization to develop its own personalized artificial intelligence, generating highly digitized and adaptive environments, capable of responding to new corporate challenges.',
     'founderName': 'Ramón Molons de San Román',
     'founderRole': 'CEO and Founder of EmpordaJobs SL',
     'founderProfession': 'Clinical Psychologist and Telecommunication Neuroengineer',
