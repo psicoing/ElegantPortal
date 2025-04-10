@@ -128,6 +128,7 @@ export function AboutSection() {
                   <p className="text-sm text-gray-600 mt-1">
                     Servicio de selección, orientación y bienestar laboral con un enfoque basado 
                     en la ISO 45003, con impacto real en la cultura organizacional.
+                    Grupo empresarial EmpordaJobs SL B02701100.
                   </p>
                 </div>
               </div>
@@ -139,7 +140,7 @@ export function AboutSection() {
                   <Bookmark className="h-5 w-5 text-indigo-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-indigo-900">APPIA</h4>
+                  <h4 className="font-bold text-indigo-900">Appia</h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial
                     para empresas que buscan digitalizar y optimizar sus procesos.

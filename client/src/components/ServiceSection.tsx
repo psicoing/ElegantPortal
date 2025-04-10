@@ -46,7 +46,7 @@ export function ServiceSection() {
 
   const aiApps = {
     icon: <Sparkles className="h-8 w-8 text-accent" />,
-    title: "APPIA",
+    title: "Appia",
     description: "Aplicaciones inteligentes 100% a medida con integración real de IA para empresas innovadoras.",
     features: [
       "IA personalizada entrenada para tu negocio",

@@ -37,13 +37,13 @@ export default function AiApps() {
               <div className="md:w-1/3">
                 <img 
                   src={aiAppsIconImage} 
-                  alt="APPIA - Aplicaciones Inteligentes con IA" 
+                  alt="Appia - Aplicaciones Inteligentes con IA" 
                   className="max-w-full rounded-lg shadow-md"
                 />
               </div>
               <div className="md:w-2/3">
                 <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                  🚀 APPIA: Aplicaciones Inteligentes con IA
+                  🚀 Appia: Aplicaciones Inteligentes con IA
                 </h1>
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm">
                   <p className="text-gray-700 mb-4">
