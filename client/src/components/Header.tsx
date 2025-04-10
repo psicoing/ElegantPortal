@@ -16,7 +16,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
     <header className="w-full py-4 bg-white shadow-sm sticky top-0 z-30">
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="text-2xl font-bold text-primary font-sans">NFLOW - JOBDA</div>
+          <div className="text-2xl font-bold text-primary font-sans">JOBDA</div>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
           <a href="#acerca-de" className="font-sans font-medium text-gray-600 hover:text-primary transition">
