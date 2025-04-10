@@ -133,6 +133,21 @@ export function AboutSection() {
               </div>
             </div>
 
+            <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-lg p-4 border border-indigo-100">
+              <div className="flex items-start">
+                <div className="bg-indigo-100 p-2 rounded-full mr-4">
+                  <Bookmark className="h-5 w-5 text-indigo-600" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-indigo-900">APPIA</h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial
+                    para empresas que buscan digitalizar y optimizar sus procesos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-gradient-to-br from-rose-50 to-red-50 rounded-lg p-4 border border-rose-100">
               <div className="flex items-start">
                 <div className="bg-rose-100 p-2 rounded-full mr-4">
