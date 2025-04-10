@@ -24,7 +24,7 @@ const categories = [
   {
     icon: <Building2 className="h-8 w-8 text-white" />,
     title: "Empresas",
-    description: "Gestión de ofertas laborables y RASTREAJOBS de toda EU",
+    description: "Servicio de selección, orientación y bienestar laboral con impacto real",
     image: jobdaEmpresasImage,
     imageAlt: "JOBDA Selección de Personal"
   },

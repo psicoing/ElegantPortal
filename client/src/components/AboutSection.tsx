@@ -53,10 +53,9 @@ export function AboutSection() {
                 lo que garantiza un ejercicio profesional riguroso, ético y basado en la evidencia científica.
               </p>
               <p>
-                Además, Jobda representa la evolución natural de EmpordaJobs SL, una iniciativa 
-                fundada en 1996 para dinamizar el mercado laboral del Alt Empordà mediante procesos 
-                de selección justos, accesibles y orientados al bienestar. Con los años, esta plataforma 
-                ha evolucionado hasta convertirse en un servicio integral que incorpora inteligencia 
+                Además, Jobda representa nuestra solución orientada al mundo laboral, incorporando 
+                procesos de selección justos, accesibles y orientados al bienestar. Con los años, este servicio 
+                ha evolucionado hasta convertirse en una plataforma integral que incorpora inteligencia 
                 artificial, la norma ISO 45003 y un enfoque psicosocial centrado en la persona y el entorno laboral.
               </p>
               <p>
@@ -129,21 +128,6 @@ export function AboutSection() {
                   <p className="text-sm text-gray-600 mt-1">
                     Servicio de selección, orientación y bienestar laboral con un enfoque basado 
                     en la ISO 45003, con impacto real en la cultura organizacional.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg p-4 border border-amber-100">
-              <div className="flex items-start">
-                <div className="bg-amber-100 p-2 rounded-full mr-4">
-                  <Globe className="h-5 w-5 text-amber-600" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-amber-900">EmpordaJobs</h4>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Plataforma especializada en selección y orientación laboral en el Alt Empordà,
-                    conectando personas con empresas comprometidas con el bienestar.
                   </p>
                 </div>
               </div>
