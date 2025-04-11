@@ -124,10 +124,10 @@ export function AboutSection() {
                   <Puzzle className="h-5 w-5 text-emerald-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-emerald-900">Jobda</h4>
+                  <h4 className="font-bold text-emerald-900">Appia</h4>
                   <p className="text-sm text-gray-600 mt-1">
-                    Servicio de selección, orientación y bienestar laboral con un enfoque basado 
-                    en la ISO 45003, con impacto real en la cultura organizacional.
+                    Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial
+                    para empresas que buscan digitalizar y optimizar sus procesos. 
                     Grupo empresarial EmpordaJobs SL B02701100.
                   </p>
                 </div>
@@ -140,10 +140,10 @@ export function AboutSection() {
                   <Bookmark className="h-5 w-5 text-indigo-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-indigo-900">Appia</h4>
+                  <h4 className="font-bold text-indigo-900">RASTREAJOBS</h4>
                   <p className="text-sm text-gray-600 mt-1">
-                    Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial
-                    para empresas que buscan digitalizar y optimizar sus procesos.
+                    Sistema de búsqueda inteligente de ofertas de empleo basado en tecnología APPIA,
+                    que ayuda a candidatos a encontrar oportunidades laborales adecuadas a su perfil.
                   </p>
                 </div>
               </div>
@@ -186,12 +186,10 @@ export function AboutSection() {
               Colegiado-7851 · Colegio de Psicólogos de Catalunya
             </p>
             <a 
-              href="https://jobda.es" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/ai-apps" 
               className="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800 transition-colors"
             >
-              jobda.es
+              appia.jobda.es
             </a>
           </div>
         </motion.div>
