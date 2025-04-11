@@ -22,7 +22,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            APPIA
+            JOBDA
           </motion.h1>
           
           <motion.p 
