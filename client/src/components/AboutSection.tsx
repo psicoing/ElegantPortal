@@ -192,7 +192,7 @@ export function AboutSection() {
               href="/ai-apps" 
               className="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800 transition-colors"
             >
-              appia.jobda.es
+              APPIA · Desarrollo de apps inteligentes
             </a>
           </div>
         </motion.div>

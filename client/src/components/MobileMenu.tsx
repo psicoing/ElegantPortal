@@ -39,7 +39,7 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
           transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
           <div className="flex justify-between items-center mb-8">
-            <div className="text-xl font-bold text-primary font-sans">JOBDA</div>
+            <div className="text-xl font-bold text-primary font-sans">NFLOW - APPIA</div>
             <Button 
               variant="ghost" 
               size="icon" 
