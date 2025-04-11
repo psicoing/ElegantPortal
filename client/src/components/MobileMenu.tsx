@@ -5,6 +5,7 @@ import { ContactDialog } from "./ContactDialog";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
+import faroLogo from "@/assets/faro-logo.png";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -39,7 +40,14 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
           transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
           <div className="flex justify-between items-center mb-8">
-            <div className="text-xl font-bold text-primary font-sans">NFLOW - JOBDA</div>
+            <Link href="/" className="flex items-center" onClick={() => closeMobileMenu()}>
+              <img 
+                src={faroLogo} 
+                alt="Logo Faro" 
+                className="h-10 w-auto"
+                style={{filter: "drop-shadow(0 0 2px rgba(0, 156, 255, 0.8))"}}
+              />
+            </Link>
             <Button 
               variant="ghost" 
               size="icon" 
