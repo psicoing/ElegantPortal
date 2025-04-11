@@ -288,13 +288,13 @@ const translations: Record<Language, Record<string, string>> = {
     'service.nflow.badge': 'Innovative',
     'service.nflow.button': 'Access NFLOW',
     
-    'service.jobda.title': 'JOBDA',
-    'service.jobda.description': 'Comprehensive employment platform that connects candidates with companies, focused on work and personal wellbeing.',
-    'service.jobda.feature1': 'Personalized job offers',
-    'service.jobda.feature2': 'Work environment assessment',
-    'service.jobda.feature3': 'Continuous professional guidance',
-    'service.jobda.badge': 'Quality employment',
-    'service.jobda.button': 'Search jobs on JOBDA',
+    'service.appia.title': 'APPIA',
+    'service.appia.description': 'Specialized service in the development of web and mobile applications with artificial intelligence for companies looking to digitize and optimize their processes.',
+    'service.appia.feature1': 'Personalized technological solutions',
+    'service.appia.feature2': 'Web and mobile development with AI',
+    'service.appia.feature3': 'Digital transformation for businesses',
+    'service.appia.badge': 'Technological innovation',
+    'service.appia.button': 'Go to APPIA',
     
     'rewards.title': 'Win real prizes just for being part of it!',
     'rewards.subtitle': 'Click here or discover the floating balloon with our prizes.',
@@ -318,7 +318,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'area.psychology': 'Psychology',
     'area.nflow': 'Nflow',
-    'area.jobda': 'Jobda',
+    'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'NeuronMeg Institute',
     

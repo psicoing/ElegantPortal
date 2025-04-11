@@ -4,7 +4,7 @@ import nflowAdolescenteImage from "../assets/nflow_adolescente_girl.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import nflowPadresMadresImage from "../assets/nflow_padres_madres.png";
 import nflowSaludLaboralImage from "../assets/nflow_salud_laboral.png";
-import jobdaEmpresasImage from "../assets/jobda_empresas.png";
+import appiaEmpresasImage from "../assets/jobda_empresas.png";
 
 const categories = [
   {
@@ -24,9 +24,9 @@ const categories = [
   {
     icon: <Building2 className="h-8 w-8 text-white" />,
     title: "Empresas",
-    description: "Servicio de selección, orientación y bienestar laboral con impacto real",
-    image: jobdaEmpresasImage,
-    imageAlt: "JOBDA Selección de Personal"
+    description: "Servicio de desarrollo personalizado de apps con IA para la transformación digital de tu empresa",
+    image: appiaEmpresasImage,
+    imageAlt: "APPIA Desarrollo de Apps con IA"
   },
   {
     icon: <HeartPulse className="h-8 w-8 text-white" />,
