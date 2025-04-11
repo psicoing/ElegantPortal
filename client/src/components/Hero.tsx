@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/language-context";
 
 export function Hero() {
+  const { t } = useLanguage();
+  
   const scrollToServices = () => {
     const servicesSection = document.getElementById("services");
     if (servicesSection) {
@@ -19,7 +22,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            JOBDA
+            APPIA
           </motion.h1>
           
           <motion.p 
@@ -28,7 +31,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral. Además, desarrollamos apps con IA para empresas.
+            {t('hero.title')}. {t('hero.subtitle')}
           </motion.p>
           
           <motion.div
@@ -40,7 +43,7 @@ export function Hero() {
               onClick={scrollToServices}
               className="bg-white text-primary hover:shadow-lg transition transform hover:-translate-y-1 font-sans font-semibold px-8 py-3 rounded-lg"
             >
-              Explorar servicios
+              {t('hero.cta')}
             </Button>
           </motion.div>
         </div>
