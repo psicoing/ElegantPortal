@@ -51,13 +51,13 @@ const translations: Record<Language, Record<string, string>> = {
     'service.nflow.badge': 'Innovador',
     'service.nflow.button': 'Acceder a NFLOW',
     
-    'service.jobda.title': 'JOBDA',
-    'service.jobda.description': 'Plataforma de empleo integral que conecta candidatos con empresas, enfocada en el bienestar laboral y personal.',
-    'service.jobda.feature1': 'Ofertas de empleo personalizadas',
-    'service.jobda.feature2': 'Evaluación de entorno laboral',
-    'service.jobda.feature3': 'Orientación profesional continua',
-    'service.jobda.badge': 'Calidad empleo',
-    'service.jobda.button': 'Buscar empleo en JOBDA',
+    'service.appia.title': 'APPIA',
+    'service.appia.description': 'Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial para empresas que buscan digitalizar sus procesos.',
+    'service.appia.feature1': 'Soluciones tecnológicas personalizadas',
+    'service.appia.feature2': 'Desarrollo web y móvil con IA',
+    'service.appia.feature3': 'Transformación digital para empresas',
+    'service.appia.badge': 'Innovación tecnológica',
+    'service.appia.button': 'Ir a APPIA',
     
     'rewards.title': '¡Gana premios reales solo por formar parte!',
     'rewards.subtitle': 'Haz clic aquí o descubre el globo flotante con nuestros premios.',
@@ -82,7 +82,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'area.psychology': 'Psicología',
     'area.nflow': 'Nflow',
-    'area.jobda': 'Jobda',
+    'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'Instituto NeuronMeg',
     
@@ -151,8 +151,8 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.users': 'usuaris actius',
     
     'hero.title': 'Benvinguts a un entorn pensat per cuidar la teva salut mental i laboral',
-    'hero.subtitle': 'A més, et convidem a descobrir el nostre servei d\'ocupació.',
-    'hero.cta': 'Descobreix els nostres serveis',
+    'hero.subtitle': 'A més, desenvolupem apps amb IA per a empreses',
+    'hero.cta': 'Explorar serveis',
     
     'category.adolescents': 'Adolescents',
     'category.parents': 'Pares i mares',
@@ -170,13 +170,13 @@ const translations: Record<Language, Record<string, string>> = {
     'service.nflow.badge': 'Innovador',
     'service.nflow.button': 'Accedir a NFLOW',
     
-    'service.jobda.title': 'JOBDA',
-    'service.jobda.description': 'Plataforma d\'ocupació integral que connecta candidats amb empreses, enfocada en el benestar laboral i personal.',
-    'service.jobda.feature1': 'Ofertes de feina personalitzades',
-    'service.jobda.feature2': 'Avaluació d\'entorn laboral',
-    'service.jobda.feature3': 'Orientació professional contínua',
-    'service.jobda.badge': 'Qualitat ocupació',
-    'service.jobda.button': 'Buscar feina a JOBDA',
+    'service.appia.title': 'APPIA',
+    'service.appia.description': 'Servei especialitzat en desenvolupament d\'aplicacions web i mòbils amb intel·ligència artificial per a empreses que busquen digitalitzar els seus processos.',
+    'service.appia.feature1': 'Solucions tecnològiques personalitzades',
+    'service.appia.feature2': 'Desenvolupament web i mòbil amb IA',
+    'service.appia.feature3': 'Transformació digital per a empreses',
+    'service.appia.badge': 'Innovació tecnològica',
+    'service.appia.button': 'Anar a APPIA',
     
     'rewards.title': 'Guanya premis reals només per formar part!',
     'rewards.subtitle': 'Fes clic aquí o descobreix el globus flotant amb els nostres premis.',
@@ -200,7 +200,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'area.psychology': 'Psicologia',
     'area.nflow': 'Nflow',
-    'area.jobda': 'Jobda',
+    'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'Institut NeuronMeg',
     

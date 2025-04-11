@@ -29,32 +29,17 @@ export function ServiceSection() {
     imageSrc: nflowDigitalImage
   };
 
-  const jobda = {
-    icon: <Briefcase className="h-8 w-8 text-secondary-600" />,
-    title: t('service.jobda.title'),
-    description: t('service.jobda.description'),
-    features: [
-      t('service.jobda.feature1'),
-      t('service.jobda.feature2'),
-      t('service.jobda.feature3')
-    ],
-    url: "https://ejobs.jobda.es/",
-    badgeText: t('service.jobda.badge'),
-    variant: "secondary" as const,
-    imageSrc: jobdaHealthImage
-  };
-
   const aiApps = {
     icon: <Sparkles className="h-8 w-8 text-accent" />,
-    title: "Appia",
-    description: "Aplicaciones inteligentes 100% a medida con integración real de IA para empresas innovadoras.",
+    title: t('service.appia.title'),
+    description: t('service.appia.description'),
     features: [
-      "IA personalizada entrenada para tu negocio",
-      "Backend con panel de control a medida",
-      "De 8.400 a 15.000€ de inversión inicial"
+      t('service.appia.feature1'),
+      t('service.appia.feature2'),
+      t('service.appia.feature3')
     ],
     url: "/ai-apps",
-    badgeText: "Innovación",
+    badgeText: t('service.appia.badge'),
     variant: "primary" as const,
     imageSrc: aiAppsIconImage
   };

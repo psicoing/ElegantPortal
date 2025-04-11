@@ -2,8 +2,11 @@ import { Bookmark, Brain, Globe, HeartHandshake, Puzzle, Users } from "lucide-re
 import { motion } from "framer-motion";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import nflowRobotAIImage from "../assets/nflow_robot_ai.png";
+import { useLanguage } from "@/lib/language-context";
 
 export function AboutSection() {
+  const { t } = useLanguage();
+  
   return (
     <section id="acerca-de" className="py-16 lg:py-24 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -15,11 +18,11 @@ export function AboutSection() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ¿Quiénes somos?
+              {t('about.title')}
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Conoce nuestra historia y visión
+              {t('about.subtitle')}
             </p>
             <div className="max-w-md mx-auto">
               <img 
@@ -69,7 +72,7 @@ export function AboutSection() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Nuestra visión</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('about.vision.title')}</h3>
               <p className="text-gray-700">
                 Unimos el conocimiento humano con la tecnología avanzada para ofrecer soluciones adaptadas, 
                 eficientes y sostenibles. Trabajamos para que cada persona, organización o comunidad tenga 
@@ -86,7 +89,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h3 className="text-xl font-bold text-gray-900 mb-6">Nuestras áreas de acción</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-6">{t('about.areas.title')}</h3>
 
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-100">
               <div className="flex items-start">
@@ -94,7 +97,7 @@ export function AboutSection() {
                   <Users className="h-5 w-5 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-blue-900">Psicología</h4>
+                  <h4 className="font-bold text-blue-900">{t('area.psychology')}</h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Continuamos el legado clínico del Instituto NeuronMeg, ofreciendo intervención 
                     psicológica en contextos escolares, familiares, individuales y comunitarios.
@@ -109,7 +112,7 @@ export function AboutSection() {
                   <Brain className="h-5 w-5 text-purple-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-purple-900">Nflow</h4>
+                  <h4 className="font-bold text-purple-900">{t('area.nflow')}</h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Unidad de desarrollo en inteligencia artificial aplicada al bienestar,
                     la educación y la gestión del conocimiento organizacional.
@@ -124,7 +127,7 @@ export function AboutSection() {
                   <Puzzle className="h-5 w-5 text-emerald-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-emerald-900">Appia</h4>
+                  <h4 className="font-bold text-emerald-900">{t('area.appia')}</h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial
                     para empresas que buscan digitalizar y optimizar sus procesos. 
@@ -155,7 +158,7 @@ export function AboutSection() {
                   <HeartHandshake className="h-5 w-5 text-rose-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-rose-900">Instituto NeuronMeg</h4>
+                  <h4 className="font-bold text-rose-900">{t('area.neuronmeg')}</h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Nuestro origen y núcleo clínico. Especializado en psicología escolar, clínica y 
                     comunitaria, con una vocación pública que se mantiene viva.
