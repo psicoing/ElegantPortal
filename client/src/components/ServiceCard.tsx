@@ -72,12 +72,14 @@ export function ServiceCard({
           
           <div className="mt-auto">
             {onClick ? (
-              // Botón para mostrar diálogo (JOBDA)
+              // Botón para mostrar diálogo (JOBDA o SINAPSY)
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
                 onClick={onClick}
               >
-                {t('service.appia.button')}
+                {title === t('service.appia.title') 
+                  ? t('service.appia.button') 
+                  : t('service.sinapsy.button')}
               </Button>
             ) : url.startsWith("/") ? (
               // Botón para rutas internas

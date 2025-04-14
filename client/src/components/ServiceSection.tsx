@@ -4,6 +4,7 @@ import { MessageCircle, Briefcase, Code, Sparkles, Brain } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
+import { SinapsyDialog } from "./SinapsyDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -28,6 +29,7 @@ interface ServiceItem {
 export function ServiceSection() {
   const { t } = useLanguage();
   const [jobdaDialogOpen, setJobdaDialogOpen] = useState(false);
+  const [sinapsyDialogOpen, setSinapsyDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
@@ -70,7 +72,8 @@ export function ServiceSection() {
       t('service.sinapsy.feature2'),
       t('service.sinapsy.feature3')
     ],
-    url: "https://sinapsy.jobda.es/",
+    url: "#",
+    onClick: () => setSinapsyDialogOpen(true),
     badgeText: t('service.sinapsy.badge'),
     variant: "secondary",
     imageSrc: jobdaHealthImage
@@ -124,6 +127,7 @@ export function ServiceSection() {
       </section>
       
       <JobdaDialog open={jobdaDialogOpen} setOpen={setJobdaDialogOpen} />
+      <SinapsyDialog open={sinapsyDialogOpen} setOpen={setSinapsyDialogOpen} />
     </>
   );
 }
