@@ -125,6 +125,11 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.content': 'Cada solución es diseñada específicamente para atender las necesidades particulares de cada cliente, garantizando resultados óptimos y una experiencia de usuario excepcional.',
     'jobda.dialog.contact': 'Para más información sobre nuestros servicios de desarrollo tecnológico, contáctanos en:',
     
+    'sinapsy.dialog.subtitle': 'Revista digital de Psicología, Neurociencias y Salud para todos los públicos',
+    'sinapsy.dialog.features': 'Características',
+    'sinapsy.dialog.participate': '¿Quieres participar?',
+    'sinapsy.dialog.subscribe': 'Suscribirme',
+    
     'cookies.title': 'Su privacidad es importante',
     'cookies.description': 'Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio. Al hacer clic en "Aceptar todo", consiente el uso de cookies para análisis, contenido personalizado y publicidad.',
     'cookies.privacy': 'Política de Privacidad',
@@ -261,6 +266,11 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.content': 'Cada solució és dissenyada específicament per atendre les necessitats particulars de cada client, garantint resultats òptims i una experiència d\'usuari excepcional.',
     'jobda.dialog.contact': 'Per a més informació sobre els nostres serveis de desenvolupament tecnològic, contacta\'ns a:',
     
+    'sinapsy.dialog.subtitle': 'Revista digital de Psicologia, Neurociències i Salut per a tots els públics',
+    'sinapsy.dialog.features': 'Característiques',
+    'sinapsy.dialog.participate': 'Vols participar?',
+    'sinapsy.dialog.subscribe': 'Subscriure\'m',
+    
     'cookies.title': 'La teva privacitat és important',
     'cookies.description': 'Aquest lloc web utilitza cookies per garantir que obtingui la millor experiència al nostre lloc. En fer clic a "Acceptar tot", consenteix l\'ús de cookies per a anàlisi, contingut personalitzat i publicitat.',
     'cookies.privacy': 'Política de Privacitat',
@@ -396,6 +406,11 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.title': 'Tailored Services',
     'jobda.dialog.section3.content': 'Each solution is specifically designed to meet the particular needs of each client, ensuring optimal results and an exceptional user experience.',
     'jobda.dialog.contact': 'For more information about our technological development services, contact us at:',
+    
+    'sinapsy.dialog.subtitle': 'Digital Magazine of Psychology, Neuroscience and Health for all audiences',
+    'sinapsy.dialog.features': 'Features',
+    'sinapsy.dialog.participate': 'Want to participate?',
+    'sinapsy.dialog.subscribe': 'Subscribe',
     
     'cookies.title': 'Your privacy is important',
     'cookies.description': 'This website uses cookies to ensure you get the best experience on our site. By clicking "Accept All", you consent to the use of cookies for analytics, personalized content, and advertising.',
