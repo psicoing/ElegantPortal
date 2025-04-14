@@ -1,0 +1,49 @@
+🖱️ BOTÓN EN PANTALLA PRINCIPAL:
+[ Ir a SINAPSY ]
+
+→ Al hacer clic, se abre una nueva ventana o sección interna (como /sinapsy o #sinapsy) con el siguiente contenido:
+
+🧾 CONTENIDO DE LA SECCIÓN:
+html
+Copiar
+Editar
+<h1>SINAPSY</h1>
+<h2>Revista digital de Psicología, Neurociencias y Salud para todos los públicos</h2>
+
+<p><strong>SINAPSY</strong> es una publicación independiente, técnica y humana a la vez. 
+Nace con el objetivo de acercar la psicología y la neurociencia al día a día de las personas, sin renunciar al rigor profesional.</p>
+
+<ul>
+  <li>🧠 Artículos accesibles para todo el mundo</li>
+  <li>📚 Zona técnica central con contenido científico de alto nivel</li>
+  <li>💬 Entrevistas, reflexiones clínicas y guías prácticas</li>
+  <li>👨‍⚕️ Colaboraciones con profesionales colegiados del ámbito de la salud</li>
+  <li>📥 Recursos descargables en cada número</li>
+  <li>📦 Disponible en formato digital, con proyección en papel para distribución selectiva</li>
+</ul>
+
+<p>Cada número de SINAPSY está estructurado para que cualquier lector pueda disfrutarlo, pero también para ofrecer contenidos que incluso revistas científicas valorarían.</p>
+
+<h3>💡 ¿Quieres participar?</h3>
+<p>Si eres profesional de la salud y estás colegiado/a, puedes enviar tus artículos para ser publicados. Contacta con nosotros:</p>
+
+<ul>
+  <li>📧 Correo: <a href="mailto:rmportbou@gmail.com">rmportbou@gmail.com</a></li>
+  <li>📱 WhatsApp: <a href="tel:+34660452136">660 45 21 36</a></li>
+  <li>🌐 Más información en: <a href="https://www.jobda.es" target="_blank">www.jobda.es</a></li>
+</ul>
+
+<p>➡️ Suscríbete por solo 4,99 € al trimestre y accede a todos los contenidos de cada edición.  
+<strong>SINAPSY</strong> está hecha para pensar, para sentir, y para transformar.</p>
+✅ ¿Qué puedes hacer ahora en Replit?
+Crea una ruta o componente nuevo llamado /sinapsy.
+
+Inserta este contenido HTML dentro del componente.
+
+Desde tu home o menú principal, crea un botón:
+
+html
+Copiar
+Editar
+<a href="/sinapsy"><button>Ir a SINAPSY</button></a>
+O si usas React o Vue, implementa el enlace con Link o router interno.
