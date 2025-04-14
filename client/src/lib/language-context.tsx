@@ -59,6 +59,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.badge': 'Innovación tecnológica',
     'service.appia.button': 'Ir a APPIA',
     
+    'service.sinapsy.title': 'SINAPSY',
+    'service.sinapsy.description': 'Plataforma avanzada de diagnóstico y tratamiento neuropsicológico que integra tecnología de vanguardia con terapias personalizadas.',
+    'service.sinapsy.feature1': 'Evaluación neuropsicológica completa',
+    'service.sinapsy.feature2': 'Tratamientos personalizados basados en evidencia',
+    'service.sinapsy.feature3': 'Seguimiento continuo del progreso',
+    'service.sinapsy.badge': 'Neurociencia avanzada',
+    'service.sinapsy.button': 'Explorar SINAPSY',
+    
     'rewards.title': '¡Gana premios reales solo por formar parte!',
     'rewards.subtitle': 'Haz clic aquí o descubre el globo flotante con nuestros premios.',
     'rewards.milestones': 'Premios por hitos de usuarios activos mensuales:',
