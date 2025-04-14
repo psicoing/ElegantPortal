@@ -39,7 +39,6 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row justify-center gap-4"
           >
             <Button 
               onClick={scrollToServices}
@@ -47,14 +46,6 @@ export function Hero() {
             >
               {t('hero.cta')}
             </Button>
-            
-            <Link href="/sinapsy">
-              <Button 
-                className="bg-gradient-to-r from-blue-400 to-indigo-500 text-white hover:shadow-lg transition transform hover:-translate-y-1 font-sans font-semibold px-8 py-3 rounded-lg"
-              >
-                Ir a SINAPSY
-              </Button>
-            </Link>
           </motion.div>
         </div>
       </div>

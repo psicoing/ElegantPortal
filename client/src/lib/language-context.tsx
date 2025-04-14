@@ -315,6 +315,8 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.house2': 'We raffle an ecological wooden house from Tu Casa Eco, so you can put it wherever you want.',
     'rewards.footer': 'Keep inviting, growing and dreaming. We are closer to the prizes thanks to you.',
     
+    'sinapsy.button': 'Go to SINAPSY',
+    
     'about.title': 'Who We Are',
     'about.subtitle': 'Learn about our history and vision',
     'about.vision.title': 'Our vision',
