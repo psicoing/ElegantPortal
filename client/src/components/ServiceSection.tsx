@@ -1,6 +1,6 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 
 // Importar las imágenes
@@ -43,8 +43,23 @@ export function ServiceSection() {
     variant: "primary" as const,
     imageSrc: aiAppsIconImage
   };
+  
+  const sinapsy = {
+    icon: <Brain className="h-8 w-8 text-blue-500" />,
+    title: t('service.sinapsy.title'),
+    description: t('service.sinapsy.description'),
+    features: [
+      t('service.sinapsy.feature1'),
+      t('service.sinapsy.feature2'),
+      t('service.sinapsy.feature3')
+    ],
+    url: "https://sinapsy.jobda.es/",
+    badgeText: t('service.sinapsy.badge'),
+    variant: "secondary" as const,
+    imageSrc: jobdaHealthImage
+  };
 
-  const services = [nflow, aiApps];
+  const services = [nflow, aiApps, sinapsy];
 
   return (
     <section id="services" className="py-16 bg-gray-50">
@@ -64,7 +79,7 @@ export function ServiceSection() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <motion.div 
               key={index}

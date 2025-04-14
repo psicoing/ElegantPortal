@@ -186,6 +186,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.badge': 'Innovació tecnològica',
     'service.appia.button': 'Anar a APPIA',
     
+    'service.sinapsy.title': 'SINAPSY',
+    'service.sinapsy.description': 'Plataforma avançada de diagnòstic i tractament neuropsicològic que integra tecnologia d\'avantguarda amb teràpies personalitzades.',
+    'service.sinapsy.feature1': 'Avaluació neuropsicològica completa',
+    'service.sinapsy.feature2': 'Tractaments personalitzats basats en evidències',
+    'service.sinapsy.feature3': 'Seguiment continu del progrés',
+    'service.sinapsy.badge': 'Neurociència avançada',
+    'service.sinapsy.button': 'Explorar SINAPSY',
+    
     'rewards.title': 'Guanya premis reals només per formar part!',
     'rewards.subtitle': 'Fes clic aquí o descobreix el globus flotant amb els nostres premis.',
     'rewards.milestones': 'Premis per fites d\'usuaris actius mensuals:',
@@ -303,6 +311,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.feature3': 'Digital transformation for businesses',
     'service.appia.badge': 'Technological innovation',
     'service.appia.button': 'Go to APPIA',
+    
+    'service.sinapsy.title': 'SINAPSY',
+    'service.sinapsy.description': 'Advanced neuropsychological diagnosis and treatment platform that integrates cutting-edge technology with personalized therapies.',
+    'service.sinapsy.feature1': 'Comprehensive neuropsychological assessment',
+    'service.sinapsy.feature2': 'Evidence-based personalized treatments',
+    'service.sinapsy.feature3': 'Continuous progress monitoring',
+    'service.sinapsy.badge': 'Advanced neuroscience',
+    'service.sinapsy.button': 'Explore SINAPSY',
     
     'rewards.title': 'Win real prizes just for being part of it!',
     'rewards.subtitle': 'Click here or discover the floating balloon with our prizes.',
