@@ -12,6 +12,7 @@ import nflowDigitalImage from "../assets/nflow_terapia_digital.png";
 import jobdaHealthImage from "../assets/jobda_salud_laboral.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import aiAppsIconImage from "../assets/ai_apps_icon.png";
+import sinapsyLogoImage from "../assets/sinapsy_logo.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -76,7 +77,7 @@ export function ServiceSection() {
     onClick: () => setSinapsyDialogOpen(true),
     badgeText: t('service.sinapsy.badge'),
     variant: "secondary",
-    imageSrc: jobdaHealthImage
+    imageSrc: sinapsyLogoImage
   };
 
   const services = [nflow, jobda, sinapsy];
