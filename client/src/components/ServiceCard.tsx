@@ -15,6 +15,7 @@ interface ServiceCardProps {
   badgeText: string;
   variant: "primary" | "secondary";
   imageSrc?: string;
+  onClick?: () => void;
 }
 
 export function ServiceCard({ 
@@ -25,7 +26,8 @@ export function ServiceCard({
   url, 
   badgeText,
   variant,
-  imageSrc
+  imageSrc,
+  onClick
 }: ServiceCardProps) {
   const { t } = useLanguage();
   const isPrimary = variant === "primary";
@@ -69,7 +71,15 @@ export function ServiceCard({
           </div>
           
           <div className="mt-auto">
-            {url.startsWith("/") ? (
+            {onClick ? (
+              // Botón para mostrar diálogo (JOBDA)
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
+                onClick={onClick}
+              >
+                {t('service.appia.button')}
+              </Button>
+            ) : url.startsWith("/") ? (
               // Botón para rutas internas
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
@@ -79,7 +89,7 @@ export function ServiceCard({
                   Más información
                 </a>
               </Button>
-            ) : isPrimary ? (
+            ) : title === t('service.nflow.title') ? (
               // Botón NFLOW con estilo normal
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
@@ -94,7 +104,7 @@ export function ServiceCard({
                 </a>
               </Button>
             ) : (
-              // Botón JOBDA con fondo oscuro y texto explícitamente blanco
+              // Botón SINAPSY
               <Button 
                 className="w-full bg-black hover:bg-gray-800 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
                 asChild
@@ -106,7 +116,7 @@ export function ServiceCard({
                   className="text-white hover:text-white"
                   style={{ color: 'white' }}
                 >
-                  <span className="text-white">{t('service.jobda.button')}</span>
+                  <span className="text-white">{t('service.sinapsy.button')}</span>
                 </a>
               </Button>
             )}

@@ -57,7 +57,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.feature2': 'Desarrollo web y móvil con IA',
     'service.appia.feature3': 'Transformación digital para empresas',
     'service.appia.badge': 'Innovación tecnológica',
-    'service.appia.button': 'Ir a APPIA',
+    'service.appia.button': 'Más información',
     
     'service.sinapsy.title': 'SINAPSY',
     'service.sinapsy.description': 'Plataforma avanzada de diagnóstico y tratamiento neuropsicológico que integra tecnología de vanguardia con terapias personalizadas.',
@@ -114,6 +114,16 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'Todos los derechos reservados.',
     'footer.privacy': 'Política de Privacidad',
     'footer.cookies': 'Preferencias de Cookies',
+    
+    'jobda.dialog.title': 'JOBDA - Innovación Tecnológica',
+    'jobda.dialog.description': 'JOBDA es un servicio especializado en el desarrollo de aplicaciones web y móviles con inteligencia artificial para empresas que buscan digitalizar y optimizar sus procesos.',
+    'jobda.dialog.section1.title': 'Transformación Digital',
+    'jobda.dialog.section1.content': 'Ofrecemos soluciones tecnológicas personalizadas que permiten a las empresas transformar sus procesos y adaptarse a la era digital. Nuestra tecnología se integra perfectamente con los sistemas existentes, permitiendo una transición fluida.',
+    'jobda.dialog.section2.title': 'Desarrollo con IA',
+    'jobda.dialog.section2.content': 'Implementamos inteligencia artificial avanzada en todas nuestras soluciones, permitiendo a las empresas automatizar procesos, analizar datos y obtener insights valiosos para la toma de decisiones estratégicas.',
+    'jobda.dialog.section3.title': 'Servicios a Medida',
+    'jobda.dialog.section3.content': 'Cada solución es diseñada específicamente para atender las necesidades particulares de cada cliente, garantizando resultados óptimos y una experiencia de usuario excepcional.',
+    'jobda.dialog.contact': 'Para más información sobre nuestros servicios de desarrollo tecnológico, contáctanos en:',
     
     'cookies.title': 'Su privacidad es importante',
     'cookies.description': 'Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio. Al hacer clic en "Aceptar todo", consiente el uso de cookies para análisis, contenido personalizado y publicidad.',
@@ -184,7 +194,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.feature2': 'Desenvolupament web i mòbil amb IA',
     'service.appia.feature3': 'Transformació digital per a empreses',
     'service.appia.badge': 'Innovació tecnològica',
-    'service.appia.button': 'Anar a APPIA',
+    'service.appia.button': 'Més informació',
     
     'service.sinapsy.title': 'SINAPSY',
     'service.sinapsy.description': 'Plataforma avançada de diagnòstic i tractament neuropsicològic que integra tecnologia d\'avantguarda amb teràpies personalitzades.',
@@ -240,6 +250,16 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'Tots els drets reservats.',
     'footer.privacy': 'Política de Privacitat',
     'footer.cookies': 'Preferències de Cookies',
+    
+    'jobda.dialog.title': 'JOBDA - Innovació Tecnològica',
+    'jobda.dialog.description': 'JOBDA és un servei especialitzat en el desenvolupament d\'aplicacions web i mòbils amb intel·ligència artificial per a empreses que busquen digitalitzar i optimitzar els seus processos.',
+    'jobda.dialog.section1.title': 'Transformació Digital',
+    'jobda.dialog.section1.content': 'Oferim solucions tecnològiques personalitzades que permeten a les empreses transformar els seus processos i adaptar-se a l\'era digital. La nostra tecnologia s\'integra perfectament amb els sistemes existents, permetent una transició fluida.',
+    'jobda.dialog.section2.title': 'Desenvolupament amb IA',
+    'jobda.dialog.section2.content': 'Implementem intel·ligència artificial avançada en totes les nostres solucions, permetent a les empreses automatitzar processos, analitzar dades i obtenir insights valuosos per a la presa de decisions estratègiques.',
+    'jobda.dialog.section3.title': 'Serveis a Mida',
+    'jobda.dialog.section3.content': 'Cada solució és dissenyada específicament per atendre les necessitats particulars de cada client, garantint resultats òptims i una experiència d\'usuari excepcional.',
+    'jobda.dialog.contact': 'Per a més informació sobre els nostres serveis de desenvolupament tecnològic, contacta\'ns a:',
     
     'cookies.title': 'La teva privacitat és important',
     'cookies.description': 'Aquest lloc web utilitza cookies per garantir que obtingui la millor experiència al nostre lloc. En fer clic a "Acceptar tot", consenteix l\'ús de cookies per a anàlisi, contingut personalitzat i publicitat.',
@@ -310,7 +330,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.feature2': 'Web and mobile development with AI',
     'service.appia.feature3': 'Digital transformation for businesses',
     'service.appia.badge': 'Technological innovation',
-    'service.appia.button': 'Go to APPIA',
+    'service.appia.button': 'More information',
     
     'service.sinapsy.title': 'SINAPSY',
     'service.sinapsy.description': 'Advanced neuropsychological diagnosis and treatment platform that integrates cutting-edge technology with personalized therapies.',
@@ -366,6 +386,16 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.cookies': 'Cookie Preferences',
+    
+    'jobda.dialog.title': 'JOBDA - Technological Innovation',
+    'jobda.dialog.description': 'JOBDA is a specialized service in the development of web and mobile applications with artificial intelligence for companies looking to digitize and optimize their processes.',
+    'jobda.dialog.section1.title': 'Digital Transformation',
+    'jobda.dialog.section1.content': 'We offer personalized technological solutions that allow companies to transform their processes and adapt to the digital era. Our technology integrates perfectly with existing systems, allowing a smooth transition.',
+    'jobda.dialog.section2.title': 'AI Development',
+    'jobda.dialog.section2.content': 'We implement advanced artificial intelligence in all our solutions, allowing companies to automate processes, analyze data and obtain valuable insights for strategic decision making.',
+    'jobda.dialog.section3.title': 'Tailored Services',
+    'jobda.dialog.section3.content': 'Each solution is specifically designed to meet the particular needs of each client, ensuring optimal results and an exceptional user experience.',
+    'jobda.dialog.contact': 'For more information about our technological development services, contact us at:',
     
     'cookies.title': 'Your privacy is important',
     'cookies.description': 'This website uses cookies to ensure you get the best experience on our site. By clicking "Accept All", you consent to the use of cookies for analytics, personalized content, and advertising.',
