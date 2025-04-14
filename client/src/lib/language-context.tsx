@@ -75,8 +75,6 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.users': 'usuarios activos',
     'rewards.footer': 'Sigue invitando, creciendo y soñando. Estamos más cerca de los premios gracias a ti.',
     
-    'sinapsy.button': 'Ir a SINAPSY',
-    
     'about.title': '¿Quiénes somos?',
     'about.subtitle': 'Conoce nuestra historia y visión',
     'about.vision.title': 'Nuestra visión',
@@ -195,8 +193,6 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.house2': 'Sortegem una casa ecològica de fusta de Tu Casa Eco, perquè la posis on tu vulguis.',
     'rewards.footer': 'Segueix convidant, creixent i somiant. Estem més a prop dels premis gràcies a tu.',
     
-    'sinapsy.button': 'Anar a SINAPSY',
-    
     'about.title': 'Qui som?',
     'about.subtitle': 'Coneix la nostra història i visió',
     'about.vision.title': 'La nostra visió',
@@ -314,8 +310,6 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.house1': 'We raffle a house in Palamós (Girona, Spain).',
     'rewards.house2': 'We raffle an ecological wooden house from Tu Casa Eco, so you can put it wherever you want.',
     'rewards.footer': 'Keep inviting, growing and dreaming. We are closer to the prizes thanks to you.',
-    
-    'sinapsy.button': 'Go to SINAPSY',
     
     'about.title': 'Who We Are',
     'about.subtitle': 'Learn about our history and vision',
