@@ -130,6 +130,24 @@ const translations: Record<Language, Record<string, string>> = {
     'sinapsy.dialog.participate': '¿Quieres participar?',
     'sinapsy.dialog.subscribe': 'Suscribirme',
     
+    'neuronmeg.dialog.title': 'Servicios de Psicología a Domicilio – NeuronMeg',
+    'neuronmeg.dialog.subtitle': 'Atención psicológica especializada en la comodidad de tu hogar',
+    'neuronmeg.dialog.description': 'NeuronMeg ofrece servicios de psicología a domicilio para diferentes edades y necesidades en Girona y el Alt Empordà.',
+    'neuronmeg.dialog.coverage': 'Figueres, Roses, Castelló d\'Empúries, Llançà, y otras localidades del Alt Empordà',
+    'neuronmeg.dialog.payment': 'Antes de la visita, es necesario realizar un abono mediante un enlace que se proporcionará y enviar copia del DNI y tarjeta sanitaria como medida de seguridad.',
+    
+    'neuronmeg.dialog.children.title': 'Psicología Infantil a Domicilio',
+    'neuronmeg.dialog.children.description': 'Ofrecemos atención psicológica especializada para niños en su hogar en la zona de Girona y el Alt Empordà. Para concertar una cita, puedes hacerlo por teléfono o email.',
+    
+    'neuronmeg.dialog.adults.title': 'Psicología para Adultos a Domicilio',
+    'neuronmeg.dialog.adults.description': 'Realizamos sesiones psicológicas para adultos en su propio domicilio en Girona y el Alt Empordà. Para agendar la cita, contáctanos por teléfono o correo electrónico.',
+    
+    'neuronmeg.dialog.elderly.title': 'Psicología para Gente Mayor a Domicilio',
+    'neuronmeg.dialog.elderly.description': 'Brindamos apoyo psicológico especializado a personas mayores en la comodidad de su hogar en Girona y el Alt Empordà. Para reservar una cita, contacta por teléfono o email.',
+    
+    'neuronmeg.button': 'Conocer servicios',
+    'neuronmeg.badge': 'Atención a domicilio',
+    
     'cookies.title': 'Su privacidad es importante',
     'cookies.description': 'Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio. Al hacer clic en "Aceptar todo", consiente el uso de cookies para análisis, contenido personalizado y publicidad.',
     'cookies.privacy': 'Política de Privacidad',
@@ -271,6 +289,24 @@ const translations: Record<Language, Record<string, string>> = {
     'sinapsy.dialog.participate': 'Vols participar?',
     'sinapsy.dialog.subscribe': 'Subscriure\'m',
     
+    'neuronmeg.dialog.title': 'Serveis de Psicologia a Domicili – NeuronMeg',
+    'neuronmeg.dialog.subtitle': 'Atenció psicològica especialitzada a la comoditat de la teva llar',
+    'neuronmeg.dialog.description': 'NeuronMeg ofereix serveis de psicologia a domicili per a diferents edats i necessitats a Girona i l\'Alt Empordà.',
+    'neuronmeg.dialog.coverage': 'Figueres, Roses, Castelló d\'Empúries, Llançà i altres localitats de l\'Alt Empordà',
+    'neuronmeg.dialog.payment': 'Abans de la visita, cal realitzar un abonament mitjançant un enllaç que es proporcionarà i enviar còpia del DNI i targeta sanitària com a mesura de seguretat.',
+    
+    'neuronmeg.dialog.children.title': 'Psicologia Infantil a Domicili',
+    'neuronmeg.dialog.children.description': 'Oferim atenció psicològica especialitzada per a nens a la seva llar a la zona de Girona i l\'Alt Empordà. Per concertar una cita, pots fer-ho per telèfon o email.',
+    
+    'neuronmeg.dialog.adults.title': 'Psicologia per a Adults a Domicili',
+    'neuronmeg.dialog.adults.description': 'Realitzem sessions psicològiques per a adults al seu propi domicili a Girona i l\'Alt Empordà. Per agendar la cita, contacta\'ns per telèfon o correu electrònic.',
+    
+    'neuronmeg.dialog.elderly.title': 'Psicologia per a Gent Gran a Domicili',
+    'neuronmeg.dialog.elderly.description': 'Brindem suport psicològic especialitzat a persones grans a la comoditat de la seva llar a Girona i l\'Alt Empordà. Per reservar una cita, contacta per telèfon o email.',
+    
+    'neuronmeg.button': 'Conèixer serveis',
+    'neuronmeg.badge': 'Atenció a domicili',
+    
     'cookies.title': 'La teva privacitat és important',
     'cookies.description': 'Aquest lloc web utilitza cookies per garantir que obtingui la millor experiència al nostre lloc. En fer clic a "Acceptar tot", consenteix l\'ús de cookies per a anàlisi, contingut personalitzat i publicitat.',
     'cookies.privacy': 'Política de Privacitat',
@@ -411,6 +447,24 @@ const translations: Record<Language, Record<string, string>> = {
     'sinapsy.dialog.features': 'Features',
     'sinapsy.dialog.participate': 'Want to participate?',
     'sinapsy.dialog.subscribe': 'Subscribe',
+    
+    'neuronmeg.dialog.title': 'Psychology Home Services – NeuronMeg',
+    'neuronmeg.dialog.subtitle': 'Specialized psychological care in the comfort of your home',
+    'neuronmeg.dialog.description': 'NeuronMeg offers home psychology services for different ages and needs in Girona and Alt Empordà.',
+    'neuronmeg.dialog.coverage': 'Figueres, Roses, Castelló d\'Empúries, Llançà, and other locations in Alt Empordà',
+    'neuronmeg.dialog.payment': 'Before the visit, it is necessary to make a payment through a link that will be provided and to send a copy of your ID and health card as a security measure.',
+    
+    'neuronmeg.dialog.children.title': 'Child Psychology at Home',
+    'neuronmeg.dialog.children.description': 'We offer specialized psychological care for children in their home in the Girona and Alt Empordà area. To make an appointment, you can do so by phone or email.',
+    
+    'neuronmeg.dialog.adults.title': 'Adult Psychology at Home',
+    'neuronmeg.dialog.adults.description': 'We conduct psychological sessions for adults in their own home in Girona and Alt Empordà. To schedule an appointment, contact us by phone or email.',
+    
+    'neuronmeg.dialog.elderly.title': 'Elderly Psychology at Home',
+    'neuronmeg.dialog.elderly.description': 'We provide specialized psychological support for older people in the comfort of their home in Girona and Alt Empordà. To book an appointment, contact us by phone or email.',
+    
+    'neuronmeg.button': 'Learn about services',
+    'neuronmeg.badge': 'Home care',
     
     'cookies.title': 'Your privacy is important',
     'cookies.description': 'This website uses cookies to ensure you get the best experience on our site. By clicking "Accept All", you consent to the use of cookies for analytics, personalized content, and advertising.',

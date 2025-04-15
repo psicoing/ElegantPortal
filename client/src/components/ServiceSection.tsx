@@ -1,10 +1,11 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
 import { SinapsyDialog } from "./SinapsyDialog";
+import { NeuronMegDialog } from "./NeuronMegDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -13,6 +14,7 @@ import jobdaHealthImage from "../assets/jobda_salud_laboral.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import aiAppsIconImage from "../assets/ai_apps_icon.png";
 import sinapsyLogoImage from "../assets/sinapsy_logo.png";
+import neuronMegImage from "../assets/neuronmeg_psychology.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
