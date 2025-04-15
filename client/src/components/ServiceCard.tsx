@@ -79,7 +79,9 @@ export function ServiceCard({
               >
                 {title === t('service.appia.title') 
                   ? t('service.appia.button') 
-                  : t('service.sinapsy.button')}
+                  : title === t('service.neuronmeg.title')
+                    ? t('neuronmeg.button')
+                    : t('service.sinapsy.button')}
               </Button>
             ) : url.startsWith("/") ? (
               // Botón para rutas internas
@@ -118,7 +120,11 @@ export function ServiceCard({
                   className="text-white hover:text-white"
                   style={{ color: 'white' }}
                 >
-                  <span className="text-white">{t('service.sinapsy.button')}</span>
+                  <span className="text-white">
+                    {title === t('service.neuronmeg.title') 
+                      ? t('neuronmeg.button') 
+                      : t('service.sinapsy.button')}
+                  </span>
                 </a>
               </Button>
             )}
