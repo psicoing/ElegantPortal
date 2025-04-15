@@ -147,7 +147,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.contact.title': 'Información de contacto',
     'neuronmeg.dialog.close': 'Cerrar',
     
-    'neuronmeg.button': 'Conocer servicios',
+    'neuronmeg.button': 'Ver Ins NeuronMeg',
     'neuronmeg.badge': 'Atención a domicilio',
     'service.neuronmeg.title': 'NeuronMeg',
     'service.neuronmeg.description': 'Servicios de psicología a domicilio para diferentes edades y necesidades en Girona y el Alt Empordà.',
@@ -313,7 +313,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.contact.title': 'Informació de contacte',
     'neuronmeg.dialog.close': 'Tancar',
     
-    'neuronmeg.button': 'Conèixer serveis',
+    'neuronmeg.button': 'Veure Ins NeuronMeg',
     'neuronmeg.badge': 'Atenció a domicili',
     'service.neuronmeg.title': 'NeuronMeg',
     'service.neuronmeg.description': 'Serveis de psicologia a domicili per a diferents edats i necessitats a Girona i l\'Alt Empordà.',
@@ -479,7 +479,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.contact.title': 'Contact Information',
     'neuronmeg.dialog.close': 'Close',
     
-    'neuronmeg.button': 'Learn about services',
+    'neuronmeg.button': 'View Ins NeuronMeg',
     'neuronmeg.badge': 'Home care',
     'service.neuronmeg.title': 'NeuronMeg',
     'service.neuronmeg.description': 'Home psychology services for different ages and needs in Girona and Alt Empordà.',
