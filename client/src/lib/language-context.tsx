@@ -144,6 +144,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.dialog.elderly.title': 'Psicología para Gente Mayor a Domicilio',
     'neuronmeg.dialog.elderly.description': 'Brindamos apoyo psicológico especializado a personas mayores en la comodidad de su hogar en Girona y el Alt Empordà. Para reservar una cita, contacta por teléfono o email.',
+    'neuronmeg.dialog.contact.title': 'Información de contacto',
+    'neuronmeg.dialog.close': 'Cerrar',
     
     'neuronmeg.button': 'Conocer servicios',
     'neuronmeg.badge': 'Atención a domicilio',
@@ -308,6 +310,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.dialog.elderly.title': 'Psicologia per a Gent Gran a Domicili',
     'neuronmeg.dialog.elderly.description': 'Brindem suport psicològic especialitzat a persones grans a la comoditat de la seva llar a Girona i l\'Alt Empordà. Per reservar una cita, contacta per telèfon o email.',
+    'neuronmeg.dialog.contact.title': 'Informació de contacte',
+    'neuronmeg.dialog.close': 'Tancar',
     
     'neuronmeg.button': 'Conèixer serveis',
     'neuronmeg.badge': 'Atenció a domicili',
@@ -472,6 +476,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.dialog.elderly.title': 'Elderly Psychology at Home',
     'neuronmeg.dialog.elderly.description': 'We provide specialized psychological support for older people in the comfort of their home in Girona and Alt Empordà. To book an appointment, contact us by phone or email.',
+    'neuronmeg.dialog.contact.title': 'Contact Information',
+    'neuronmeg.dialog.close': 'Close',
     
     'neuronmeg.button': 'Learn about services',
     'neuronmeg.badge': 'Home care',
