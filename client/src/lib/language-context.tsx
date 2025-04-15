@@ -147,6 +147,11 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Conocer servicios',
     'neuronmeg.badge': 'Atención a domicilio',
+    'service.neuronmeg.title': 'NeuronMeg',
+    'service.neuronmeg.description': 'Servicios de psicología a domicilio para diferentes edades y necesidades en Girona y el Alt Empordà.',
+    'service.neuronmeg.feature1': 'Psicología infantil especializada',
+    'service.neuronmeg.feature2': 'Atención a adultos y personas mayores',
+    'service.neuronmeg.feature3': 'Profesionales cualificados a domicilio',
     
     'cookies.title': 'Su privacidad es importante',
     'cookies.description': 'Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio. Al hacer clic en "Aceptar todo", consiente el uso de cookies para análisis, contenido personalizado y publicidad.',
@@ -306,6 +311,11 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Conèixer serveis',
     'neuronmeg.badge': 'Atenció a domicili',
+    'service.neuronmeg.title': 'NeuronMeg',
+    'service.neuronmeg.description': 'Serveis de psicologia a domicili per a diferents edats i necessitats a Girona i l\'Alt Empordà.',
+    'service.neuronmeg.feature1': 'Psicologia infantil especialitzada',
+    'service.neuronmeg.feature2': 'Atenció a adults i gent gran',
+    'service.neuronmeg.feature3': 'Professionals qualificats a domicili',
     
     'cookies.title': 'La teva privacitat és important',
     'cookies.description': 'Aquest lloc web utilitza cookies per garantir que obtingui la millor experiència al nostre lloc. En fer clic a "Acceptar tot", consenteix l\'ús de cookies per a anàlisi, contingut personalitzat i publicitat.',
@@ -465,6 +475,11 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Learn about services',
     'neuronmeg.badge': 'Home care',
+    'service.neuronmeg.title': 'NeuronMeg',
+    'service.neuronmeg.description': 'Home psychology services for different ages and needs in Girona and Alt Empordà.',
+    'service.neuronmeg.feature1': 'Specialized child psychology',
+    'service.neuronmeg.feature2': 'Adult and elderly care',
+    'service.neuronmeg.feature3': 'Qualified professionals at home',
     
     'cookies.title': 'Your privacy is important',
     'cookies.description': 'This website uses cookies to ensure you get the best experience on our site. By clicking "Accept All", you consent to the use of cookies for analytics, personalized content, and advertising.',

@@ -33,6 +33,7 @@ export function ServiceSection() {
   const { t } = useLanguage();
   const [jobdaDialogOpen, setJobdaDialogOpen] = useState(false);
   const [sinapsyDialogOpen, setSinapsyDialogOpen] = useState(false);
+  const [neuronMegDialogOpen, setNeuronMegDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
@@ -81,8 +82,24 @@ export function ServiceSection() {
     variant: "secondary",
     imageSrc: sinapsyLogoImage
   };
+  
+  const neuronMeg: ServiceItem = {
+    icon: <Home className="h-8 w-8 text-green-600" />,
+    title: t('service.neuronmeg.title'),
+    description: t('service.neuronmeg.description'),
+    features: [
+      t('service.neuronmeg.feature1'),
+      t('service.neuronmeg.feature2'),
+      t('service.neuronmeg.feature3')
+    ],
+    url: "#",
+    onClick: () => setNeuronMegDialogOpen(true),
+    badgeText: t('neuronmeg.badge'),
+    variant: "secondary",
+    imageSrc: neuronMegImage
+  };
 
-  const services = [nflow, jobda, sinapsy];
+  const services = [nflow, jobda, sinapsy, neuronMeg];
 
   return (
     <>
@@ -131,6 +148,7 @@ export function ServiceSection() {
       
       <JobdaDialog open={jobdaDialogOpen} setOpen={setJobdaDialogOpen} />
       <SinapsyDialog open={sinapsyDialogOpen} setOpen={setSinapsyDialogOpen} />
+      <NeuronMegDialog open={neuronMegDialogOpen} setOpen={setNeuronMegDialogOpen} />
     </>
   );
 }
