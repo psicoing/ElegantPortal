@@ -14,7 +14,7 @@ import jobdaHealthImage from "../assets/jobda_salud_laboral.png";
 import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import aiAppsIconImage from "../assets/ai_apps_icon.png";
 import sinapsyLogoImage from "../assets/sinapsy_logo.png";
-import neuronMegImage from "../assets/neuronmeg_psychology.png";
+import neuronMegImage from "../assets/neuronmeg_services.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {

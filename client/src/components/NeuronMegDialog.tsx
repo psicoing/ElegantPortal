@@ -12,6 +12,7 @@ import { useLanguage } from "@/lib/language-context";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, Home, MapPin } from "lucide-react";
+import neuronMegServicesImage from "../assets/neuronmeg_services.png";
 
 interface NeuronMegDialogProps {
   open: boolean;
@@ -32,6 +33,14 @@ export function NeuronMegDialog({ open, setOpen }: NeuronMegDialogProps) {
             {t('neuronmeg.dialog.subtitle')}
           </DialogDescription>
         </DialogHeader>
+        
+        <div className="mb-6 flex justify-center">
+          <img 
+            src={neuronMegServicesImage} 
+            alt="NeuronMeg - Servicios de psicología a domicilio" 
+            className="max-w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
         
         <div className="mt-4 space-y-6">
           {/* Descripción general del servicio */}
