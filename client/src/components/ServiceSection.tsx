@@ -76,8 +76,7 @@ export function ServiceSection() {
       t('service.sinapsy.feature2'),
       t('service.sinapsy.feature3')
     ],
-    url: "#",
-    onClick: () => setSinapsyDialogOpen(true),
+    url: "https://sinapsy.jobda.es/",
     badgeText: t('service.sinapsy.badge'),
     variant: "secondary",
     imageSrc: sinapsyLogoImage
