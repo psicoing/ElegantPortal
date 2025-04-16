@@ -125,11 +125,18 @@ export function NeuronMegDialog({ open, setOpen }: NeuronMegDialogProps) {
           <Badge variant="outline" className="mb-2 sm:mb-0">
             {t('neuronmeg.badge')}
           </Badge>
-          <DialogClose asChild>
-            <Button type="button" variant="secondary">
-              {t('neuronmeg.dialog.close')}
-            </Button>
-          </DialogClose>
+          <div className="flex gap-2">
+            <a href="https://neuronmeg.jobda.es" target="_blank" rel="noopener noreferrer">
+              <Button type="button" variant="default">
+                {t('neuronmeg.dialog.visit_website')}
+              </Button>
+            </a>
+            <DialogClose asChild>
+              <Button type="button" variant="secondary">
+                {t('neuronmeg.dialog.close')}
+              </Button>
+            </DialogClose>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>

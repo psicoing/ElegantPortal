@@ -146,6 +146,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.elderly.description': 'Brindamos apoyo psicológico especializado a personas mayores en la comodidad de su hogar en Girona y el Alt Empordà. Para reservar una cita, contacta por teléfono o email.',
     'neuronmeg.dialog.contact.title': 'Información de contacto',
     'neuronmeg.dialog.close': 'Cerrar',
+    'neuronmeg.dialog.visit_website': 'Visitar sitio web',
     
     'neuronmeg.button': 'Ir Ins NeuronMeg',
     'neuronmeg.badge': 'Atención a domicilio',
@@ -312,6 +313,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.elderly.description': 'Brindem suport psicològic especialitzat a persones grans a la comoditat de la seva llar a Girona i l\'Alt Empordà. Per reservar una cita, contacta per telèfon o email.',
     'neuronmeg.dialog.contact.title': 'Informació de contacte',
     'neuronmeg.dialog.close': 'Tancar',
+    'neuronmeg.dialog.visit_website': 'Visitar lloc web',
     
     'neuronmeg.button': 'Anar Ins NeuronMeg',
     'neuronmeg.badge': 'Atenció a domicili',
@@ -478,6 +480,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.elderly.description': 'We provide specialized psychological support for older people in the comfort of their home in Girona and Alt Empordà. To book an appointment, contact us by phone or email.',
     'neuronmeg.dialog.contact.title': 'Contact Information',
     'neuronmeg.dialog.close': 'Close',
+    'neuronmeg.dialog.visit_website': 'Visit website',
     
     'neuronmeg.button': 'Go Ins NeuronMeg',
     'neuronmeg.badge': 'Home care',
