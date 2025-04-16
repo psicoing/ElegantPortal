@@ -107,12 +107,21 @@ export function SinapsyDialog({ open, setOpen }: SinapsyDialogProps) {
         </div>
         
         <DialogFooter className="mt-6">
-          <Button onClick={() => setOpen(false)}>
-            {t('rewards.close')}
-          </Button>
-          <Button variant="outline" onClick={() => setOpen(false)}>
-            {t('sinapsy.dialog.subscribe')}
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
+            <a href="https://sinapsy.jobda.es" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button type="button" variant="default" className="w-full">
+                {t('sinapsy.dialog.visit_website')}
+              </Button>
+            </a>
+            <div className="flex gap-2 w-full sm:w-auto">
+              <Button onClick={() => setOpen(false)} className="w-full sm:w-auto">
+                {t('rewards.close')}
+              </Button>
+              <Button variant="outline" onClick={() => setOpen(false)} className="w-full sm:w-auto">
+                {t('sinapsy.dialog.subscribe')}
+              </Button>
+            </div>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>

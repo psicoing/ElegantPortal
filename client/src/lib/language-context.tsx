@@ -129,6 +129,7 @@ const translations: Record<Language, Record<string, string>> = {
     'sinapsy.dialog.features': 'Características',
     'sinapsy.dialog.participate': '¿Quieres participar?',
     'sinapsy.dialog.subscribe': 'Suscribirme',
+    'sinapsy.dialog.visit_website': 'Visitar sitio web',
     
     'neuronmeg.dialog.title': 'Servicios de Psicología a Domicilio – NeuronMeg',
     'neuronmeg.dialog.subtitle': 'Atención psicológica especializada en la comodidad de tu hogar',
@@ -296,6 +297,7 @@ const translations: Record<Language, Record<string, string>> = {
     'sinapsy.dialog.features': 'Característiques',
     'sinapsy.dialog.participate': 'Vols participar?',
     'sinapsy.dialog.subscribe': 'Subscriure\'m',
+    'sinapsy.dialog.visit_website': 'Visitar lloc web',
     
     'neuronmeg.dialog.title': 'Serveis de Psicologia a Domicili – NeuronMeg',
     'neuronmeg.dialog.subtitle': 'Atenció psicològica especialitzada a la comoditat de la teva llar',
@@ -463,6 +465,7 @@ const translations: Record<Language, Record<string, string>> = {
     'sinapsy.dialog.features': 'Features',
     'sinapsy.dialog.participate': 'Want to participate?',
     'sinapsy.dialog.subscribe': 'Subscribe',
+    'sinapsy.dialog.visit_website': 'Visit website',
     
     'neuronmeg.dialog.title': 'Psychology Home Services – NeuronMeg',
     'neuronmeg.dialog.subtitle': 'Specialized psychological care in the comfort of your home',
