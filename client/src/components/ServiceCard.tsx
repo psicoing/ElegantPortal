@@ -81,7 +81,9 @@ export function ServiceCard({
                   ? t('service.appia.button') 
                   : title === t('service.neuronmeg.title')
                     ? t('neuronmeg.button')
-                    : t('service.sinapsy.button')}
+                    : title === t('service.empordajobs.title')
+                      ? t('service.empordajobs.button')
+                      : t('service.sinapsy.button')}
               </Button>
             ) : url.startsWith("/") ? (
               // Botón para rutas internas
@@ -123,7 +125,9 @@ export function ServiceCard({
                   <span className="text-white">
                     {title === t('service.neuronmeg.title') 
                       ? t('neuronmeg.button') 
-                      : t('service.sinapsy.button')}
+                      : title === t('service.empordajobs.title')
+                        ? t('service.empordajobs.button')
+                        : t('service.sinapsy.button')}
                   </span>
                 </a>
               </Button>
