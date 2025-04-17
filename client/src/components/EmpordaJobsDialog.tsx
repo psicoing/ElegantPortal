@@ -75,7 +75,7 @@ export function EmpordaJobsDialog({ open, setOpen }: EmpordaJobsDialogProps) {
 
         <DialogFooter className="mt-6">
           <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
-            <a href="https://job-search-pro-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://empordajobs.jobda.es/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button type="button" variant="default" className="w-full">
                 {t('empordajobs.dialog.visit_button')}
               </Button>
