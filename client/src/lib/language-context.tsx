@@ -157,6 +157,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.neuronmeg.feature2': 'Atención a adultos y personas mayores',
     'service.neuronmeg.feature3': 'Profesionales cualificados a domicilio',
     
+    'service.empordajobs.title': 'EMPORDÀ JOBS',
+    'service.empordajobs.description': 'Ofertas de trabajo en el Alt i Baix Empordà, provincia de Girona. Encuentra empleo cerca de ti con facilidad.',
+    'service.empordajobs.feature1': 'Empleos locales en la provincia',
+    'service.empordajobs.feature2': 'Búsqueda por localidad',
+    'service.empordajobs.feature3': 'Actualizaciones recientes de ofertas',
+    'service.empordajobs.badge': 'Empleo local',
+    'service.empordajobs.button': 'Ver ofertas',
+    
     'cookies.title': 'Su privacidad es importante',
     'cookies.description': 'Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio. Al hacer clic en "Aceptar todo", consiente el uso de cookies para análisis, contenido personalizado y publicidad.',
     'cookies.privacy': 'Política de Privacidad',
@@ -325,6 +333,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.neuronmeg.feature2': 'Atenció a adults i gent gran',
     'service.neuronmeg.feature3': 'Professionals qualificats a domicili',
     
+    'service.empordajobs.title': 'EMPORDÀ JOBS',
+    'service.empordajobs.description': 'Ofertes de feina a l\'Alt i Baix Empordà, província de Girona. Troba feina a prop teu amb facilitat.',
+    'service.empordajobs.feature1': 'Feines locals a la província',
+    'service.empordajobs.feature2': 'Cerca per localitat',
+    'service.empordajobs.feature3': 'Actualitzacions recents d\'ofertes',
+    'service.empordajobs.badge': 'Feina local',
+    'service.empordajobs.button': 'Veure ofertes',
+    
     'cookies.title': 'La teva privacitat és important',
     'cookies.description': 'Aquest lloc web utilitza cookies per garantir que obtingui la millor experiència al nostre lloc. En fer clic a "Acceptar tot", consenteix l\'ús de cookies per a anàlisi, contingut personalitzat i publicitat.',
     'cookies.privacy': 'Política de Privacitat',
@@ -492,6 +508,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.neuronmeg.feature1': 'Specialized child psychology',
     'service.neuronmeg.feature2': 'Adult and elderly care',
     'service.neuronmeg.feature3': 'Qualified professionals at home',
+    
+    'service.empordajobs.title': 'EMPORDÀ JOBS',
+    'service.empordajobs.description': 'Job offers in Alt i Baix Empordà, Girona province. Find employment near you with ease.',
+    'service.empordajobs.feature1': 'Local jobs in the province',
+    'service.empordajobs.feature2': 'Search by location',
+    'service.empordajobs.feature3': 'Recent job offer updates',
+    'service.empordajobs.badge': 'Local employment',
+    'service.empordajobs.button': 'View offers',
     
     'cookies.title': 'Your privacy is important',
     'cookies.description': 'This website uses cookies to ensure you get the best experience on our site. By clicking "Accept All", you consent to the use of cookies for analytics, personalized content, and advertising.',

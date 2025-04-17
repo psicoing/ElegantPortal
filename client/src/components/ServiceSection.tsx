@@ -1,6 +1,6 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2 } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
