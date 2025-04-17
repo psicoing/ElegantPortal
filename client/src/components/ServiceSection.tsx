@@ -15,6 +15,7 @@ import nflowFamiliarImage from "../assets/nflow_familiar.png";
 import aiAppsIconImage from "../assets/ai_apps_icon.png";
 import sinapsyLogoImage from "../assets/sinapsy_logo.png";
 import neuronMegImage from "../assets/neuronmeg_services.png";
+import empordaJobsImage from "../assets/empordajobs.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -98,8 +99,23 @@ export function ServiceSection() {
     variant: "secondary",
     imageSrc: neuronMegImage
   };
+  
+  const empordaJobs: ServiceItem = {
+    icon: <Building2 className="h-8 w-8 text-emerald-600" />,
+    title: t('service.empordajobs.title'),
+    description: t('service.empordajobs.description'),
+    features: [
+      t('service.empordajobs.feature1'),
+      t('service.empordajobs.feature2'),
+      t('service.empordajobs.feature3')
+    ],
+    url: "https://empordajobs.jobda.es/",
+    badgeText: t('service.empordajobs.badge'),
+    variant: "primary",
+    imageSrc: empordaJobsImage
+  };
 
-  const services = [nflow, jobda, sinapsy, neuronMeg];
+  const services = [nflow, jobda, sinapsy, neuronMeg, empordaJobs];
 
   return (
     <>
@@ -120,7 +136,7 @@ export function ServiceSection() {
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {services.map((service, index) => (
               <motion.div 
                 key={index}
