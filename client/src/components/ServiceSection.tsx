@@ -6,6 +6,7 @@ import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
 import { SinapsyDialog } from "./SinapsyDialog";
 import { NeuronMegDialog } from "./NeuronMegDialog";
+import { EmpordaJobsDialog } from "./EmpordaJobsDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -35,6 +36,7 @@ export function ServiceSection() {
   const [jobdaDialogOpen, setJobdaDialogOpen] = useState(false);
   const [sinapsyDialogOpen, setSinapsyDialogOpen] = useState(false);
   const [neuronMegDialogOpen, setNeuronMegDialogOpen] = useState(false);
+  const [empordaJobsDialogOpen, setEmpordaJobsDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
@@ -109,7 +111,8 @@ export function ServiceSection() {
       t('service.empordajobs.feature2'),
       t('service.empordajobs.feature3')
     ],
-    url: "https://empordajobs.jobda.es/",
+    url: "#",
+    onClick: () => setEmpordaJobsDialogOpen(true),
     badgeText: t('service.empordajobs.badge'),
     variant: "primary",
     imageSrc: empordaJobsImage
@@ -165,6 +168,7 @@ export function ServiceSection() {
       <JobdaDialog open={jobdaDialogOpen} setOpen={setJobdaDialogOpen} />
       <SinapsyDialog open={sinapsyDialogOpen} setOpen={setSinapsyDialogOpen} />
       <NeuronMegDialog open={neuronMegDialogOpen} setOpen={setNeuronMegDialogOpen} />
+      <EmpordaJobsDialog open={empordaJobsDialogOpen} setOpen={setEmpordaJobsDialogOpen} />
     </>
   );
 }
