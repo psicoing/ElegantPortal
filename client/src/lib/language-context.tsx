@@ -508,6 +508,7 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.title': 'Tailored Services',
     'jobda.dialog.section3.content': 'Each solution is specifically designed to meet the particular needs of each client, ensuring optimal results and an exceptional user experience.',
     'jobda.dialog.contact': 'For more information about our technological development services, contact us at:',
+    'jobda.dialog.go_to_appia': 'Go to Appia',
     
     'sinapsy.dialog.subtitle': 'Digital Magazine of Psychology, Neuroscience and Health for all audiences',
     'sinapsy.dialog.features': 'Features',
