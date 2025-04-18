@@ -57,7 +57,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.appia.feature2': 'Desarrollo web y móvil con IA',
     'service.appia.feature3': 'Transformación digital para empresas',
     'service.appia.badge': 'Innovación tecnológica',
-    'service.appia.button': 'Más información',
+    'service.appia.button': 'Acceder a APPIA',
     
     'service.sinapsy.title': 'SINAPSY',
     'service.sinapsy.description': 'Revista digital de Psicología, Neurociencias y Salud que acerca estos campos al día a día de las personas, con rigor profesional.',
@@ -65,7 +65,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.sinapsy.feature2': 'Contenido científico de alto nivel',
     'service.sinapsy.feature3': 'Entrevistas y recursos descargables',
     'service.sinapsy.badge': 'Neurociencia y Psicología',
-    'service.sinapsy.button': 'Explorar SINAPSY',
+    'service.sinapsy.button': 'Acceder a SINAPSY',
     
     'rewards.title': '¡Gana premios reales solo por formar parte!',
     'rewards.subtitle': 'Haz clic aquí o descubre el globo flotante con nuestros premios.',
@@ -124,7 +124,7 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.title': 'Servicios a Medida',
     'jobda.dialog.section3.content': 'Cada solución es diseñada específicamente para atender las necesidades particulares de cada cliente, garantizando resultados óptimos y una experiencia de usuario excepcional.',
     'jobda.dialog.contact': 'Para más información sobre nuestros servicios de desarrollo tecnológico, contáctanos en:',
-    'jobda.dialog.go_to_appia': 'Ir a Appia',
+    'jobda.dialog.go_to_appia': 'Acceder a Appia',
     
     'sinapsy.dialog.subtitle': 'Revista digital de Psicología, Neurociencias y Salud para todos los públicos',
     'sinapsy.dialog.features': 'Características',
@@ -150,7 +150,7 @@ const translations: Record<Language, Record<string, string>> = {
     'neuronmeg.dialog.close': 'Cerrar',
     'neuronmeg.dialog.visit_website': 'Visitar sitio web',
     
-    'neuronmeg.button': 'Ir Ins NeuronMeg',
+    'neuronmeg.button': 'Acceder a NeuronMeg',
     'neuronmeg.badge': 'Atención a domicilio',
     'service.neuronmeg.title': 'NeuronMeg',
     'service.neuronmeg.description': 'Servicios de psicología a domicilio para diferentes edades y necesidades en Girona y el Alt Empordà.',
@@ -164,7 +164,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature2': 'Búsqueda por localidad',
     'service.empordajobs.feature3': 'Actualizaciones recientes de ofertas',
     'service.empordajobs.badge': 'Empleo local',
-    'service.empordajobs.button': 'Ir a Empordà Jobs',
+    'service.empordajobs.button': 'Acceder a Empordà Jobs',
     
     'empordajobs.dialog.status': 'En desarrollo',
     'empordajobs.dialog.subtitle': 'Portal de empleo especializado en la comarca del Empordà',
