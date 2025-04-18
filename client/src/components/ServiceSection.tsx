@@ -147,6 +147,7 @@ export function ServiceSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
+                id={service.title === t('service.appia.title') ? 'appia-section' : ''}
               >
                 <ServiceCard 
                   icon={service.icon}

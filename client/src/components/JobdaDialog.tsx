@@ -83,9 +83,24 @@ export function JobdaDialog({ open, setOpen }: JobdaDialogProps) {
         </div>
         
         <DialogFooter className="mt-6">
-          <Button onClick={() => setOpen(false)}>
-            {t('rewards.close')}
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
+            <Button type="button" variant="default" className="w-full sm:w-auto">
+              <a href="#appia-section" onClick={() => {
+                setOpen(false);
+                setTimeout(() => {
+                  const appiaSection = document.getElementById('appia-section');
+                  if (appiaSection) {
+                    appiaSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }, 100);
+              }}>
+                {t('jobda.dialog.go_to_appia')}
+              </a>
+            </Button>
+            <Button onClick={() => setOpen(false)} className="w-full sm:w-auto">
+              {t('rewards.close')}
+            </Button>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -124,6 +124,7 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.title': 'Servicios a Medida',
     'jobda.dialog.section3.content': 'Cada solución es diseñada específicamente para atender las necesidades particulares de cada cliente, garantizando resultados óptimos y una experiencia de usuario excepcional.',
     'jobda.dialog.contact': 'Para más información sobre nuestros servicios de desarrollo tecnológico, contáctanos en:',
+    'jobda.dialog.go_to_appia': 'Ir a Appia',
     
     'sinapsy.dialog.subtitle': 'Revista digital de Psicología, Neurociencias y Salud para todos los públicos',
     'sinapsy.dialog.features': 'Características',
@@ -315,6 +316,7 @@ const translations: Record<Language, Record<string, string>> = {
     'jobda.dialog.section3.title': 'Serveis a Mida',
     'jobda.dialog.section3.content': 'Cada solució és dissenyada específicament per atendre les necessitats particulars de cada client, garantint resultats òptims i una experiència d\'usuari excepcional.',
     'jobda.dialog.contact': 'Per a més informació sobre els nostres serveis de desenvolupament tecnològic, contacta\'ns a:',
+    'jobda.dialog.go_to_appia': 'Anar a Appia',
     
     'sinapsy.dialog.subtitle': 'Revista digital de Psicologia, Neurociències i Salut per a tots els públics',
     'sinapsy.dialog.features': 'Característiques',
