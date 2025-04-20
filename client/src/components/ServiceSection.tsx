@@ -66,7 +66,7 @@ export function ServiceSection() {
       t('service.appia.feature3')
     ],
     url: "#",
-    onClick: () => setJobdaDialogOpen(true),
+    onClick: () => setAppiaDialogOpen(true),
     badgeText: t('service.appia.badge'),
     variant: "primary",
     imageSrc: aiAppsIconImage
@@ -172,6 +172,7 @@ export function ServiceSection() {
       <SinapsyDialog open={sinapsyDialogOpen} setOpen={setSinapsyDialogOpen} />
       <NeuronMegDialog open={neuronMegDialogOpen} setOpen={setNeuronMegDialogOpen} />
       <EmpordaJobsDialog open={empordaJobsDialogOpen} setOpen={setEmpordaJobsDialogOpen} />
+      <AppiaDialog open={appiaDialogOpen} setOpen={setAppiaDialogOpen} />
     </>
   );
 }

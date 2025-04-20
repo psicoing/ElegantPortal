@@ -76,6 +76,10 @@ export function ServiceCard({
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
                 onClick={onClick}
+                data-service={title === t('service.appia.title') ? 'appia' : 
+                             title === t('service.sinapsy.title') ? 'sinapsy' : 
+                             title === t('service.neuronmeg.title') ? 'neuronmeg' : 
+                             title === t('service.empordajobs.title') ? 'empordajobs' : ''}
               >
                 {title === t('service.appia.title') 
                   ? t('service.appia.button') 

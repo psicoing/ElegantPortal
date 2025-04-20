@@ -90,7 +90,20 @@ export function JobdaDialog({ open, setOpen }: JobdaDialogProps) {
                 setTimeout(() => {
                   const appiaSection = document.getElementById('appia-section');
                   if (appiaSection) {
+                    // Hacemos scroll a la sección de APPIA
                     appiaSection.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Simulamos el clic de manera compatible
+                    setTimeout(() => {
+                      const appiaServiceSection = document.querySelector('[data-service="appia"]');
+                      if (appiaServiceSection && appiaServiceSection instanceof HTMLElement) {
+                        appiaServiceSection.dispatchEvent(new MouseEvent('click', {
+                          view: window,
+                          bubbles: true,
+                          cancelable: true
+                        }));
+                      }
+                    }, 500);
                   }
                 }, 100);
               }}>
