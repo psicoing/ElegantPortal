@@ -7,6 +7,7 @@ import { JobdaDialog } from "./JobdaDialog";
 import { SinapsyDialog } from "./SinapsyDialog";
 import { NeuronMegDialog } from "./NeuronMegDialog";
 import { EmpordaJobsDialog } from "./EmpordaJobsDialog";
+import { AppiaDialog } from "./AppiaDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -37,6 +38,7 @@ export function ServiceSection() {
   const [sinapsyDialogOpen, setSinapsyDialogOpen] = useState(false);
   const [neuronMegDialogOpen, setNeuronMegDialogOpen] = useState(false);
   const [empordaJobsDialogOpen, setEmpordaJobsDialogOpen] = useState(false);
+  const [appiaDialogOpen, setAppiaDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
