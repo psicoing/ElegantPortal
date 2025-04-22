@@ -97,7 +97,7 @@ export function ServiceSection() {
       t('service.neuronmeg.feature2'),
       t('service.neuronmeg.feature3')
     ],
-    url: "#",
+    url: "https://neuronmeg.jobda.es/",
     onClick: () => setNeuronMegDialogOpen(true),
     badgeText: t('neuronmeg.badge'),
     variant: "secondary",
