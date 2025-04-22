@@ -88,6 +88,20 @@ export function CTASection() {
                   </a>
                 </Button>
               </motion.div>
+              
+              <motion.div
+                whileHover={{ y: -2 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Button
+                  className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
+                  asChild
+                >
+                  <a href="https://neuronmeg.jobda.es" target="_blank" rel="noopener noreferrer" className="text-primary">
+                    {t('neuronmeg.button')}
+                  </a>
+                </Button>
+              </motion.div>
             </div>
           </div>
         </motion.div>
