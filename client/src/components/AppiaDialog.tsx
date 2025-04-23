@@ -117,7 +117,7 @@ export function AppiaDialog({ open, setOpen }: AppiaDialogProps) {
         <DialogFooter className="mt-6">
           <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
             <Button type="button" variant="default" className="w-full sm:w-auto">
-              <a href="/ai-apps" onClick={() => {
+              <a href="https://appia.jobda.es/" target="_blank" rel="noopener noreferrer" onClick={() => {
                 setOpen(false);
               }}>
                 Ver más detalles

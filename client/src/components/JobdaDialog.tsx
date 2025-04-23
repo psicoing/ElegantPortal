@@ -85,27 +85,8 @@ export function JobdaDialog({ open, setOpen }: JobdaDialogProps) {
         <DialogFooter className="mt-6">
           <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
             <Button type="button" variant="default" className="w-full sm:w-auto">
-              <a href="#appia-section" onClick={() => {
+              <a href="https://appia.jobda.es/" target="_blank" rel="noopener noreferrer" onClick={() => {
                 setOpen(false);
-                setTimeout(() => {
-                  const appiaSection = document.getElementById('appia-section');
-                  if (appiaSection) {
-                    // Hacemos scroll a la sección de APPIA
-                    appiaSection.scrollIntoView({ behavior: 'smooth' });
-                    
-                    // Simulamos el clic de manera compatible
-                    setTimeout(() => {
-                      const appiaServiceSection = document.querySelector('[data-service="appia"]');
-                      if (appiaServiceSection && appiaServiceSection instanceof HTMLElement) {
-                        appiaServiceSection.dispatchEvent(new MouseEvent('click', {
-                          view: window,
-                          bubbles: true,
-                          cancelable: true
-                        }));
-                      }
-                    }, 500);
-                  }
-                }, 100);
               }}>
                 {t('jobda.dialog.go_to_appia')}
               </a>

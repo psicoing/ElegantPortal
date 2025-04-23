@@ -65,7 +65,7 @@ export function ServiceSection() {
       t('service.appia.feature2'),
       t('service.appia.feature3')
     ],
-    url: "#",
+    url: "https://appia.jobda.es/",
     onClick: () => setAppiaDialogOpen(true),
     badgeText: t('service.appia.badge'),
     variant: "primary",
