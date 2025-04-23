@@ -134,7 +134,16 @@ export default function AiApps() {
             </div>
             
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold mb-6">¿Hablamos?</h2>
+              <h2 className="text-2xl font-bold mb-6">¿Listo para comenzar?</h2>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+                <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg" size="lg">
+                  <a href="https://appia.jobda.es/" target="_blank" rel="noopener noreferrer" className="text-white">
+                    Acceder a APPIA
+                  </a>
+                </Button>
+              </div>
+              
+              <h3 className="text-xl font-bold mb-4">¿Hablamos?</h3>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="outline" className="w-full sm:w-auto flex items-center gap-2" size="lg">
                   <Mail className="h-4 w-4" />
