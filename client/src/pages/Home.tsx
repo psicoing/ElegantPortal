@@ -28,8 +28,8 @@ export default function Home() {
       <Header toggleMobileMenu={toggleMobileMenu} />
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
-        <ServiceSection />
         <Hero />
+        <ServiceSection />
         <CategorySection />
         <RewardsSection />
         <AboutSection />
