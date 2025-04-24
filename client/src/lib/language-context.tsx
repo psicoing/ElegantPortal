@@ -158,7 +158,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.neuronmeg.feature2': 'Atención a adultos y personas mayores',
     'service.neuronmeg.feature3': 'Profesionales cualificados a domicilio',
     
-    'service.empordajobs.title': 'EMPORDÀ JOBS',
+    'service.empordajobs.title': 'EJOBS',
     'service.empordajobs.description': 'Ofertas de trabajo en el Alt i Baix Empordà, provincia de Girona. Encuentra empleo cerca de ti con facilidad.',
     'service.empordajobs.feature1': 'Empleos locales en la provincia',
     'service.empordajobs.feature2': 'Búsqueda por localidad',
@@ -350,7 +350,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.neuronmeg.feature2': 'Atenció a adults i gent gran',
     'service.neuronmeg.feature3': 'Professionals qualificats a domicili',
     
-    'service.empordajobs.title': 'EMPORDÀ JOBS',
+    'service.empordajobs.title': 'EJOBS',
     'service.empordajobs.description': 'Ofertes de feina a l\'Alt i Baix Empordà, província de Girona. Troba feina a prop teu amb facilitat.',
     'service.empordajobs.feature1': 'Feines locals a la província',
     'service.empordajobs.feature2': 'Cerca per localitat',
@@ -542,7 +542,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.neuronmeg.feature2': 'Adult and elderly care',
     'service.neuronmeg.feature3': 'Qualified professionals at home',
     
-    'service.empordajobs.title': 'EMPORDÀ JOBS',
+    'service.empordajobs.title': 'EJOBS',
     'service.empordajobs.description': 'Job offers in Alt i Baix Empordà, Girona province. Find employment near you with ease.',
     'service.empordajobs.feature1': 'Local jobs in the province',
     'service.empordajobs.feature2': 'Search by location',
