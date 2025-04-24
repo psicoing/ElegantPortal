@@ -120,7 +120,7 @@ export function ServiceSection() {
     imageSrc: empordaJobsImage
   };
 
-  const services = [nflow, jobda, sinapsy, neuronMeg, empordaJobs];
+  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs];
 
   return (
     <>
