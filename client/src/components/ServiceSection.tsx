@@ -58,18 +58,18 @@ export function ServiceSection() {
 
   const jobda: ServiceItem = {
     icon: <Sparkles className="h-8 w-8 text-accent" />,
-    title: t('service.appia.title'),
-    description: t('service.appia.description'),
+    title: t('service.nflow.title'),
+    description: t('service.nflow.description'),
     features: [
-      t('service.appia.feature1'),
-      t('service.appia.feature2'),
-      t('service.appia.feature3')
+      t('service.nflow.feature1'),
+      t('service.nflow.feature2'),
+      t('service.nflow.feature3')
     ],
-    url: "https://appia.jobda.es/",
+    url: "https://nflow.jobda.es/",
     onClick: () => setAppiaDialogOpen(true),
-    badgeText: t('service.appia.badge'),
+    badgeText: t('service.nflow.badge'),
     variant: "primary",
-    imageSrc: aiAppsIconImage
+    imageSrc: nflowDigitalImage
   };
   
   const sinapsy: ServiceItem = {
@@ -120,7 +120,8 @@ export function ServiceSection() {
     imageSrc: empordaJobsImage
   };
 
-  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs];
+  // Quitamos el servicio original nflow para evitar duplicidad
+  const services = [jobda, sinapsy, neuronMeg, empordaJobs];
 
   return (
     <>
