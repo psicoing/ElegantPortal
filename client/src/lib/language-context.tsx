@@ -152,7 +152,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Acceder a NeuronMeg',
     'neuronmeg.badge': 'Atención a domicilio',
-    'service.neuronmeg.title': 'NeuronMeg',
+    'service.neuronmeg.title': 'MEG',
     'service.neuronmeg.description': 'Servicios de psicología a domicilio para diferentes edades y necesidades en Girona y el Alt Empordà.',
     'service.neuronmeg.feature1': 'Psicología infantil especializada',
     'service.neuronmeg.feature2': 'Atención a adultos y personas mayores',
@@ -344,7 +344,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Anar Ins NeuronMeg',
     'neuronmeg.badge': 'Atenció a domicili',
-    'service.neuronmeg.title': 'NeuronMeg',
+    'service.neuronmeg.title': 'MEG',
     'service.neuronmeg.description': 'Serveis de psicologia a domicili per a diferents edats i necessitats a Girona i l\'Alt Empordà.',
     'service.neuronmeg.feature1': 'Psicologia infantil especialitzada',
     'service.neuronmeg.feature2': 'Atenció a adults i gent gran',
@@ -536,7 +536,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Go Ins NeuronMeg',
     'neuronmeg.badge': 'Home care',
-    'service.neuronmeg.title': 'NeuronMeg',
+    'service.neuronmeg.title': 'MEG',
     'service.neuronmeg.description': 'Home psychology services for different ages and needs in Girona and Alt Empordà.',
     'service.neuronmeg.feature1': 'Specialized child psychology',
     'service.neuronmeg.feature2': 'Adult and elderly care',
