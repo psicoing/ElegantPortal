@@ -1,7 +1,5 @@
-import { Bookmark, Brain, Globe, HeartHandshake, Puzzle, Users } from "lucide-react";
+import { Brain, HeartHandshake, Puzzle, Users } from "lucide-react";
 import { motion } from "framer-motion";
-import nflowFamiliarImage from "../assets/nflow_familiar.png";
-import nflowRobotAIImage from "../assets/nflow_robot_ai.png";
 import { useLanguage } from "@/lib/language-context";
 
 export function AboutSection() {
@@ -24,14 +22,6 @@ export function AboutSection() {
             <p className="text-gray-600 leading-relaxed mb-8">
               {t('about.subtitle')}
             </p>
-            <div className="max-w-md mx-auto">
-              <img 
-                src={nflowFamiliarImage} 
-                alt="NFLOW Salud Mental Familiar" 
-                className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105 mb-4"
-                style={{ maxWidth: '100%', height: 'auto' }}
-              />
-            </div>
           </motion.div>
         </div>
 
@@ -154,33 +144,7 @@ export function AboutSection() {
           </motion.div>
         </div>
 
-        {/* Imagen de NFLOW Robot IA al final de la sección */}
-        <motion.div 
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-8"></div>
-          <div className="max-w-xs mx-auto">
-            <img 
-              src={nflowRobotAIImage} 
-              alt="NFLOW Salud Mental para Adolescentes y Adultos" 
-              className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105 mb-6"
-              style={{ maxWidth: '100%', height: 'auto' }}
-            />
-            <p className="text-gray-600 mt-8 font-medium">
-              Colegiado-7851 · Colegio de Psicólogos de Catalunya
-            </p>
-            <a 
-              href="/ai-apps" 
-              className="text-blue-600 font-semibold mt-4 inline-block hover:text-blue-800 transition-colors"
-            >
-              APPIA · Desarrollo de apps inteligentes
-            </a>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
