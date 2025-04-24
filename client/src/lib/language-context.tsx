@@ -43,7 +43,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Nuestros Servicios',
     'services.subtitle': 'Soluciones personalizadas para cada necesidad',
 
-    'service.nflow.title': 'NFLOW',
+    'service.nflow.title': 'NFLOW, tu psicólogo de bolsillo',
     'service.nflow.description': 'Servicio de apoyo psicológico mediante IA, conectando profesionales con quienes necesitan orientación personalizada.',
     'service.nflow.feature1': 'Atención psicológica personalizada',
     'service.nflow.feature2': 'Asistente virtual 24/7',
@@ -236,7 +236,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Els nostres serveis',
     'services.subtitle': 'Solucions personalitzades per a cada necessitat',
 
-    'service.nflow.title': 'NFLOW',
+    'service.nflow.title': 'NFLOW, el teu psicòleg a la butxaca',
     'service.nflow.description': 'Servei de suport psicològic mitjançant IA, connectant professionals amb qui necessita orientació personalitzada.',
     'service.nflow.feature1': 'Atenció psicològica personalitzada',
     'service.nflow.feature2': 'Assistent virtual 24/7',
@@ -428,7 +428,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Our Services',
     'services.subtitle': 'Customized solutions for every need',
 
-    'service.nflow.title': 'NFLOW',
+    'service.nflow.title': 'NFLOW, your pocket psychologist',
     'service.nflow.description': 'Psychological support service using AI, connecting professionals with those who need personalized guidance.',
     'service.nflow.feature1': 'Personalized psychological care',
     'service.nflow.feature2': '24/7 virtual assistant',
