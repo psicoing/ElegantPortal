@@ -31,8 +31,8 @@ const translations: Record<Language, Record<string, string>> = {
     'founderProfession': 'Psicólogo Clínico y Neuroingeniero en Telecomunicaciones',
     'founderAlt': 'Foto de Ramón Molons de San Román, CEO',
     
-    'hero.title': 'Bienvenidos a un entorno pensado para cuidar tu salud mental y laboral',
-    'hero.subtitle': 'Además, desarrollamos apps con IA para empresas',
+    'hero.title': 'Bienvenidos a nuestra plataforma de servicios',
+    'hero.subtitle': 'Escoge aquel que sea más interesante para ti',
     'hero.cta': 'Explorar servicios',
     
     'category.adolescents': 'Adolescentes',
@@ -224,8 +224,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     'rewards.users': 'usuaris actius',
     
-    'hero.title': 'Benvinguts a un entorn pensat per cuidar la teva salut mental i laboral',
-    'hero.subtitle': 'A més, desenvolupem apps amb IA per a empreses',
+    'hero.title': 'Benvinguts a la nostra plataforma de serveis',
+    'hero.subtitle': 'Escull aquell que sigui més interessant per a tu',
     'hero.cta': 'Explorar serveis',
     
     'category.adolescents': 'Adolescents',
@@ -416,8 +416,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     'rewards.users': 'active users',
     
-    'hero.title': 'Welcome to an environment designed to care for your mental and work health',
-    'hero.subtitle': 'Additionally, we develop AI apps for businesses',
+    'hero.title': 'Welcome to our services platform',
+    'hero.subtitle': 'Choose the one that is most interesting to you',
     'hero.cta': 'Explore our services',
     
     'category.adolescents': 'Adolescents',
