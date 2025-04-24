@@ -28,9 +28,9 @@ export default function Home() {
       <Header toggleMobileMenu={toggleMobileMenu} />
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
+        <ServiceSection />
         <Hero />
         <CategorySection />
-        <ServiceSection />
         <RewardsSection />
         <AboutSection />
         <FounderTestimonial />
