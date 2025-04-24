@@ -99,7 +99,7 @@ export function CTASection() {
                   className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://neuronmeg.jobda.es" target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     {t('neuronmeg.button')}
                   </a>
                 </Button>
