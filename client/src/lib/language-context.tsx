@@ -43,7 +43,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Nuestros Servicios',
     'services.subtitle': 'Soluciones personalizadas para cada necesidad',
 
-    'service.nflow.title': 'NFLOW',
+    'service.nflow.title': 'NFLOW, tu psicólogo en el bolsillo',
     'service.nflow.description': 'Servicio de apoyo psicológico mediante IA, conectando profesionales con quienes necesitan orientación personalizada.',
     'service.nflow.feature1': 'Atención psicológica personalizada',
     'service.nflow.feature2': 'Asistente virtual 24/7',
