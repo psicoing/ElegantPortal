@@ -23,6 +23,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacto',
     'nav.rewards': 'Premios',
     'nav.projects': 'Proyectos',
+    'nav.investors': 'Inversores',
     
     'founderTitle': 'Fundador y Director Ejecutivo',
     'founderQuote': 'Con NFLOW y APPIA, mi objetivo es ofrecer soluciones innovadoras que integren salud mental y desarrollo laboral, alineadas con los principios de la normativa ISO 45003, centrada en el bienestar psicológico en el entorno de trabajo. NFLOW actúa como un recurso digital de apoyo emocional continuo, mientras que APPIA permite a cada organización desarrollar su propia inteligencia artificial personalizada, generando entornos altamente digitalizados y adaptativos, capaces de responder a los nuevos desafíos del ámbito corporativo.',
@@ -206,6 +207,60 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.arco.link_text': 'Para acceder a la documentación completa del Proyecto ARCO, visite:',
     'projects.arco.folder': 'Carpeta de Google Drive - Proyecto ARCO',
     'projects.footer': 'Volver a la página principal',
+
+    'investors.title': 'Invierte en NFlow',
+    'investors.subtitle': 'Forma parte de un proyecto de salud mental inteligente, escalable y con impacto global real',
+    'investors.tab.overview': 'Visión general',
+    'investors.tab.options': 'Opciones de inversión',
+    'investors.tab.contact': 'Contacto',
+    
+    'investors.what_is': '¿Qué es NFlow?',
+    'investors.chatbot_description': 'Un asistente emocional que responde en cualquier idioma, orienta con rigor y ofrece contenido adaptado a adolescentes, madres, padres y adultos.',
+    'investors.price_info': 'Funciona por suscripción mensual: 2,99 €/usuario, sin personal ni gastos variables.',
+    'investors.tech_info': 'Código propio. IA integrada. Listo para escalar.',
+    
+    'investors.company_info': 'Grupo empresarial ya constituido',
+    'investors.company_description': 'Este proyecto forma parte de EmpordaJobs SL – B02701100.',
+    'investors.company_legal': 'La estructura legal ya existe. El producto también.',
+    
+    'investors.investment_info': 'Inversión inicial: ya hecha',
+    'investors.development_cost': 'Desarrollar NFlow costaría más de 70.000 € en mercado.',
+    'investors.founder_funded': 'Todo ha sido financiado directamente por mí como fundador.',
+    'investors.seeking_boost': 'Ahora buscamos impulso, no arranque.',
+    
+    'investors.projection_title': 'Proyección a 12 meses',
+    'investors.projection_users': 'Con 30.000 usuarios → +1M €/año',
+    'investors.market_size': 'Mercado objetivo en España: hasta 400.000 usuarios',
+    'investors.scalability': 'Escalable sin costes operativos por usuario',
+    
+    'investors.see_options': 'Ver opciones de inversión',
+    'investors.most_popular': 'Popular',
+    'investors.private_contract': 'Contrato privado',
+    'investors.no_notary': 'Sin notaría',
+    'investors.min_shares_safe': 'Participaciones desde 75 €',
+    'investors.min_amount_safe': 'Mínimo: 500 € (≈6–7 participaciones)',
+    'investors.select_safe': 'Seleccionar esta opción',
+    
+    'investors.notarial': 'Notarial (escritura pública)',
+    'investors.min_shares_notarial': 'Participaciones desde 150 €',
+    'investors.min_amount_notarial': 'Mínimo: 20 participaciones (3.000 €)',
+    'investors.full_rights': 'Derechos societarios plenos',
+    'investors.select_notarial': 'Seleccionar esta opción',
+    
+    'investors.transparency': 'Transparencia total para los inversores',
+    'investors.transparency_description': 'Todos los inversores tendrán acceso directo a la base de datos SQL Users, donde podrán ver:',
+    'investors.real_time_users': 'Altas de usuarios en tiempo real',
+    'investors.confirmed_payments': 'Pagos confirmados',
+    'investors.revenue_tracking': 'Recaudación bruta, neta y evolución',
+    
+    'investors.back': 'Volver',
+    'investors.next': 'Siguiente',
+    
+    'investors.contact_title': '¿Quieres recibir el dossier inversor o ver la demo?',
+    'investors.email_instructions': 'Envía un email para recibir más información',
+    'investors.website_info': 'Visita nuestra web para más información',
+    'investors.final_note': 'No vendemos humo. Hemos invertido tiempo, dinero y conocimiento. Y si esto despega, cada participación puede multiplicar su valor por 20 o más.',
+    'investors.back_to_overview': 'Volver al resumen',
   },
   
   ca: {
@@ -215,6 +270,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacte',
     'nav.rewards': 'Premis',
     'nav.projects': 'Projectes',
+    'nav.investors': 'Inversors',
     
     'founderTitle': 'Fundador i Director Executiu',
     'founderQuote': 'Amb NFLOW i APPIA, el meu objectiu és oferir solucions innovadores que integrin salut mental i desenvolupament laboral, alineades amb els principis de la normativa ISO 45003, centrada en el benestar psicològic en l\'entorn de treball. NFLOW actua com un recurs digital de suport emocional continu, mentre que APPIA permet a cada organització desenvolupar la seva pròpia intel·ligència artificial personalitzada, generant entorns altament digitalitzats i adaptatius, capaços de respondre als nous desafiaments de l\'àmbit corporatiu.',
@@ -408,6 +464,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     'nav.rewards': 'Rewards',
     'nav.projects': 'Projects',
+    'nav.investors': 'Investors',
     
     'founderTitle': 'Founder and Chief Executive Officer',
     'founderQuote': 'With NFLOW and APPIA, my goal is to offer innovative solutions that integrate mental health and labor development, aligned with the principles of the ISO 45003 standard, focused on psychological well-being in the work environment. NFLOW acts as a digital resource for continuous emotional support, while APPIA allows each organization to develop its own personalized artificial intelligence, generating highly digitized and adaptive environments, capable of responding to new corporate challenges.',
