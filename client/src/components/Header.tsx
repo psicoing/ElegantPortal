@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { ContactDialog } from "./ContactDialog";
+import { InvestorsDialog } from "./InvestorsDialog";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
@@ -39,6 +40,11 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
           <Link href="/projects" className="font-sans font-medium text-gray-600 hover:text-primary transition">
             {t('nav.projects')}
           </Link>
+          <InvestorsDialog>
+            <button className="font-sans font-medium text-blue-600 hover:text-blue-700 transition font-semibold">
+              {t('nav.investors')}
+            </button>
+          </InvestorsDialog>
           <ContactDialog>
             <button className="font-sans font-medium text-gray-600 hover:text-primary transition">
               {t('nav.contact')}
