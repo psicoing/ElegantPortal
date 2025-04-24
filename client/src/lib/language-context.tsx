@@ -44,7 +44,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Nuestros Servicios',
     'services.subtitle': 'Soluciones personalizadas para cada necesidad',
 
-    'service.nflow.title': 'NFLOW, tu psicólogo de bolsillo',
+    'service.nflow.title': 'NFLOW',
     'service.nflow.description': 'Servicio de apoyo psicológico mediante IA, conectando profesionales con quienes necesitan orientación personalizada.',
     'service.nflow.feature1': 'Atención psicológica personalizada',
     'service.nflow.feature2': 'Asistente virtual 24/7',
@@ -154,7 +154,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Acceder a NeuronMeg',
     'neuronmeg.badge': 'Atención a domicilio',
-    'service.neuronmeg.title': 'MEG',
+    'service.neuronmeg.title': 'NEURONMEG',
     'service.neuronmeg.description': 'Servicios de psicología a domicilio para diferentes edades y necesidades en Girona y el Alt Empordà.',
     'service.neuronmeg.feature1': 'Psicología infantil especializada',
     'service.neuronmeg.feature2': 'Atención a adultos y personas mayores',
@@ -293,7 +293,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Els nostres serveis',
     'services.subtitle': 'Solucions personalitzades per a cada necessitat',
 
-    'service.nflow.title': 'NFLOW, el teu psicòleg a la butxaca',
+    'service.nflow.title': 'NFLOW',
     'service.nflow.description': 'Servei de suport psicològic mitjançant IA, connectant professionals amb qui necessita orientació personalitzada.',
     'service.nflow.feature1': 'Atenció psicològica personalitzada',
     'service.nflow.feature2': 'Assistent virtual 24/7',
@@ -402,7 +402,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Anar Ins NeuronMeg',
     'neuronmeg.badge': 'Atenció a domicili',
-    'service.neuronmeg.title': 'MEG',
+    'service.neuronmeg.title': 'NEURONMEG',
     'service.neuronmeg.description': 'Serveis de psicologia a domicili per a diferents edats i necessitats a Girona i l\'Alt Empordà.',
     'service.neuronmeg.feature1': 'Psicologia infantil especialitzada',
     'service.neuronmeg.feature2': 'Atenció a adults i gent gran',
@@ -487,7 +487,7 @@ const translations: Record<Language, Record<string, string>> = {
     'services.title': 'Our Services',
     'services.subtitle': 'Customized solutions for every need',
 
-    'service.nflow.title': 'NFLOW, your pocket psychologist',
+    'service.nflow.title': 'NFLOW',
     'service.nflow.description': 'Psychological support service using AI, connecting professionals with those who need personalized guidance.',
     'service.nflow.feature1': 'Personalized psychological care',
     'service.nflow.feature2': '24/7 virtual assistant',
@@ -596,7 +596,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'neuronmeg.button': 'Go Ins NeuronMeg',
     'neuronmeg.badge': 'Home care',
-    'service.neuronmeg.title': 'MEG',
+    'service.neuronmeg.title': 'NEURONMEG',
     'service.neuronmeg.description': 'Home psychology services for different ages and needs in Girona and Alt Empordà.',
     'service.neuronmeg.feature1': 'Specialized child psychology',
     'service.neuronmeg.feature2': 'Adult and elderly care',
