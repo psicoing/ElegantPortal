@@ -36,6 +36,7 @@ export function AboutSection() {
           >
             <div className="prose prose-lg max-w-none">
               <p>
+                Jobda es una plataforma de servicios que integra varios servicios que pueden ser de vuestro interés.
                 Nflow nace como evolución del Instituto NeuronMeg, un centro con más de 32 años 
                 de experiencia en psicología clínica y escolar. Desde su origen en el Empordà, 
                 NeuronMeg ha acompañado a personas, familias y comunidades educativas con una 
@@ -56,8 +57,11 @@ export function AboutSection() {
                 inteligencia artificial para empresas y empleados, el desarrollo de IAs personalizadas 
                 y la implementación de modelos organizacionales que promueven el bienestar psicológico. 
                 Paralelamente, seguimos ofreciendo servicios de atención y acompañamiento dirigidos a 
-                adolescentes, familias y adultos, con una mirada clínica, educativa y social. También 
-                mantenemos nuestros servicios de selección gratuitos a empresas y candidatos.
+                adolescentes, familias y adultos, con una mirada clínica, educativa y social. 
+              </p>
+              <p>
+                También ofrecemos la app Empordajobs SL orientada a buscar candidatos para empresas de la comarca de Girona.
+                Mantenemos nuestros servicios de selección gratuitos a empresas y candidatos.
               </p>
             </div>
 
