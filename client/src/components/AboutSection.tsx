@@ -115,6 +115,21 @@ export function AboutSection() {
               </div>
             </div>
 
+            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg p-4 border border-amber-100">
+              <div className="flex items-start">
+                <div className="bg-amber-100 p-2 rounded-full mr-4">
+                  <Users className="h-5 w-5 text-amber-600" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-amber-900">{t('area.jobda')}</h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Aplicación especializada en selección de personal, ayudando a empresas a encontrar 
+                    los mejores candidatos a través de análisis inteligente de perfiles y competencias.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-lg p-4 border border-emerald-100">
               <div className="flex items-start">
                 <div className="bg-emerald-100 p-2 rounded-full mr-4">

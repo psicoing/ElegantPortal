@@ -90,6 +90,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'area.psychology': 'Psicología',
     'area.nflow': 'Nflow',
+    'area.jobda': 'Jobda',
     'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'Instituto NeuronMeg',
@@ -282,6 +283,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'area.psychology': 'Psicologia',
     'area.nflow': 'Nflow',
+    'area.jobda': 'Jobda',
     'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'Institut NeuronMeg',
@@ -474,6 +476,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     'area.psychology': 'Psychology',
     'area.nflow': 'Nflow',
+    'area.jobda': 'Jobda',
     'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'NeuronMeg Institute',
