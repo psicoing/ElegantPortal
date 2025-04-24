@@ -32,7 +32,7 @@ const translations: Record<Language, Record<string, string>> = {
     'founderAlt': 'Foto de Ramón Molons de San Román, CEO',
     
     'hero.title': 'Bienvenidos a nuestra plataforma de servicios',
-    'hero.subtitle': 'Escoge aquel que sea más interesante para ti',
+    'hero.subtitle': 'Escoge aquel que necesites',
     'hero.cta': 'Explorar servicios',
     
     'category.adolescents': 'Adolescentes',
@@ -225,7 +225,7 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.users': 'usuaris actius',
     
     'hero.title': 'Benvinguts a la nostra plataforma de serveis',
-    'hero.subtitle': 'Escull aquell que sigui més interessant per a tu',
+    'hero.subtitle': 'Escull aquell que necessitis',
     'hero.cta': 'Explorar serveis',
     
     'category.adolescents': 'Adolescents',
@@ -417,7 +417,7 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.users': 'active users',
     
     'hero.title': 'Welcome to our services platform',
-    'hero.subtitle': 'Choose the one that is most interesting to you',
+    'hero.subtitle': 'Choose the one you need',
     'hero.cta': 'Explore our services',
     
     'category.adolescents': 'Adolescents',
