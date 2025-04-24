@@ -49,7 +49,7 @@ export function CategorySection() {
           transition={{ duration: 0.6 }}
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">NFLOW</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">NFLOW, un psicólogo en tu bolsillo</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-indigo-500 mx-auto mb-6"></div>
             <p className="text-gray-300 max-w-2xl mx-auto">
               Nuestras soluciones están diseñadas para atender las necesidades específicas de diferentes grupos, 
