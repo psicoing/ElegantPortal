@@ -23,7 +23,7 @@ export function AntifraudeCommitment() {
               En <span className="text-red-400 font-medium">Jobda.es</span>, liderada por Ramón Molons de San Román, ofrecemos servicios 
               profesionales con la máxima seriedad y confianza. Somos una empresa registrada 
               con NIF <span className="font-medium text-blue-300">B02701100</span> y nuestro director está colegiado con el número <span className="font-medium text-blue-300">7851</span> en el 
-              Colegio de Psicólogos de Catalunya.
+              Colegio de Psicólogos de Catalunya de <span className="font-medium text-blue-300">EmpordaJobs SL</span>.
             </p>
             
             <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-800/30">
