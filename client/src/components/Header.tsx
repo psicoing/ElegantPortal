@@ -27,36 +27,12 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center space-x-6">
-          <a href="#acerca-de" className="font-sans font-medium text-gray-600 hover:text-primary transition">
-            {t('nav.about')}
-          </a>
-          <a href="#services" className="font-sans font-medium text-gray-600 hover:text-primary transition">
-            {t('nav.services')}
-          </a>
-          <a href="#rewards" className="font-sans font-medium text-gray-600 hover:text-primary transition">
-            {t('nav.rewards')}
-          </a>
-          <Link href="/projects" className="font-sans font-medium text-gray-600 hover:text-primary transition">
-            {t('nav.projects')}
-          </Link>
-          <InvestorsDialog>
-            <button className="font-sans font-medium text-blue-600 hover:text-blue-700 transition font-semibold">
-              {t('nav.investors')}
-            </button>
-          </InvestorsDialog>
-          <ContactDialog>
-            <button className="font-sans font-medium text-gray-600 hover:text-primary transition">
-              {t('nav.contact')}
-            </button>
-          </ContactDialog>
-        </nav>
+        
         <div className="flex items-center gap-2">
           <LanguageSelector />
           <Button 
             variant="ghost"
             size="icon"
-            className="md:hidden"
             onClick={toggleMobileMenu}
             aria-label="Menu"
           >
