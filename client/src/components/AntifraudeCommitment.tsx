@@ -6,9 +6,9 @@ export function AntifraudeCommitment() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="mt-12 pt-6 border-t border-gray-800/50">
+    <div className="mt-8 border-t border-gray-800/50 py-3">
       <div 
-        className={`transition-all duration-300 ease-in-out ${isExpanded ? 'max-h-[1000px] opacity-100' : 'max-h-[70px] opacity-80'} overflow-hidden`}
+        className={`transition-all duration-300 ease-in-out ${isExpanded ? 'max-h-[1000px] opacity-100' : 'max-h-[90px] opacity-100'} overflow-hidden`}
       >
         <div className="bg-gradient-to-b from-gray-800/60 to-gray-900/80 border border-gray-700/50 rounded-xl p-5 shadow-lg backdrop-blur-sm">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -109,11 +109,12 @@ export function AntifraudeCommitment() {
       
       <div className="flex justify-center -mt-1">
         <Button 
-          variant="ghost" 
-          className="text-xs text-gray-400 hover:text-blue-400 transition-colors focus:ring-0 focus:ring-offset-0"
+          variant={isExpanded ? "ghost" : "default"} 
+          className={`text-sm ${isExpanded ? 'text-gray-400 hover:text-blue-400' : 'bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white'} transition-colors focus:ring-0 focus:ring-offset-0`}
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          {isExpanded ? 'Mostrar menos' : 'Mostrar certificado antifraude'}
+          {isExpanded ? 'Mostrar menos' : 'Ver certificado antifraude'}
+          {!isExpanded && <Shield className="ml-2 h-4 w-4" />}
         </Button>
       </div>
     </div>

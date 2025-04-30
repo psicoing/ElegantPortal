@@ -130,11 +130,13 @@ export function Footer() {
           </div>
         </div>
         
-        {/* Antifraud Commitment */}
-        <AntifraudeCommitment />
+        {/* Antifraud Commitment - Visible standalone section */}
+        <div className="w-full mx-auto max-w-3xl py-4">
+          <AntifraudeCommitment />
+        </div>
         
         {/* Footer bottom */}
-        <div className="mt-6 pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-4 pt-6 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-6 md:mb-0">
             &copy; {new Date().getFullYear()} EMPORDAJOBS SL. Todos los derechos reservados.
           </p>
