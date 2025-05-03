@@ -2,7 +2,7 @@ import { CreditCard, Lightbulb, LineChart, Lock, Mail, ScrollText, Users, Globe,
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/lib/language-context";
 
 interface InvestorsDialogProps {
@@ -11,14 +11,14 @@ interface InvestorsDialogProps {
 
 export function InvestorsDialog({ children }: InvestorsDialogProps) {
   const { t } = useLanguage();
+  const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("overview");
-  const [open, setOpen] = useState(false);
 
-  // Resetear la pestaña activa cuando se cierra el diálogo
-  const handleOpenChange = (isOpen: boolean) => {
-    setOpen(isOpen);
-    if (!isOpen) {
-      // Esperar a que se complete la animación de cierre antes de resetear
+  // Cuando el diálogo se cierra, restablece la pestaña a "overview" después de un tiempo
+  const handleOpenChange = (open: boolean) => {
+    setIsOpen(open);
+    if (!open) {
+      // Esperar a que se complete la animación antes de cambiar la pestaña
       setTimeout(() => {
         setActiveTab("overview");
       }, 300);
@@ -26,7 +26,7 @@ export function InvestorsDialog({ children }: InvestorsDialogProps) {
   };
 
   return (
-    <Dialog open={open} onOpenChange={handleOpenChange}>
+    <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
