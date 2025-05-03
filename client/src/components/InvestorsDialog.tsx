@@ -12,9 +12,21 @@ interface InvestorsDialogProps {
 export function InvestorsDialog({ children }: InvestorsDialogProps) {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState("overview");
+  const [open, setOpen] = useState(false);
+
+  // Resetear la pestaña activa cuando se cierra el diálogo
+  const handleOpenChange = (isOpen: boolean) => {
+    setOpen(isOpen);
+    if (!isOpen) {
+      // Esperar a que se complete la animación de cierre antes de resetear
+      setTimeout(() => {
+        setActiveTab("overview");
+      }, 300);
+    }
+  };
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
