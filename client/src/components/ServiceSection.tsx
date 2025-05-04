@@ -8,6 +8,7 @@ import { SinapsyDialog } from "./SinapsyDialog";
 import { NeuronMegDialog } from "./NeuronMegDialog";
 import { EmpordaJobsDialog } from "./EmpordaJobsDialog";
 import { AppiaDialog } from "./AppiaDialog";
+import { NflowDialog } from "./NflowDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -39,6 +40,7 @@ export function ServiceSection() {
   const [neuronMegDialogOpen, setNeuronMegDialogOpen] = useState(false);
   const [empordaJobsDialogOpen, setEmpordaJobsDialogOpen] = useState(false);
   const [appiaDialogOpen, setAppiaDialogOpen] = useState(false);
+  const [nflowDialogOpen, setNflowDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
@@ -51,6 +53,7 @@ export function ServiceSection() {
       t('service.nflow.feature3')
     ],
     url: "https://nflow.jobda.es/",
+    onClick: () => setNflowDialogOpen(true),
     badgeText: t('service.nflow.badge'),
     variant: "primary",
     imageSrc: nflowDigitalImage
@@ -173,6 +176,7 @@ export function ServiceSection() {
       <NeuronMegDialog open={neuronMegDialogOpen} setOpen={setNeuronMegDialogOpen} />
       <EmpordaJobsDialog open={empordaJobsDialogOpen} setOpen={setEmpordaJobsDialogOpen} />
       <AppiaDialog open={appiaDialogOpen} setOpen={setAppiaDialogOpen} />
+      <NflowDialog open={nflowDialogOpen} setOpen={setNflowDialogOpen} />
     </>
   );
 }
