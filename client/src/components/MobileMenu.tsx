@@ -3,6 +3,7 @@ import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { InvestorsModal } from "./InvestorsModal";
 import { ContactModal } from "./ContactModal";
+import { WorkWithUsModal } from "./WorkWithUsModal";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
@@ -88,6 +89,7 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
               {t('nav.projects')}
             </Link>
             <InvestorsModal />
+            <WorkWithUsModal text="Trabaja con nosotros" />
             <ContactModal text={t('nav.contact')} />
           </nav>
         </motion.div>

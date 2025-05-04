@@ -1,0 +1,51 @@
+
+Cálculo simplificado: Comisión del comercial por una venta de 1.800 €
+•  Venta al cliente: 1.800 € (con IVA incluido).
+•  Comisión del comercial: 20% de 1.800 € = 360 €.
+Factura del comercial (lo que le pagas)
+•  Base imponible: 360 €.
+•  IVA (21%): 360 € × 0,21 = 75,60 €.
+•  IRPF (15%): 360 € × 0,15 = -54 €.
+•  Total a pagar al comercial: 360 € + 75,60 € - 54 € = 381,60 €.
+Desglose para ti (autónomo):
+•  Pagas al comercial: 381,60 € por cada venta de 1.800 €.
+•  IVA a Hacienda:
+	•  IVA repercutido (cliente): 1.800 € ÷ 1,21 × 0,21 = 312,40 €.
+	•  IVA soportado (comercial): 75,60 €.
+	•  IVA neto: 312,40 € - 75,60 € = 236,80 €.
+•  IRPF a Hacienda:
+	•  IRPF retenido del comercial: 54 € (ingresas a Hacienda, modelo 111).
+•  Tu IRPF:
+	•  Cliente te paga: 1.800 € ÷ 1,21 × (1 + 0,21 - 0,15) = 1.576,86 €.
+	•  Cliente ingresa tu IRPF: 1.487,60 € × 0,15 = 223,14 € a Hacienda.
+	•  Tu beneficio neto: 1.487,60 € - 360 € = 1.127,60 €.
+	•  Pago a cuenta (modelo 130): 1.127,60 € × 20% ≈ 225,52 € (estimado).
+
+Resumen para copiar y pegar
+Por cada venta de 1.800 € (con IVA):
+•  El comercial se lleva: 381,60 €.
+•  Desglose de la factura del comercial:
+	•  Base: 360 €.
+	•  IVA (21%): +75,60 €.
+	•  IRPF (15%): -54 €.
+	•  Total: 381,60 €.
+•  Tú pagas a Hacienda:
+	•  IVA: 236,80 € (modelo 303).
+	•  IRPF del comercial: 54 € (modelo 111).
+•  Cliente te paga: 1.576,86 € (y 223,14 € de tu IRPF a Hacienda).
+•  Tu margen: 1.127,60 € (antes de tu IRPF y cuota de autónomo).
+Para todas las ventas:
+•  Por cada venta de 1.800 €, pagas 381,60 € al comercial.
+•  Si tienes N ventas, multiplica: N × 381,60 €.
+	•  Ejemplo: 10 ventas = 10 × 381,60 € = 3.816 €.
+
+Notas clave
+•  Contrato mercantil: Asegúrate de que el contrato especifique la comisión del 20% sobre 1.800 € (con IVA) y la independencia del comercial para evitar problemas con Hacienda (falso autónomo).
+•  Facturas: La factura del comercial debe incluir NIF, nombre, dirección, base (360 €), IVA (75,60 €), e IRPF (-54 €).
+•  Tus obligaciones:
+	•  Modelo 303 (IVA: 236,80 € por venta).
+	•  Modelo 111 (IRPF comercial: 54 € por venta).
+	•  Modelo 130 (tu IRPF: ~225,52 € por venta, ajustado).
+	•  Modelo 190 (anual, retenciones).
+	•  Modelo 100 (anual, tu IRPF).
+Si necesitas un formato aún más simple, un ejemplo de factura, o cálculos para un número específico de ventas (por ejemplo, 5, 10, o 20 al mes), dímelo. También puedo ajustar si la comisión es sobre la base sin IVA (1.487,60 €).
