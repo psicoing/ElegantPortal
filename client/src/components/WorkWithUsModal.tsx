@@ -1,326 +1,191 @@
-import React, { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { X, ChevronRight, FileText, Calculator, CheckCircle, Users, BarChart } from "lucide-react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef, ReactNode } from "react";
+import { Link } from "wouter";
+import { X, User2 } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface WorkWithUsModalProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   text?: string;
   variant?: "menu" | "button" | "icon";
-  icon?: React.ReactNode;
+  icon?: ReactNode;
 }
 
 export function WorkWithUsModal({
   children,
   text = "Trabaja con nosotros",
   variant = "menu",
-  icon
+  icon = <User2 className="h-4 w-4" />
 }: WorkWithUsModalProps) {
   const [isOpen, setIsOpen] = useState(false);
-  
-  // Controladores para abrir/cerrar modal
-  const openModal = () => {
-    setIsOpen(true);
-    document.body.style.overflow = "hidden";
-  };
+  const modalRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
-  const closeModal = () => {
-    setIsOpen(false);
-    document.body.style.overflow = "auto";
-  };
-
-  // Manejar clics fuera del modal para cerrarlo
-  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
-  };
-
-  // Tecla Escape para cerrar el modal
   useEffect(() => {
     const handleEscKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isOpen) {
-        closeModal();
+      if (e.key === "Escape") {
+        setIsOpen(false);
       }
     };
 
-    window.addEventListener("keydown", handleEscKey);
+    if (isOpen) {
+      document.addEventListener("keydown", handleEscKey);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
     return () => {
-      window.removeEventListener("keydown", handleEscKey);
-      // Asegurarnos de restaurar overflow al desmontar
+      document.removeEventListener("keydown", handleEscKey);
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
 
-  // Renderizar trigger según el tipo
-  const renderTrigger = () => {
-    if (children) {
-      // Si el hijo es un elemento de React y podemos clonarlo
-      if (React.isValidElement(children)) {
-        const childProps: any = {
-          onClick: (e: React.MouseEvent) => {
-            e.preventDefault();
-            e.stopPropagation();
-            openModal();
-          }
-        };
-        return React.cloneElement(children, childProps);
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
       }
-      // Si no es un elemento válido, simplemente retornamos los children
-      return children;
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
-    if (variant === "menu") {
-      return (
-        <button
-          className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            openModal();
-          }}
-        >
-          {text}
-        </button>
-      );
-    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
-    if (variant === "icon" && icon) {
-      return (
-        <button 
-          className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            openModal();
-          }}
-        >
-          {icon}
-        </button>
-      );
-    }
-
-    // default button
-    return (
-      <Button 
-        type="button" 
-        className="bg-primary hover:bg-primary/90 text-white font-sans font-semibold rounded-lg py-3 px-6 shadow-md transition"
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          openModal();
-        }}
+  let trigger;
+  if (children) {
+    trigger = (
+      <div onClick={() => setIsOpen(true)}>
+        {children}
+      </div>
+    );
+  } else if (variant === "menu") {
+    trigger = (
+      <button
+        className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+        onClick={() => setIsOpen(true)}
       >
         {text}
-      </Button>
+      </button>
     );
-  };
+  } else if (variant === "button") {
+    trigger = (
+      <button
+        className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
+        onClick={() => setIsOpen(true)}
+      >
+        {icon}
+        <span>{text}</span>
+      </button>
+    );
+  } else if (variant === "icon") {
+    trigger = (
+      <button
+        className="p-2 text-gray-600 hover:text-primary transition-colors"
+        onClick={() => setIsOpen(true)}
+        aria-label={text}
+      >
+        {icon}
+      </button>
+    );
+  }
 
   return (
     <>
-      {renderTrigger()}
-
-      {/* Modal */}
+      {trigger}
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center p-4 transition-all"
-          onClick={handleBackdropClick}
-          role="dialog"
-          aria-modal="true"
-        >
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
           <div
-            className="bg-white rounded-xl shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto transform transition-transform"
-            onClick={(e) => e.stopPropagation()}
+            ref={modalRef}
+            className={`bg-white rounded-lg shadow-xl max-h-[90vh] overflow-y-auto ${
+              isMobile ? "w-full max-w-[95%] mx-auto" : "w-full max-w-4xl"
+            }`}
           >
-            <div className="relative p-6 md:p-8">
-              {/* Botón para cerrar */}
+            <div className="sticky top-0 z-10 bg-white p-4 border-b flex justify-between items-center">
+              <h2 className="text-xl font-bold text-gray-800">Trabaja con nosotros</h2>
               <button
-                onClick={closeModal}
-                className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+                className="p-1 rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-600 transition-colors"
                 aria-label="Cerrar"
               >
-                <X size={24} />
+                <X className="h-6 w-6" />
               </button>
-
-              {/* Encabezado */}
-              <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">
-                  Trabaja con Nosotros
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Forma parte de nuestro equipo de profesionales independientes y desarrolla tu carrera como comercial o colaborador en cualquiera de nuestros servicios.
+            </div>
+            
+            <div className="p-6">
+              <section>
+                <h3 className="text-lg font-semibold mb-3 text-primary">¿Quieres formar parte de nuestro equipo?</h3>
+                <p className="text-gray-600 mb-6">
+                  En JOBDA buscamos colaboradores que compartan nuestra visión y quieran formar parte de un proyecto innovador en el ámbito de la transformación digital y las aplicaciones de IA.
                 </p>
-              </div>
-
-              {/* Contenido principal */}
-              <div className="space-y-6">
-                {/* Sección de contrato mercantil */}
-                <div className="rounded-xl border border-blue-100 bg-gradient-to-r from-blue-50 to-transparent p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-blue-100 p-3 rounded-lg shrink-0">
-                      <FileText className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800 mb-3">Condiciones de Colaboración</h3>
-                      <p className="text-gray-700 mb-4">
-                        Las colaboraciones se realizan mediante contrato mercantil, lo que requiere que el colaborador disponga de alta como autónomo vigente, que será verificada antes de iniciar la relación. Este modelo ofrece flexibilidad y ventajas tanto para el colaborador como para nuestra empresa.
-                      </p>
-                    </div>
+                
+                <div className="bg-blue-50 p-4 rounded-lg mb-6 border border-blue-100">
+                  <h4 className="font-medium text-blue-800 mb-2">Modelo de colaboración freelance</h4>
+                  <p className="text-gray-700 mb-4">
+                    Trabajamos con un modelo de colaboración freelance basado en comisiones del 25% sobre las ventas generadas.
+                  </p>
+                  <ul className="space-y-2 list-disc pl-6 text-gray-700">
+                    <li>Sin horarios fijos ni exclusividad</li>
+                    <li>Comisiones directas del 25% por cada venta</li>
+                    <li>Apoyo técnico y comercial completo</li>
+                    <li>Formación en nuestras soluciones tecnológicas</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
+                  <h4 className="font-medium text-gray-900 mb-3">Ejemplo de comisiones</h4>
+                  <p className="text-gray-600 mb-4">Venta de un servicio de EMPORDÀ JOBS por 1.800€:</p>
+                  <div className="flex justify-between items-center border-b border-gray-200 pb-3 mb-3">
+                    <span className="text-gray-700">Venta al cliente</span>
+                    <span className="font-semibold text-primary">1.800€</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-700">Tu comisión (25%)</span>
+                    <span className="font-semibold text-green-600">450€</span>
                   </div>
                 </div>
-
-                {/* Sección de opciones */}
-                <div className="rounded-xl border border-blue-100 bg-gradient-to-r from-blue-50 to-transparent p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-blue-100 p-3 rounded-lg shrink-0">
-                      <Users className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800 mb-3">Áreas de Colaboración</h3>
-                      <p className="text-gray-700 mb-4">
-                        Ofrecemos múltiples opciones para colaborar con nosotros en cualquiera de nuestros servicios como JOBDA, NFLOW, EmpordàJobs, Appia, Sinapsy o NeuronMeg. Puedes consultar más detalles sobre cada uno en nuestra sección de servicios.
-                      </p>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                        <div className="flex items-center gap-2 text-gray-700">
-                          <CheckCircle className="h-5 w-5 text-green-500" />
-                          <span>Representación comercial</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-gray-700">
-                          <CheckCircle className="h-5 w-5 text-green-500" />
-                          <span>Consultoría técnica</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-gray-700">
-                          <CheckCircle className="h-5 w-5 text-green-500" />
-                          <span>Desarrollo de aplicaciones</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-gray-700">
-                          <CheckCircle className="h-5 w-5 text-green-500" />
-                          <span>Psicología y salud mental</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Sistema de comisiones */}
-                <div className="rounded-xl border border-blue-100 bg-gradient-to-r from-blue-50 to-transparent p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-blue-100 p-3 rounded-lg shrink-0">
-                      <Calculator className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800 mb-3">Sistema de Comisiones</h3>
-                      <p className="text-gray-700 mb-4">
-                        Para los comerciales, facilitamos un enlace específico que permite realizar un seguimiento en tiempo real de ventas y comisiones. La compensación será un 20% del valor de venta (IVA incluido).
-                      </p>
-                      
-                      <div className="bg-white border border-blue-200 rounded-lg p-4 mb-4">
-                        <h4 className="font-semibold text-gray-800 mb-2">Ejemplo de comisión por venta:</h4>
-                        <ul className="space-y-2 text-sm">
-                          <li className="flex justify-between">
-                            <span>Venta al cliente (con IVA):</span>
-                            <span className="font-semibold">1.800 €</span>
-                          </li>
-                          <li className="flex justify-between">
-                            <span>Comisión del comercial (20%):</span>
-                            <span className="font-semibold">360 €</span>
-                          </li>
-                          <li className="flex justify-between">
-                            <span>IVA (21%):</span>
-                            <span className="font-semibold">+75,60 €</span>
-                          </li>
-                          <li className="flex justify-between">
-                            <span>IRPF (15%):</span>
-                            <span className="font-semibold">-54 €</span>
-                          </li>
-                          <li className="flex justify-between border-t border-gray-200 pt-2 font-semibold text-blue-700">
-                            <span>Total a recibir:</span>
-                            <span>381,60 €</span>
-                          </li>
-                        </ul>
-                      </div>
-                      
-                      <div className="flex items-center justify-center mt-4">
-                        <Button
-                          className="bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2"
-                          onClick={() => window.open('/trabajo-comisiones-calculadora', '_blank')}
-                        >
-                          Ver detalles del sistema de comisiones
-                          <ChevronRight className="h-4 w-4" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Beneficios de colaborar */}
-                <div className="rounded-xl border border-blue-100 bg-gradient-to-r from-blue-50 to-transparent p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-blue-100 p-3 rounded-lg shrink-0">
-                      <BarChart className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-800 mb-3">Beneficios de Colaborar con Nosotros</h3>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                        <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                          <h4 className="font-semibold text-gray-800 mb-2">Flexibilidad</h4>
-                          <p className="text-sm text-gray-600">
-                            Trabaja a tu ritmo, gestiona tu tiempo y organízate según tus necesidades.
-                          </p>
-                        </div>
-                        
-                        <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                          <h4 className="font-semibold text-gray-800 mb-2">Crecimiento Profesional</h4>
-                          <p className="text-sm text-gray-600">
-                            Acceso a formación continua y oportunidades en múltiples sectores tecnológicos.
-                          </p>
-                        </div>
-                        
-                        <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                          <h4 className="font-semibold text-gray-800 mb-2">Comisiones Competitivas</h4>
-                          <p className="text-sm text-gray-600">
-                            20% sobre el valor total de las ventas con un sistema transparente de seguimiento.
-                          </p>
-                        </div>
-                        
-                        <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-                          <h4 className="font-semibold text-gray-800 mb-2">Soporte Continuo</h4>
-                          <p className="text-sm text-gray-600">
-                            Equipo de soporte para ayudarte con cualquier duda técnica o administrativa.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Footer */}
-              <div className="mt-8 text-center">
+                
+                <h3 className="text-lg font-semibold mb-3 text-primary">¿Quieres calcular tu potencial de ganancias?</h3>
                 <p className="text-gray-600 mb-4">
-                  ¿Interesado en formar parte de nuestro equipo?
+                  Utiliza nuestra calculadora para estimar cuánto podrías ganar según tus objetivos de ventas.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Button
-                    type="button"
-                    variant="outline"
-                    className="border-blue-200 text-blue-700 hover:bg-blue-50"
-                    onClick={() => window.open('https://forms.gle/1DJY5GKbUZ8RYjRd6', '_blank')}
+                
+                <div className="flex justify-center mb-8">
+                  <Link href="/trabajo-comisiones-calculadora" 
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors font-medium"
+                    onClick={() => setIsOpen(false)}
                   >
-                    Más información
-                  </Button>
-                  
-                  <Button
-                    type="button"
-                    className="bg-blue-600 hover:bg-blue-700"
-                    onClick={() => window.open('https://forms.gle/1DJY5GKbUZ8RYjRd6', '_blank')}
-                  >
-                    Solicitar colaboración
-                  </Button>
+                    Ir a la calculadora de comisiones
+                  </Link>
                 </div>
-              </div>
+                
+                <h3 className="text-lg font-semibold mb-3 text-primary">¿Cómo empezar?</h3>
+                <p className="text-gray-600 mb-4">
+                  Si estás interesado en colaborar con nosotros, contáctanos y te proporcionaremos toda la información necesaria para comenzar.
+                </p>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                  <h4 className="font-medium text-gray-900 mb-3">Contacto para colaboradores</h4>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-gray-600 mb-1">Email:</p>
+                      <a href="mailto:empordajobs@gmail.com" className="text-blue-600 hover:underline">
+                        empordajobs@gmail.com
+                      </a>
+                    </div>
+                    <div>
+                      <p className="text-gray-600 mb-1">Teléfono:</p>
+                      <a href="tel:+34660452136" className="text-blue-600 hover:underline">
+                        +34 660 45 21 36
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>

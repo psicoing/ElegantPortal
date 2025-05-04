@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Phone, User2 } from "lucide-react";
 import { ContactModal } from "./ContactModal";
+import { WorkWithUsModal } from "./WorkWithUsModal";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
 import faroLogo from "@/assets/faro-logo.png";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface HeaderProps {
   toggleMobileMenu: () => void;
@@ -12,6 +14,7 @@ interface HeaderProps {
 
 export function Header({ toggleMobileMenu }: HeaderProps) {
   const { t } = useLanguage();
+  const isMobile = useIsMobile();
   
   return (
     <header className="w-full py-4 bg-white shadow-sm sticky top-0 z-30">
@@ -28,6 +31,20 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
         </div>
         
         <div className="flex items-center gap-2">
+          {!isMobile && (
+            <>
+              <WorkWithUsModal
+                variant="icon"
+                icon={<User2 className="h-5 w-5" />}
+                text="Trabaja con nosotros"
+              />
+              <ContactModal
+                variant="icon"
+                icon={<Phone className="h-5 w-5" />}
+                text={t('nav.contact')}
+              />
+            </>
+          )}
           <LanguageSelector />
           <Button 
             variant="ghost"

@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { ContactModal } from "./ContactModal";
+import { WorkWithUsModal } from "./WorkWithUsModal";
 import { AntifraudeCommitment } from "./AntifraudeCommitment";
 
 export function Footer() {
@@ -99,6 +100,14 @@ export function Footer() {
                   <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
                   <span>Testimonios</span>
                 </a>
+              </li>
+              <li>
+                <WorkWithUsModal>
+                  <button className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group">
+                    <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
+                    <span>Trabaja con nosotros</span>
+                  </button>
+                </WorkWithUsModal>
               </li>
               <li>
                 <ContactModal>

@@ -1,302 +1,333 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Calculator, ArrowLeft, FileText, BarChart3, AlertCircle } from "lucide-react";
+import { useState, ChangeEvent } from "react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet";
+import { ArrowLeft, Calculator, ChevronUp, ChevronDown, PieChart, Coins, User, Mail } from "lucide-react";
+import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 
 export default function CommissionsCalculator() {
+  const [salesAmount, setSalesAmount] = useState(1000);
+  const [commissionRate, setCommissionRate] = useState(25);
+  const [salesQuantity, setSalesQuantity] = useState(1);
+  const [isPeriodOpen, setIsPeriodOpen] = useState(false);
+  const [selectedPeriod, setSelectedPeriod] = useState("mes");
+
+  const handleSalesAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = parseFloat(e.target.value);
+    if (!isNaN(value) && value >= 0) {
+      setSalesAmount(value);
+    }
+  };
+
+  const handleCommissionRateChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = parseFloat(e.target.value);
+    if (!isNaN(value) && value >= 0 && value <= 100) {
+      setCommissionRate(value);
+    }
+  };
+
+  const handleSalesQuantityChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const value = parseInt(e.target.value);
+    if (!isNaN(value) && value >= 0) {
+      setSalesQuantity(value);
+    }
+  };
+
+  const commissionAmount = (salesAmount * commissionRate / 100) * salesQuantity;
+  
+  // Multipliers for different periods
+  const periodMultipliers = {
+    "mes": 1,
+    "trimestre": 3,
+    "semestre": 6,
+    "año": 12
+  };
+  
+  // Calculate values for different periods
+  const calculateForPeriod = (period: keyof typeof periodMultipliers) => {
+    return commissionAmount * periodMultipliers[period];
+  };
+
   return (
     <>
       <Helmet>
-        <title>Calculadora de Comisiones | JOBDA</title>
-        <meta name="description" content="Detalles sobre el sistema de comisiones para colaboradores y cálculo de beneficios" />
+        <title>Calculadora de Comisiones para Colaboradores | JOBDA</title>
+        <meta name="description" content="Calcula cuánto puedes ganar como colaborador de JOBDA con nuestra calculadora de comisiones interactiva" />
       </Helmet>
-
-      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4 py-12">
-          <div className="mb-8">
-            <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Volver al inicio
-            </Link>
-          </div>
-
+      
+      <header className="bg-white shadow-sm sticky top-0 z-10">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+          <Link href="/" className="inline-flex items-center text-gray-700 hover:text-primary transition-colors">
+            <ArrowLeft className="h-5 w-5 mr-2" />
+            <span>Volver a inicio</span>
+          </Link>
+        </div>
+      </header>
+      
+      <main className="container mx-auto px-4 py-8 md:py-12">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="max-w-4xl mx-auto"
           >
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
-                <Calculator className="h-8 w-8 text-blue-600" />
-              </div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">
-                Sistema de Comisiones
-              </h1>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Información detallada sobre el cálculo de comisiones para colaboradores independientes
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden mb-12">
-              <div className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Ejemplo de Cálculo: Venta de 1.800€</h2>
-                
-                <div className="space-y-8">
-                  {/* Desglose básico */}
-                  <div className="rounded-lg bg-blue-50 p-5 border border-blue-100">
-                    <h3 className="font-semibold text-lg mb-4 text-gray-800">
-                      Datos básicos de la operación
-                    </h3>
-                    <ul className="space-y-2">
-                      <li className="flex justify-between items-center pb-2 border-b border-blue-100">
-                        <span className="text-gray-700">Venta al cliente (con IVA):</span>
-                        <span className="font-semibold text-gray-900">1.800 €</span>
-                      </li>
-                      <li className="flex justify-between items-center pb-2 border-b border-blue-100">
-                        <span className="text-gray-700">Comisión del comercial (20%):</span>
-                        <span className="font-semibold text-gray-900">360 €</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  {/* Factura del comercial */}
-                  <div>
-                    <h3 className="font-semibold text-lg mb-4 text-gray-800 flex items-center">
-                      <FileText className="h-5 w-5 mr-2 text-blue-500" />
-                      Factura del comercial (lo que recibe)
-                    </h3>
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                      <table className="min-w-full divide-y divide-gray-200">
-                        <thead className="bg-gray-50">
-                          <tr>
-                            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                              Concepto
-                            </th>
-                            <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                              Importe
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody className="bg-white divide-y divide-gray-200">
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              Base imponible
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right font-medium">
-                              360,00 €
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              IVA (21%)
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600 text-right font-medium">
-                              +75,60 €
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              IRPF (15%)
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-red-600 text-right font-medium">
-                              -54,00 €
-                            </td>
-                          </tr>
-                          <tr className="bg-blue-50">
-                            <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800">
-                              Total a recibir
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600 text-right font-bold">
-                              381,60 €
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-
-                  {/* Desglose para la empresa */}
-                  <div>
-                    <h3 className="font-semibold text-lg mb-4 text-gray-800 flex items-center">
-                      <BarChart3 className="h-5 w-5 mr-2 text-blue-500" />
-                      Desglose para la empresa
-                    </h3>
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                      <table className="min-w-full divide-y divide-gray-200">
-                        <thead className="bg-gray-50">
-                          <tr>
-                            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                              Concepto
-                            </th>
-                            <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                              Importe
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody className="bg-white divide-y divide-gray-200">
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              IVA repercutido (cliente)
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right font-medium">
-                              312,40 €
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              IVA soportado (comercial)
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right font-medium">
-                              75,60 €
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              IVA neto a pagar
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right font-medium">
-                              236,80 €
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              IRPF retenido del comercial
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right font-medium">
-                              54,00 €
-                            </td>
-                          </tr>
-                          <tr className="bg-gray-50">
-                            <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-800">
-                              Base sin IVA (cliente)
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-right font-medium">
-                              1.487,60 €
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                              Comisión comercial (base)
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-red-600 text-right font-medium">
-                              -360,00 €
-                            </td>
-                          </tr>
-                          <tr className="bg-blue-50">
-                            <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800">
-                              Beneficio bruto
-                            </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600 text-right font-bold">
-                              1.127,60 €
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Notas importantes */}
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-12">
-              <div className="flex items-start">
-                <AlertCircle className="h-6 w-6 text-yellow-500 mr-4 mt-0.5 flex-shrink-0" />
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 tracking-tight">
+              Calculadora de Comisiones
+            </h1>
+            <p className="text-lg text-gray-600 mb-8">
+              Estima tus ganancias como colaborador de JOBDA según tus objetivos de ventas.
+            </p>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <motion.div
+              className="col-span-2 bg-white rounded-xl shadow-lg p-6 border border-gray-100"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <h2 className="text-xl font-semibold mb-6 flex items-center text-gray-800">
+                <Calculator className="h-5 w-5 mr-2 text-primary" />
+                Ingresa tus valores
+              </h2>
+              
+              <div className="space-y-5">
                 <div>
-                  <h3 className="font-semibold text-lg mb-3 text-gray-800">Notas importantes</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start">
-                      <span className="inline-block w-4 h-4 rounded-full bg-yellow-200 text-yellow-800 text-xs font-bold flex items-center justify-center mr-2 mt-1">1</span>
-                      <span>El contrato mercantil debe especificar claramente la comisión del 20% sobre el valor de venta (con IVA) y la independencia del comercial para evitar problemas con Hacienda (falso autónomo).</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="inline-block w-4 h-4 rounded-full bg-yellow-200 text-yellow-800 text-xs font-bold flex items-center justify-center mr-2 mt-1">2</span>
-                      <span>La factura del comercial debe incluir todos los datos fiscales obligatorios: NIF, nombre completo, dirección, base imponible, IVA e IRPF.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="inline-block w-4 h-4 rounded-full bg-yellow-200 text-yellow-800 text-xs font-bold flex items-center justify-center mr-2 mt-1">3</span>
-                      <span>Los pagos a comerciales se realizan una vez que el cliente ha liquidado el importe correspondiente y siempre mediante transferencia bancaria para mantener la trazabilidad.</span>
-                    </li>
-                  </ul>
+                  <label htmlFor="salesAmount" className="block text-sm font-medium text-gray-700 mb-1">
+                    Importe promedio de cada venta (€)
+                  </label>
+                  <div className="flex items-center">
+                    <input
+                      type="number"
+                      id="salesAmount"
+                      value={salesAmount}
+                      onChange={handleSalesAmountChange}
+                      className="block w-full rounded-md border border-gray-300 py-2 px-3 focus:border-primary focus:ring focus:ring-primary/20 focus:outline-none text-gray-900"
+                      min="0"
+                      step="100"
+                    />
+                    <span className="ml-2 text-gray-500">€</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Cálculo para múltiples ventas */}
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden mb-12">
-              <div className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">Cálculo para múltiples ventas</h2>
-                <p className="text-gray-600 mb-6">
-                  Para calcular la comisión total por múltiples ventas, simplemente multiplica el número de ventas por la comisión unitaria.
-                </p>
                 
-                <div className="overflow-x-auto">
-                  <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
-                      <tr>
-                        <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Número de ventas
-                        </th>
-                        <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          Comisión total (con IVA - IRPF)
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
-                      <tr>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                          1 venta
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600 text-right font-medium">
-                          381,60 €
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                          5 ventas
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600 text-right font-medium">
-                          1.908,00 €
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                          10 ventas
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600 text-right font-medium">
-                          3.816,00 €
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                          20 ventas
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-blue-600 text-right font-medium">
-                          7.632,00 €
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div>
+                  <label htmlFor="commissionRate" className="block text-sm font-medium text-gray-700 mb-1">
+                    Porcentaje de comisión
+                  </label>
+                  <div className="flex items-center">
+                    <input
+                      type="number"
+                      id="commissionRate"
+                      value={commissionRate}
+                      onChange={handleCommissionRateChange}
+                      className="block w-full rounded-md border border-gray-300 py-2 px-3 focus:border-primary focus:ring focus:ring-primary/20 focus:outline-none text-gray-900"
+                      min="0"
+                      max="100"
+                      step="1"
+                    />
+                    <span className="ml-2 text-gray-500">%</span>
+                  </div>
+                </div>
+                
+                <div>
+                  <label htmlFor="salesQuantity" className="block text-sm font-medium text-gray-700 mb-1">
+                    Número de ventas
+                  </label>
+                  <div className="flex items-center">
+                    <input
+                      type="number"
+                      id="salesQuantity"
+                      value={salesQuantity}
+                      onChange={handleSalesQuantityChange}
+                      className="block w-full rounded-md border border-gray-300 py-2 px-3 focus:border-primary focus:ring focus:ring-primary/20 focus:outline-none text-gray-900"
+                      min="0"
+                      step="1"
+                    />
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <label htmlFor="period" className="block text-sm font-medium text-gray-700 mb-1">
+                    Período de cálculo
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => setIsPeriodOpen(!isPeriodOpen)}
+                    className="w-full flex items-center justify-between rounded-md border border-gray-300 py-2 px-3 text-gray-900 focus:border-primary focus:ring focus:ring-primary/20 focus:outline-none bg-white"
+                  >
+                    <span className="capitalize">{selectedPeriod}</span>
+                    {isPeriodOpen ? (
+                      <ChevronUp className="h-4 w-4 text-gray-500" />
+                    ) : (
+                      <ChevronDown className="h-4 w-4 text-gray-500" />
+                    )}
+                  </button>
+                  {isPeriodOpen && (
+                    <div className="absolute top-full left-0 z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg">
+                      {Object.keys(periodMultipliers).map((period) => (
+                        <button
+                          key={period}
+                          type="button"
+                          onClick={() => {
+                            setSelectedPeriod(period);
+                            setIsPeriodOpen(false);
+                          }}
+                          className={`w-full text-left px-3 py-2 hover:bg-gray-100 capitalize ${
+                            selectedPeriod === period ? "bg-gray-100" : ""
+                          }`}
+                        >
+                          {period}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
+            </motion.div>
+            
+            <motion.div
+              className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-xl shadow-lg p-6 flex flex-col"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <h2 className="text-xl font-semibold mb-6 flex items-center">
+                <Coins className="h-5 w-5 mr-2" />
+                Tus ganancias
+              </h2>
+              
+              <div className="text-center flex-grow flex flex-col justify-center">
+                <p className="text-blue-100 mb-2">Por {selectedPeriod}</p>
+                <div className="text-4xl md:text-5xl font-bold mb-4">
+                  {calculateForPeriod(selectedPeriod as keyof typeof periodMultipliers).toLocaleString('es-ES', {
+                    style: 'currency',
+                    currency: 'EUR',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                  })}
+                </div>
+                <p className="text-blue-100 text-sm">
+                  Basado en {salesQuantity} {salesQuantity === 1 ? 'venta' : 'ventas'} de {salesAmount.toLocaleString('es-ES')}€ cada una
+                </p>
+              </div>
+              
+              <div className="mt-6 pt-6 border-t border-blue-500/30">
+                <div className="flex items-center justify-between text-sm mb-2">
+                  <span>Comisión por venta:</span>
+                  <span className="font-medium">
+                    {(salesAmount * commissionRate / 100).toLocaleString('es-ES', {
+                      style: 'currency',
+                      currency: 'EUR'
+                    })}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span>Tasa de comisión:</span>
+                  <span className="font-medium">{commissionRate}%</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          
+          <motion.div
+            className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 mb-10"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <h2 className="text-xl font-semibold mb-6 flex items-center text-gray-800">
+              <PieChart className="h-5 w-5 mr-2 text-primary" />
+              Proyección de ingresos por períodos
+            </h2>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <h3 className="text-sm font-medium text-gray-500 mb-2">Mensual</h3>
+                <p className="text-2xl font-bold text-gray-900">
+                  {calculateForPeriod('mes').toLocaleString('es-ES', {
+                    style: 'currency',
+                    currency: 'EUR',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                  })}
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <h3 className="text-sm font-medium text-gray-500 mb-2">Trimestral</h3>
+                <p className="text-2xl font-bold text-gray-900">
+                  {calculateForPeriod('trimestre').toLocaleString('es-ES', {
+                    style: 'currency',
+                    currency: 'EUR',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                  })}
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <h3 className="text-sm font-medium text-gray-500 mb-2">Semestral</h3>
+                <p className="text-2xl font-bold text-gray-900">
+                  {calculateForPeriod('semestre').toLocaleString('es-ES', {
+                    style: 'currency',
+                    currency: 'EUR',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                  })}
+                </p>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <h3 className="text-sm font-medium text-gray-500 mb-2">Anual</h3>
+                <p className="text-2xl font-bold text-gray-900">
+                  {calculateForPeriod('año').toLocaleString('es-ES', {
+                    style: 'currency',
+                    currency: 'EUR',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                  })}
+                </p>
+              </div>
             </div>
-
-            {/* Botón de contacto */}
-            <div className="text-center">
-              <p className="text-gray-600 mb-4">
-                ¿Interesado en formar parte de nuestro equipo o tienes dudas sobre el sistema de comisiones?
-              </p>
-              <Link href="/#contact">
-                <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                  Contacta con nosotros
-                </button>
+          </motion.div>
+          
+          <motion.div
+            className="bg-blue-50 rounded-xl shadow-md p-6 border border-blue-100"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <h2 className="text-xl font-semibold mb-4 flex items-center text-gray-800">
+              <User className="h-5 w-5 mr-2 text-primary" />
+              ¿Interesado en trabajar con nosotros?
+            </h2>
+            
+            <p className="text-gray-700 mb-4">
+              Si estás interesado en formar parte de nuestro equipo de colaboradores y aprovechar este modelo de comisiones, contáctanos y te proporcionaremos toda la información necesaria.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="mailto:empordajobs@gmail.com"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                <span>Contactar por email</span>
+              </a>
+              
+              <Link
+                href="/"
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-primary border border-primary rounded-md hover:bg-blue-50 transition-colors"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span>Volver a inicio</span>
               </Link>
             </div>
           </motion.div>
         </div>
-      </div>
+      </main>
+      
+      <Footer />
     </>
   );
 }
