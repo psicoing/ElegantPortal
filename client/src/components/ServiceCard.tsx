@@ -99,8 +99,8 @@ export function ServiceCard({
                   Más información
                 </a>
               </Button>
-            ) : title === t('service.nflow.title') ? (
-              // Botón NFLOW con estilo normal
+            ) : (
+              // Botón para servicios externos
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
                 asChild
@@ -110,29 +110,15 @@ export function ServiceCard({
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  {t('service.nflow.button')}
-                </a>
-              </Button>
-            ) : (
-              // Botón SINAPSY
-              <Button 
-                className="w-full bg-black hover:bg-gray-800 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
-                asChild
-              >
-                <a 
-                  href={url} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-white hover:text-white"
-                  style={{ color: 'white' }}
-                >
-                  <span className="text-white">
-                    {title === t('service.neuronmeg.title') 
+                  {title === t('service.nflow.title') 
+                    ? t('service.nflow.button')
+                    : title === t('service.neuronmeg.title') 
                       ? t('neuronmeg.button') 
                       : title === t('service.empordajobs.title')
                         ? t('service.empordajobs.button')
-                        : t('service.sinapsy.button')}
-                  </span>
+                        : title === t('service.sinapsy.title')
+                          ? t('service.sinapsy.button')
+                          : t('service.appia.button')}
                 </a>
               </Button>
             )}
