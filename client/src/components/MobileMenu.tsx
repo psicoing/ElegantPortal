@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
+import { 
+  X,
+  Info, 
+  Briefcase, 
+  Gift, 
+  FolderKanban,
+  Users,
+  HandHelping,
+  Mail
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { InvestorsModal } from "./InvestorsModal";
 import { ContactModal } from "./ContactModal";
@@ -63,34 +72,47 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
           <nav className="flex flex-col space-y-4">
             <a 
               href="#acerca-de" 
-              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
               onClick={handleLinkClick}
             >
+              <Info className="h-5 w-5 text-primary" />
               {t('nav.about')}
             </a>
             <a 
               href="#services" 
-              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
               onClick={handleLinkClick}
             >
+              <Briefcase className="h-5 w-5 text-primary" />
               {t('nav.services')}
             </a>
             <a 
               href="#rewards" 
-              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
               onClick={handleLinkClick}
             >
+              <Gift className="h-5 w-5 text-primary" />
               {t('nav.rewards')}
             </a>
             <Link href="/projects" 
-              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100"
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
               onClick={() => closeMobileMenu()}
             >
+              <FolderKanban className="h-5 w-5 text-primary" />
               {t('nav.projects')}
             </Link>
-            <InvestorsModal />
-            <WorkWithUsModal text="Trabaja con nosotros" />
-            <ContactModal text={t('nav.contact')} />
+            <div className="flex items-center gap-3 py-2 border-b border-gray-100">
+              <Users className="h-5 w-5 text-primary" />
+              <InvestorsModal />
+            </div>
+            <div className="flex items-center gap-3 py-2 border-b border-gray-100">
+              <HandHelping className="h-5 w-5 text-primary" />
+              <WorkWithUsModal text="Trabaja con nosotros" />
+            </div>
+            <div className="flex items-center gap-3 py-2 border-b border-gray-100">
+              <Mail className="h-5 w-5 text-primary" />
+              <ContactModal text={t('nav.contact')} />
+            </div>
           </nav>
         </motion.div>
       )}
