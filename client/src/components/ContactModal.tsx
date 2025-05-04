@@ -1,9 +1,21 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Building, Clock, X } from "lucide-react";
 import { motion } from "framer-motion";
 
-export function ContactModal({ text = "Contacto" }: { text?: string }) {
+interface ContactModalProps {
+  children?: ReactNode;
+  text?: string;
+  variant?: "menu" | "button" | "icon";
+  icon?: ReactNode;
+}
+
+export function ContactModal({ 
+  children, 
+  text = "Contacto", 
+  variant = "menu",
+  icon
+}: ContactModalProps) {
   const [isOpen, setIsOpen] = useState(false);
   
   // Controladores para abrir/cerrar modal
@@ -59,10 +71,59 @@ export function ContactModal({ text = "Contacto" }: { text?: string }) {
     };
   }, [isOpen]);
 
-  return (
-    <>
-      <button
-        className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"
+  // Renderizar trigger según el tipo
+  const renderTrigger = () => {
+    if (children) {
+      // Si el hijo es un elemento de React y podemos clonarlo
+      if (React.isValidElement(children)) {
+        const childProps: any = {
+          onClick: (e: React.MouseEvent) => {
+            e.preventDefault();
+            e.stopPropagation();
+            openModal();
+          }
+        };
+        return React.cloneElement(children, childProps);
+      }
+      // Si no es un elemento válido, simplemente retornamos los children
+      return children;
+    }
+
+    if (variant === "menu") {
+      return (
+        <button
+          className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            openModal();
+          }}
+        >
+          {text}
+        </button>
+      );
+    }
+
+    if (variant === "icon" && icon) {
+      return (
+        <button 
+          className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            openModal();
+          }}
+        >
+          {icon}
+        </button>
+      );
+    }
+
+    // default button
+    return (
+      <Button 
+        type="button" 
+        className="bg-primary hover:bg-primary/90 text-white font-sans font-semibold rounded-lg py-3 px-6 shadow-md transition"
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -70,7 +131,13 @@ export function ContactModal({ text = "Contacto" }: { text?: string }) {
         }}
       >
         {text}
-      </button>
+      </Button>
+    );
+  };
+
+  return (
+    <>
+      {renderTrigger()}
 
       {/* Modal */}
       {isOpen && (

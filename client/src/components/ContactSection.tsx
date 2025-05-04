@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ContactDialog } from "./ContactDialog";
+import { ContactModal } from "./ContactModal";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactSection() {
@@ -36,40 +36,33 @@ export function ContactSection() {
               </p>
             </div>
             
-            <ContactDialog>
-              <Button 
-                type="button" 
-                className="bg-primary hover:bg-primary/90 text-white font-sans font-semibold rounded-lg py-3 px-6 shadow-md transition"
-              >
-                Información de contacto
-              </Button>
-            </ContactDialog>
+            <ContactModal 
+              variant="button" 
+              text="Información de contacto" 
+            />
 
             <div className="w-full max-w-sm mt-8 grid grid-cols-3 gap-4">
               <div className="text-center">
-                <ContactDialog>
-                  <button className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors">
-                    <Mail className="w-6 h-6" />
-                  </button>
-                </ContactDialog>
+                <ContactModal
+                  variant="icon"
+                  icon={<Mail className="w-6 h-6" />}
+                />
                 <p className="mt-2 text-sm text-gray-600">Email</p>
               </div>
               
               <div className="text-center">
-                <ContactDialog>
-                  <button className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors">
-                    <Phone className="w-6 h-6" />
-                  </button>
-                </ContactDialog>
+                <ContactModal
+                  variant="icon"
+                  icon={<Phone className="w-6 h-6" />}
+                />
                 <p className="mt-2 text-sm text-gray-600">Teléfono</p>
               </div>
               
               <div className="text-center">
-                <ContactDialog>
-                  <button className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition-colors">
-                    <MapPin className="w-6 h-6" />
-                  </button>
-                </ContactDialog>
+                <ContactModal
+                  variant="icon"
+                  icon={<MapPin className="w-6 h-6" />}
+                />
                 <p className="mt-2 text-sm text-gray-600">Ubicación</p>
               </div>
             </div>

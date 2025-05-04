@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import { ContactDialog } from "./ContactDialog";
+import { ContactModal } from "./ContactModal";
 import { AntifraudeCommitment } from "./AntifraudeCommitment";
 
 export function Footer() {
@@ -101,12 +101,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <ContactDialog>
+                <ContactModal>
                   <button className="text-gray-300 hover:text-blue-400 transition-colors flex items-center gap-1 group">
                     <span className="w-0 group-hover:w-2 transition-all duration-300 h-px bg-blue-400"></span>
                     <span>Contacto</span>
                   </button>
-                </ContactDialog>
+                </ContactModal>
               </li>
               <li>
                 <a 
