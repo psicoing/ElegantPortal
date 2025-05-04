@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function CommissionsCalculator() {
   const [salesAmount, setSalesAmount] = useState(1800);
-  const [commissionRate, setCommissionRate] = useState(20);
+  const [commissionRate, setCommissionRate] = useState(25);
   const [salesQuantity, setSalesQuantity] = useState(1);
   const [isPeriodOpen, setIsPeriodOpen] = useState(false);
   const [selectedPeriod, setSelectedPeriod] = useState("mes");

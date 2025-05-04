@@ -144,20 +144,20 @@ export function WorkWithUsModal({
                     <span className="font-semibold text-primary">1.800€</span>
                   </div>
                   <div className="flex justify-between items-center mb-3 pb-3 border-b border-gray-200">
-                    <span className="text-gray-700">Tu comisión (20%)</span>
-                    <span className="font-semibold text-green-600">360€</span>
+                    <span className="text-gray-700">Tu comisión (25%)</span>
+                    <span className="font-semibold text-green-600">450€</span>
                   </div>
                   <div className="bg-blue-50 p-3 rounded-md mb-3">
                     <h5 className="font-medium text-blue-800 text-sm mb-2">Factura del colaborador (lo que recibes)</h5>
                     <div className="grid grid-cols-2 gap-2 text-sm">
                       <span className="text-gray-700">Base imponible:</span>
-                      <span className="text-right font-medium">360€</span>
+                      <span className="text-right font-medium">450€</span>
                       <span className="text-gray-700">IVA (21%):</span>
-                      <span className="text-right font-medium">+75,60€</span>
+                      <span className="text-right font-medium">+94,50€</span>
                       <span className="text-gray-700">IRPF (15%):</span>
-                      <span className="text-right font-medium">-54€</span>
+                      <span className="text-right font-medium">-67,50€</span>
                       <span className="text-gray-700 font-medium">Total a recibir:</span>
-                      <span className="text-right font-semibold text-green-600">381,60€</span>
+                      <span className="text-right font-semibold text-green-600">477,00€</span>
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 italic mt-2">
