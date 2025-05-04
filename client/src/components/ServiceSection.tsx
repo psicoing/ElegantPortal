@@ -113,7 +113,7 @@ export function ServiceSection() {
       t('service.empordajobs.feature2'),
       t('service.empordajobs.feature3')
     ],
-    url: "https://job-search-pro-rmportbou.replit.app/",
+    url: "https://empordajobs.jobda.es/",
     onClick: () => setEmpordaJobsDialogOpen(true),
     badgeText: t('service.empordajobs.badge'),
     variant: "primary",
