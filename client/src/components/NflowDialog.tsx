@@ -110,7 +110,7 @@ export function NflowDialog({ open, setOpen }: NflowDialogProps) {
               <ActivitySquare className="h-5 w-5 mr-2" /> Plan de suscripción
             </h3>
             <p className="text-gray-700 mb-3">
-              Por solo <span className="font-semibold">14,99€ al mes</span>, obtén acceso ilimitado a NFLOW y conecta con nuestros profesionales cuando lo necesites.
+              Por solo <span className="font-semibold">2,99€ al mes</span>, obtén acceso ilimitado a NFLOW y conecta con nuestros profesionales cuando lo necesites.
             </p>
             <p className="text-sm text-indigo-600 font-medium">
               Prueba gratuita de 7 días disponible para nuevos usuarios.
