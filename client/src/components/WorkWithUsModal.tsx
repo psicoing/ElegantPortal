@@ -136,6 +136,38 @@ export function WorkWithUsModal({
                   </ul>
                 </div>
                 
+                <div className="bg-indigo-50 p-4 rounded-lg mb-6 border border-indigo-100">
+                  <h4 className="font-medium text-indigo-800 mb-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    Modalidades de colaboración
+                  </h4>
+                  <p className="text-gray-700 mb-3">
+                    Si quieres unirte a nuestro equipo, tienes dos opciones:
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white p-3 rounded-md border border-indigo-100">
+                      <h5 className="font-medium text-indigo-700 mb-1">1. Trabajador de APPIA</h5>
+                      <ul className="text-gray-700 space-y-1 list-disc pl-5 text-sm">
+                        <li>Puedes cerrar hasta dos contratos al mes</li>
+                        <li>Verificación directa de ingresos y beneficios</li>
+                        <li>Utiliza las mismas tablas proporcionadas por Empordajobs</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-white p-3 rounded-md border border-indigo-100">
+                      <h5 className="font-medium text-indigo-700 mb-1">2. Trabajador de Empordajobs</h5>
+                      <ul className="text-gray-700 space-y-1 list-disc pl-5 text-sm">
+                        <li>Sin límite de contratos mensuales</li>
+                        <li>Total flexibilidad para maximizar tus oportunidades</li>
+                        <li>Mayor potencial de ingresos a largo plazo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
                   <h4 className="font-medium text-gray-900 mb-3 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
