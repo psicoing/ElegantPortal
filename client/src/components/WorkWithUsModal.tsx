@@ -137,6 +137,66 @@ export function WorkWithUsModal({
                 </div>
                 
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
+                  <h4 className="font-medium text-gray-900 mb-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    Funciones y Obligaciones del Comercial
+                  </h4>
+                  
+                  <div className="space-y-4 text-sm">
+                    <div>
+                      <h5 className="font-medium text-gray-800 mb-2">Objeto del contrato</h5>
+                      <p className="text-gray-600">
+                        El Comercial Autónomo, en el marco de un contrato mercantil, tendrá como objetivo principal la promoción y comercialización de los servicios del portal de ofertas laborales JOBDA, dedicado a conectar empresas con candidatos en las comarcas del Alt Empordà y Baix Empordà.
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <h5 className="font-medium text-gray-800 mb-2">Principales funciones</h5>
+                      <ul className="space-y-2 list-disc pl-6 text-gray-600">
+                        <li><span className="font-medium">Promoción:</span> Dar a conocer JOBDA en las comarcas, contactando empresarios.</li>
+                        <li><span className="font-medium">Establecer vínculos:</span> Crear relaciones de confianza con empresas, identificando sus necesidades.</li>
+                        <li><span className="font-medium">Capacitación:</span> Enseñar a empresarios a usar el portal, destacando su facilidad y sistema de IA.</li>
+                        <li><span className="font-medium">Cierre de ventas:</span> Negociar, cerrar tratos y gestionar pagos.</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h5 className="font-medium text-gray-800 mb-2">Sistema automatizado</h5>
+                      <p className="text-gray-600 mb-2">
+                        El comercial deberá informar a los clientes que una vez cerrada la venta:
+                      </p>
+                      <ul className="space-y-1 list-disc pl-6 text-gray-600">
+                        <li>El resto del proceso es gestionado por JOBDA a través de un sistema automático con IA.</li>
+                        <li>La plataforma entrega 3 perfiles destacados para cada oferta y acceso a todos los candidatos.</li>
+                        <li>El comercial no es responsable de la gestión posterior de candidaturas.</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h5 className="font-medium text-gray-800 mb-2">Independencia</h5>
+                      <p className="text-gray-600">
+                        El comercial operará con total autonomía, utilizando sus propios medios (teléfono, transporte, etc.) y sin sujeción a horarios, pudiendo trabajar para otras empresas no competidoras.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-4 pt-3 border-t border-gray-200">
+                    <button 
+                      type="button" 
+                      onClick={() => window.open('/trabajo-comisiones-calculadora', '_blank')}
+                      className="text-sm text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      Ver calculadora de comisiones
+                    </button>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
                   <h4 className="font-medium text-gray-900 mb-3">Ejemplo de comisiones</h4>
                   <p className="text-gray-600 mb-4">Venta de un servicio de EMPORDÀ JOBS por 1.800€ (IVA incluido):</p>
                   <div className="flex justify-between items-center border-b border-gray-200 pb-3 mb-3">

@@ -1,0 +1,61 @@
+A continuación, te proporciono un apartado claro y detallado sobre las funciones y obligaciones del comercial autónomo con contrato mercantil, adaptado a tu negocio de un portal de ofertas laborales en las comarcas del Alt Empordà y Baix Empordà. Este apartado especifica las tareas del comercial, incluyendo dar a conocer la empresa, establecer vínculos con empresarios, enseñar el uso de la aplicación, cerrar tratos y gestionar pagos, mientras se destaca que el resto del proceso (gestión de perfiles y selección de candidatos) lo manejáis vosotros desde la empresa con un sistema automatizado impulsado por inteligencia artificial. El texto está diseñado para que puedas incluirlo en un contrato mercantil o usarlo como base para negociar con el comercial. También mantengo el contexto de la comisión del 25% por una venta de 1.800 € (con IVA), como en tus cálculos recientes, y lo integro para que sea coherente.
+
+Apartado: Funciones y Obligaciones del Comercial Autónomo
+1. Objeto del contrato
+El Comercial Autónomo, en el marco de un contrato mercantil, tendrá como objetivo principal la promoción y comercialización de los servicios del portal de ofertas laborales [Nombre de la Empresa], dedicado a conectar empresas con candidatos en las comarcas del Alt Empordà y Baix Empordà. El Comercial actuará de forma independiente, sin relación laboral, utilizando sus propios medios y asumiendo sus obligaciones fiscales y de Seguridad Social como autónomo.
+2. Funciones y Obligaciones
+El Comercial Autónomo se compromete a realizar las siguientes tareas:
+•  Dar a conocer la empresa:
+	•  Promocionar activamente el portal [Nombre de la Empresa] entre empresas de las comarcas del Alt Empordà y Baix Empordà.
+	•  Identificar y contactar a empresarios y responsables de recursos humanos interesados en publicar ofertas laborales.
+	•  Organizar reuniones, presentaciones o visitas para explicar los beneficios del portal, destacando su facilidad de uso y tecnología avanzada.
+•  Establecer vínculos con empresarios:
+	•  Crear y mantener relaciones de confianza con empresarios locales, actuando como el principal punto de contacto de la empresa en la región.
+	•  Identificar las necesidades de contratación de las empresas y adaptar la propuesta del portal a sus requerimientos.
+•  Enseñar el uso de la aplicación:
+	•  Capacitar a los empresarios en el uso del portal, guiándolos en la creación de cuentas, publicación de ofertas laborales y navegación por la plataforma.
+	•  Explicar cómo el sistema automatizado, basado en inteligencia artificial, simplifica el proceso de selección, proporcionando:
+		•  Tres perfiles destacados (los mejores candidatos seleccionados por el sistema para cada oferta).
+		•  Acceso a todos los perfiles adicionales, permitiendo a las empresas contactar a otros candidatos si tienen motivos específicos.
+	•  Asegurarse de que los empresarios comprendan la facilidad de uso del portal, a pesar de su complejo desarrollo tecnológico.
+•  Cerrar tratos y gestionar pagos:
+	•  Negociar y cerrar acuerdos con las empresas para la publicación de ofertas laborales en el portal, asegurando la firma de contratos o acuerdos de servicio.
+	•  Facilitar el proceso de pago por los servicios (por ejemplo, 1.800 € con IVA por oferta, según el modelo de ejemplo).
+	•  Coordinar con la empresa para confirmar que los pagos se realicen correctamente, informando de cualquier incidencia.
+3. Proceso automatizado gestionado por la empresa
+El Comercial será informado y deberá comunicar a los empresarios que:
+•  Una vez cerrada la venta, el resto del proceso es gestionado por [Nombre de la Empresa] a través de un sistema automático impulsado por inteligencia artificial.
+•  La plataforma es fácil de usar, pero cuenta con un desarrollo tecnológico complejo que garantiza:
+	•  Selección automática de los tres mejores perfiles para cada oferta, optimizando el tiempo de las empresas.
+	•  Acceso a todos los perfiles de candidatos, permitiendo a las empresas explorar opciones adicionales si lo desean.
+•  El Comercial no es responsable de la gestión de candidaturas, contacto con candidatos, ni soporte técnico posterior, que serán manejados por [Nombre de la Empresa].
+4. Comisión
+•  Por cada venta cerrada (por ejemplo, 1.800 € con IVA), el Comercial recibirá una comisión del 25% sobre el importe total facturado.
+•  Cálculo por venta de 1.800 €:
+	•  Comisión (base imponible): 1.800 € × 25% = 450 €.
+	•  Factura del Comercial:
+		•  Base: 450 €.
+		•  IVA (21%): +94,50 €.
+		•  IRPF (15%): -67,50 €.
+		•  Total a pagar (bruto): 477 €.
+	•  Beneficio neto aproximado (limpio):
+		•  Para 1 venta/mes: ~28,50 € (tras IVA, IRPF y cuota de autónomo completa).
+		•  Para 5 ventas/mes: ~263,70 € por venta (~1.318,50 €/mes), asumiendo la cuota de autónomo se diluye.
+5. Obligaciones adicionales del Comercial
+•  Actuar con diligencia, profesionalidad y buena fe en la promoción del portal.
+•  Mantener la confidencialidad de la información proporcionada por [Nombre de la Empresa] y las empresas clientes.
+•  Emitir facturas correctas por sus servicios, incluyendo NIF, nombre, dirección, base imponible, IVA (21%) e IRPF (15%).
+•  Cumplir con sus obligaciones fiscales (modelos 303, 130, 100) y de Seguridad Social (cuota de autónomo, ~294 €/mes mínimo).
+6. Independencia
+•  El Comercial operará con total autonomía, utilizando sus propios medios (teléfono, transporte, etc.) y sin sujeción a horarios o instrucciones directas de [Nombre de la Empresa].
+•  No existirá relación laboral, y el Comercial no tendrá exclusividad, pudiendo trabajar para otras empresas siempre que no compitan directamente con [Nombre de la Empresa].
+
+Resumen para copiar y pegar
+Funciones y Obligaciones del Comercial Autónomo
+•  Promoción: Dar a conocer [Nombre de la Empresa] en Alt Empordà y Baix Empordà, contactando empresarios.
+•  Vínculos: Establecer relaciones de confianza con empresas, identificando sus necesidades.
+•  Capacitación: Enseñar a empresarios a usar el portal, destacando su facilidad y sistema de IA.
+•  Cierre de ventas: Negociar, cerrar tratos y gestionar pagos (por ejemplo, 1.800 € con IVA).
+•  Sistema automatizado: Informar que la empresa gestiona el proceso post-venta con IA, entregando 3 perfiles destacados y acceso a todos los candidatos.
+•  Comisión: 25% por venta (1.800 € → 477 € bruto, ~28,50 € limpio con 1 venta, ~263,70 €/venta con 5 ventas/mes).
+•  Independencia: Trabajar como autónomo, emitiendo facturas y asumiendo costes (cuota ~294 €/mes).
