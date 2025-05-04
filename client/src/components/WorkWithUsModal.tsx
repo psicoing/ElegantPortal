@@ -155,6 +155,12 @@ export function WorkWithUsModal({
                         <li>Verificación directa de ingresos y beneficios</li>
                         <li>Utiliza las mismas tablas proporcionadas por Empordajobs</li>
                       </ul>
+                      <p className="mt-2 text-sm text-indigo-600 font-medium flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Solo necesitamos 1 comercial para esta posición
+                      </p>
                     </div>
                     
                     <div className="bg-white p-3 rounded-md border border-indigo-100">
@@ -164,6 +170,12 @@ export function WorkWithUsModal({
                         <li>Total flexibilidad para maximizar tus oportunidades</li>
                         <li>Mayor potencial de ingresos a largo plazo</li>
                       </ul>
+                      <p className="mt-2 text-sm text-green-600 font-medium flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Plazas ilimitadas disponibles
+                      </p>
                     </div>
                   </div>
                 </div>
