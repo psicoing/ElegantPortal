@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-import { ContactDialog } from "./ContactDialog";
+import { ContactModal } from "./ContactModal";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
