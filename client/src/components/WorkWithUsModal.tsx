@@ -175,6 +175,19 @@ export function WorkWithUsModal({
                     </div>
                     
                     <div>
+                      <h5 className="font-medium text-gray-800 mb-2">Formación inicial</h5>
+                      <p className="text-gray-600 mb-2">
+                        Durante la formación de máximo tres horas proporcionada por la empresa, se abordarán:
+                      </p>
+                      <ul className="space-y-1 list-decimal pl-6 text-gray-600">
+                        <li><span className="font-medium">Funcionamiento del entorno:</span> Explicación detallada de la plataforma, interfaz, herramientas y características principales.</li>
+                        <li><span className="font-medium">Enseñanza al empresario:</span> Capacitación sobre cómo transmitir de forma clara y efectiva el valor y funcionamiento de la plataforma.</li>
+                        <li><span className="font-medium">Asistencia para ofertas:</span> Instrucciones sobre cómo guiar al empresario en el proceso de acceso y participación.</li>
+                        <li><span className="font-medium">Funcionalidades con ejemplos:</span> Demostración mediante casos reales validados que ilustren el potencial de la plataforma.</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
                       <h5 className="font-medium text-gray-800 mb-2">Independencia</h5>
                       <p className="text-gray-600">
                         El comercial operará con total autonomía, utilizando sus propios medios (teléfono, transporte, etc.) y sin sujeción a horarios, pudiendo trabajar para otras empresas no competidoras.
