@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ContactDialog } from "./ContactDialog";
-import { InvestorsDialog } from "./InvestorsDialog";
+import { InvestorsModal } from "./InvestorsModal";
 import { LanguageSelector } from "./LanguageSelector";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
@@ -87,14 +87,7 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
             >
               {t('nav.projects')}
             </Link>
-            <InvestorsDialog>
-              <button
-                className="font-sans font-medium text-blue-600 hover:text-blue-700 transition py-2 text-left w-full border-b border-gray-100 font-semibold"
-                onClick={() => closeMobileMenu()}
-              >
-                {t('nav.investors')}
-              </button>
-            </InvestorsDialog>
+            <InvestorsModal />
             <ContactDialog>
               <button
                 className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 text-left w-full border-b border-gray-100"
