@@ -25,11 +25,7 @@ export function EmpordaJobsDialog({ open, setOpen }: EmpordaJobsDialogProps) {
           <DialogTitle className="text-2xl font-bold text-center">
             EMPORDÀ JOBS
           </DialogTitle>
-          <div className="flex justify-center">
-            <Badge variant="outline" className="bg-emerald-100 text-emerald-800 border-emerald-300">
-              {t('empordajobs.dialog.status')}
-            </Badge>
-          </div>
+
           <DialogDescription className="text-center text-lg pt-2">
             {t('empordajobs.dialog.subtitle')}
           </DialogDescription>
