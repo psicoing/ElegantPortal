@@ -6,11 +6,12 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 
 export default function CommissionsCalculator() {
-  const [salesAmount, setSalesAmount] = useState(1000);
-  const [commissionRate, setCommissionRate] = useState(25);
+  const [salesAmount, setSalesAmount] = useState(1800);
+  const [commissionRate, setCommissionRate] = useState(20);
   const [salesQuantity, setSalesQuantity] = useState(1);
   const [isPeriodOpen, setIsPeriodOpen] = useState(false);
   const [selectedPeriod, setSelectedPeriod] = useState("mes");
+  const [showTaxDetails, setShowTaxDetails] = useState(false);
 
   const handleSalesAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = parseFloat(e.target.value);
@@ -33,7 +34,12 @@ export default function CommissionsCalculator() {
     }
   };
 
-  const commissionAmount = (salesAmount * commissionRate / 100) * salesQuantity;
+  // Cálculos base
+  const baseCommission = salesAmount * commissionRate / 100;
+  const iva = baseCommission * 0.21;
+  const irpf = baseCommission * 0.15;
+  const netCommission = baseCommission + iva - irpf;
+  const commissionAmount = netCommission * salesQuantity;
   
   // Multipliers for different periods
   const periodMultipliers = {
@@ -213,18 +219,58 @@ export default function CommissionsCalculator() {
               
               <div className="mt-6 pt-6 border-t border-blue-500/30">
                 <div className="flex items-center justify-between text-sm mb-2">
-                  <span>Comisión por venta:</span>
+                  <span>Base comisión:</span>
                   <span className="font-medium">
-                    {(salesAmount * commissionRate / 100).toLocaleString('es-ES', {
+                    {baseCommission.toLocaleString('es-ES', {
                       style: 'currency',
                       currency: 'EUR'
                     })}
                   </span>
                 </div>
-                <div className="flex items-center justify-between text-sm">
-                  <span>Tasa de comisión:</span>
-                  <span className="font-medium">{commissionRate}%</span>
-                </div>
+                <button 
+                  onClick={() => setShowTaxDetails(!showTaxDetails)}
+                  className="w-full text-center text-xs text-blue-200 hover:text-white transition-colors mt-2 flex items-center justify-center"
+                  aria-expanded={showTaxDetails}
+                >
+                  {showTaxDetails ? 'Ocultar detalles fiscales' : 'Ver detalles fiscales'} 
+                  {showTaxDetails ? (
+                    <ChevronUp className="h-3 w-3 ml-1" />
+                  ) : (
+                    <ChevronDown className="h-3 w-3 ml-1" />
+                  )}
+                </button>
+                
+                {showTaxDetails && (
+                  <div className="mt-3 pt-3 border-t border-blue-500/30 text-xs space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span>IVA (21%):</span>
+                      <span>
+                        +{iva.toLocaleString('es-ES', {
+                          style: 'currency',
+                          currency: 'EUR'
+                        })}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span>IRPF (15%):</span>
+                      <span>
+                        -{irpf.toLocaleString('es-ES', {
+                          style: 'currency',
+                          currency: 'EUR'
+                        })}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between font-medium pt-2 border-t border-blue-500/30">
+                      <span>Total a recibir:</span>
+                      <span>
+                        {netCommission.toLocaleString('es-ES', {
+                          style: 'currency',
+                          currency: 'EUR'
+                        })}
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
             </motion.div>
           </div>
@@ -292,10 +338,58 @@ export default function CommissionsCalculator() {
           </motion.div>
           
           <motion.div
-            className="bg-blue-50 rounded-xl shadow-md p-6 border border-blue-100"
+            className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 mb-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <h2 className="text-xl font-semibold mb-4 flex items-center text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Información fiscal importante
+            </h2>
+            
+            <div className="bg-amber-50 p-4 rounded-lg border border-amber-100 mb-4">
+              <p className="text-amber-800 text-sm font-medium mb-2">Ten en cuenta que para trabajar como colaborador:</p>
+              <ul className="text-sm text-gray-700 space-y-1 list-disc pl-5">
+                <li>Deberás estar dado de alta como autónomo o tener una sociedad.</li>
+                <li>Las facturas deben incluir IVA (21%) y retención por IRPF (15%).</li>
+                <li>Es responsabilidad del colaborador cumplir con sus obligaciones fiscales.</li>
+              </ul>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="border border-gray-200 rounded-lg p-4">
+                <h3 className="font-medium text-gray-800 mb-2 text-sm">Documentos a presentar</h3>
+                <ul className="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                  <li>Modelo 303 (IVA) - Trimestral</li>
+                  <li>Modelo 130 (IRPF) - Trimestral</li>
+                  <li>Modelo 100 (Declaración renta) - Anual</li>
+                </ul>
+              </div>
+              
+              <div className="border border-gray-200 rounded-lg p-4">
+                <h3 className="font-medium text-gray-800 mb-2 text-sm">Facturación</h3>
+                <ul className="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                  <li>Emitir factura con tus datos completos</li>
+                  <li>Incluir concepto detallado del servicio</li>
+                  <li>Especificar base, IVA e IRPF</li>
+                  <li>Incluir información de pago</li>
+                </ul>
+              </div>
+            </div>
+            
+            <p className="text-xs text-gray-500 mt-4 italic">
+              Nota: Esta información es orientativa. Consulta con un asesor fiscal para obtener información específica según tu situación particular.
+            </p>
+          </motion.div>
+          
+          <motion.div
+            className="bg-blue-50 rounded-xl shadow-md p-6 border border-blue-100"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <h2 className="text-xl font-semibold mb-4 flex items-center text-gray-800">
               <User className="h-5 w-5 mr-2 text-primary" />

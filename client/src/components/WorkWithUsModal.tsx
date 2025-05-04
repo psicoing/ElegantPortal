@@ -138,15 +138,46 @@ export function WorkWithUsModal({
                 
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
                   <h4 className="font-medium text-gray-900 mb-3">Ejemplo de comisiones</h4>
-                  <p className="text-gray-600 mb-4">Venta de un servicio de EMPORDÀ JOBS por 1.800€:</p>
+                  <p className="text-gray-600 mb-4">Venta de un servicio de EMPORDÀ JOBS por 1.800€ (IVA incluido):</p>
                   <div className="flex justify-between items-center border-b border-gray-200 pb-3 mb-3">
                     <span className="text-gray-700">Venta al cliente</span>
                     <span className="font-semibold text-primary">1.800€</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Tu comisión (25%)</span>
-                    <span className="font-semibold text-green-600">450€</span>
+                  <div className="flex justify-between items-center mb-3 pb-3 border-b border-gray-200">
+                    <span className="text-gray-700">Tu comisión (20%)</span>
+                    <span className="font-semibold text-green-600">360€</span>
                   </div>
+                  <div className="bg-blue-50 p-3 rounded-md mb-3">
+                    <h5 className="font-medium text-blue-800 text-sm mb-2">Factura del colaborador (lo que recibes)</h5>
+                    <div className="grid grid-cols-2 gap-2 text-sm">
+                      <span className="text-gray-700">Base imponible:</span>
+                      <span className="text-right font-medium">360€</span>
+                      <span className="text-gray-700">IVA (21%):</span>
+                      <span className="text-right font-medium">+75,60€</span>
+                      <span className="text-gray-700">IRPF (15%):</span>
+                      <span className="text-right font-medium">-54€</span>
+                      <span className="text-gray-700 font-medium">Total a recibir:</span>
+                      <span className="text-right font-semibold text-green-600">381,60€</span>
+                    </div>
+                  </div>
+                  <p className="text-xs text-gray-500 italic mt-2">
+                    Nota: Las cantidades son aproximadas y pueden variar según tu situación fiscal. Consulta con un asesor para casos específicos.
+                  </p>
+                </div>
+                
+                <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
+                  <h4 className="font-medium text-gray-900 mb-2 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Información fiscal importante
+                  </h4>
+                  <ul className="text-sm text-gray-600 space-y-2 list-disc pl-5 mt-2">
+                    <li>Necesitarás estar dado de alta como autónomo para facturar.</li>
+                    <li>Deberás emitir facturas con tu NIF, incluyendo base, IVA e IRPF.</li>
+                    <li>Recuerda presentar tus modelos trimestrales (303 para IVA, 130 para IRPF).</li>
+                    <li>La empresa ingresará en Hacienda las retenciones de IRPF realizadas.</li>
+                  </ul>
                 </div>
                 
                 <h3 className="text-lg font-semibold mb-3 text-primary">¿Quieres calcular tu potencial de ganancias?</h3>
