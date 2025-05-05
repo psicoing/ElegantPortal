@@ -111,14 +111,14 @@ export function ServiceCard({
                   rel="noopener noreferrer"
                 >
                   {title === "NFLOW" 
-                    ? "Explorar NFLOW"
+                    ? t('nflow.button.explore')
                     : title === "NEURONMEG" 
-                      ? "Anar a NeuronMeg" 
+                      ? t('neuronmeg.button') 
                       : title === "EJOBS"
-                        ? "Anar a Empordà Jobs"
+                        ? t('service.empordajobs.button')
                         : title === "SINAPSY"
-                          ? "Explorar SINAPSY"
-                          : "Més informació"}
+                          ? t('service.sinapsy.button')
+                          : t('service.appia.button')}
                 </a>
               </Button>
             )}

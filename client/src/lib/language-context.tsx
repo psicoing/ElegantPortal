@@ -67,6 +67,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.sinapsy.feature3': 'Entrevistas y recursos descargables',
     'service.sinapsy.badge': 'Neurociencia y Psicología',
     'service.sinapsy.button': 'Acceder a SINAPSY',
+    'nflow.button.explore': 'Explorar NFLOW',
     
     'rewards.title': '¡Gana premios reales solo por formar parte!',
     'rewards.subtitle': 'Haz clic aquí o descubre el globo flotante con nuestros premios.',
@@ -316,6 +317,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.sinapsy.feature3': 'Entrevistes i recursos descarregables',
     'service.sinapsy.badge': 'Neurociència i Psicologia',
     'service.sinapsy.button': 'Explorar SINAPSY',
+    'nflow.button.explore': 'Explorar NFLOW',
     
     'rewards.title': 'Guanya premis reals només per formar part!',
     'rewards.subtitle': 'Fes clic aquí o descobreix el globus flotant amb els nostres premis.',
@@ -510,6 +512,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.sinapsy.feature3': 'Interviews and downloadable resources',
     'service.sinapsy.badge': 'Neuroscience & Psychology',
     'service.sinapsy.button': 'Explore SINAPSY',
+    'nflow.button.explore': 'Explore NFLOW',
     
     'rewards.title': 'Win real prizes just for being part of it!',
     'rewards.subtitle': 'Click here or discover the floating balloon with our prizes.',
