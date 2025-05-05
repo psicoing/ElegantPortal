@@ -317,7 +317,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.sinapsy.feature3': 'Entrevistes i recursos descarregables',
     'service.sinapsy.badge': 'Neurociència i Psicologia',
     'service.sinapsy.button': 'Explorar SINAPSY',
-    'nflow.button.explore': 'Explorar NFLOW',
+    'nflow.button.explore': 'Accedir a NFLOW',
     
     'rewards.title': 'Guanya premis reals només per formar part!',
     'rewards.subtitle': 'Fes clic aquí o descobreix el globus flotant amb els nostres premis.',
