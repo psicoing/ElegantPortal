@@ -140,7 +140,7 @@ export function NflowDialog({ open, setOpen }: NflowDialogProps) {
           <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
             <a href="https://nflow.jobda.es/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button type="button" variant="default" className="w-full">
-                Acceder a NFLOW
+                Ir a NFLOW
               </Button>
             </a>
             <Button onClick={() => setOpen(false)} className="w-full sm:w-auto">
