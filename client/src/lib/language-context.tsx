@@ -50,7 +50,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.nflow.feature2': 'Asistente virtual 24/7',
     'service.nflow.feature3': 'Conexión con profesionales cualificados',
     'service.nflow.badge': 'Innovador',
-    'service.nflow.button': 'Acceder a NFLOW',
+    'service.nflow.button': 'Ir a NFLOW',
     
     'service.appia.title': 'APPIA',
     'service.appia.description': 'Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial para empresas que buscan digitalizar sus procesos.',
@@ -300,7 +300,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.nflow.feature2': 'Assistent virtual 24/7',
     'service.nflow.feature3': 'Connexió amb professionals qualificats',
     'service.nflow.badge': 'Innovador',
-    'service.nflow.button': 'Accedir a NFLOW',
+    'service.nflow.button': 'Anar a NFLOW',
     
     'service.appia.title': 'APPIA',
     'service.appia.description': 'Servei especialitzat en desenvolupament d\'aplicacions web i mòbils amb intel·ligència artificial per a empreses que busquen digitalitzar els seus processos.',
@@ -495,7 +495,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.nflow.feature2': '24/7 virtual assistant',
     'service.nflow.feature3': 'Connection with qualified professionals',
     'service.nflow.badge': 'Innovative',
-    'service.nflow.button': 'Access NFLOW',
+    'service.nflow.button': 'Go to NFLOW',
     
     'service.appia.title': 'APPIA',
     'service.appia.description': 'Specialized service in the development of web and mobile applications with artificial intelligence for companies looking to digitize and optimize their processes.',
