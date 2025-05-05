@@ -111,7 +111,7 @@ export function ServiceCard({
                   rel="noopener noreferrer"
                 >
                   {title === "NFLOW" 
-                    ? t('nflow.button.explore')
+                    ? t('service.nflow.button')
                     : title === "NEURONMEG" 
                       ? t('neuronmeg.button') 
                       : title === "EJOBS"
