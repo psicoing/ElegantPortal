@@ -457,6 +457,12 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.arco.link_text': 'Per accedir a la documentació completa del Projecte ARCO, visiteu:',
     'projects.arco.folder': 'Carpeta de Google Drive - Projecte ARCO',
     'projects.footer': 'Tornar a la pàgina principal',
+    
+    'investors.title': 'Inversors',
+    'investors.subtitle': 'La teva Intranet',
+    'investors.tab.overview': 'Visió general',
+    'investors.tab.options': 'Opcions d\'inversió',
+    'investors.tab.contact': 'Contacte',
   },
   
   en: {
@@ -467,6 +473,12 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.rewards': 'Rewards',
     'nav.projects': 'Projects',
     'nav.investors': 'Investors',
+    
+    'investors.title': 'Investors',
+    'investors.subtitle': 'Your Intranet',
+    'investors.tab.overview': 'Overview',
+    'investors.tab.options': 'Investment Options',
+    'investors.tab.contact': 'Contact',
     
     'founderTitle': 'Founder and Chief Executive Officer',
     'founderQuote': 'With NFLOW and APPIA, my goal is to offer innovative solutions that integrate mental health and labor development, aligned with the principles of the ISO 45003 standard, focused on psychological well-being in the work environment. NFLOW acts as a digital resource for continuous emotional support, while APPIA allows each organization to develop its own personalized artificial intelligence, generating highly digitized and adaptive environments, capable of responding to new corporate challenges.',
