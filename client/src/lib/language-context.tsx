@@ -209,8 +209,8 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.arco.folder': 'Carpeta de Google Drive - Proyecto ARCO',
     'projects.footer': 'Volver a la página principal',
 
-    'investors.title': 'Invierte en NFlow',
-    'investors.subtitle': 'Forma parte de un proyecto de salud mental inteligente, escalable y con impacto global real',
+    'investors.title': 'Inversores',
+    'investors.subtitle': 'Tu Intranet',
     'investors.tab.overview': 'Visión general',
     'investors.tab.options': 'Opciones de inversión',
     'investors.tab.contact': 'Contacto',
