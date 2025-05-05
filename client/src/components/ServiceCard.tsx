@@ -110,15 +110,15 @@ export function ServiceCard({
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  {title === t('service.nflow.title') 
-                    ? t('service.nflow.button')
-                    : title === t('service.neuronmeg.title') 
-                      ? t('neuronmeg.button') 
-                      : title === t('service.empordajobs.title')
-                        ? t('service.empordajobs.button')
-                        : title === t('service.sinapsy.title')
-                          ? t('service.sinapsy.button')
-                          : t('service.appia.button')}
+                  {title === "NFLOW" 
+                    ? "Explorar NFLOW"
+                    : title === "NEURONMEG" 
+                      ? "Anar a NeuronMeg" 
+                      : title === "EJOBS"
+                        ? "Anar a Empordà Jobs"
+                        : title === "SINAPSY"
+                          ? "Explorar SINAPSY"
+                          : "Més informació"}
                 </a>
               </Button>
             )}
