@@ -18,6 +18,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations: Record<Language, Record<string, string>> = {
   es: {
     // Español (idioma por defecto)
+    'common.more_info': 'Más datos',
+    
     'nav.about': 'Acerca de',
     'nav.services': 'Servicios',
     'nav.contact': 'Contacto',
@@ -266,6 +268,8 @@ const translations: Record<Language, Record<string, string>> = {
   
   ca: {
     // Catalán
+    'common.more_info': 'Més dades',
+    
     'nav.about': 'Sobre nosaltres',
     'nav.services': 'Serveis',
     'nav.contact': 'Contacte',
@@ -467,6 +471,8 @@ const translations: Record<Language, Record<string, string>> = {
   
   en: {
     // Inglés
+    'common.more_info': 'More data',
+    
     'nav.about': 'About',
     'nav.services': 'Services',
     'nav.contact': 'Contact',

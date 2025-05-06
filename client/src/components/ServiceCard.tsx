@@ -72,7 +72,7 @@ export function ServiceCard({
           
           <div className="mt-auto">
             {onClick ? (
-              // Botón para mostrar diálogo (JOBDA o SINAPSY)
+              // Botón para mostrar diálogo
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 font-sans font-semibold text-center py-3 px-6 shadow-md transition transform hover:-translate-y-1"
                 onClick={onClick}
@@ -81,13 +81,7 @@ export function ServiceCard({
                              title === t('service.neuronmeg.title') ? 'neuronmeg' : 
                              title === t('service.empordajobs.title') ? 'empordajobs' : ''}
               >
-                {title === t('service.appia.title') 
-                  ? t('service.appia.button') 
-                  : title === t('service.neuronmeg.title')
-                    ? t('neuronmeg.button')
-                    : title === t('service.empordajobs.title')
-                      ? t('service.empordajobs.button')
-                      : t('service.sinapsy.button')}
+                {t('common.more_info')}
               </Button>
             ) : url.startsWith("/") ? (
               // Botón para rutas internas
@@ -96,7 +90,7 @@ export function ServiceCard({
                 asChild
               >
                 <a href={url}>
-                  Más información
+                  {t('common.more_info')}
                 </a>
               </Button>
             ) : (
@@ -110,15 +104,7 @@ export function ServiceCard({
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  {title === "NFLOW" 
-                    ? t('service.nflow.button')
-                    : title === "NEURONMEG" 
-                      ? t('neuronmeg.button') 
-                      : title === "EJOBS"
-                        ? t('service.empordajobs.button')
-                        : title === "SINAPSY"
-                          ? t('service.sinapsy.button')
-                          : t('service.appia.button')}
+                  {t('common.more_info')}
                 </a>
               </Button>
             )}
