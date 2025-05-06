@@ -46,6 +46,9 @@ export function Hero() {
             >
               {t('hero.cta')}
             </Button>
+            <div className="mt-4 text-white font-bold">
+              EMPORDAJOBS SL
+            </div>
           </motion.div>
         </div>
       </div>
