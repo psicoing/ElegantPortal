@@ -114,7 +114,8 @@ export function ServiceSection() {
     features: [
       t('service.empordajobs.feature1'),
       t('service.empordajobs.feature2'),
-      t('service.empordajobs.feature3')
+      t('service.empordajobs.feature3'),
+      t('service.empordajobs.feature4')
     ],
     url: "https://empordajobs.jobda.es/",
     onClick: () => setEmpordaJobsDialogOpen(true),

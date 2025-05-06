@@ -168,6 +168,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature1': 'Empleos locales en la provincia',
     'service.empordajobs.feature2': 'Búsqueda por localidad',
     'service.empordajobs.feature3': 'Actualizaciones recientes de ofertas',
+    'service.empordajobs.feature4': 'Ofertas a partir de 1200 €',
     'service.empordajobs.badge': 'Empleo local',
     'service.empordajobs.button': 'Acceder a Empordà Jobs',
     
@@ -419,6 +420,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature1': 'Feines locals a la província',
     'service.empordajobs.feature2': 'Cerca per localitat',
     'service.empordajobs.feature3': 'Actualitzacions recents d\'ofertes',
+    'service.empordajobs.feature4': 'Ofertes a partir de 1200 €',
     'service.empordajobs.badge': 'Feina local',
     'service.empordajobs.button': 'Anar a Empordà Jobs',
     
@@ -628,6 +630,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature1': 'Local jobs in the province',
     'service.empordajobs.feature2': 'Search by location',
     'service.empordajobs.feature3': 'Recent job offer updates',
+    'service.empordajobs.feature4': 'Job offers from 1200 €',
     'service.empordajobs.badge': 'Local employment',
     'service.empordajobs.button': 'Go to Empordà Jobs',
     
