@@ -63,7 +63,7 @@ export function EmpordaJobsDialog({ open, setOpen }: EmpordaJobsDialogProps) {
             <div className="bg-white p-4 rounded-md border border-emerald-200 shadow-sm">
               <div className="flex justify-between items-center">
                 <span className="font-medium">{t('empordajobs.dialog.pricing.per_offer')}</span>
-                <span className="text-xl font-bold text-emerald-700">75€</span>
+                <span className="text-xl font-bold text-emerald-700">1200 €</span>
               </div>
             </div>
           </section>
