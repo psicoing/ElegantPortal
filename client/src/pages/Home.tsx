@@ -34,10 +34,10 @@ export default function Home() {
         <CategorySection />
         <RewardsSection />
         <AboutSection />
+        <CTASection />
         <FounderTestimonial />
         <TestimonialSection />
         <HobbiesSection />
-        <CTASection />
         <ContactSection />
       </main>
       <Footer />
