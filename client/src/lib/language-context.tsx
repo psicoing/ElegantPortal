@@ -170,6 +170,13 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature3': 'Actualizaciones recientes de ofertas',
     'service.empordajobs.feature4': 'Ofertas a partir de 1200 €',
     'service.empordajobs.badge': 'Empleo local',
+    
+    'service.saludalia.title': 'SALUDALIA',
+    'service.saludalia.description': 'Servicios integrales de salud con atención personalizada. Cuidamos de tu bienestar físico y mental.',
+    'service.saludalia.feature1': 'Especialistas en medicina preventiva',
+    'service.saludalia.feature2': 'Consultas presenciales y telemedicina',
+    'service.saludalia.feature3': 'Seguimiento personalizado',
+    'service.saludalia.badge': 'Salud integral',
     'service.empordajobs.button': 'Acceder a Empordà Jobs',
     
     'empordajobs.dialog.status': 'En desarrollo',
