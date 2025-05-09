@@ -21,7 +21,8 @@ import aiAppsIconImage from "../assets/ai_apps_icon.png";
 import sinapsyLogoImage from "../assets/sinapsy_logo.png";
 import neuronMegImage from "../assets/neuronmeg_services.png";
 import empordaJobsImage from "../assets/empordajobs.png";
-import saludaliaImage from "../assets/healthcare_placeholder.jpg";
+import saludaliaMainImage from "../assets/saludalia/saludalia_main.png";
+import saludaliaInfoImage from "../assets/saludalia/saludalia_info.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -44,6 +45,7 @@ export function ServiceSection() {
   const [empordaJobsDialogOpen, setEmpordaJobsDialogOpen] = useState(false);
   const [appiaDialogOpen, setAppiaDialogOpen] = useState(false);
   const [nflowDialogOpen, setNflowDialogOpen] = useState(false);
+  const [saludaliaDialogOpen, setSaludaliaDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
@@ -127,6 +129,22 @@ export function ServiceSection() {
     imageSrc: empordaJobsImage
   };
 
+  const saludalia: ServiceItem = {
+    icon: <Heart className="h-8 w-8 text-sky-600" />,
+    title: t('service.saludalia.title'),
+    description: t('service.saludalia.description'),
+    features: [
+      t('service.saludalia.feature1'),
+      t('service.saludalia.feature2'),
+      t('service.saludalia.feature3')
+    ],
+    url: "https://saludalia.jobda.es/",
+    onClick: () => setSaludaliaDialogOpen(true),
+    badgeText: t('service.saludalia.badge'),
+    variant: "secondary",
+    imageSrc: saludaliaMainImage
+  };
+
   const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs];
 
   return (
@@ -172,6 +190,28 @@ export function ServiceSection() {
               </motion.div>
             ))}
           </div>
+          
+          {/* Horizontal card for SALUDALIA */}
+          <div className="mt-12 max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <HorizontalServiceCard
+                icon={saludalia.icon}
+                title={saludalia.title}
+                description={saludalia.description}
+                features={saludalia.features}
+                url={saludalia.url}
+                badgeText={saludalia.badgeText}
+                variant={saludalia.variant}
+                imageSrc={saludalia.imageSrc}
+                onClick={saludalia.onClick}
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
       
@@ -181,6 +221,7 @@ export function ServiceSection() {
       <EmpordaJobsDialog open={empordaJobsDialogOpen} setOpen={setEmpordaJobsDialogOpen} />
       <AppiaDialog open={appiaDialogOpen} setOpen={setAppiaDialogOpen} />
       <NflowDialog open={nflowDialogOpen} setOpen={setNflowDialogOpen} />
+      <SaludaliaDialog open={saludaliaDialogOpen} setOpen={setSaludaliaDialogOpen} />
     </>
   );
 }
