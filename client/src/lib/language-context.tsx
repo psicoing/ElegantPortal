@@ -429,6 +429,13 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature3': 'Actualitzacions recents d\'ofertes',
     'service.empordajobs.feature4': 'Ofertes a partir de 1200 €',
     'service.empordajobs.badge': 'Feina local',
+    
+    'service.saludalia.title': 'SALUDALIA',
+    'service.saludalia.description': 'Serveis integrals de salut amb atenció personalitzada. Cuidem del teu benestar físic i mental.',
+    'service.saludalia.feature1': 'Especialistes en medicina preventiva',
+    'service.saludalia.feature2': 'Consultes presencials i telemedicina',
+    'service.saludalia.feature3': 'Seguiment personalitzat',
+    'service.saludalia.badge': 'Salut integral',
     'service.empordajobs.button': 'Anar a Empordà Jobs',
     
     'empordajobs.dialog.status': 'En desenvolupament',
@@ -639,6 +646,13 @@ const translations: Record<Language, Record<string, string>> = {
     'service.empordajobs.feature3': 'Recent job offer updates',
     'service.empordajobs.feature4': 'Job offers from 1200 €',
     'service.empordajobs.badge': 'Local employment',
+    
+    'service.saludalia.title': 'SALUDALIA',
+    'service.saludalia.description': 'Comprehensive health services with personalized care. We take care of your physical and mental well-being.',
+    'service.saludalia.feature1': 'Specialists in preventive medicine',
+    'service.saludalia.feature2': 'In-person consultations and telemedicine',
+    'service.saludalia.feature3': 'Personalized follow-up',
+    'service.saludalia.badge': 'Comprehensive health',
     'service.empordajobs.button': 'Go to Empordà Jobs',
     
     'empordajobs.dialog.status': 'Under development',

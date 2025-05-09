@@ -1,6 +1,7 @@
 import { ServiceCard } from "@/components/ServiceCard";
+import { HorizontalServiceCard } from "@/components/HorizontalServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2 } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
@@ -9,6 +10,7 @@ import { NeuronMegDialog } from "./NeuronMegDialog";
 import { EmpordaJobsDialog } from "./EmpordaJobsDialog";
 import { AppiaDialog } from "./AppiaDialog";
 import { NflowDialog } from "./NflowDialog";
+import { SaludaliaDialog } from "./SaludaliaDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -19,6 +21,7 @@ import aiAppsIconImage from "../assets/ai_apps_icon.png";
 import sinapsyLogoImage from "../assets/sinapsy_logo.png";
 import neuronMegImage from "../assets/neuronmeg_services.png";
 import empordaJobsImage from "../assets/empordajobs.png";
+import saludaliaImage from "../assets/healthcare_placeholder.jpg";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
