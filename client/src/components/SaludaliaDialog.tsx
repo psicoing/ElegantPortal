@@ -90,7 +90,7 @@ export function SaludaliaDialog({ open, setOpen }: SaludaliaDialogProps) {
               asChild
             >
               <a
-                href="https://saludalia.jobda.es"
+                href="https://neuronmeg.jobda.es/join-team"
                 target="_blank"
                 rel="noopener noreferrer"
               >
