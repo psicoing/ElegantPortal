@@ -483,6 +483,54 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.tab.overview': 'Visió general',
     'investors.tab.options': 'Opcions d\'inversió',
     'investors.tab.contact': 'Contacte',
+    
+    'investors.what_is': 'Què és NFlow?',
+    'investors.chatbot_description': 'Un assistent emocional que respon en qualsevol idioma, orienta amb rigor i ofereix contingut adaptat a adolescents, mares, pares i adults.',
+    'investors.price_info': 'Funciona per subscripció mensual: 2,99 €/usuari, sense personal ni despeses variables.',
+    'investors.tech_info': 'Codi propi. IA integrada. Preparat per escalar.',
+    
+    'investors.company_info': 'Grup empresarial ja constituït',
+    'investors.company_description': 'Aquest projecte forma part d\'EmpordaJobs SL – B02701100.',
+    'investors.company_legal': 'L\'estructura legal ja existeix. El producte també.',
+    
+    'investors.investment_info': 'Inversió inicial: ja feta',
+    'investors.development_cost': 'Desenvolupar NFlow costaria més de 70.000 € al mercat.',
+    'investors.founder_funded': 'Tot ha estat finançat directament per mi com a fundador.',
+    'investors.seeking_boost': 'Ara busquem impuls, no arrencada.',
+    
+    'investors.projection_title': 'Projecció a 12 mesos',
+    'investors.projection_users': 'Amb 30.000 usuaris → +1M €/any',
+    'investors.market_size': 'Mercat objectiu a Espanya: fins a 400.000 usuaris',
+    'investors.scalability': 'Escalable sense costos operatius per usuari',
+    
+    'investors.see_options': 'Veure opcions d\'inversió',
+    'investors.most_popular': 'Popular',
+    'investors.private_contract': 'Contracte privat',
+    'investors.no_notary': 'Sense notaria',
+    'investors.min_shares_safe': 'Participacions des de 75 €',
+    'investors.min_amount_safe': 'Mínim: 500 € (≈6–7 participacions)',
+    'investors.select_safe': 'Seleccionar aquesta opció',
+    
+    'investors.notarial': 'Notarial (escriptura pública)',
+    'investors.min_shares_notarial': 'Participacions des de 150 €',
+    'investors.min_amount_notarial': 'Mínim: 20 participacions (3.000 €)',
+    'investors.full_rights': 'Drets societaris plens',
+    'investors.select_notarial': 'Seleccionar aquesta opció',
+    
+    'investors.transparency': 'Transparència total per als inversors',
+    'investors.transparency_description': 'Tots els inversors tindran accés directe a la base de dades SQL Users, on podran veure:',
+    'investors.real_time_users': 'Altes d\'usuaris en temps real',
+    'investors.confirmed_payments': 'Pagaments confirmats',
+    'investors.revenue_tracking': 'Recaptació bruta, neta i evolució',
+    
+    'investors.back': 'Tornar',
+    'investors.next': 'Següent',
+    
+    'investors.contact_title': 'Vols rebre el dossier inversor o veure la demo?',
+    'investors.email_instructions': 'Envia un email per rebre més informació',
+    'investors.website_info': 'Visita el nostre web per més informació',
+    'investors.final_note': 'No venem fum. Hem invertit temps, diners i coneixement. I si això despega, cada participació pot multiplicar el seu valor per 20 o més.',
+    'investors.back_to_overview': 'Tornar al resum',
   },
   
   en: {
@@ -501,6 +549,54 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.tab.overview': 'Overview',
     'investors.tab.options': 'Investment Options',
     'investors.tab.contact': 'Contact',
+    
+    'investors.what_is': 'What is NFlow?',
+    'investors.chatbot_description': 'An emotional assistant that responds in any language, provides guidance with rigor, and offers content adapted to teenagers, mothers, fathers, and adults.',
+    'investors.price_info': 'Works on a monthly subscription: €2.99/user, with no staff or variable costs.',
+    'investors.tech_info': 'Proprietary code. Integrated AI. Ready to scale.',
+    
+    'investors.company_info': 'Established business group',
+    'investors.company_description': 'This project is part of EmpordaJobs SL – B02701100.',
+    'investors.company_legal': 'The legal structure already exists. The product too.',
+    
+    'investors.investment_info': 'Initial investment: already made',
+    'investors.development_cost': 'Developing NFlow would cost over €70,000 in the market.',
+    'investors.founder_funded': 'Everything has been funded directly by me as the founder.',
+    'investors.seeking_boost': 'Now we are looking for momentum, not a startup.',
+    
+    'investors.projection_title': '12-month projection',
+    'investors.projection_users': 'With 30,000 users → +€1M/year',
+    'investors.market_size': 'Target market in Spain: up to 400,000 users',
+    'investors.scalability': 'Scalable with no operational costs per user',
+    
+    'investors.see_options': 'View investment options',
+    'investors.most_popular': 'Popular',
+    'investors.private_contract': 'Private contract',
+    'investors.no_notary': 'No notary required',
+    'investors.min_shares_safe': 'Shares from €75',
+    'investors.min_amount_safe': 'Minimum: €500 (≈6-7 shares)',
+    'investors.select_safe': 'Select this option',
+    
+    'investors.notarial': 'Notarial (public deed)',
+    'investors.min_shares_notarial': 'Shares from €150',
+    'investors.min_amount_notarial': 'Minimum: 20 shares (€3,000)',
+    'investors.full_rights': 'Full corporate rights',
+    'investors.select_notarial': 'Select this option',
+    
+    'investors.transparency': 'Complete transparency for investors',
+    'investors.transparency_description': 'All investors will have direct access to the SQL Users database, where they can see:',
+    'investors.real_time_users': 'Real-time user registrations',
+    'investors.confirmed_payments': 'Confirmed payments',
+    'investors.revenue_tracking': 'Gross and net revenue and evolution',
+    
+    'investors.back': 'Back',
+    'investors.next': 'Next',
+    
+    'investors.contact_title': 'Want to receive the investor dossier or see the demo?',
+    'investors.email_instructions': 'Send an email to receive more information',
+    'investors.website_info': 'Visit our website for more information',
+    'investors.final_note': 'We do not sell smoke. We have invested time, money, and knowledge. And if this takes off, each share can multiply its value by 20 or more.',
+    'investors.back_to_overview': 'Back to overview',
     
     'founderTitle': 'Founder and Chief Executive Officer',
     'founderQuote': 'With NFLOW and APPIA, my goal is to offer innovative solutions that integrate mental health and labor development, aligned with the principles of the ISO 45003 standard, focused on psychological well-being in the work environment. NFLOW acts as a digital resource for continuous emotional support, while APPIA allows each organization to develop its own personalized artificial intelligence, generating highly digitized and adaptive environments, capable of responding to new corporate challenges.',
