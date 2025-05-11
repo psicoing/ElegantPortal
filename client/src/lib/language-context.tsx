@@ -369,22 +369,24 @@ const translations: Record<Language, Record<string, string>> = {
     // Simple Service Cards Section
     'simple.title': 'Soluciones Digitales para Profesionales',
     'simple.subtitle': 'EmpordaJobs SL ofrece plataformas digitales especializadas para diferentes sectores profesionales, conectando a especialistas con clientes y optimizando la gestión de servicios.',
-    'simple.visit_link': 'Visitar sitio web',
     
+    'simple.jobda.title': 'Jobda Servicios',
     'simple.jobda.description': 'Plataforma de servicios que integra varios servicios que pueden ser de vuestro interés. Aplicación especializada en selección de personal.',
     'simple.jobda.feature1': 'Selección de personal especializado',
     'simple.jobda.feature2': 'Análisis inteligente de perfiles',
     'simple.jobda.feature3': 'Evaluación de competencias',
     
-    'simple.saludalia.description': 'Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las especialidades, a través de una plataforma digital.',
-    'simple.saludalia.feature1': 'Guía sanitaria internacional',
-    'simple.saludalia.feature2': 'Profesionales sanitarios de todas las especialidades',
-    'simple.saludalia.feature3': 'Accesible desde cualquier parte del mundo',
+    'simple.appia.title': 'Appia Apps Inteligentes',
+    'simple.appia.description': 'Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial para empresas.',
+    'simple.appia.feature1': 'Diseño de apps empresariales',
+    'simple.appia.feature2': 'Soluciones con inteligencia artificial',
+    'simple.appia.feature3': 'Optimización de procesos digitales',
     
-    'simple.empordajobs.description': 'Aplicación orientada a buscar candidatos para empresas de la comarca de Girona. Ofrecemos servicios de selección gratuitos a empresas y candidatos.',
-    'simple.empordajobs.feature1': 'Servicio gratuito para empresas',
-    'simple.empordajobs.feature2': 'Especializado en comarca de Girona',
-    'simple.empordajobs.feature3': 'Búsqueda y selección de candidatos',
+    'simple.nflow.title': 'Nflow Bienestar Digital',
+    'simple.nflow.description': 'Unidad de desarrollo en inteligencia artificial aplicada al bienestar, la educación y la gestión del conocimiento organizacional.',
+    'simple.nflow.feature1': 'Soporte psicológico digital',
+    'simple.nflow.feature2': 'Modelos de bienestar organizacional',
+    'simple.nflow.feature3': 'Formación en inteligencia artificial',
   },
   
   ca: {
@@ -741,22 +743,24 @@ const translations: Record<Language, Record<string, string>> = {
     // Simple Service Cards Section
     'simple.title': 'Solucions Digitals per a Professionals',
     'simple.subtitle': 'EmpordaJobs SL ofereix plataformes digitals especialitzades per a diferents sectors professionals, connectant especialistes amb clients i optimitzant la gestió de serveis.',
-    'simple.visit_link': 'Visitar lloc web',
     
+    'simple.jobda.title': 'Jobda Serveis',
     'simple.jobda.description': 'Plataforma de serveis que integra diversos serveis que poden ser del vostre interès. Aplicació especialitzada en selecció de personal.',
     'simple.jobda.feature1': 'Selecció de personal especialitzat',
     'simple.jobda.feature2': 'Anàlisi intel·ligent de perfils',
     'simple.jobda.feature3': 'Avaluació de competències',
     
-    'simple.saludalia.description': 'Guia de salut internacional que connecta pacients amb professionals sanitaris de totes les especialitats, a través d\'una plataforma digital.',
-    'simple.saludalia.feature1': 'Guia sanitària internacional',
-    'simple.saludalia.feature2': 'Professionals sanitaris de totes les especialitats',
-    'simple.saludalia.feature3': 'Accessible des de qualsevol part del món',
+    'simple.appia.title': 'Appia Apps Intel·ligents',
+    'simple.appia.description': 'Servei especialitzat en desenvolupament d\'aplicacions web i mòbils amb intel·ligència artificial per a empreses.',
+    'simple.appia.feature1': 'Disseny d\'apps empresarials',
+    'simple.appia.feature2': 'Solucions amb intel·ligència artificial',
+    'simple.appia.feature3': 'Optimització de processos digitals',
     
-    'simple.empordajobs.description': 'Aplicació orientada a buscar candidats per a empreses de la comarca de Girona. Oferim serveis de selecció gratuïts a empreses i candidats.',
-    'simple.empordajobs.feature1': 'Servei gratuït per a empreses',
-    'simple.empordajobs.feature2': 'Especialitzat en comarca de Girona',
-    'simple.empordajobs.feature3': 'Cerca i selecció de candidats',
+    'simple.nflow.title': 'Nflow Benestar Digital',
+    'simple.nflow.description': 'Unitat de desenvolupament en intel·ligència artificial aplicada al benestar, l\'educació i la gestió del coneixement organitzacional.',
+    'simple.nflow.feature1': 'Suport psicològic digital',
+    'simple.nflow.feature2': 'Models de benestar organitzacional',
+    'simple.nflow.feature3': 'Formació en intel·ligència artificial',
   },
   
   en: {
@@ -920,22 +924,24 @@ const translations: Record<Language, Record<string, string>> = {
     // Simple Service Cards Section
     'simple.title': 'Digital Solutions for Professionals',
     'simple.subtitle': 'EmpordaJobs SL offers specialized digital platforms for different professional sectors, connecting specialists with clients and optimizing service management.',
-    'simple.visit_link': 'Visit website',
     
+    'simple.jobda.title': 'Jobda Services',
     'simple.jobda.description': 'Service platform that integrates various services that may be of interest to you. Specialized application for personnel selection.',
     'simple.jobda.feature1': 'Specialized personnel selection',
     'simple.jobda.feature2': 'Intelligent profile analysis',
     'simple.jobda.feature3': 'Skills assessment',
     
-    'simple.saludalia.description': 'International health guide that connects patients with healthcare professionals from all specialties, through a digital platform.',
-    'simple.saludalia.feature1': 'International health guide',
-    'simple.saludalia.feature2': 'Healthcare professionals from all specialties',
-    'simple.saludalia.feature3': 'Accessible from anywhere in the world',
+    'simple.appia.title': 'Appia Intelligent Apps',
+    'simple.appia.description': 'Specialized service in web and mobile application development with artificial intelligence for companies.',
+    'simple.appia.feature1': 'Business app design',
+    'simple.appia.feature2': 'Artificial intelligence solutions',
+    'simple.appia.feature3': 'Digital process optimization',
     
-    'simple.empordajobs.description': 'Application aimed at finding candidates for companies in the Girona region. We offer free selection services to companies and candidates.',
-    'simple.empordajobs.feature1': 'Free service for companies',
-    'simple.empordajobs.feature2': 'Specialized in the Girona region',
-    'simple.empordajobs.feature3': 'Search and selection of candidates',
+    'simple.nflow.title': 'Nflow Digital Wellbeing',
+    'simple.nflow.description': 'Development unit in artificial intelligence applied to wellbeing, education, and organizational knowledge management.',
+    'simple.nflow.feature1': 'Digital psychological support',
+    'simple.nflow.feature2': 'Organizational wellbeing models',
+    'simple.nflow.feature3': 'Artificial intelligence training',
     
     'founderTitle': 'Founder and Chief Executive Officer',
     'founderQuote': 'With NFLOW and APPIA, my goal is to offer innovative solutions that integrate mental health and labor development, aligned with the principles of the ISO 45003 standard, focused on psychological well-being in the work environment. NFLOW acts as a digital resource for continuous emotional support, while APPIA allows each organization to develop its own personalized artificial intelligence, generating highly digitized and adaptive environments, capable of responding to new corporate challenges.',

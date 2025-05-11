@@ -1,12 +1,12 @@
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { motion } from "framer-motion";
 
 // Iconos para cada servicio
 import { 
   Briefcase, 
-  Heart, 
-  User 
+  Code, 
+  Brain 
 } from "lucide-react";
 
 export function SimpleServiceCards() {
@@ -15,7 +15,7 @@ export function SimpleServiceCards() {
   const services = [
     {
       id: "jobda",
-      title: "Jobda",
+      title: t('simple.jobda.title'),
       icon: <Briefcase className="h-7 w-7 text-blue-500" />,
       description: t('simple.jobda.description'),
       features: [
@@ -23,37 +23,31 @@ export function SimpleServiceCards() {
         t('simple.jobda.feature2'),
         t('simple.jobda.feature3')
       ],
-      url: "https://jobda.es",
-      textColor: "text-blue-600",
-      linkText: t('simple.visit_link')
+      bgColor: "bg-blue-50 border-blue-100"
     },
     {
-      id: "saludalia",
-      title: "Saludalia",
-      icon: <Heart className="h-7 w-7 text-emerald-500" />,
-      description: t('simple.saludalia.description'),
+      id: "appia",
+      title: t('simple.appia.title'),
+      icon: <Code className="h-7 w-7 text-emerald-500" />,
+      description: t('simple.appia.description'),
       features: [
-        t('simple.saludalia.feature1'),
-        t('simple.saludalia.feature2'),
-        t('simple.saludalia.feature3')
+        t('simple.appia.feature1'),
+        t('simple.appia.feature2'),
+        t('simple.appia.feature3')
       ],
-      url: "https://neuronmeg.jobda.es/join-team",
-      textColor: "text-emerald-600",
-      linkText: t('simple.visit_link')
+      bgColor: "bg-emerald-50 border-emerald-100"
     },
     {
-      id: "empordajobs",
-      title: "EmpordaJobs",
-      icon: <User className="h-7 w-7 text-orange-500" />,
-      description: t('simple.empordajobs.description'),
+      id: "nflow",
+      title: t('simple.nflow.title'),
+      icon: <Brain className="h-7 w-7 text-purple-500" />,
+      description: t('simple.nflow.description'),
       features: [
-        t('simple.empordajobs.feature1'),
-        t('simple.empordajobs.feature2'),
-        t('simple.empordajobs.feature3')
+        t('simple.nflow.feature1'),
+        t('simple.nflow.feature2'),
+        t('simple.nflow.feature3')
       ],
-      url: "https://empordajobs.jobda.es",
-      textColor: "text-orange-600",
-      linkText: t('simple.visit_link')
+      bgColor: "bg-purple-50 border-purple-100"
     }
   ];
 
@@ -83,7 +77,7 @@ export function SimpleServiceCards() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-sm border border-gray-100 p-6"
+              className={`rounded-lg shadow-sm border p-6 ${service.bgColor}`}
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-full bg-gray-100">
@@ -94,7 +88,7 @@ export function SimpleServiceCards() {
               
               <p className="text-gray-600 mb-6">{service.description}</p>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
@@ -102,15 +96,6 @@ export function SimpleServiceCards() {
                   </li>
                 ))}
               </ul>
-              
-              <a 
-                href={service.url}
-                target="_blank"
-                rel="noreferrer"
-                className={`inline-flex items-center gap-1 font-medium ${service.textColor} hover:underline`}
-              >
-                {service.linkText} <ArrowRight className="h-4 w-4" />
-              </a>
             </motion.div>
           ))}
         </div>
