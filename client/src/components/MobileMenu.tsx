@@ -101,10 +101,13 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
               <FolderKanban className="h-5 w-5 text-primary" />
               {t('nav.projects')}
             </Link>
-            <div className="flex items-center gap-3 py-2 border-b border-gray-100">
+            <Link href="/investors" 
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
+              onClick={() => closeMobileMenu()}
+            >
               <Users className="h-5 w-5 text-primary" />
-              <InvestorsModal />
-            </div>
+              {t('nav.investors')}
+            </Link>
             <div className="flex items-center gap-3 py-2 border-b border-gray-100">
               <HandHelping className="h-5 w-5 text-primary" />
               <WorkWithUsModal text="Trabaja con nosotros" />
