@@ -11,7 +11,7 @@ import { MobileMenu } from "@/components/MobileMenu";
 import { RewardsSection } from "@/components/RewardsSection";
 import { FounderTestimonial } from "@/components/FounderTestimonial";
 import { HobbiesSection } from "@/components/HobbiesSection";
-import { EnhancedServiceSection } from "@/components/services/EnhancedServiceSection";
+import { SimpleServiceCards } from "@/components/services/SimpleServiceCards";
 import { useState } from "react";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
         <Hero />
-        <EnhancedServiceSection />
+        <SimpleServiceCards />
         <ServiceSection />
         <CategorySection />
         <RewardsSection />
