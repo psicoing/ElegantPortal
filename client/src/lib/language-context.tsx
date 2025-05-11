@@ -24,7 +24,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Servicios',
     'nav.contact': 'Contacto',
     'nav.rewards': 'Premios',
-    'nav.projects': 'Proyectos',
+    'nav.projects': 'Investigación',
     'nav.investors': 'Inversores',
     
     'founderTitle': 'Fundador y Director Ejecutivo',
@@ -329,7 +329,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Serveis',
     'nav.contact': 'Contacte',
     'nav.rewards': 'Premis',
-    'nav.projects': 'Projectes',
+    'nav.projects': 'Investigació',
     'nav.investors': 'Inversors',
     
     'founderTitle': 'Fundador i Director Executiu',
@@ -635,7 +635,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.services': 'Services',
     'nav.contact': 'Contact',
     'nav.rewards': 'Rewards',
-    'nav.projects': 'Projects',
+    'nav.projects': 'Research',
     'nav.investors': 'Investors',
     
     'investors.title': 'Investors',
