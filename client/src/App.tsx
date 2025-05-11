@@ -8,6 +8,7 @@ import Privacy from "@/pages/Privacy";
 import Projects from "@/pages/Projects";
 import AiApps from "@/pages/AiApps";
 import CommissionsCalculator from "@/pages/CommissionsCalculator";
+import { InvestorsPage } from "@/pages/Investors";
 import { CookieBanner } from "@/components/CookieBanner";
 import { LanguageProvider } from "./lib/language-context";
 
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
       <Route path="/projects" component={Projects} />
       <Route path="/ai-apps" component={AiApps} />
+      <Route path="/investors" component={InvestorsPage} />
       <Route path="/trabajo-comisiones-calculadora" component={CommissionsCalculator} />
       <Route component={NotFound} />
     </Switch>
