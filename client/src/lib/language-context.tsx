@@ -319,6 +319,52 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.portal.investor_resources': 'Recursos para Inversores',
     'investors.portal.resources_description': 'Solicita nuestro dossier para inversores con proyecciones financieras detalladas y plan de negocio completo.',
     'investors.portal.request_dossier': 'Solicitar dossier',
+    
+    // Enhanced Services Section
+    'enhanced.title': 'Soluciones Digitales para Profesionales',
+    'enhanced.subtitle': 'EmpordaJobs SL ofrece plataformas digitales especializadas para diferentes sectores profesionales, conectando a especialistas con clientes y optimizando la gestión de servicios.',
+    'enhanced.visit_link': 'Visitar sitio web',
+    
+    'enhanced.jobda.description': 'Plataforma de servicios que integra varios servicios que pueden ser de vuestro interés. Aplicación especializada en selección de personal.',
+    'enhanced.jobda.feature1': 'Selección de personal especializado',
+    'enhanced.jobda.feature2': 'Análisis inteligente de perfiles',
+    'enhanced.jobda.feature3': 'Evaluación de competencias',
+    'enhanced.jobda.long_description': 'Plataforma de servicios que integra varios servicios que pueden ser de vuestro interés. Aplicación especializada en selección de personal, ayudando a empresas a encontrar los mejores candidatos a través de análisis inteligente de perfiles y competencias.',
+    
+    'enhanced.saludalia.description': 'Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las especialidades, a través de una plataforma digital.',
+    'enhanced.saludalia.feature1': 'Guía sanitaria internacional',
+    'enhanced.saludalia.feature2': 'Profesionales sanitarios de todas las especialidades',
+    'enhanced.saludalia.feature3': 'Accesible desde cualquier parte del mundo',
+    'enhanced.saludalia.long_description': 'Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las especialidades, a través de una plataforma digital accesible desde cualquier lugar del mundo.',
+    
+    'enhanced.empordajobs.description': 'Aplicación orientada a buscar candidatos para empresas de la comarca de Girona. Ofrecemos servicios de selección gratuitos a empresas y candidatos.',
+    'enhanced.empordajobs.feature1': 'Servicio gratuito para empresas',
+    'enhanced.empordajobs.feature2': 'Especializado en comarca de Girona',
+    'enhanced.empordajobs.feature3': 'Búsqueda y selección de candidatos',
+    'enhanced.empordajobs.long_description': 'Aplicación orientada a buscar candidatos para empresas de la comarca de Girona. Ofrecemos servicios de selección gratuitos a empresas y candidatos, manteniendo nuestro compromiso con el desarrollo local.',
+    
+    'enhanced.company_info.title': 'Nuestra Empresa',
+    'enhanced.company_info.paragraph1': 'Jobda es una plataforma de servicios que integra varios servicios que pueden ser de vuestro interés.',
+    'enhanced.company_info.paragraph2': 'Nflow nace como evolución del Instituto NeuronMeg, un centro con más de 32 años de experiencia en psicología clínica y escolar. Desde su origen en el Empordà, NeuronMeg ha acompañado a personas, familias y comunidades educativas con una mirada integradora que combina ciencia, tecnología y sensibilidad humana.',
+    'enhanced.company_info.paragraph3': 'Estamos colegiados en el Col·legi Oficial de Psicologia de Catalunya con el número 7851, lo que garantiza un ejercicio profesional riguroso, ético y basado en la evidencia científica.',
+    'enhanced.company_info.paragraph4': 'Además, Appia representa nuestra división especializada en el desarrollo de aplicaciones web y móviles con inteligencia artificial. Creamos soluciones tecnológicas personalizadas para empresas que buscan transformar digitalmente sus procesos, con un enfoque en la usabilidad, la eficiencia y el impacto real en los resultados de negocio.',
+    
+    'enhanced.vision.title': 'Nuestra Visión',
+    'enhanced.vision.description': 'Unimos el conocimiento humano con la tecnología avanzada para ofrecer soluciones adaptadas, eficientes y sostenibles. Trabajamos para que cada persona, organización o comunidad tenga acceso a herramientas que mejoren su bienestar, fortalezcan sus decisiones y potencien su desarrollo.',
+    
+    'enhanced.areas.title': 'Nuestras áreas de acción',
+    'enhanced.areas.psychology.title': 'Psicología',
+    'enhanced.areas.psychology.description': 'Continuamos el legado clínico del Instituto NeuronMeg, ofreciendo intervención psicológica en contextos escolares, familiares, individuales y comunitarios.',
+    'enhanced.areas.nflow.description': 'Unidad de desarrollo en inteligencia artificial aplicada al bienestar, la educación y la gestión del conocimiento organizacional.',
+    'enhanced.areas.jobda.description': 'Aplicación especializada en selección de personal, ayudando a empresas a encontrar los mejores candidatos a través de análisis inteligente de perfiles y competencias.',
+    'enhanced.areas.appia.description': 'Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial para empresas que buscan digitalizar y optimizar sus procesos. Grupo empresarial EmpordaJobs SL B02701100.',
+    'enhanced.areas.neuronmeg.title': 'Instituto NeuronMeg',
+    'enhanced.areas.neuronmeg.description': 'Nuestro origen y núcleo clínico. Especializado en psicología escolar, clínica y comunitaria, con una vocación pública que se mantiene viva.',
+    
+    'enhanced.cta.title': '¿Interesado en nuestros servicios?',
+    'enhanced.cta.description': 'Disponemos de diferentes soluciones para profesionales, empresas e inversores. Contáctanos para obtener más información o visita nuestra página de inversores.',
+    'enhanced.cta.investor_button': 'Ver información para inversores',
+    'enhanced.cta.contact_button': 'Contactar con nosotros',
   },
   
   ca: {
@@ -625,6 +671,52 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.portal.investor_resources': 'Recursos per a Inversors',
     'investors.portal.resources_description': 'Sol·licita el nostre dossier per a inversors amb projeccions financeres detallades i pla de negoci complet.',
     'investors.portal.request_dossier': 'Sol·licitar dossier',
+    
+    // Enhanced Services Section
+    'enhanced.title': 'Solucions Digitals per a Professionals',
+    'enhanced.subtitle': 'EmpordaJobs SL ofereix plataformes digitals especialitzades per a diferents sectors professionals, connectant especialistes amb clients i optimitzant la gestió de serveis.',
+    'enhanced.visit_link': 'Visitar lloc web',
+    
+    'enhanced.jobda.description': 'Plataforma de serveis que integra diversos serveis que poden ser del vostre interès. Aplicació especialitzada en selecció de personal.',
+    'enhanced.jobda.feature1': 'Selecció de personal especialitzat',
+    'enhanced.jobda.feature2': 'Anàlisi intel·ligent de perfils',
+    'enhanced.jobda.feature3': 'Avaluació de competències',
+    'enhanced.jobda.long_description': 'Plataforma de serveis que integra diversos serveis que poden ser del vostre interès. Aplicació especialitzada en selecció de personal, ajudant a empreses a trobar els millors candidats a través d\'anàlisi intel·ligent de perfils i competències.',
+    
+    'enhanced.saludalia.description': 'Guia de salut internacional que connecta pacients amb professionals sanitaris de totes les especialitats, a través d\'una plataforma digital.',
+    'enhanced.saludalia.feature1': 'Guia sanitària internacional',
+    'enhanced.saludalia.feature2': 'Professionals sanitaris de totes les especialitats',
+    'enhanced.saludalia.feature3': 'Accessible des de qualsevol part del món',
+    'enhanced.saludalia.long_description': 'Guia de salut internacional que connecta pacients amb professionals sanitaris de totes les especialitats, a través d\'una plataforma digital accessible des de qualsevol lloc del món.',
+    
+    'enhanced.empordajobs.description': 'Aplicació orientada a buscar candidats per a empreses de la comarca de Girona. Oferim serveis de selecció gratuïts a empreses i candidats.',
+    'enhanced.empordajobs.feature1': 'Servei gratuït per a empreses',
+    'enhanced.empordajobs.feature2': 'Especialitzat en comarca de Girona',
+    'enhanced.empordajobs.feature3': 'Cerca i selecció de candidats',
+    'enhanced.empordajobs.long_description': 'Aplicació orientada a buscar candidats per a empreses de la comarca de Girona. Oferim serveis de selecció gratuïts a empreses i candidats, mantenint el nostre compromís amb el desenvolupament local.',
+    
+    'enhanced.company_info.title': 'La nostra Empresa',
+    'enhanced.company_info.paragraph1': 'Jobda és una plataforma de serveis que integra diversos serveis que poden ser del vostre interès.',
+    'enhanced.company_info.paragraph2': 'Nflow neix com a evolució de l\'Institut NeuronMeg, un centre amb més de 32 anys d\'experiència en psicologia clínica i escolar. Des del seu origen a l\'Empordà, NeuronMeg ha acompanyat persones, famílies i comunitats educatives amb una mirada integradora que combina ciència, tecnologia i sensibilitat humana.',
+    'enhanced.company_info.paragraph3': 'Estem col·legiats al Col·legi Oficial de Psicologia de Catalunya amb el número 7851, el que garanteix un exercici professional rigorós, ètic i basat en l\'evidència científica.',
+    'enhanced.company_info.paragraph4': 'A més, Appia representa la nostra divisió especialitzada en el desenvolupament d\'aplicacions web i mòbils amb intel·ligència artificial. Creem solucions tecnològiques personalitzades per a empreses que busquen transformar digitalment els seus processos, amb un enfocament en la usabilitat, l\'eficiència i l\'impacte real en els resultats de negoci.',
+    
+    'enhanced.vision.title': 'La nostra Visió',
+    'enhanced.vision.description': 'Unim el coneixement humà amb la tecnologia avançada per oferir solucions adaptades, eficients i sostenibles. Treballem perquè cada persona, organització o comunitat tingui accés a eines que millorin el seu benestar, enforteixin les seves decisions i potenciïn el seu desenvolupament.',
+    
+    'enhanced.areas.title': 'Les nostres àrees d\'acció',
+    'enhanced.areas.psychology.title': 'Psicologia',
+    'enhanced.areas.psychology.description': 'Continuem el llegat clínic de l\'Institut NeuronMeg, oferint intervenció psicològica en contextos escolars, familiars, individuals i comunitaris.',
+    'enhanced.areas.nflow.description': 'Unitat de desenvolupament en intel·ligència artificial aplicada al benestar, l\'educació i la gestió del coneixement organitzacional.',
+    'enhanced.areas.jobda.description': 'Aplicació especialitzada en selecció de personal, ajudant a empreses a trobar els millors candidats a través d\'anàlisi intel·ligent de perfils i competències.',
+    'enhanced.areas.appia.description': 'Servei especialitzat en desenvolupament d\'aplicacions web i mòbils amb intel·ligència artificial per a empreses que busquen digitalitzar i optimitzar els seus processos. Grup empresarial EmpordaJobs SL B02701100.',
+    'enhanced.areas.neuronmeg.title': 'Institut NeuronMeg',
+    'enhanced.areas.neuronmeg.description': 'El nostre origen i nucli clínic. Especialitzat en psicologia escolar, clínica i comunitària, amb una vocació pública que es manté viva.',
+    
+    'enhanced.cta.title': 'Interessat en els nostres serveis?',
+    'enhanced.cta.description': 'Disposem de diferents solucions per a professionals, empreses i inversors. Contacta\'ns per obtenir més informació o visita la nostra pàgina d\'inversors.',
+    'enhanced.cta.investor_button': 'Veure informació per a inversors',
+    'enhanced.cta.contact_button': 'Contactar amb nosaltres',
   },
   
   en: {
@@ -738,6 +830,52 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.portal.investor_resources': 'Investor Resources',
     'investors.portal.resources_description': 'Request our investor dossier with detailed financial projections and complete business plan.',
     'investors.portal.request_dossier': 'Request dossier',
+    
+    // Enhanced Services Section
+    'enhanced.title': 'Digital Solutions for Professionals',
+    'enhanced.subtitle': 'EmpordaJobs SL offers specialized digital platforms for different professional sectors, connecting specialists with clients and optimizing service management.',
+    'enhanced.visit_link': 'Visit website',
+    
+    'enhanced.jobda.description': 'Service platform that integrates various services that may be of interest to you. Specialized application for personnel selection.',
+    'enhanced.jobda.feature1': 'Specialized personnel selection',
+    'enhanced.jobda.feature2': 'Intelligent profile analysis',
+    'enhanced.jobda.feature3': 'Skills assessment',
+    'enhanced.jobda.long_description': 'Service platform that integrates various services that may be of interest to you. Specialized application for personnel selection, helping companies find the best candidates through intelligent profile and skill analysis.',
+    
+    'enhanced.saludalia.description': 'International health guide that connects patients with healthcare professionals from all specialties, through a digital platform.',
+    'enhanced.saludalia.feature1': 'International health guide',
+    'enhanced.saludalia.feature2': 'Healthcare professionals from all specialties',
+    'enhanced.saludalia.feature3': 'Accessible from anywhere in the world',
+    'enhanced.saludalia.long_description': 'International health guide that connects patients with healthcare professionals from all specialties, through a digital platform accessible from anywhere in the world.',
+    
+    'enhanced.empordajobs.description': 'Application aimed at finding candidates for companies in the Girona region. We offer free selection services to companies and candidates.',
+    'enhanced.empordajobs.feature1': 'Free service for companies',
+    'enhanced.empordajobs.feature2': 'Specialized in the Girona region',
+    'enhanced.empordajobs.feature3': 'Search and selection of candidates',
+    'enhanced.empordajobs.long_description': 'Application aimed at finding candidates for companies in the Girona region. We offer free selection services to companies and candidates, maintaining our commitment to local development.',
+    
+    'enhanced.company_info.title': 'Our Company',
+    'enhanced.company_info.paragraph1': 'Jobda is a service platform that integrates various services that may be of interest to you.',
+    'enhanced.company_info.paragraph2': 'Nflow was born as an evolution of the NeuronMeg Institute, a center with more than 32 years of experience in clinical and school psychology. Since its origin in Empordà, NeuronMeg has accompanied people, families, and educational communities with an integrative approach that combines science, technology, and human sensitivity.',
+    'enhanced.company_info.paragraph3': 'We are registered with the Official College of Psychology of Catalonia with number 7851, which guarantees rigorous, ethical professional practice based on scientific evidence.',
+    'enhanced.company_info.paragraph4': 'Additionally, Appia represents our division specialized in the development of web and mobile applications with artificial intelligence. We create personalized technological solutions for companies seeking to digitally transform their processes, with a focus on usability, efficiency, and real impact on business results.',
+    
+    'enhanced.vision.title': 'Our Vision',
+    'enhanced.vision.description': 'We unite human knowledge with advanced technology to offer adapted, efficient, and sustainable solutions. We work so that each person, organization, or community has access to tools that improve their well-being, strengthen their decisions, and enhance their development.',
+    
+    'enhanced.areas.title': 'Our areas of action',
+    'enhanced.areas.psychology.title': 'Psychology',
+    'enhanced.areas.psychology.description': 'We continue the clinical legacy of the NeuronMeg Institute, offering psychological intervention in school, family, individual, and community contexts.',
+    'enhanced.areas.nflow.description': 'Development unit in artificial intelligence applied to well-being, education, and organizational knowledge management.',
+    'enhanced.areas.jobda.description': 'Specialized application in personnel selection, helping companies find the best candidates through intelligent profile and skills analysis.',
+    'enhanced.areas.appia.description': 'Specialized service in web and mobile application development with artificial intelligence for companies looking to digitize and optimize their processes. EmpordaJobs SL business group B02701100.',
+    'enhanced.areas.neuronmeg.title': 'NeuronMeg Institute',
+    'enhanced.areas.neuronmeg.description': 'Our origin and clinical core. Specialized in school, clinical, and community psychology, with a public vocation that remains alive.',
+    
+    'enhanced.cta.title': 'Interested in our services?',
+    'enhanced.cta.description': 'We have different solutions for professionals, companies, and investors. Contact us for more information or visit our investors page.',
+    'enhanced.cta.investor_button': 'View investor information',
+    'enhanced.cta.contact_button': 'Contact us',
     
     'founderTitle': 'Founder and Chief Executive Officer',
     'founderQuote': 'With NFLOW and APPIA, my goal is to offer innovative solutions that integrate mental health and labor development, aligned with the principles of the ISO 45003 standard, focused on psychological well-being in the work environment. NFLOW acts as a digital resource for continuous emotional support, while APPIA allows each organization to develop its own personalized artificial intelligence, generating highly digitized and adaptive environments, capable of responding to new corporate challenges.',
