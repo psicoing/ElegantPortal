@@ -34,7 +34,6 @@ export default function Home() {
         <Hero />
         <SimpleServiceCards />
         <ServiceSection />
-        <FuturisticCTA />
         <CategorySection />
         <RewardsSection />
         <AboutSection />
@@ -43,6 +42,7 @@ export default function Home() {
         <TestimonialSection />
         <HobbiesSection />
         <ContactSection />
+        <FuturisticCTA />
       </main>
       <Footer />
     </div>

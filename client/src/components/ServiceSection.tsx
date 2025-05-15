@@ -191,27 +191,7 @@ export function ServiceSection() {
             ))}
           </div>
           
-          {/* Horizontal card for SALUDALIA */}
-          <div className="mt-12 max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <HorizontalServiceCard
-                icon={saludalia.icon}
-                title={saludalia.title}
-                description={saludalia.description}
-                features={saludalia.features}
-                url={saludalia.url}
-                badgeText={saludalia.badgeText}
-                variant={saludalia.variant}
-                imageSrc={saludalia.imageSrc}
-                onClick={saludalia.onClick}
-              />
-            </motion.div>
-          </div>
+
         </div>
       </section>
       
