@@ -67,14 +67,7 @@ export function AboutSection() {
               </p>
             </div>
 
-            <div className="mt-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{t('about.vision.title')}</h3>
-              <p className="text-gray-700">
-                Unimos el conocimiento humano con la tecnología avanzada para ofrecer soluciones adaptadas, 
-                eficientes y sostenibles. Trabajamos para que cada persona, organización o comunidad tenga 
-                acceso a herramientas que mejoren su bienestar, fortalezcan sus decisiones y potencien su desarrollo.
-              </p>
-            </div>
+
           </motion.div>
 
           {/* Columna con áreas de acción */}
