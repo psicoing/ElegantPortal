@@ -98,6 +98,8 @@ const translations: Record<Language, Record<string, string>> = {
     'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'Instituto NeuronMeg',
+    'area.saludalia': 'Saludalia',
+    'area.saludalia.description': 'Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las especialidades, a través de una plataforma digital.',
     
     'testimonials.title': 'Lo que dicen nuestros usuarios',
     'testimonials.subtitle': 'Experiencias reales de quienes confían en nosotros',
@@ -472,6 +474,8 @@ const translations: Record<Language, Record<string, string>> = {
     'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'Institut NeuronMeg',
+    'area.saludalia': 'Saludalia',
+    'area.saludalia.description': 'Guia de salut internacional que connecta pacients amb professionals sanitaris de totes les especialitats, a través d\'una plataforma digital.',
     
     'testimonials.title': 'El que diuen els nostres usuaris',
     'testimonials.subtitle': 'Experiències reals dels que confien en nosaltres',
@@ -1015,6 +1019,8 @@ const translations: Record<Language, Record<string, string>> = {
     'area.appia': 'Appia',
     'area.empordajobs': 'EmpordaJobs',
     'area.neuronmeg': 'NeuronMeg Institute',
+    'area.saludalia': 'Saludalia',
+    'area.saludalia.description': 'International health guide that connects patients with healthcare professionals from all specialties, through a digital platform.',
     
     'testimonials.title': 'What our users say',
     'testimonials.subtitle': 'Real experiences from those who trust us',

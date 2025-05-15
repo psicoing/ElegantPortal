@@ -1,4 +1,4 @@
-import { Brain, HeartHandshake, Puzzle, Users } from "lucide-react";
+import { Brain, HeartHandshake, Puzzle, Users, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/language-context";
 
@@ -156,6 +156,20 @@ export function AboutSection() {
                   <p className="text-sm text-gray-600 mt-1">
                     Nuestro origen y núcleo clínico. Especializado en psicología escolar, clínica y 
                     comunitaria, con una vocación pública que se mantiene viva.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-lg p-4 border border-emerald-100">
+              <div className="flex items-start">
+                <div className="bg-emerald-100 p-2 rounded-full mr-4">
+                  <Heart className="h-5 w-5 text-emerald-600" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-emerald-900">{t('area.saludalia')}</h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {t('area.saludalia.description')}
                   </p>
                 </div>
               </div>
