@@ -80,9 +80,9 @@ export function FuturisticCTA() {
             {t('futuristic.subtitle')}
           </motion.p>
           
-          {/* Botones con efecto hover */}
+          {/* Botones con efecto hover - Primera fila */}
           <motion.div 
-            className="flex flex-wrap justify-center gap-3 md:gap-4"
+            className="flex flex-wrap justify-center gap-3 md:gap-4 mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -122,10 +122,19 @@ export function FuturisticCTA() {
                 {t('futuristic.neuronmeg')}
               </button>
             </a>
-            
+          </motion.div>
+          
+          {/* Saludalia en una fila separada con estilo destacado */}
+          <motion.div 
+            className="flex justify-center mt-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
             <a href="https://saludalia.jobda.es/" className="group relative">
-              <div className="absolute inset-0 bg-white bg-opacity-20 rounded-full blur group-hover:bg-opacity-30 transition-all duration-300"></div>
-              <button className="relative px-6 py-2.5 bg-white bg-opacity-10 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-20 transition-all duration-300">
+              <div className="absolute inset-0 bg-emerald-500 bg-opacity-40 rounded-full blur-md group-hover:bg-opacity-60 transition-all duration-300"></div>
+              <button className="relative px-10 py-3.5 bg-gradient-to-r from-emerald-500/40 to-teal-500/40 backdrop-blur-md rounded-full font-medium text-white border border-white/30 hover:border-white/50 transition-all duration-300 shadow-lg shadow-emerald-500/20">
                 {t('futuristic.saludalia')}
               </button>
             </a>
