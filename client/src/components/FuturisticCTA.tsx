@@ -67,7 +67,7 @@ export function FuturisticCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            ¿Listo para comenzar?
+            {t('futuristic.title')}
           </motion.h2>
           
           <motion.p 
@@ -77,7 +77,7 @@ export function FuturisticCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Descubre cómo podemos ayudarte
+            {t('futuristic.subtitle')}
           </motion.p>
           
           {/* Botones con efecto hover */}
@@ -91,42 +91,42 @@ export function FuturisticCTA() {
             <a href="https://nflow.jobda.es/" className="group relative">
               <div className="absolute inset-0 bg-white bg-opacity-20 rounded-full blur group-hover:bg-opacity-30 transition-all duration-300"></div>
               <button className="relative px-6 py-2.5 bg-white bg-opacity-10 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-20 transition-all duration-300">
-                Ir a NFLOW
+                {t('futuristic.nflow')}
               </button>
             </a>
             
             <a href="https://appia.jobda.es/" className="group relative">
               <div className="absolute inset-0 bg-black bg-opacity-70 rounded-full blur group-hover:bg-opacity-80 transition-all duration-300"></div>
               <button className="relative px-6 py-2.5 bg-black bg-opacity-80 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-90 transition-all duration-300">
-                Acceder a APPIA
+                {t('futuristic.appia')}
               </button>
             </a>
             
             <a href="https://sinapsy.jobda.es/" className="group relative">
               <div className="absolute inset-0 bg-white bg-opacity-20 rounded-full blur group-hover:bg-opacity-30 transition-all duration-300"></div>
               <button className="relative px-6 py-2.5 bg-white bg-opacity-10 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-20 transition-all duration-300">
-                Acceder a SINAPSY
+                {t('futuristic.sinapsy')}
               </button>
             </a>
             
             <a href="https://empordajobs.jobda.es/" className="group relative">
               <div className="absolute inset-0 bg-black bg-opacity-70 rounded-full blur group-hover:bg-opacity-80 transition-all duration-300"></div>
               <button className="relative px-6 py-2.5 bg-black bg-opacity-80 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-90 transition-all duration-300">
-                Acceder a Empordà Jobs
+                {t('futuristic.empordajobs')}
               </button>
             </a>
             
             <a href="https://neuronmeg.jobda.es/" className="group relative">
               <div className="absolute inset-0 bg-white bg-opacity-20 rounded-full blur group-hover:bg-opacity-30 transition-all duration-300"></div>
               <button className="relative px-6 py-2.5 bg-white bg-opacity-10 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-20 transition-all duration-300">
-                Acceder a NeuronMeg
+                {t('futuristic.neuronmeg')}
               </button>
             </a>
             
             <a href="https://saludalia.jobda.es/" className="group relative">
               <div className="absolute inset-0 bg-white bg-opacity-20 rounded-full blur group-hover:bg-opacity-30 transition-all duration-300"></div>
               <button className="relative px-6 py-2.5 bg-white bg-opacity-10 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-20 transition-all duration-300">
-                Acceder a Saludalia
+                {t('futuristic.saludalia')}
               </button>
             </a>
           </motion.div>
