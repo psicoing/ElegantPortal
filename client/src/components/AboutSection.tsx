@@ -36,32 +36,78 @@ export function AboutSection() {
           >
             <div className="prose prose-lg max-w-none">
               <p>
-                Jobda es una plataforma de servicios que integra varios servicios que pueden ser de vuestro interés.
-                Nflow nace como evolución del Instituto NeuronMeg, un centro con más de 32 años 
-                de experiencia en psicología clínica y escolar. Desde su origen en el Empordà, 
-                NeuronMeg ha acompañado a personas, familias y comunidades educativas con una 
-                mirada integradora que combina ciencia, tecnología y sensibilidad humana.
+                Somos un grupo empresarial especializado en soluciones digitales y servicios profesionales. 
+                El Instituto NeuronMeg constituye nuestro origen y núcleo clínico, con más de 32 años de 
+                experiencia en psicología clínica, escolar y comunitaria. Desde nuestros inicios en el Empordà, 
+                hemos acompañado a personas, familias y comunidades educativas con una visión integradora 
+                que combina ciencia, tecnología y sensibilidad humana.
               </p>
               <p>
-                Estamos colegiados en el Col·legi Oficial de Psicologia de Catalunya con el número 7851, 
+                Contamos con la colegiación en el Col·legi Oficial de Psicologia de Catalunya (nº 7851), 
                 lo que garantiza un ejercicio profesional riguroso, ético y basado en la evidencia científica.
               </p>
               <p>
-                Además, Appia representa nuestra división especializada en el desarrollo de aplicaciones web 
-                y móviles con inteligencia artificial. Creamos soluciones tecnológicas personalizadas para 
-                empresas que buscan transformar digitalmente sus procesos, con un enfoque en la usabilidad,
-                la eficiencia y el impacto real en los resultados de negocio.
+                Nuestro ecosistema de servicios incluye:
               </p>
+            </div>
+            
+            <div className="mt-6 mb-8 grid gap-4 grid-cols-1 md:grid-cols-2">
+              <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
+                <h4 className="font-bold text-blue-900 mb-2">Servicios de Psicología</h4>
+                <p className="text-gray-700 text-sm">
+                  Continuamos el legado clínico del Instituto NeuronMeg, ofreciendo intervención psicológica 
+                  en contextos escolares, familiares, individuales y comunitarios, con una vocación pública que 
+                  se mantiene viva.
+                </p>
+              </div>
+              
+              <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
+                <h4 className="font-bold text-purple-900 mb-2">Nflow</h4>
+                <p className="text-gray-700 text-sm">
+                  Unidad de desarrollo en inteligencia artificial aplicada al bienestar, la educación 
+                  y la gestión del conocimiento organizacional. Ofrecemos formación en IA para empresas, 
+                  desarrollo de IAs personalizadas y modelos organizacionales que promueven el bienestar.
+                </p>
+              </div>
+              
+              <div className="bg-amber-50 rounded-lg p-4 border border-amber-100">
+                <h4 className="font-bold text-amber-900 mb-2">Jobda</h4>
+                <p className="text-gray-700 text-sm">
+                  Aplicación especializada en selección de personal, ayudando a empresas a encontrar los mejores 
+                  candidatos a través de análisis inteligente de perfiles y competencias.
+                </p>
+              </div>
+              
+              <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
+                <h4 className="font-bold text-emerald-900 mb-2">Appia</h4>
+                <p className="text-gray-700 text-sm">
+                  Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial 
+                  para empresas que buscan digitalizar y optimizar sus procesos. Grupo empresarial EmpordaJobs SL B02701100.
+                </p>
+              </div>
+              
+              <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
+                <h4 className="font-bold text-emerald-900 mb-2">Saludalia</h4>
+                <p className="text-gray-700 text-sm">
+                  Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las 
+                  especialidades, a través de una plataforma digital.
+                </p>
+              </div>
+              
+              <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
+                <h4 className="font-bold text-orange-900 mb-2">EmpordaJobs</h4>
+                <p className="text-gray-700 text-sm">
+                  App orientada a buscar candidatos para empresas de la comarca de Girona. Mantenemos nuestros 
+                  servicios de selección gratuitos a empresas y candidatos.
+                </p>
+              </div>
+            </div>
+            
+            <div className="prose prose-lg max-w-none mt-4">
               <p>
-                Actualmente, como Nflow, ampliamos nuestra acción profesional hacia la formación en 
-                inteligencia artificial para empresas y empleados, el desarrollo de IAs personalizadas 
-                y la implementación de modelos organizacionales que promueven el bienestar psicológico. 
-                Paralelamente, seguimos ofreciendo servicios de atención y acompañamiento dirigidos a 
-                adolescentes, familias y adultos, con una mirada clínica, educativa y social. 
-              </p>
-              <p>
-                También ofrecemos la app Empordajobs SL orientada a buscar candidatos para empresas de la comarca de Girona.
-                Mantenemos nuestros servicios de selección gratuitos a empresas y candidatos.
+                A través de estos servicios, trabajamos para unir el conocimiento humano con la tecnología avanzada, 
+                ofreciendo soluciones adaptadas, eficientes y sostenibles para que cada persona, organización o comunidad 
+                tenga acceso a herramientas que mejoren su bienestar, fortalezcan sus decisiones y potencien su desarrollo.
               </p>
             </div>
 
