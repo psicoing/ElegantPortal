@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { AboutSection } from "@/components/AboutSection";
 import { ServiceSection } from "@/components/ServiceSection";
 import { CategorySection } from "@/components/CategorySection";
-import { CTASection } from "@/components/CTASection";
 import { FuturisticCTA } from "@/components/FuturisticCTA";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -37,7 +36,6 @@ export default function Home() {
         <CategorySection />
         <RewardsSection />
         <AboutSection />
-        <CTASection />
         <FounderTestimonial />
         <TestimonialSection />
         <HobbiesSection />
