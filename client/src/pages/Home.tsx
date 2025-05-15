@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { ServiceSection } from "@/components/ServiceSection";
 import { CategorySection } from "@/components/CategorySection";
 import { CTASection } from "@/components/CTASection";
+import { FuturisticCTA } from "@/components/FuturisticCTA";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -33,6 +34,7 @@ export default function Home() {
         <Hero />
         <SimpleServiceCards />
         <ServiceSection />
+        <FuturisticCTA />
         <CategorySection />
         <RewardsSection />
         <AboutSection />

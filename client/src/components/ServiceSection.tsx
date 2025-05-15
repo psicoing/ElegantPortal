@@ -138,7 +138,7 @@ export function ServiceSection() {
       t('service.saludalia.feature2'),
       t('service.saludalia.feature3')
     ],
-    url: "https://neuronmeg.jobda.es/join-team",
+    url: "https://saludalia.jobda.es/",
     onClick: () => setSaludaliaDialogOpen(true),
     badgeText: t('service.saludalia.badge'),
     variant: "secondary",

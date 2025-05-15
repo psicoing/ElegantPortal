@@ -101,6 +101,15 @@ const translations: Record<Language, Record<string, string>> = {
     'area.saludalia': 'Saludalia',
     'area.saludalia.description': 'Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las especialidades, a través de una plataforma digital.',
     
+    'futuristic.title': '¿Listo para comenzar?',
+    'futuristic.subtitle': 'Descubre cómo podemos ayudarte',
+    'futuristic.nflow': 'Ir a NFLOW',
+    'futuristic.appia': 'Acceder a APPIA',
+    'futuristic.sinapsy': 'Acceder a SINAPSY',
+    'futuristic.empordajobs': 'Acceder a Empordà Jobs',
+    'futuristic.neuronmeg': 'Acceder a NeuronMeg',
+    'futuristic.saludalia': 'Acceder a Saludalia',
+    
     'testimonials.title': 'Lo que dicen nuestros usuarios',
     'testimonials.subtitle': 'Experiencias reales de quienes confían en nosotros',
     
@@ -476,6 +485,15 @@ const translations: Record<Language, Record<string, string>> = {
     'area.neuronmeg': 'Institut NeuronMeg',
     'area.saludalia': 'Saludalia',
     'area.saludalia.description': 'Guia de salut internacional que connecta pacients amb professionals sanitaris de totes les especialitats, a través d\'una plataforma digital.',
+    
+    'futuristic.title': 'Preparat per començar?',
+    'futuristic.subtitle': 'Descobreix com podem ajudar-te',
+    'futuristic.nflow': 'Anar a NFLOW',
+    'futuristic.appia': 'Accedir a APPIA',
+    'futuristic.sinapsy': 'Accedir a SINAPSY',
+    'futuristic.empordajobs': 'Accedir a Empordà Jobs',
+    'futuristic.neuronmeg': 'Accedir a NeuronMeg',
+    'futuristic.saludalia': 'Accedir a Saludalia',
     
     'testimonials.title': 'El que diuen els nostres usuaris',
     'testimonials.subtitle': 'Experiències reals dels que confien en nosaltres',
@@ -1021,6 +1039,15 @@ const translations: Record<Language, Record<string, string>> = {
     'area.neuronmeg': 'NeuronMeg Institute',
     'area.saludalia': 'Saludalia',
     'area.saludalia.description': 'International health guide that connects patients with healthcare professionals from all specialties, through a digital platform.',
+    
+    'futuristic.title': 'Ready to get started?',
+    'futuristic.subtitle': 'Discover how we can help you',
+    'futuristic.nflow': 'Go to NFLOW',
+    'futuristic.appia': 'Access APPIA',
+    'futuristic.sinapsy': 'Access SINAPSY',
+    'futuristic.empordajobs': 'Access Empordà Jobs',
+    'futuristic.neuronmeg': 'Access NeuronMeg',
+    'futuristic.saludalia': 'Access Saludalia',
     
     'testimonials.title': 'What our users say',
     'testimonials.subtitle': 'Real experiences from those who trust us',
