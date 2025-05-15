@@ -47,67 +47,23 @@ export function AboutSection() {
                 lo que garantiza un ejercicio profesional riguroso, ético y basado en la evidencia científica.
               </p>
               <p>
-                Nuestro ecosistema de servicios incluye:
+                Nuestro ecosistema incluye Servicios de Psicología, donde continuamos el legado clínico del Instituto NeuronMeg, 
+                ofreciendo intervención psicológica en contextos escolares, familiares, individuales y comunitarios. 
+                A través de Nflow, desarrollamos inteligencia artificial aplicada al bienestar, la educación y la gestión 
+                del conocimiento organizacional, ofreciendo formación en IA y modelos que promueven el bienestar.
               </p>
-            </div>
-            
-            <div className="mt-6 mb-8 grid gap-4 grid-cols-1 md:grid-cols-2">
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
-                <h4 className="font-bold text-blue-900 mb-2">Servicios de Psicología</h4>
-                <p className="text-gray-700 text-sm">
-                  Continuamos el legado clínico del Instituto NeuronMeg, ofreciendo intervención psicológica 
-                  en contextos escolares, familiares, individuales y comunitarios, con una vocación pública que 
-                  se mantiene viva.
-                </p>
-              </div>
-              
-              <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
-                <h4 className="font-bold text-purple-900 mb-2">Nflow</h4>
-                <p className="text-gray-700 text-sm">
-                  Unidad de desarrollo en inteligencia artificial aplicada al bienestar, la educación 
-                  y la gestión del conocimiento organizacional. Ofrecemos formación en IA para empresas, 
-                  desarrollo de IAs personalizadas y modelos organizacionales que promueven el bienestar.
-                </p>
-              </div>
-              
-              <div className="bg-amber-50 rounded-lg p-4 border border-amber-100">
-                <h4 className="font-bold text-amber-900 mb-2">Jobda</h4>
-                <p className="text-gray-700 text-sm">
-                  Aplicación especializada en selección de personal, ayudando a empresas a encontrar los mejores 
-                  candidatos a través de análisis inteligente de perfiles y competencias.
-                </p>
-              </div>
-              
-              <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
-                <h4 className="font-bold text-emerald-900 mb-2">Appia</h4>
-                <p className="text-gray-700 text-sm">
-                  Servicio especializado en desarrollo de aplicaciones web y móviles con inteligencia artificial 
-                  para empresas que buscan digitalizar y optimizar sus procesos. Grupo empresarial EmpordaJobs SL B02701100.
-                </p>
-              </div>
-              
-              <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-100">
-                <h4 className="font-bold text-emerald-900 mb-2">Saludalia</h4>
-                <p className="text-gray-700 text-sm">
-                  Guía de salud internacional que conecta a pacientes con profesionales sanitarios de todas las 
-                  especialidades, a través de una plataforma digital.
-                </p>
-              </div>
-              
-              <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
-                <h4 className="font-bold text-orange-900 mb-2">EmpordaJobs</h4>
-                <p className="text-gray-700 text-sm">
-                  App orientada a buscar candidatos para empresas de la comarca de Girona. Mantenemos nuestros 
-                  servicios de selección gratuitos a empresas y candidatos.
-                </p>
-              </div>
-            </div>
-            
-            <div className="prose prose-lg max-w-none mt-4">
               <p>
-                A través de estos servicios, trabajamos para unir el conocimiento humano con la tecnología avanzada, 
-                ofreciendo soluciones adaptadas, eficientes y sostenibles para que cada persona, organización o comunidad 
-                tenga acceso a herramientas que mejoren su bienestar, fortalezcan sus decisiones y potencien su desarrollo.
+                Jobda es nuestra aplicación especializada en selección de personal que ayuda a empresas a 
+                encontrar los mejores candidatos mediante análisis inteligente. Con Appia, desarrollamos 
+                aplicaciones web y móviles con IA para empresas que desean digitalizar sus procesos. Saludalia 
+                conecta pacientes con profesionales sanitarios de todas las especialidades mediante una plataforma digital.
+                Y EmpordaJobs es nuestra app orientada a buscar candidatos para empresas de la comarca de Girona.
+              </p>
+              <p>
+                A través de estos servicios, unimos el conocimiento humano con la tecnología avanzada, 
+                ofreciendo soluciones adaptadas, eficientes y sostenibles para que cada persona, organización 
+                o comunidad tenga acceso a herramientas que mejoren su bienestar, fortalezcan sus decisiones y 
+                potencien su desarrollo.
               </p>
             </div>
 
