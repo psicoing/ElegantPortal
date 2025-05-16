@@ -601,7 +601,6 @@ const translations: Record<Language, Record<string, string>> = {
     'plusalud.dialog.close': 'Tancar',
     'plusalud.dialog.contact': 'Troba un terapeuta',
     'plusalud.dialog.subtitle': 'XR Health',
-    'service.plusalud.button': 'Descobrir PluSalud',
     'service.empordajobs.button': 'Anar a Empordà Jobs',
     
     'empordajobs.dialog.status': 'En desenvolupament',
@@ -1164,6 +1163,12 @@ const translations: Record<Language, Record<string, string>> = {
     'service.plusalud.feature3': 'Personalized plans with ongoing monitoring',
     'service.plusalud.badge': 'Therapeutic innovation',
     'service.plusalud.button': 'Discover PluSalud',
+    'plusalud.dialog.description.title': 'Advanced psychology therapy',
+    'plusalud.dialog.features.title': 'Available treatments',
+    'plusalud.dialog.benefits.title': 'Benefits',
+    'plusalud.dialog.close': 'Close',
+    'plusalud.dialog.contact': 'Find a therapist',
+    'plusalud.dialog.subtitle': 'XR Health',
     'service.empordajobs.button': 'Go to Empordà Jobs',
     
     'empordajobs.dialog.status': 'Under development',
