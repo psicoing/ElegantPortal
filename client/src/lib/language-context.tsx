@@ -188,6 +188,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.saludalia.feature2': 'Consultas presenciales y telemedicina',
     'service.saludalia.feature3': 'Seguimiento personalizado',
     'service.saludalia.badge': 'Salud integral',
+    
+    'service.plusalud.title': 'TICKETS PLUSALUD',
+    'service.plusalud.description': 'Terapia psicológica avanzada mediante visores de realidad virtual para empresas y particulares.',
+    'service.plusalud.feature1': 'Sesiones presenciales y online con RV',
+    'service.plusalud.feature2': 'Tratamiento de trastornos psicológicos',
+    'service.plusalud.feature3': 'Planes personalizados con seguimiento',
+    'service.plusalud.badge': 'Innovación terapéutica',
+    'service.plusalud.button': 'Descubrir PluSalud',
     'service.empordajobs.button': 'Acceder a Empordà Jobs',
     
     'empordajobs.dialog.status': 'En desarrollo',
@@ -573,6 +581,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.saludalia.feature2': 'Consultes presencials i telemedicina',
     'service.saludalia.feature3': 'Seguiment personalitzat',
     'service.saludalia.badge': 'Salut integral',
+    
+    'service.plusalud.title': 'TICKETS PLUSALUD',
+    'service.plusalud.description': 'Teràpia psicològica avançada mitjançant visors de realitat virtual per a empreses i particulars.',
+    'service.plusalud.feature1': 'Sessions presencials i online amb RV',
+    'service.plusalud.feature2': 'Tractament de trastorns psicològics',
+    'service.plusalud.feature3': 'Plans personalitzats amb seguiment',
+    'service.plusalud.badge': 'Innovació terapèutica',
+    'service.plusalud.button': 'Descobrir PluSalud',
     'service.empordajobs.button': 'Anar a Empordà Jobs',
     
     'empordajobs.dialog.status': 'En desenvolupament',
