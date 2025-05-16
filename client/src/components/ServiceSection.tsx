@@ -1,7 +1,7 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { HorizontalServiceCard } from "@/components/HorizontalServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
@@ -11,6 +11,7 @@ import { EmpordaJobsDialog } from "./EmpordaJobsDialog";
 import { AppiaDialog } from "./AppiaDialog";
 import { NflowDialog } from "./NflowDialog";
 import { SaludaliaDialog } from "./SaludaliaDialog";
+import { PluSaludDialog } from "./PluSaludDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -23,6 +24,7 @@ import neuronMegImage from "../assets/neuronmeg_services.png";
 import empordaJobsImage from "../assets/empordajobs.png";
 import saludaliaMainImage from "../assets/saludalia/saludalia_main.png";
 import saludaliaInfoImage from "../assets/saludalia/saludalia_info.png";
+import plusaludVRImage from "../assets/plusalud_vr.svg";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -145,7 +147,25 @@ export function ServiceSection() {
     imageSrc: saludaliaMainImage
   };
 
-  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs];
+  const [plusAludDialogOpen, setPluSaludDialogOpen] = useState(false);
+  
+  const ticketsPlusalud: ServiceItem = {
+    icon: <Headphones className="h-8 w-8 text-purple-600" />,
+    title: t('service.plusalud.title'),
+    description: t('service.plusalud.description'),
+    features: [
+      t('service.plusalud.feature1'),
+      t('service.plusalud.feature2'),
+      t('service.plusalud.feature3')
+    ],
+    url: "#tickets-plusalud", // Se utilizará una ventana modal por ahora
+    onClick: () => setPluSaludDialogOpen(true),
+    badgeText: t('service.plusalud.badge'),
+    variant: "primary",
+    imageSrc: plusaludVRImage
+  };
+
+  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, ticketsPlusalud];
 
   return (
     <>
@@ -202,6 +222,7 @@ export function ServiceSection() {
       <AppiaDialog open={appiaDialogOpen} setOpen={setAppiaDialogOpen} />
       <NflowDialog open={nflowDialogOpen} setOpen={setNflowDialogOpen} />
       <SaludaliaDialog open={saludaliaDialogOpen} setOpen={setSaludaliaDialogOpen} />
+      <PluSaludDialog open={plusAludDialogOpen} setOpen={setPluSaludDialogOpen} />
     </>
   );
 }

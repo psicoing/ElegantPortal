@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#F0F8FF"/>
+  
+  <!-- Background gradient -->
+  <rect width="800" height="500" fill="url(#blue_gradient)"/>
+  
+  <!-- Grid pattern -->
+  <path d="M0 100H800 M0 200H800 M0 300H800 M0 400H800" stroke="#4361EE" stroke-opacity="0.1" stroke-width="1"/>
+  <path d="M100 0V500 M200 0V500 M300 0V500 M400 0V500 M500 0V500 M600 0V500 M700 0V500" stroke="#4361EE" stroke-opacity="0.1" stroke-width="1"/>
+  
+  <!-- VR Headset -->
+  <g transform="translate(400, 250) scale(1.2)">
+    <!-- VR Headset body -->
+    <path d="M0 -50C-60 -50 -100 -20 -100 20C-100 60 -60 90 0 90C60 90 100 60 100 20C100 -20 60 -50 0 -50Z" fill="white" stroke="#4A55A2" stroke-width="6"/>
+    <path d="M-60 20C-60 5 -35 -5 0 -5C35 -5 60 5 60 20C60 35 35 45 0 45C-35 45 -60 35 -60 20Z" fill="#4A55A2"/>
+    
+    <!-- Sensors -->
+    <circle cx="-70" cy="0" r="6" fill="#5D6CC6"/>
+    <circle cx="-50" cy="0" r="6" fill="#5D6CC6"/>
+    <circle cx="-30" cy="0" r="6" fill="#5D6CC6"/>
+    
+    <!-- Strap -->
+    <path d="M-85 10C-85 10 -120 50 -85 80" stroke="#4A55A2" stroke-width="6" stroke-linecap="round"/>
+    <path d="M85 10C85 10 120 50 85 80" stroke="#4A55A2" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- User silhouette -->
+  <g transform="translate(400, 330)">
+    <ellipse cx="0" cy="-100" rx="25" ry="30" fill="#3A86FF" opacity="0.7"/>
+    <path d="M-20 -70C-20 -70 -50 0 -20 60" stroke="#3A86FF" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+    <path d="M20 -70C20 -70 50 0 20 60" stroke="#3A86FF" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  
+  <!-- Virtual environment elements - abstract -->
+  <circle cx="200" cy="150" r="30" fill="#4895EF" fill-opacity="0.3"/>
+  <circle cx="600" cy="350" r="40" fill="#4CC9F0" fill-opacity="0.3"/>
+  <circle cx="150" cy="400" r="25" fill="#3A86FF" fill-opacity="0.4"/>
+  <circle cx="650" cy="180" r="35" fill="#3F37C9" fill-opacity="0.2"/>
+  
+  <!-- Pulse effect -->
+  <circle cx="400" cy="250" r="150" stroke="#4361EE" stroke-opacity="0.3" stroke-width="2" fill="none">
+    <animate attributeName="r" from="150" to="200" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" from="0.3" to="0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="400" cy="250" r="100" stroke="#4361EE" stroke-opacity="0.3" stroke-width="3" fill="none">
+    <animate attributeName="r" from="100" to="150" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" from="0.3" to="0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="blue_gradient" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F0F8FF"/>
+      <stop offset="100%" stop-color="#E6F0FF"/>
+    </linearGradient>
+  </defs>
+</svg>
