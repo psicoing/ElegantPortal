@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <circle cx="200" cy="200" r="180" fill="#F0F4FF"/>
+  <circle cx="200" cy="200" r="150" fill="#E6EDFF"/>
+  
+  <!-- VR Headset -->
+  <path d="M200 120C133.726 120 80 153.726 80 195C80 236.274 133.726 270 200 270C266.274 270 320 236.274 320 195C320 153.726 266.274 120 200 120Z" fill="white" stroke="#4A55A2" stroke-width="6"/>
+  <path d="M130 195C130 177.327 160.294 163 197.5 163C234.706 163 265 177.327 265 195C265 212.673 234.706 227 197.5 227C160.294 227 130 212.673 130 195Z" fill="#4A55A2"/>
+  
+  <!-- Sensors -->
+  <circle cx="120" cy="170" r="8" fill="#5D6CC6"/>
+  <circle cx="140" cy="170" r="8" fill="#5D6CC6"/>
+  <circle cx="160" cy="170" r="8" fill="#5D6CC6"/>
+  
+  <!-- Strap -->
+  <path d="M95 185C95 185 65 240 95 270" stroke="#4A55A2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M305 185C305 185 335 240 305 270" stroke="#4A55A2" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Abstract elements -->
+  <circle cx="350" cy="100" r="15" fill="#5D6CC6" fill-opacity="0.3"/>
+  <circle cx="50" cy="300" r="20" fill="#5D6CC6" fill-opacity="0.3"/>
+  <circle cx="330" cy="280" r="10" fill="#5D6CC6" fill-opacity="0.3"/>
+  <circle cx="70" cy="120" r="12" fill="#5D6CC6" fill-opacity="0.3"/>
+</svg>

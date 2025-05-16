@@ -1143,6 +1143,14 @@ const translations: Record<Language, Record<string, string>> = {
     'service.saludalia.feature2': 'In-person consultations and telemedicine',
     'service.saludalia.feature3': 'Personalized follow-up',
     'service.saludalia.badge': 'Comprehensive health',
+    
+    'service.plusalud.title': 'TICKETS PLUSALUD',
+    'service.plusalud.description': 'Advanced psychological therapy using virtual reality headsets for businesses and individuals.',
+    'service.plusalud.feature1': 'In-person and online sessions with VR',
+    'service.plusalud.feature2': 'Treatment for psychological disorders',
+    'service.plusalud.feature3': 'Personalized plans with ongoing monitoring',
+    'service.plusalud.badge': 'Therapeutic innovation',
+    'service.plusalud.button': 'Discover PluSalud',
     'service.empordajobs.button': 'Go to Empordà Jobs',
     
     'empordajobs.dialog.status': 'Under development',
