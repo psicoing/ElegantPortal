@@ -15,7 +15,7 @@ export function PluSaludDialog({ open, setOpen }: PluSaludDialogProps) {
   
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="max-w-3xl">
+      <DialogContent className="w-[90vw] max-w-3xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center space-x-2">
             <Badge className="bg-blue-600">
@@ -44,7 +44,7 @@ export function PluSaludDialog({ open, setOpen }: PluSaludDialogProps) {
             <h3 className="font-bold text-lg mb-3">
               Terapia de psicología
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-sm sm:text-base">
               Descubre el futuro de la psicología con una terapia que combina comodidad e innovación tecnológica. Nuestras soluciones de realidad virtual ofrecen una nueva forma de acceder a la terapia de psicología, haciendo que la atención sea más accesible y eficaz.
             </p>
           </div>
@@ -53,34 +53,34 @@ export function PluSaludDialog({ open, setOpen }: PluSaludDialogProps) {
             <h3 className="font-bold text-lg mb-3">
               Tratamientos disponibles
             </h3>
-            <div className="flex flex-wrap gap-2 mb-6">
-              <Badge variant="outline" className="border-blue-500 text-blue-700">Ansiedad Generalizada</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">Ansiedad Social</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">Trastorno del Espectro Autista</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">TDAH</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">Trastornos Adictivos</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">TCA</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">Bullying</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">TOC</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">TEPT</Badge>
-              <Badge variant="outline" className="border-blue-500 text-blue-700">Trauma</Badge>
+            <div className="flex flex-wrap gap-1 sm:gap-2 mb-6">
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">Ansiedad Generalizada</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">Ansiedad Social</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">TEA</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">TDAH</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">Trastornos Adictivos</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">TCA</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">Bullying</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">TOC</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">TEPT</Badge>
+              <Badge variant="outline" className="border-blue-500 text-blue-700 text-xs sm:text-sm whitespace-nowrap mb-1">Trauma</Badge>
             </div>
             
-            <div className="space-y-6">
-              <div className="bg-blue-50 rounded-lg p-4">
-                <h3 className="font-bold text-blue-700 mb-2">
+            <div className="space-y-4">
+              <div className="bg-blue-50 rounded-lg p-3 sm:p-4">
+                <h3 className="font-bold text-blue-700 mb-1 sm:mb-2 text-sm sm:text-base">
                   Recibe el visor de realidad virtual en tu domicilio
                 </h3>
-                <p className="text-sm text-gray-700">
+                <p className="text-xs sm:text-sm text-gray-700">
                   Utiliza el visor de RV durante las sesiones de telemedicina con tu terapeuta y para las tareas asignadas entre sesiones.
                 </p>
               </div>
               
-              <div className="bg-blue-50 rounded-lg p-4">
-                <h3 className="font-bold text-blue-700 mb-2">
+              <div className="bg-blue-50 rounded-lg p-3 sm:p-4">
+                <h3 className="font-bold text-blue-700 mb-1 sm:mb-2 text-sm sm:text-base">
                   Plan de atención personalizado
                 </h3>
-                <p className="text-sm text-gray-700">
+                <p className="text-xs sm:text-sm text-gray-700">
                   Recibe un plan personalizado adaptado a tus necesidades y sigue tu evolución con tu terapeuta para asegurar una mejora continua.
                 </p>
               </div>
@@ -88,17 +88,17 @@ export function PluSaludDialog({ open, setOpen }: PluSaludDialogProps) {
           </div>
         </div>
         
-        <div className="flex justify-between mt-6">
+        <div className="flex justify-between mt-4 sm:mt-6">
           <Button
             onClick={() => setOpen(false)}
             variant="outline"
-            className="border-gray-300"
+            className="border-gray-300 text-xs sm:text-sm py-1 px-2 sm:px-4 h-8 sm:h-10"
           >
             Cerrar
           </Button>
           
           <Button
-            className="bg-blue-600 hover:bg-blue-700"
+            className="bg-blue-600 hover:bg-blue-700 text-xs sm:text-sm py-1 px-2 sm:px-4 h-8 sm:h-10"
             asChild
           >
             <a href="#contact" onClick={() => setOpen(false)}>
