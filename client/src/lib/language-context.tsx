@@ -83,7 +83,7 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.iphones': 'Sorteamos 10 iPhones entre toda la comunidad.',
     'rewards.tesla': 'Sorteamos 1 Tesla.',
     'rewards.house1': 'Sorteamos una casa en Palamós (Girona, España).',
-    'rewards.house2': 'Sorteamos una casa ecológica de madera de Tu Casa Eco, para que la pongas donde tú quieras.',
+    'rewards.house2': 'Sorteamos un regalo sorpresa muy importante no dinerario, podría ser un chalet o sorpresa con impuestos pagados.',
     'rewards.users': 'usuarios activos',
     'rewards.footer': 'Sigue invitando, creciendo y soñando. Estamos más cerca de los premios gracias a ti.',
     
