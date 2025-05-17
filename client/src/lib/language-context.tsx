@@ -507,7 +507,7 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.iphones': 'Sortegem 10 iPhones entre tota la comunitat.',
     'rewards.tesla': 'Sortegem 1 Tesla.',
     'rewards.house1': 'Sortegem una casa a Palamós (Girona, Espanya).',
-    'rewards.house2': 'Sortegem una casa ecològica de fusta de Tu Casa Eco, perquè la posis on tu vulguis.',
+    'rewards.house2': 'Sortegem un regal sorpresa molt important no dinerari, podria ser un xalet o sorpresa amb impostos pagats.',
     'rewards.footer': 'Segueix convidant, creixent i somiant. Estem més a prop dels premis gràcies a tu.',
     
     'about.title': 'Qui som?',
@@ -1099,7 +1099,7 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.iphones': 'We raffle 10 iPhones among the entire community.',
     'rewards.tesla': 'We raffle 1 Tesla.',
     'rewards.house1': 'We raffle a house in Palamós (Girona, Spain).',
-    'rewards.house2': 'We raffle an ecological wooden house from Tu Casa Eco, so you can put it wherever you want.',
+    'rewards.house2': 'We raffle a very important non-monetary surprise gift, which could be a chalet or surprise with taxes paid.',
     'rewards.footer': 'Keep inviting, growing and dreaming. We are closer to the prizes thanks to you.',
     
     'about.title': 'Who We Are',
