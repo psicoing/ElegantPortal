@@ -165,7 +165,7 @@ export function ServiceSection() {
     imageSrc: plusaludVRImage
   };
 
-  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, ticketsPlusalud];
+  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud];
 
   return (
     <>
