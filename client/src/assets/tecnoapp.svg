@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#E6F7FF"/>
+  
+  <!-- Círculos decorativos -->
+  <circle cx="200" cy="150" r="50" fill="#007BFF" opacity="0.1"/>
+  <circle cx="650" cy="400" r="80" fill="#007BFF" opacity="0.1"/>
+  <circle cx="400" cy="500" r="40" fill="#007BFF" opacity="0.1"/>
+  
+  <!-- Elementos tecnológicos -->
+  <g transform="translate(400, 300) scale(1.5)">
+    <!-- Tablet -->
+    <rect x="-60" y="-80" width="120" height="160" rx="10" fill="#FFFFFF" stroke="#0066CC" stroke-width="4"/>
+    <rect x="-50" y="-70" width="100" height="120" rx="2" fill="#E6F7FF"/>
+    
+    <!-- Líneas de código -->
+    <rect x="-40" y="-60" width="60" height="4" rx="2" fill="#007BFF" opacity="0.7"/>
+    <rect x="-40" y="-50" width="70" height="4" rx="2" fill="#007BFF" opacity="0.5"/>
+    <rect x="-40" y="-40" width="50" height="4" rx="2" fill="#007BFF" opacity="0.7"/>
+    <rect x="-40" y="-30" width="65" height="4" rx="2" fill="#007BFF" opacity="0.5"/>
+    
+    <!-- Círculos de conexión -->
+    <circle cx="-30" cy="20" r="10" fill="#0066CC"/>
+    <circle cx="0" cy="30" r="10" fill="#0066CC"/>
+    <circle cx="30" cy="20" r="10" fill="#0066CC"/>
+    
+    <!-- Líneas de conexión -->
+    <line x1="-30" y1="20" x2="0" y2="30" stroke="#0066CC" stroke-width="2"/>
+    <line x1="0" y1="30" x2="30" y2="20" stroke="#0066CC" stroke-width="2"/>
+    
+    <!-- Botón de la tablet -->
+    <circle cx="0" cy="65" r="8" fill="#FFFFFF" stroke="#0066CC" stroke-width="2"/>
+  </g>
+  
+  <!-- Texto "TecnoApp" con estilo moderno -->
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#0066CC">TecnoApp</text>
+</svg>

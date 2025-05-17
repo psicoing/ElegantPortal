@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#F3F4F6"/>
+  
+  <!-- Elementos decorativos del fondo -->
+  <rect x="100" y="100" width="200" height="200" rx="20" fill="#6D28D9" opacity="0.05"/>
+  <rect x="500" y="300" width="200" height="200" rx="20" fill="#6D28D9" opacity="0.05"/>
+  <circle cx="250" cy="450" r="80" fill="#6D28D9" opacity="0.05"/>
+  <circle cx="600" cy="150" r="100" fill="#6D28D9" opacity="0.05"/>
+  
+  <!-- Logo de C++ estilizado -->
+  <g transform="translate(400, 280)">
+    <!-- Símbolo C -->
+    <path d="M-80,0 A80,80 0 1,1 -80,1" fill="none" stroke="#7C3AED" stroke-width="30" stroke-linecap="round"/>
+    
+    <!-- Primera + -->
+    <line x1="20" y1="-40" x2="20" y2="40" stroke="#7C3AED" stroke-width="30" stroke-linecap="round"/>
+    <line x1="-20" y1="0" x2="60" y2="0" stroke="#7C3AED" stroke-width="30" stroke-linecap="round"/>
+    
+    <!-- Segunda + -->
+    <line x1="100" y1="-40" x2="100" y2="40" stroke="#7C3AED" stroke-width="30" stroke-linecap="round"/>
+    <line x1="60" y1="0" x2="140" y2="0" stroke="#7C3AED" stroke-width="30" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Elementos de código -->
+  <g transform="translate(400, 150)" opacity="0.7">
+    <rect x="-150" y="-25" width="300" height="50" rx="5" fill="#EDE9FE"/>
+    <text x="-140" y="10" font-family="monospace" font-size="24" fill="#7C3AED">int main() { return 0; }</text>
+  </g>
+  
+  <!-- Texto "C++" con estilo de programación -->
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#7C3AED">C++</text>
+</svg>

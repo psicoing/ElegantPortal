@@ -1,7 +1,7 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { HorizontalServiceCard } from "@/components/HorizontalServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
@@ -25,6 +25,9 @@ import empordaJobsImage from "../assets/empordajobs.png";
 import saludaliaMainImage from "../assets/saludalia/saludalia_main.png";
 import saludaliaInfoImage from "../assets/saludalia/saludalia_info.png";
 import plusaludVRImage from "../assets/plusalud_vr.svg";
+import tecnoappImage from "../assets/tecnoapp.svg";
+import telecosImage from "../assets/telecos.svg";
+import cplusplusImage from "../assets/cplusplus.svg";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -165,7 +168,52 @@ export function ServiceSection() {
     imageSrc: plusaludVRImage
   };
 
-  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud];
+  const tecnoapp: ServiceItem = {
+    icon: <Laptop className="h-8 w-8 text-blue-600" />,
+    title: t('service.tecnoapp.title'),
+    description: t('service.tecnoapp.description'),
+    features: [
+      t('service.tecnoapp.feature1'),
+      t('service.tecnoapp.feature2'),
+      t('service.tecnoapp.feature3')
+    ],
+    url: "#tecnoapp",
+    badgeText: t('service.tecnoapp.badge'),
+    variant: "secondary",
+    imageSrc: tecnoappImage
+  };
+
+  const telecos: ServiceItem = {
+    icon: <Radio className="h-8 w-8 text-blue-700" />,
+    title: t('service.telecos.title'),
+    description: t('service.telecos.description'),
+    features: [
+      t('service.telecos.feature1'),
+      t('service.telecos.feature2'),
+      t('service.telecos.feature3')
+    ],
+    url: "#telecos",
+    badgeText: t('service.telecos.badge'),
+    variant: "primary",
+    imageSrc: telecosImage
+  };
+
+  const cplusplus: ServiceItem = {
+    icon: <Terminal className="h-8 w-8 text-purple-700" />,
+    title: t('service.cplusplus.title'),
+    description: t('service.cplusplus.description'),
+    features: [
+      t('service.cplusplus.feature1'),
+      t('service.cplusplus.feature2'),
+      t('service.cplusplus.feature3')
+    ],
+    url: "#cplusplus",
+    badgeText: t('service.cplusplus.badge'),
+    variant: "secondary",
+    imageSrc: cplusplusImage
+  };
+
+  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus];
 
   return (
     <>
