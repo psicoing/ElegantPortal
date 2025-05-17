@@ -12,6 +12,9 @@ import { AppiaDialog } from "./AppiaDialog";
 import { NflowDialog } from "./NflowDialog";
 import { SaludaliaDialog } from "./SaludaliaDialog";
 import { PluSaludDialog } from "./PluSaludDialog";
+import { TecnoAppDialog } from "./TecnoAppDialog";
+import { TelecosDialog } from "./TelecosDialog";
+import { CPlusPlusDialog } from "./CPlusPlusDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -151,6 +154,9 @@ export function ServiceSection() {
   };
 
   const [plusAludDialogOpen, setPluSaludDialogOpen] = useState(false);
+  const [tecnoAppDialogOpen, setTecnoAppDialogOpen] = useState(false);
+  const [telecosDialogOpen, setTelecosDialogOpen] = useState(false);
+  const [cplusplusDialogOpen, setCplusplusDialogOpen] = useState(false);
   
   const ticketsPlusalud: ServiceItem = {
     icon: <Headphones className="h-8 w-8 text-purple-600" />,
@@ -178,6 +184,7 @@ export function ServiceSection() {
       t('service.tecnoapp.feature3')
     ],
     url: "#tecnoapp",
+    onClick: () => setTecnoAppDialogOpen(true),
     badgeText: t('service.tecnoapp.badge'),
     variant: "secondary",
     imageSrc: tecnoappImage
@@ -193,6 +200,7 @@ export function ServiceSection() {
       t('service.telecos.feature3')
     ],
     url: "#telecos",
+    onClick: () => setTelecosDialogOpen(true),
     badgeText: t('service.telecos.badge'),
     variant: "primary",
     imageSrc: telecosImage
@@ -208,6 +216,7 @@ export function ServiceSection() {
       t('service.cplusplus.feature3')
     ],
     url: "#cplusplus",
+    onClick: () => setCplusplusDialogOpen(true),
     badgeText: t('service.cplusplus.badge'),
     variant: "secondary",
     imageSrc: cplusplusImage
@@ -271,6 +280,9 @@ export function ServiceSection() {
       <NflowDialog open={nflowDialogOpen} setOpen={setNflowDialogOpen} />
       <SaludaliaDialog open={saludaliaDialogOpen} setOpen={setSaludaliaDialogOpen} />
       <PluSaludDialog open={plusAludDialogOpen} setOpen={setPluSaludDialogOpen} />
+      <TecnoAppDialog open={tecnoAppDialogOpen} setOpen={setTecnoAppDialogOpen} />
+      <TelecosDialog open={telecosDialogOpen} setOpen={setTelecosDialogOpen} />
+      <CPlusPlusDialog open={cplusplusDialogOpen} setOpen={setCplusplusDialogOpen} />
     </>
   );
 }
