@@ -122,6 +122,34 @@ export function FuturisticCTA() {
                 {t('futuristic.neuronmeg')}
               </button>
             </a>
+            
+            <a href="https://plusalud.jobda.es/" className="group relative">
+              <div className="absolute inset-0 bg-purple-500 bg-opacity-40 rounded-full blur group-hover:bg-opacity-50 transition-all duration-300"></div>
+              <button className="relative px-6 py-2.5 bg-purple-500 bg-opacity-20 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-30 transition-all duration-300">
+                Acceder a PluSalud
+              </button>
+            </a>
+            
+            <a href="https://tecnoapp.jobda.es/" className="group relative">
+              <div className="absolute inset-0 bg-blue-500 bg-opacity-40 rounded-full blur group-hover:bg-opacity-50 transition-all duration-300"></div>
+              <button className="relative px-6 py-2.5 bg-blue-500 bg-opacity-20 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-30 transition-all duration-300">
+                Acceder a TecnoApp
+              </button>
+            </a>
+            
+            <a href="https://telecos.jobda.es/" className="group relative">
+              <div className="absolute inset-0 bg-blue-700 bg-opacity-40 rounded-full blur group-hover:bg-opacity-50 transition-all duration-300"></div>
+              <button className="relative px-6 py-2.5 bg-blue-700 bg-opacity-20 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-30 transition-all duration-300">
+                Acceder a Telecos
+              </button>
+            </a>
+            
+            <a href="https://cplusplus.jobda.es/" className="group relative">
+              <div className="absolute inset-0 bg-purple-700 bg-opacity-40 rounded-full blur group-hover:bg-opacity-50 transition-all duration-300"></div>
+              <button className="relative px-6 py-2.5 bg-purple-700 bg-opacity-20 backdrop-blur-md rounded-full font-medium text-white border border-white/25 hover:bg-opacity-30 transition-all duration-300">
+                Acceder a C++
+              </button>
+            </a>
           </motion.div>
           
           {/* Saludalia en una fila separada con estilo destacado */}
