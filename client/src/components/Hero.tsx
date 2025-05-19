@@ -39,14 +39,26 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-col items-center gap-4"
           >
-            <Button 
-              onClick={scrollToServices}
-              className="bg-white text-primary hover:shadow-lg transition transform hover:-translate-y-1 font-sans font-semibold px-8 py-3 rounded-lg"
-            >
-              {t('hero.cta')}
-            </Button>
-            <div className="mt-4 text-white font-bold">
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button 
+                onClick={scrollToServices}
+                className="bg-white text-primary hover:shadow-lg transition transform hover:-translate-y-1 font-sans font-semibold px-8 py-3 rounded-lg"
+              >
+                {t('hero.cta')}
+              </Button>
+              
+              <Link href="/investors">
+                <Button 
+                  className="bg-amber-500 text-white hover:bg-amber-600 hover:shadow-lg transition transform hover:-translate-y-1 font-sans font-semibold px-8 py-3 rounded-lg"
+                >
+                  Portal Inversores
+                </Button>
+              </Link>
+            </div>
+            
+            <div className="mt-2 text-white font-bold">
               EMPORDAJOBS SL
             </div>
           </motion.div>
