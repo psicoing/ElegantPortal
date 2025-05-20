@@ -1,85 +1,116 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/language-context";
 import { useState } from "react";
+import { JobdaDialog } from "./JobdaDialog";
+import { SinapsyDialog } from "./SinapsyDialog";
+import { NeuronMegDialog } from "./NeuronMegDialog";
+import { EmpordaJobsDialog } from "./EmpordaJobsDialog";
+import { AppiaDialog } from "./AppiaDialog";
+import { NflowDialog } from "./NflowDialog";
+import { SaludaliaDialog } from "./SaludaliaDialog";
+import { PluSaludDialog } from "./PluSaludDialog";
+import { TecnoAppDialog } from "./TecnoAppDialog";
+import { TelecosDialog } from "./TelecosDialog";
+import { CPlusPlusDialog } from "./CPlusPlusDialog";
+
+// Definir la interfaz para el servicio
+interface Service {
+  name: string;
+  onClick: () => void;
+  variant: string;
+  icon: string;
+}
 
 export function FuturisticCTA() {
   const { t } = useLanguage();
   
+  // Estados para controlar los diálogos
+  const [nflowDialogOpen, setNflowDialogOpen] = useState(false);
+  const [appiaDialogOpen, setAppiaDialogOpen] = useState(false);
+  const [sinapsyDialogOpen, setSinapsyDialogOpen] = useState(false);
+  const [empordaJobsDialogOpen, setEmpordaJobsDialogOpen] = useState(false);
+  const [neuronMegDialogOpen, setNeuronMegDialogOpen] = useState(false);
+  const [saludaliaDialogOpen, setSaludaliaDialogOpen] = useState(false);
+  const [plusAludDialogOpen, setPluSaludDialogOpen] = useState(false);
+  const [tecnoAppDialogOpen, setTecnoAppDialogOpen] = useState(false);
+  const [telecosDialogOpen, setTelecosDialogOpen] = useState(false);
+  const [cplusplusDialogOpen, setCplusplusDialogOpen] = useState(false);
+
   // Estructura para organizar los servicios por categorías
-  const mainServices = [
+  const mainServices: Service[] = [
     { 
       name: t('futuristic.nflow'), 
-      url: "https://nflow.jobda.es/", 
+      onClick: () => setNflowDialogOpen(true), 
       variant: "blue-light",
       icon: "psychological"
     },
     { 
       name: t('futuristic.appia'), 
-      url: "https://appia.jobda.es/", 
+      onClick: () => setAppiaDialogOpen(true), 
       variant: "dark",
       icon: "technology"
     },
     { 
       name: t('futuristic.sinapsy'), 
-      url: "https://sinapsy.jobda.es/", 
+      onClick: () => setSinapsyDialogOpen(true), 
       variant: "blue-light",
       icon: "publication" 
     },
   ];
   
-  const jobServices = [
+  const jobServices: Service[] = [
     { 
       name: t('futuristic.empordajobs'), 
-      url: "https://empordajobs.jobda.es/", 
+      onClick: () => setEmpordaJobsDialogOpen(true), 
       variant: "dark",
       icon: "jobs"
     },
     { 
       name: "Acceder a PluSalud", 
-      url: "https://plusalud.jobda.es/", 
+      onClick: () => setPluSaludDialogOpen(true), 
       variant: "purple",
       icon: "therapy"  
     },
   ];
   
-  const healthServices = [
+  const healthServices: Service[] = [
     { 
       name: t('futuristic.neuronmeg'), 
-      url: "https://neuronmeg.jobda.es/", 
+      onClick: () => setNeuronMegDialogOpen(true), 
       variant: "blue-light",
       icon: "psychology" 
     },
     { 
       name: t('futuristic.saludalia'), 
-      url: "https://saludalia.jobda.es/", 
+      onClick: () => setSaludaliaDialogOpen(true), 
       variant: "emerald",
       icon: "health" 
     },
   ];
   
-  const techServices = [
+  const techServices: Service[] = [
     { 
       name: "Acceder a TecnoApp", 
-      url: "https://tecnoapp.jobda.es/", 
+      onClick: () => setTecnoAppDialogOpen(true), 
       variant: "blue", 
       icon: "app"
     },
     { 
       name: "Acceder a Telecos", 
-      url: "https://telecos.jobda.es/", 
+      onClick: () => setTelecosDialogOpen(true), 
       variant: "blue-dark",
       icon: "telecom" 
     },
     { 
       name: "Acceder a C++", 
-      url: "https://cplusplus.jobda.es/", 
+      onClick: () => setCplusplusDialogOpen(true), 
       variant: "purple-dark",
       icon: "code" 
     },
   ];
   
   // Función para obtener la clase de estilo según la variante
-  const getButtonStyle = (variant) => {
+  const getButtonStyle = (variant: string): string => {
     switch(variant) {
       case 'blue-light':
         return "bg-white bg-opacity-10 border-white/25 hover:bg-opacity-20";
@@ -100,7 +131,7 @@ export function FuturisticCTA() {
     }
   };
   
-  const getBackgroundStyle = (variant) => {
+  const getBackgroundStyle = (variant: string): string => {
     switch(variant) {
       case 'blue-light':
         return "bg-white bg-opacity-20 group-hover:bg-opacity-30";
@@ -122,13 +153,13 @@ export function FuturisticCTA() {
   };
   
   // Componente para renderizar un botón de servicio
-  const ServiceButton = ({ service }) => (
-    <a href={service.url} className="group relative">
+  const ServiceButton = ({ service }: { service: Service }) => (
+    <div className="group relative cursor-pointer" onClick={service.onClick}>
       <div className={`absolute inset-0 ${getBackgroundStyle(service.variant)} rounded-full blur-md transition-all duration-300`}></div>
-      <button className={`relative px-6 py-2.5 ${getButtonStyle(service.variant)} backdrop-blur-md rounded-full font-medium text-white border transition-all duration-300`}>
+      <button className={`relative px-6 py-2.5 ${getButtonStyle(service.variant)} backdrop-blur-md rounded-full font-medium text-white border transition-all duration-300 w-full`}>
         {service.name}
       </button>
-    </a>
+    </div>
   );
   
   return (
@@ -281,6 +312,19 @@ export function FuturisticCTA() {
           </div>
         </div>
       </motion.div>
+      
+      {/* Diálogos para cada servicio */}
+      <JobdaDialog open={appiaDialogOpen} setOpen={setAppiaDialogOpen} />
+      <SinapsyDialog open={sinapsyDialogOpen} setOpen={setSinapsyDialogOpen} />
+      <NeuronMegDialog open={neuronMegDialogOpen} setOpen={setNeuronMegDialogOpen} />
+      <EmpordaJobsDialog open={empordaJobsDialogOpen} setOpen={setEmpordaJobsDialogOpen} />
+      <AppiaDialog open={appiaDialogOpen} setOpen={setAppiaDialogOpen} />
+      <NflowDialog open={nflowDialogOpen} setOpen={setNflowDialogOpen} />
+      <SaludaliaDialog open={saludaliaDialogOpen} setOpen={setSaludaliaDialogOpen} />
+      <PluSaludDialog open={plusAludDialogOpen} setOpen={setPluSaludDialogOpen} />
+      <TecnoAppDialog open={tecnoAppDialogOpen} setOpen={setTecnoAppDialogOpen} />
+      <TelecosDialog open={telecosDialogOpen} setOpen={setTelecosDialogOpen} />
+      <CPlusPlusDialog open={cplusplusDialogOpen} setOpen={setCplusplusDialogOpen} />
     </section>
   );
 }
