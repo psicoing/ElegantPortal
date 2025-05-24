@@ -10,6 +10,7 @@ import AiApps from "@/pages/AiApps";
 import CommissionsCalculator from "@/pages/CommissionsCalculator";
 import { InvestorsPage } from "@/pages/Investors";
 import { CookieBanner } from "@/components/CookieBanner";
+import { WhatsAppBanner } from "@/components/WhatsAppBanner";
 import { LanguageProvider } from "./lib/language-context";
 
 function Router() {
@@ -32,6 +33,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Router />
         <CookieBanner />
+        <WhatsAppBanner />
         <Toaster />
       </QueryClientProvider>
     </LanguageProvider>
