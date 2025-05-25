@@ -255,12 +255,12 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
               </div>
               
               <div className="space-y-2">
-                <img src={img8899} alt="Professional Rankings" className="rounded-lg shadow-md w-full" />
+                <img src={img8901} alt="Professional Rankings" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Rankings Profesionales</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8900} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
+                <img src={img8902} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Análisis por Sectores</p>
               </div>
             </div>
@@ -268,13 +268,13 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
             {/* Additional Screenshots */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <img src={img8901} alt="Professional Profiles" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Perfiles Profesionales</p>
+                <img src={img8899} alt="Professional Dashboard" className="rounded-lg shadow-md w-full" />
+                <p className="text-sm text-center text-gray-600">Dashboard Profesional</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8902} alt="Talent Search" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Búsqueda de Talento</p>
+                <img src={img8900} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
+                <p className="text-sm text-center text-gray-600">Análisis por Sectores</p>
               </div>
             </div>
 
@@ -286,13 +286,13 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
               </div>
               
               <div className="space-y-2">
-                <img src={img8904} alt="Professional Updates" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Actualizaciones Profesionales</p>
+                <img src={img8904} alt="Professional Search" className="rounded-lg shadow-md w-full" />
+                <p className="text-sm text-center text-gray-600">Búsqueda de Talento</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8905} alt="Market Overview" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Vista General del Mercado</p>
+                <img src={img8905} alt="Recent Activity" className="rounded-lg shadow-md w-full" />
+                <p className="text-sm text-center text-gray-600">Actividad Reciente</p>
               </div>
             </div>
           </div>
