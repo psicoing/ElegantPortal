@@ -18,7 +18,7 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
 
   const content = {
     es: {
-      title: "JOBDA - Bolsa de Talento",
+      title: "TALENTPOOL",
       subtitle: "La Primera Bolsa de Talento Humano",
       description: "Descubre, evalúa y conecta con profesionales verificados por IA. Cada talento cotiza en tiempo real según su valor de mercado.",
       features: [
@@ -70,7 +70,7 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
       professionalStates: "Sistema de estados profesionales independientes"
     },
     ca: {
-      title: "JOBDA - Borsa de Talent",
+      title: "TALENTPOOL",
       subtitle: "La Primera Borsa de Talent Humà",
       description: "Descobreix, avalua i connecta amb professionals verificats per IA. Cada talent cotitza en temps real segons el seu valor de mercat.",
       features: [
