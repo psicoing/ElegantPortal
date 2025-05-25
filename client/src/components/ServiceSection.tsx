@@ -15,6 +15,7 @@ import { PluSaludDialog } from "./PluSaludDialog";
 import { TecnoAppDialog } from "./TecnoAppDialog";
 import { TelecosDialog } from "./TelecosDialog";
 import { CPlusPlusDialog } from "./CPlusPlusDialog";
+import { JobdaBolsaDialog } from "./JobdaBolsaDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -157,6 +158,7 @@ export function ServiceSection() {
   const [tecnoAppDialogOpen, setTecnoAppDialogOpen] = useState(false);
   const [telecosDialogOpen, setTelecosDialogOpen] = useState(false);
   const [cplusplusDialogOpen, setCplusplusDialogOpen] = useState(false);
+  const [jobdaBolsaDialogOpen, setJobdaBolsaDialogOpen] = useState(false);
   
   const ticketsPlusalud: ServiceItem = {
     icon: <Headphones className="h-8 w-8 text-purple-600" />,

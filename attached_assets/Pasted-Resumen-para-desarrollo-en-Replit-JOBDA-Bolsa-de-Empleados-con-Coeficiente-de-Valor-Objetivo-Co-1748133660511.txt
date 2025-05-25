@@ -1,0 +1,66 @@
+Resumen para desarrollo en Replit: JOBDA - Bolsa de Empleados con Coeficiente de Valor
+
+Objetivo:
+Construir una plataforma web interactiva desde Replit que funcione como una Bolsa de Inversión en Talento Humano. Cada usuario (empleado o candidato) se presenta como un “activo laboral” con un valor de bolsa, validado por méritos, trayectoria e inteligencia artificial psicométrica.
+
+⸻
+
+Características clave del proyecto:
+
+1. Interfaz de Bolsa de Valores (Estilo Nasdaq o Bloomberg)
+	•	Dashboard principal con índices por profesión (Ej: Carpintería, Medicina, Ingeniería…).
+	•	Visualización tipo ranking o “ticker” con:
+	•	Nombre del profesional
+	•	Coeficiente de Valor
+	•	Estado actual (Libre, Ocupado, Disponible)
+	•	Variaciones recientes (por ejemplo, si subió su puntuación o cambió de estado)
+	•	Vista en tiempo real, actualizable dinámicamente.
+
+2. Perfil de Usuario con Validación PROM
+	•	Registro donde el candidato sube documentación:
+	•	Formación
+	•	Nóminas / contratos
+	•	CV verificado
+	•	Acceso a un módulo de prueba psicométrica grabada por videocámara, validada por IA mediante PROM:
+	•	Detecta si el candidato responde sinceramente y con coherencia.
+	•	Almacena resultados y los enlaza con su perfil.
+	•	La IA asigna un coeficiente único de bolsa (numérico, escalado 0-1000 o similar).
+
+3. Estados Independientes del Profesional
+
+Cada usuario tiene 3 valores binarios:
+	•	Libre (0/1)
+	•	Ocupado (0/1)
+	•	Disponible (0/1)
+Estos pueden cruzarse para entender si alguien está ocupado pero aún disponible, o libre pero no disponible, etc.
+
+4. Buscador de Talento
+	•	Las empresas podrán buscar por:
+	•	Sector profesional
+	•	Rango de coeficiente
+	•	Estado actual
+	•	Ubicación o disponibilidad remota
+	•	Visualización estilo “bolsa” con subidas, bajadas y destacados del día.
+
+5. Zona de Seguimiento
+	•	Las empresas pueden seguir “profesionales favoritos”.
+	•	Los usuarios pueden ver cómo evoluciona su valor y compararse en su sector.
+
+⸻
+
+Requisitos técnicos sugeridos para Replit:
+	•	Frontend: React.js o HTML/CSS + JS básico con estilo inspirado en bolsa de valores.
+	•	Backend: Node.js con Express o Python (Flask) para la lógica de validación, puntuación y gestión de estados.
+	•	Base de datos: PostgreSQL o MongoDB para almacenar perfiles, métricas, pruebas PROM, y logs de actividad.
+	•	IA / Validación PROM:
+	•	Integración futura con modelo IA de validación (puede simularse al principio con respuestas tipo).
+	•	Librerías de análisis de video si se desea implementar reconocimiento en vivo (fase 2).
+
+⸻
+
+Resumen funcional
+
+JOBDA es una bolsa de valores, pero en vez de acciones, se cotiza el talento humano.
+La puntuación de cada persona se basa en datos verificables, con capas psicométricas de IA, y su disponibilidad se monitoriza en tiempo real.
+
+Impacto esperado: democratización del talento, contratación por méritos y eficiencia total en los procesos de selección.
