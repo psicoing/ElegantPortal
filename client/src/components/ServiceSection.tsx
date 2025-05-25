@@ -32,7 +32,7 @@ import plusaludVRImage from "../assets/plusalud_vr.svg";
 import tecnoappImage from "../assets/tecnoapp.svg";
 import telecosImage from "../assets/telecos.svg";
 import cplusplusImage from "../assets/cplusplus.svg";
-import img8882 from "@assets/IMG_8882.png";
+import img8894 from "@assets/IMG_8894.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
