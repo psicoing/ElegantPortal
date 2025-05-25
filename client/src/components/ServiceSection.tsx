@@ -301,10 +301,11 @@ export function ServiceSection() {
               title={jobdaBolsa.title}
               description={jobdaBolsa.description}
               features={jobdaBolsa.features}
+              url={jobdaBolsa.url}
               badgeText={jobdaBolsa.badgeText}
+              variant={jobdaBolsa.variant}
               imageSrc={jobdaBolsa.imageSrc}
               onClick={jobdaBolsa.onClick}
-              buttonText={t('service.jobda_bolsa.button')}
             />
           </motion.div>
 
