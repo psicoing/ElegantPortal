@@ -208,7 +208,7 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
           {/* Main Image */}
           <div className="flex justify-center">
             <img 
-              src={img8882} 
+              src={img8894} 
               alt="JOBDA Main Interface" 
               className="rounded-xl shadow-lg max-w-sm w-full"
             />
@@ -235,32 +235,32 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="space-y-2">
-                <img src={img8883} alt="Real-time Coefficients" className="rounded-lg shadow-md w-full" />
+                <img src={img8895} alt="Real-time Coefficients" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">{currentContent.interfaceType}</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8884} alt="Dynamic States" className="rounded-lg shadow-md w-full" />
+                <img src={img8896} alt="Dynamic States" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">{currentContent.realTimeUpdates}</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8885} alt="Smart Search" className="rounded-lg shadow-md w-full" />
+                <img src={img8897} alt="Smart Search" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">{currentContent.aiValidation}</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8886} alt="Dashboard Overview" className="rounded-lg shadow-md w-full" />
+                <img src={img8898} alt="Dashboard Overview" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">{currentContent.professionalStates}</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8887} alt="Professional Rankings" className="rounded-lg shadow-md w-full" />
+                <img src={img8899} alt="Professional Rankings" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Rankings Profesionales</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8888} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
+                <img src={img8900} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Análisis por Sectores</p>
               </div>
             </div>
@@ -268,12 +268,12 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
             {/* Additional Screenshots */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <img src={img8890} alt="Professional Profiles" className="rounded-lg shadow-md w-full" />
+                <img src={img8901} alt="Professional Profiles" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Perfiles Profesionales</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8891} alt="Talent Search" className="rounded-lg shadow-md w-full" />
+                <img src={img8902} alt="Talent Search" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Búsqueda de Talento</p>
               </div>
             </div>
@@ -281,17 +281,17 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
             {/* Activity Screenshots */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="space-y-2">
-                <img src={img8892} alt="Activity Tracking" className="rounded-lg shadow-md w-full" />
+                <img src={img8903} alt="Activity Tracking" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Seguimiento de Actividad</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8893} alt="Professional Updates" className="rounded-lg shadow-md w-full" />
+                <img src={img8904} alt="Professional Updates" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Actualizaciones Profesionales</p>
               </div>
               
               <div className="space-y-2">
-                <img src={img8880} alt="Market Overview" className="rounded-lg shadow-md w-full" />
+                <img src={img8905} alt="Market Overview" className="rounded-lg shadow-md w-full" />
                 <p className="text-sm text-center text-gray-600">Vista General del Mercado</p>
               </div>
             </div>

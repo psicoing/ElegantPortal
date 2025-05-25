@@ -239,7 +239,7 @@ export function ServiceSection() {
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: t('service.jobda_bolsa.badge'),
     variant: "primary",
-    imageSrc: img8882
+    imageSrc: img8894
   };
 
   const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus];
