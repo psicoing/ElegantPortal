@@ -1,7 +1,7 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { HorizontalServiceCard } from "@/components/HorizontalServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
@@ -32,6 +32,7 @@ import plusaludVRImage from "../assets/plusalud_vr.svg";
 import tecnoappImage from "../assets/tecnoapp.svg";
 import telecosImage from "../assets/telecos.svg";
 import cplusplusImage from "../assets/cplusplus.svg";
+import img8882 from "@assets/IMG_8882.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -224,6 +225,23 @@ export function ServiceSection() {
     imageSrc: cplusplusImage
   };
 
+  const jobdaBolsa: ServiceItem = {
+    icon: <TrendingUp className="h-8 w-8 text-orange-600" />,
+    title: t('service.jobda_bolsa.title'),
+    description: t('service.jobda_bolsa.description'),
+    features: [
+      t('service.jobda_bolsa.feature1'),
+      t('service.jobda_bolsa.feature2'),
+      t('service.jobda_bolsa.feature3'),
+      t('service.jobda_bolsa.feature4')
+    ],
+    url: "#jobda-bolsa",
+    onClick: () => setJobdaBolsaDialogOpen(true),
+    badgeText: t('service.jobda_bolsa.badge'),
+    variant: "primary",
+    imageSrc: img8882
+  };
+
   const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus];
 
   return (
@@ -270,6 +288,25 @@ export function ServiceSection() {
             ))}
           </div>
           
+          {/* Tarjeta horizontal para JOBDA - Bolsa de Talento */}
+          <motion.div 
+            className="mt-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <HorizontalServiceCard 
+              icon={jobdaBolsa.icon}
+              title={jobdaBolsa.title}
+              description={jobdaBolsa.description}
+              features={jobdaBolsa.features}
+              badgeText={jobdaBolsa.badgeText}
+              imageSrc={jobdaBolsa.imageSrc}
+              onClick={jobdaBolsa.onClick}
+              buttonText={t('service.jobda_bolsa.button')}
+            />
+          </motion.div>
 
         </div>
       </section>
@@ -285,6 +322,7 @@ export function ServiceSection() {
       <TecnoAppDialog open={tecnoAppDialogOpen} setOpen={setTecnoAppDialogOpen} />
       <TelecosDialog open={telecosDialogOpen} setOpen={setTelecosDialogOpen} />
       <CPlusPlusDialog open={cplusplusDialogOpen} setOpen={setCplusplusDialogOpen} />
+      <JobdaBolsaDialog open={jobdaBolsaDialogOpen} onOpenChange={setJobdaBolsaDialogOpen} />
     </>
   );
 }
