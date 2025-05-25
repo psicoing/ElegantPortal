@@ -3,18 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Shield, Users, Search, Activity, Eye } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
-import img8894 from "@assets/IMG_8894.png";
-import img8895 from "@assets/IMG_8895.png";
-import img8896 from "@assets/IMG_8896.png";
-import img8897 from "@assets/IMG_8897.png";
-import img8898 from "@assets/IMG_8898.png";
-import img8899 from "@assets/IMG_8899.png";
-import img8900 from "@assets/IMG_8900.png";
-import img8901 from "@assets/IMG_8901.png";
-import img8902 from "@assets/IMG_8902.png";
-import img8903 from "@assets/IMG_8903.png";
-import img8904 from "@assets/IMG_8904.png";
-import img8905 from "@assets/IMG_8905.png";
+import ptalent01 from "@assets/PTALENT01.png";
+import ptalent02 from "@assets/PTALENT02.png";
+import talentpoolImg1 from "@assets/image_1748158850691.png";
+import talentpoolImg2 from "@assets/image_1748158906944.png";
 
 interface JobdaBolsaDialogProps {
   open: boolean;
@@ -208,9 +200,9 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
           {/* Main Image */}
           <div className="flex justify-center">
             <img 
-              src={img8894} 
-              alt="JOBDA Main Interface" 
-              className="rounded-xl shadow-lg max-w-sm w-full"
+              src={ptalent01} 
+              alt="TALENTPOOL Main Interface" 
+              className="rounded-xl shadow-lg max-w-4xl w-full"
             />
           </div>
 
@@ -233,66 +225,23 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
               {currentContent.techFeatures}
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="space-y-2">
-                <img src={img8895} alt="Real-time Coefficients" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">{currentContent.interfaceType}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <img src={ptalent02} alt="Vista Previa del Dashboard" className="rounded-lg shadow-lg w-full" />
+                <p className="text-sm text-center text-gray-600">Vista Previa del Dashboard</p>
               </div>
               
-              <div className="space-y-2">
-                <img src={img8896} alt="Dynamic States" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">{currentContent.realTimeUpdates}</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8897} alt="Smart Search" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">{currentContent.aiValidation}</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8898} alt="Dashboard Overview" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">{currentContent.professionalStates}</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8901} alt="Professional Rankings" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Rankings Profesionales</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8902} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Análisis por Sectores</p>
+              <div className="space-y-4">
+                <img src={talentpoolImg1} alt="Funcionalidades Principales" className="rounded-lg shadow-lg w-full" />
+                <p className="text-sm text-center text-gray-600">Funcionalidades Principales</p>
               </div>
             </div>
 
-            {/* Additional Screenshots */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <img src={img8899} alt="Professional Dashboard" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Dashboard Profesional</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8900} alt="Sector Analysis" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Análisis por Sectores</p>
-              </div>
-            </div>
-
-            {/* Activity Screenshots */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="space-y-2">
-                <img src={img8903} alt="Activity Tracking" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Seguimiento de Actividad</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8904} alt="Professional Search" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Búsqueda de Talento</p>
-              </div>
-              
-              <div className="space-y-2">
-                <img src={img8905} alt="Recent Activity" className="rounded-lg shadow-md w-full" />
-                <p className="text-sm text-center text-gray-600">Actividad Reciente</p>
+            {/* Dashboard Completo */}
+            <div className="flex justify-center">
+              <div className="space-y-4 max-w-4xl w-full">
+                <img src={talentpoolImg2} alt="Dashboard Completo TALENTPOOL" className="rounded-lg shadow-lg w-full" />
+                <p className="text-sm text-center text-gray-600">Dashboard Completo con Análisis por Sectores</p>
               </div>
             </div>
           </div>

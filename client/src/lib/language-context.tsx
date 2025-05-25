@@ -221,7 +221,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.cplusplus.badge': 'Programación',
     'service.cplusplus.button': 'Acceder a C++',
     
-    'service.jobda_bolsa.title': 'JOBDA - Bolsa de Talento',
+    'service.jobda_bolsa.title': 'TALENTPOOL',
     'service.jobda_bolsa.description': 'La primera bolsa de valores para talento humano. Profesionales cotizados en tiempo real según su valor de mercado verificado por IA.',
     'service.jobda_bolsa.feature1': 'Coeficientes en tiempo real',
     'service.jobda_bolsa.feature2': 'Validación PROM con IA',
@@ -653,7 +653,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.cplusplus.badge': 'Programació',
     'service.cplusplus.button': 'Accedir a C++',
     
-    'service.jobda_bolsa.title': 'JOBDA - Borsa de Talent',
+    'service.jobda_bolsa.title': 'TALENTPOOL',
     'service.jobda_bolsa.description': 'La primera borsa de valors per talent humà. Professionals cotitzats en temps real segons el seu valor de mercat verificat per IA.',
     'service.jobda_bolsa.feature1': 'Coeficients en temps real',
     'service.jobda_bolsa.feature2': 'Validació PROM amb IA',

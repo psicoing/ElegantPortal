@@ -32,7 +32,7 @@ import plusaludVRImage from "../assets/plusalud_vr.svg";
 import tecnoappImage from "../assets/tecnoapp.svg";
 import telecosImage from "../assets/telecos.svg";
 import cplusplusImage from "../assets/cplusplus.svg";
-import img8894 from "@assets/IMG_8894.png";
+import ptalent01 from "@assets/PTALENT01.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -239,7 +239,7 @@ export function ServiceSection() {
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: t('service.jobda_bolsa.badge'),
     variant: "primary",
-    imageSrc: img8894
+    imageSrc: ptalent01
   };
 
   const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus];
