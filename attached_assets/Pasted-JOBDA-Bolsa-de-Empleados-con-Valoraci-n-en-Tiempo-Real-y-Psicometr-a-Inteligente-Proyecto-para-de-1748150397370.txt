@@ -1,0 +1,86 @@
+JOBDA – Bolsa de Empleados con Valoración en Tiempo Real y Psicometría Inteligente
+
+Proyecto para desarrollo en Replit IDE
+
+⸻
+
+Concepto General
+
+JOBDA no es solo una bolsa de empleo. Es la primera Bolsa de Talento Humano, construida con la lógica de una bolsa de valores, donde los candidatos no solo se listan, sino que cotizan. Cada persona se presenta como un activo profesional dinámico, con un valor numérico de bolsa, que fluctúa en función de múltiples factores.
+
+⸻
+
+1. Interfaz tipo bolsa de valores
+	•	Estética tipo Bloomberg / Nasdaq, adaptada a sectores laborales.
+	•	Paneles por sector (salud, construcción, tecnología, hostelería, etc.).
+	•	Visualización en tiempo real de:
+	•	Coeficiente de Bolsa
+	•	Estado actual del profesional
+	•	Evolución del valor (histórico, subidas/bajadas)
+	•	Ranking de los más destacados por área profesional
+
+⸻
+
+2. Coeficiente de Bolsa: calculado sobre 250 variables
+
+Cada persona recibe un valor numérico único, generado por un algoritmo propietario diseñado por JOBDA. Este algoritmo analiza más de 250 variables entre las que se incluyen:
+	•	Formación y titulaciones oficiales
+	•	Trayectoria laboral
+	•	Experiencia específica por sector
+	•	Continuidad en el empleo
+	•	Nivel salarial histórico (nóminas verificadas)
+	•	Certificados, premios, publicaciones o menciones
+	•	Capacidad de adaptación (medida por IA psicométrica)
+	•	Tiempo de respuesta, actitud en entrevistas, pruebas técnicas, etc.
+
+Este sistema es independiente del puesto: lo que importa es el valor objetivo del talento.
+
+⸻
+
+3. Validación psicométrica con PROM de IA avanzada
+
+El sistema incluye un módulo exclusivo de evaluación por videocámara, donde la persona realiza una prueba PROM (Perfil de Respuesta y Observación Modular).
+La inteligencia artificial:
+	•	Detecta si el candidato responde de forma genuina, atenta y coherente
+	•	Analiza expresiones, pausas, microgestos, tono y contenido
+	•	Compara patrones con modelos entrenados por expertos en psicología laboral
+
+Este sistema garantiza que el perfil no es solo un currículum inflado, sino un reflejo real y validado de la persona que está detrás.
+
+⸻
+
+4. Estados laborales cruzados
+
+Cada usuario tiene 3 estados independientes:
+	•	Libre (no trabaja actualmente)
+	•	Ocupado (está trabajando)
+	•	Disponible (abierto a propuestas)
+
+Esto permite detectar, por ejemplo, a personas ocupadas pero disponibles, o libres pero no disponibles, ayudando a afinar las búsquedas empresariales.
+
+⸻
+
+5. Para empresas: búsqueda avanzada tipo inversores
+
+Desde el punto de vista de las empresas:
+	•	Buscan por sector, ubicación, coeficiente mínimo, estado…
+	•	Ven perfiles como si fueran “acciones”: valor actual, tendencia, rendimiento histórico
+	•	Pueden hacer “seguimiento” de candidatos y recibir alertas si cambian de estado o suben de valor
+
+⸻
+
+6. Tecnología en Replit
+
+Frontend: React.js (ideal para renderización dinámica tipo bolsa)
+Backend: Node.js + Express o Python Flask
+Base de datos: PostgreSQL (relacional para datos estructurados)
+Módulo IA: Fase 1 simulado; fase 2: integración con modelo de validación en Python (OpenCV + IA ligera para PROM)
+
+⸻
+
+Resumen
+
+JOBDA crea la primera infraestructura de inversión en talento humano.
+No se postulan CVs, se invierte en valor.
+Todo perfil humano tiene un precio, una tendencia y una disponibilidad.
+Y ese valor está validado por datos duros, por trayectoria… y por inteligencia artificial.

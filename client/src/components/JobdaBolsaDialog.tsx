@@ -299,25 +299,66 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
 
           {/* Main Concept */}
           <Card className="bg-gradient-to-r from-orange-50 to-orange-100 border-orange-200">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-orange-700">
-                {currentContent.mainConcept}
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-semibold text-orange-800 mb-6">
+                Concepto General
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {currentContent.conceptText}
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                JOBDA no es solo una bolsa de empleo. Es la primera <strong>Bolsa de Talento Humano</strong>, construida con la lógica de una bolsa de valores, donde los candidatos no solo se listan, sino que <strong>cotizan</strong>. Cada persona se presenta como un activo profesional dinámico, con un valor numérico de bolsa, que fluctúa en función de múltiples factores.
               </p>
-            </CardContent>
-          </Card>
+              
+              <h4 className="text-xl font-semibold text-orange-700 mb-4">
+                🏢 Interfaz tipo bolsa de valores
+              </h4>
+              <ul className="text-gray-700 mb-6 space-y-2 ml-4">
+                <li>• Estética tipo Bloomberg / Nasdaq, adaptada a sectores laborales</li>
+                <li>• Paneles por sector (salud, construcción, tecnología, hostelería, etc.)</li>
+                <li>• Visualización en tiempo real de coeficiente de bolsa, estado del profesional y evolución del valor</li>
+                <li>• Ranking de los más destacados por área profesional</li>
+              </ul>
 
-          {/* Impact */}
-          <Card className="bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-blue-700">
-                {currentContent.impact}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {currentContent.impactText}
+              <h4 className="text-xl font-semibold text-orange-700 mb-4">
+                📊 Coeficiente de Bolsa: calculado sobre 250 variables
+              </h4>
+              <p className="text-gray-700 mb-4">
+                Cada persona recibe un <strong>valor numérico único</strong>, generado por un algoritmo propietario diseñado por JOBDA. Este algoritmo analiza más de <strong>250 variables</strong> entre las que se incluyen:
               </p>
+              <ul className="text-gray-700 mb-6 space-y-2 ml-4">
+                <li>• Formación y titulaciones oficiales</li>
+                <li>• Trayectoria laboral y experiencia específica por sector</li>
+                <li>• Continuidad en el empleo y nivel salarial histórico (nóminas verificadas)</li>
+                <li>• Certificados, premios, publicaciones o menciones</li>
+                <li>• Capacidad de adaptación medida por IA psicométrica</li>
+                <li>• Tiempo de respuesta, actitud en entrevistas, pruebas técnicas</li>
+              </ul>
+
+              <h4 className="text-xl font-semibold text-orange-700 mb-4">
+                🤖 Validación psicométrica con PROM de IA avanzada
+              </h4>
+              <p className="text-gray-700 mb-4">
+                El sistema incluye un módulo exclusivo de evaluación por videocámara, donde la persona realiza una prueba <strong>PROM (Perfil de Respuesta y Observación Modular)</strong>. La inteligencia artificial detecta si el candidato responde de forma genuina, analiza expresiones, pausas, microgestos, tono y contenido, comparando patrones con modelos entrenados por expertos en psicología laboral.
+              </p>
+
+              <h4 className="text-xl font-semibold text-orange-700 mb-4">
+                🔄 Estados laborales cruzados
+              </h4>
+              <p className="text-gray-700 mb-6">
+                Cada usuario tiene <strong>3 estados independientes</strong>: <em>Libre</em> (no trabaja actualmente), <em>Ocupado</em> (está trabajando), y <em>Disponible</em> (abierto a propuestas). Esto permite detectar personas ocupadas pero disponibles, o libres pero no disponibles.
+              </p>
+
+              <h4 className="text-xl font-semibold text-orange-700 mb-4">
+                💼 Para empresas: búsqueda avanzada tipo inversores
+              </h4>
+              <p className="text-gray-700 mb-6">
+                Las empresas buscan por sector, ubicación, coeficiente mínimo y estado. Ven perfiles como <strong>"acciones"</strong>: valor actual, tendencia, rendimiento histórico. Pueden hacer seguimiento de candidatos y recibir alertas si cambian de estado o suben de valor.
+              </p>
+
+              <div className="bg-orange-100 border-l-4 border-orange-500 p-4 rounded">
+                <h5 className="font-semibold text-orange-800 mb-2">Resumen</h5>
+                <p className="text-orange-700 text-sm">
+                  JOBDA crea la primera infraestructura de inversión en talento humano. No se postulan CVs, se invierte en valor. Todo perfil humano tiene un precio, una tendencia y una disponibilidad. Y ese valor está validado por datos duros, por trayectoria… y por inteligencia artificial.
+                </p>
+              </div>
             </CardContent>
           </Card>
 
