@@ -1,7 +1,8 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { TrendingUp, Shield, Users, Search, Activity, Eye } from "lucide-react";
+import { TrendingUp, Shield, Users, Search, Activity, Eye, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
 import ptalent01 from "@assets/PTALENT01.png";
 import ptalent02 from "@assets/PTALENT02.png";
@@ -195,6 +196,24 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               {currentContent.description}
             </p>
+            
+            {/* Botón para acceder a la web de TALENTPOOL */}
+            <div className="flex justify-center mt-6">
+              <Button 
+                className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
+                asChild
+              >
+                <a 
+                  href="https://talentpool.com.es/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  Acceder a TALENTPOOL
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Main Image */}
