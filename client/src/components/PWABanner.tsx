@@ -17,8 +17,8 @@ export function PWABanner() {
       feature1: "Acceso directo desde tu pantalla de inicio",
       feature2: "Funciona sin conexión para consultas rápidas",
       feature3: "Notificaciones de nuevas oportunidades",
-      iosInstructions: "En Safari: toca 'Compartir' → 'Añadir a pantalla de inicio'",
-      androidInstructions: "Toca el menú del navegador → 'Añadir a pantalla de inicio'"
+      iosInstructions: "1. Pulsa el botón de 'Compartir' (cuadrado con flecha)\\n2. Busca 'Añadir a pantalla de inicio'\\n3. Escribe 'JOBDA' como nombre y pulsa 'Añadir'",
+      androidInstructions: "1. Abre el menú de Chrome (3 puntos arriba a la derecha)\\n2. Busca 'Añadir a pantalla de inicio' o 'Instalar aplicación'\\n3. Pulsa 'Instalar' o 'Añadir'"
     },
     ca: {
       title: "¡Posa'm al teu mòbil!",
@@ -28,8 +28,8 @@ export function PWABanner() {
       feature1: "Accés directe des de la pantalla d'inici",
       feature2: "Funciona sense connexió per consultes ràpides",
       feature3: "Notificacions de noves oportunitats",
-      iosInstructions: "A Safari: toca 'Compartir' → 'Afegir a pantalla d'inici'",
-      androidInstructions: "Toca el menú del navegador → 'Afegir a pantalla d'inici'"
+      iosInstructions: "1. Pulsa el botó de 'Compartir' (quadrat amb fletxa)\\n2. Busca 'Afegir a pantalla d'inici'\\n3. Escriu 'JOBDA' com a nom i pulsa 'Afegir'",
+      androidInstructions: "1. Obre el menú de Chrome (3 punts a dalt a la dreta)\\n2. Busca 'Afegir a pantalla d'inici' o 'Instal·lar aplicació'\\n3. Pulsa 'Instal·lar' o 'Afegir'"
     },
     en: {
       title: "Add me to your phone!",
@@ -39,8 +39,8 @@ export function PWABanner() {
       feature1: "Direct access from your home screen",
       feature2: "Works offline for quick queries",
       feature3: "Notifications for new opportunities",
-      iosInstructions: "In Safari: tap 'Share' → 'Add to Home Screen'",
-      androidInstructions: "Tap browser menu → 'Add to Home Screen'"
+      iosInstructions: "1. Tap the 'Share' button (square with arrow)\\n2. Look for 'Add to Home Screen'\\n3. Type 'JOBDA' as name and tap 'Add'",
+      androidInstructions: "1. Open Chrome menu (3 dots at top right)\\n2. Look for 'Add to home screen' or 'Install app'\\n3. Tap 'Install' or 'Add'"
     }
   };
 
@@ -130,12 +130,23 @@ export function PWABanner() {
             font-size: 18px;
             font-weight: bold;
             color: #333;
-          ">📱 ${currentContent.instructionsButton}</h3>
-          <p style="
+          ">📱 Cómo instalar JOBDA</h3>
+          <div style="
             margin: 0 0 20px 0;
             color: #666;
             line-height: 1.5;
-          ">${instructions}</p>
+          ">
+            <div style="
+              background: #f8f9fa;
+              padding: 12px;
+              border-radius: 8px;
+              margin-bottom: 12px;
+              border-left: 4px solid #007bff;
+            ">
+              <strong>${isIOS || isSafari ? '🍎 iPhone (Safari)' : '🤖 Android (Chrome)'}</strong>
+            </div>
+            <div style="white-space: pre-line;">${instructions}</div>
+          </div>
           <button onclick="this.closest('div').remove()" style="
             background: linear-gradient(to right, rgb(147, 51, 234), rgb(37, 99, 235));
             color: white;
