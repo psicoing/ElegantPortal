@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { X, Smartphone, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/lib/language-context';
+import { JobdaPWADialog } from './JobdaPWADialog';
 
 export function PWABanner() {
   const [isVisible, setIsVisible] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [showDialog, setShowDialog] = useState(false);
   const { language } = useLanguage();
 
   const content = {
@@ -147,13 +149,7 @@ export function PWABanner() {
             </Button>
           ) : (
             <button
-              onClick={() => {
-                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-                const message = isIOS 
-                  ? "📱 iPhone (Safari):\n\n1. Pulsa el botón 'Compartir' ⬆️\n2. Selecciona 'Añadir a pantalla de inicio'\n3. Confirma con 'Añadir'"
-                  : "📱 Android (Chrome):\n\n1. Pulsa el menú (⋮) arriba a la derecha\n2. Selecciona 'Añadir a pantalla de inicio'\n3. Confirma con 'Añadir'";
-                alert("Cómo instalar JOBDA como aplicación:\n\n" + message);
-              }}
+              onClick={() => setShowDialog(true)}
               className="bg-white/20 border border-white/30 text-white hover:bg-white/30 font-semibold py-1 px-3 rounded text-xs flex-1"
             >
               Instrucciones
@@ -161,6 +157,12 @@ export function PWABanner() {
           )}
         </div>
       </div>
+
+      {/* Diálogo PWA de JOBDA */}
+      <JobdaPWADialog 
+        isOpen={showDialog} 
+        onClose={() => setShowDialog(false)} 
+      />
     </div>
   );
 }
