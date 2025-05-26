@@ -167,14 +167,41 @@ export function PWABanner() {
             </Button>
           ) : (
             <button
-              onClick={() => {
-                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-                const message = isIOS 
-                  ? "📱 iPhone (Safari):\n\n1. Pulsa el botón 'Compartir' (cuadrado con flecha)\n2. Busca 'Añadir a pantalla de inicio'\n3. Escribe 'JOBDA' como nombre y pulsa 'Añadir'"
-                  : "📱 Android (Chrome):\n\n1. Abre el menú de Chrome (3 puntos arriba a la derecha)\n2. Busca 'Añadir a pantalla de inicio' o 'Instalar aplicación'\n3. Pulsa 'Instalar' o 'Añadir'";
-                alert("Cómo instalar JOBDA\n\n" + message);
+              onClick={(e) => {
+                console.log("Click en botón instrucciones");
+                e.preventDefault();
+                e.stopPropagation();
+                try {
+                  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+                  const message = isIOS 
+                    ? "📱 iPhone (Safari):\n\n1. Pulsa el botón 'Compartir' (cuadrado con flecha)\n2. Busca 'Añadir a pantalla de inicio'\n3. Escribe 'JOBDA' como nombre y pulsa 'Añadir'"
+                    : "📱 Android (Chrome):\n\n1. Abre el menú de Chrome (3 puntos arriba a la derecha)\n2. Busca 'Añadir a pantalla de inicio' o 'Instalar aplicación'\n3. Pulsa 'Instalar' o 'Añadir'";
+                  
+                  console.log("Mostrando instrucciones:", message);
+                  window.alert("Cómo instalar JOBDA\n\n" + message);
+                } catch (error) {
+                  console.error("Error al mostrar instrucciones:", error);
+                  window.alert("Error al mostrar instrucciones");
+                }
               }}
-              className="bg-white/20 border border-white/30 text-white hover:bg-white/30 font-semibold py-2 px-4 rounded-lg text-sm w-full transition-colors"
+              style={{
+                background: 'rgba(255,255,255,0.2)',
+                border: '1px solid rgba(255,255,255,0.3)',
+                color: 'white',
+                fontWeight: '600',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                fontSize: '14px',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.background = 'rgba(255,255,255,0.3)';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.background = 'rgba(255,255,255,0.2)';
+              }}
             >
               {currentContent.instructionsButton}
             </button>
