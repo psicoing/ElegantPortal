@@ -95,80 +95,18 @@ export function PWABanner() {
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     
     let instructions = "";
+    let platform = "";
+    
     if (isIOS || isSafari) {
       instructions = currentContent.iosInstructions;
+      platform = "🍎 iPhone (Safari)";
     } else {
       instructions = currentContent.androidInstructions;
+      platform = "🤖 Android (Chrome)";
     }
     
-    // Crear un dialog más elegante en lugar de alert
-    const dialog = document.createElement('div');
-    dialog.innerHTML = `
-      <div style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0,0,0,0.7);
-        z-index: 10000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      ">
-        <div style="
-          background: white;
-          border-radius: 12px;
-          padding: 24px;
-          max-width: 400px;
-          width: 100%;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        ">
-          <h3 style="
-            margin: 0 0 16px 0;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-          ">📱 Cómo instalar JOBDA</h3>
-          <div style="
-            margin: 0 0 20px 0;
-            color: #666;
-            line-height: 1.5;
-          ">
-            <div style="
-              background: #f8f9fa;
-              padding: 12px;
-              border-radius: 8px;
-              margin-bottom: 12px;
-              border-left: 4px solid #007bff;
-            ">
-              <strong>${isIOS || isSafari ? '🍎 iPhone (Safari)' : '🤖 Android (Chrome)'}</strong>
-            </div>
-            <div style="white-space: pre-line;">${instructions}</div>
-          </div>
-          <button onclick="this.closest('div').remove()" style="
-            background: linear-gradient(to right, rgb(147, 51, 234), rgb(37, 99, 235));
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            width: 100%;
-          ">Entendido</button>
-        </div>
-      </div>
-    `;
-    
-    document.body.appendChild(dialog);
-    
-    // Remover el dialog al hacer clic fuera
-    dialog.addEventListener('click', (e) => {
-      if (e.target === dialog) {
-        dialog.remove();
-      }
-    });
+    // Usar alert temporal hasta que se resuelva el problema con el DOM
+    alert(`📱 Cómo instalar JOBDA\n\n${platform}\n\n${instructions.replace(/\\n/g, '\n')}`);
   };
 
   if (!isVisible) return null;
