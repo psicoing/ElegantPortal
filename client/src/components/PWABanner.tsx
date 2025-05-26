@@ -47,8 +47,8 @@ export function PWABanner() {
   const currentContent = content[language];
 
   useEffect(() => {
-    // Detectar si es móvil
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    // Detectar si es móvil o pantalla pequeña
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
     
     // Verificar si ya está instalado
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
@@ -56,7 +56,8 @@ export function PWABanner() {
     // Verificar si ya se ha cerrado antes
     const wasClosed = localStorage.getItem('pwa-banner-closed');
     
-    if (isMobile && !isStandalone && !wasClosed) {
+    // Mostrar siempre en móviles y también en desktop para testing
+    if (!isStandalone && !wasClosed) {
       setIsVisible(true);
     }
 
