@@ -166,12 +166,18 @@ export function PWABanner() {
               {currentContent.installButton}
             </Button>
           ) : (
-            <Button
-              onClick={showInstructions}
-              className="bg-white/20 border border-white/30 text-white hover:bg-white/30 font-semibold py-2 px-4 rounded-lg text-sm w-full"
+            <button
+              onClick={() => {
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+                const message = isIOS 
+                  ? "📱 iPhone (Safari):\n\n1. Pulsa el botón 'Compartir' (cuadrado con flecha)\n2. Busca 'Añadir a pantalla de inicio'\n3. Escribe 'JOBDA' como nombre y pulsa 'Añadir'"
+                  : "📱 Android (Chrome):\n\n1. Abre el menú de Chrome (3 puntos arriba a la derecha)\n2. Busca 'Añadir a pantalla de inicio' o 'Instalar aplicación'\n3. Pulsa 'Instalar' o 'Añadir'";
+                alert("Cómo instalar JOBDA\n\n" + message);
+              }}
+              className="bg-white/20 border border-white/30 text-white hover:bg-white/30 font-semibold py-2 px-4 rounded-lg text-sm w-full transition-colors"
             >
               {currentContent.instructionsButton}
-            </Button>
+            </button>
           )}
         </div>
       </div>
