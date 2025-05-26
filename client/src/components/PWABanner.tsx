@@ -150,9 +150,9 @@ export function PWABanner() {
               onClick={() => {
                 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
                 const message = isIOS 
-                  ? "iPhone: Safari → Compartir → Añadir a pantalla de inicio"
-                  : "Android: Chrome → Menú (3 puntos) → Añadir a pantalla de inicio";
-                alert("Instalar JOBDA:\n\n" + message);
+                  ? "📱 iPhone (Safari):\n\n1. Pulsa el botón 'Compartir' ⬆️\n2. Selecciona 'Añadir a pantalla de inicio'\n3. Confirma con 'Añadir'"
+                  : "📱 Android (Chrome):\n\n1. Pulsa el menú (⋮) arriba a la derecha\n2. Selecciona 'Añadir a pantalla de inicio'\n3. Confirma con 'Añadir'";
+                alert("Cómo instalar JOBDA como aplicación:\n\n" + message);
               }}
               className="bg-white/20 border border-white/30 text-white hover:bg-white/30 font-semibold py-1 px-3 rounded text-xs flex-1"
             >
