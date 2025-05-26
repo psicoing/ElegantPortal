@@ -11,6 +11,7 @@ import CommissionsCalculator from "@/pages/CommissionsCalculator";
 import { InvestorsPage } from "@/pages/Investors";
 import { CookieBanner } from "@/components/CookieBanner";
 import { WhatsAppBanner } from "@/components/WhatsAppBanner";
+import { PWABanner } from "@/components/PWABanner";
 import { LanguageProvider } from "./lib/language-context";
 
 function Router() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <LanguageProvider>
       <QueryClientProvider client={queryClient}>
+        <PWABanner />
         <Router />
         <CookieBanner />
         <WhatsAppBanner />
