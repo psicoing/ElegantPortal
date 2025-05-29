@@ -29,7 +29,7 @@ export function CTASection() {
                   className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://mental-chat-ai-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <a href="https://nflow.biz/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     {t('service.nflow.button')}
                   </a>
                 </Button>
