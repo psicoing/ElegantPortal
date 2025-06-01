@@ -74,7 +74,7 @@ export function EnhancedServiceSection() {
         t('enhanced.empordajobs.feature2'),
         t('enhanced.empordajobs.feature3')
       ],
-      url: "https://empordajobs.jobda.es",
+      url: "https://emporda-jobs-rmportbou.replit.app/",
       imageSrc: empordajobsImage,
       longDescription: t('enhanced.empordajobs.long_description')
     }
