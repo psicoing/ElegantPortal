@@ -80,7 +80,7 @@ export function CTASection() {
                   asChild
                 >
                   <a
-                    href="https://empordajobs.jobda.es/"
+                    href="https://emporda-jobs-rmportbou.replit.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-white"
