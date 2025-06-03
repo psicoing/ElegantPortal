@@ -191,6 +191,8 @@ export function EnhancedServiceSection() {
               <p>{t('enhanced.company_info.paragraph2')}</p>
               <p>{t('enhanced.company_info.paragraph3')}</p>
               <p>{t('enhanced.company_info.paragraph4')}</p>
+              <p>{t('enhanced.company_info.paragraph5')}</p>
+              <p>{t('enhanced.company_info.paragraph6')}</p>
             </div>
             
             <div className="mt-8">
