@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Gift, Car, Home, Award, ChevronRight } from "lucide-react";
+import { Gift, Car, Home, Award, ChevronRight, Bike, Laptop } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
 import { PrizeDialog } from "./PrizeDialog";
@@ -24,21 +24,21 @@ export function RewardsSection() {
       color: "from-blue-50 to-blue-100"
     },
     {
-      icon: <Car className="h-8 w-8 text-green-500" />,
+      icon: <Gift className="h-8 w-8 text-green-500" />,
       users: "30.000",
-      reward: t('rewards.tesla'),
+      reward: t('rewards.iphones20'),
       color: "from-green-50 to-green-100"
     },
     {
-      icon: <Home className="h-8 w-8 text-orange-500" />,
+      icon: <Bike className="h-8 w-8 text-orange-500" />,
       users: "150.000",
-      reward: t('rewards.house1'),
+      reward: t('rewards.bikes'),
       color: "from-orange-50 to-orange-100"
     },
     {
-      icon: <Home className="h-8 w-8 text-teal-500" />,
+      icon: <Laptop className="h-8 w-8 text-teal-500" />,
       users: "300.000",
-      reward: t('rewards.house2'),
+      reward: t('rewards.laptops'),
       color: "from-teal-50 to-teal-100"
     }
   ];
