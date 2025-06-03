@@ -36,34 +36,22 @@ export function AboutSection() {
           >
             <div className="prose prose-lg max-w-none">
               <p>
-                Somos un grupo empresarial especializado en soluciones digitales y servicios profesionales. 
-                El Instituto NeuronMeg constituye nuestro origen y núcleo clínico, con más de 32 años de 
-                experiencia en psicología clínica, escolar y comunitaria. Desde nuestros inicios en el Empordà, 
-                hemos acompañado a personas, familias y comunidades educativas con una visión integradora 
-                que combina ciencia, tecnología y sensibilidad humana.
+                Somos una plataforma multiservicio que integra tecnología, salud y conocimiento humano, con origen en el Empordà.
               </p>
               <p>
-                Contamos con la colegiación en el Col·legi Oficial de Psicologia de Catalunya (nº 7851), 
-                lo que garantiza un ejercicio profesional riguroso, ético y basado en la evidencia científica.
+                Desde la innovación digital hasta la intervención clínica, nuestro grupo empresarial ofrece soluciones adaptadas, sostenibles y orientadas al bienestar y al desarrollo de personas y organizaciones.
               </p>
               <p>
-                Nuestro ecosistema incluye Servicios de Psicología, donde continuamos el legado clínico del Instituto NeuronMeg, 
-                ofreciendo intervención psicológica en contextos escolares, familiares, individuales y comunitarios. 
-                A través de Nflow, desarrollamos inteligencia artificial aplicada al bienestar, la educación y la gestión 
-                del conocimiento organizacional, ofreciendo formación en IA y modelos que promueven el bienestar.
+                Comenzamos con herramientas tecnológicas de alto impacto: EmpordaJobs, nuestra app especializada en conectar empresas con talento local en las comarcas de Girona, mediante un sistema de análisis y filtrado inteligente de candidatos. Appia, creamos aplicaciones web y móviles basadas en inteligencia artificial, diseñadas para empresas que desean digitalizar sus procesos y optimizar recursos.
               </p>
               <p>
-                Jobda es nuestra aplicación especializada en selección de personal que ayuda a empresas a 
-                encontrar los mejores candidatos mediante análisis inteligente. Con Appia, desarrollamos 
-                aplicaciones web y móviles con IA para empresas que desean digitalizar sus procesos. Saludalia 
-                conecta pacientes con profesionales sanitarios de todas las especialidades mediante una plataforma digital.
-                Y EmpordaJobs es nuestra app orientada a buscar candidatos para empresas de la comarca de Girona.
+                Ampliamos nuestro ecosistema con otras soluciones clave: Jobda, plataforma de selección de personal inteligente que ayuda a encontrar el perfil más adecuado para cada empresa mediante algoritmos de evaluación avanzada. NFlow, inteligencia artificial aplicada al bienestar, la educación emocional y la gestión del conocimiento organizacional. Ofrecemos también formación en IA con enfoque práctico y humano. Saludalia, plataforma digital que conecta a pacientes con profesionales de la salud de todas las especialidades, fomentando el acceso a la atención sanitaria de forma sencilla y eficaz.
               </p>
               <p>
-                A través de estos servicios, unimos el conocimiento humano con la tecnología avanzada, 
-                ofreciendo soluciones adaptadas, eficientes y sostenibles para que cada persona, organización 
-                o comunidad tenga acceso a herramientas que mejoren su bienestar, fortalezcan sus decisiones y 
-                potencien su desarrollo.
+                Y en el corazón de todo, nuestra experiencia clínica: Instituto NeuronMeg, nuestro origen y núcleo fundacional, con más de 32 años de experiencia en psicología clínica, escolar y comunitaria. Desde nuestros inicios en el Empordà, hemos acompañado a personas, familias y comunidades educativas con una visión integradora que combina ciencia, sensibilidad humana y tecnología. Estamos colegiados en el Col·legi Oficial de Psicologia de Catalunya (nº 7851), lo que respalda un ejercicio profesional riguroso, ético y basado en la evidencia científica.
+              </p>
+              <p>
+                A través de esta estructura multiservicio, combinamos conocimiento humano y tecnología avanzada para ofrecer soluciones que mejoran vidas, fortalecen decisiones y potencian el desarrollo integral de cada persona, organización o comunidad.
               </p>
             </div>
 
