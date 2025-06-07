@@ -85,7 +85,7 @@ export function JobdaDialog({ open, setOpen }: JobdaDialogProps) {
         <DialogFooter className="mt-6">
           <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
             <Button type="button" variant="default" className="w-full sm:w-auto">
-              <a href="https://appia.jobda.es/" target="_blank" rel="noopener noreferrer" onClick={() => {
+              <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" onClick={() => {
                 setOpen(false);
               }}>
                 {t('jobda.dialog.go_to_appia')}

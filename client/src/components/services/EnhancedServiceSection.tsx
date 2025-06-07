@@ -40,7 +40,7 @@ export function EnhancedServiceSection() {
         t('enhanced.jobda.feature2'),
         t('enhanced.jobda.feature3')
       ],
-      url: "https://jobda.es",
+      url: "https://neuro-consulta-rmportbou.replit.app/",
       imageSrc: jobdaImage,
       longDescription: t('enhanced.jobda.long_description')
     },
@@ -57,7 +57,7 @@ export function EnhancedServiceSection() {
         t('enhanced.saludalia.feature2'),
         t('enhanced.saludalia.feature3')
       ],
-      url: "https://neuronmeg.jobda.es/join-team",
+      url: "https://neuro-consulta-rmportbou.replit.app/",
       imageSrc: saludaliaImage,
       longDescription: t('enhanced.saludalia.long_description')
     },

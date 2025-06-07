@@ -137,7 +137,7 @@ export default function AiApps() {
               <h2 className="text-2xl font-bold mb-6">¿Listo para comenzar?</h2>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
                 <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg" size="lg">
-                  <a href="https://appia.jobda.es/" target="_blank" rel="noopener noreferrer" className="text-white">
+                  <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-white">
                     Acceder a APPIA
                   </a>
                 </Button>
