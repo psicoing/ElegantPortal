@@ -42,7 +42,7 @@ export function HobbiesSection() {
                 <div className="flex justify-center mt-4">
                   <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
                     <a 
-                      href="https://angrota.jobda.es/" 
+                      href="https://radio-sphere-rmportbou.replit.app/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-white no-underline"
@@ -74,7 +74,7 @@ export function HobbiesSection() {
                 <div className="flex justify-center mt-4">
                   <Button className="bg-gradient-to-r from-amber-600 to-orange-600 text-white">
                     <a 
-                      href="https://angrota.jobda.es/" 
+                      href="https://radio-sphere-rmportbou.replit.app/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-white no-underline"
