@@ -29,7 +29,7 @@ export function CTASection() {
                   className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://nflow.biz/" target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     {t('service.nflow.button')}
                   </a>
                 </Button>
@@ -45,7 +45,7 @@ export function CTASection() {
                   asChild
                 >
                   <a 
-                    href="https://appia.jobda.es/" 
+                    href="https://neuro-consulta-rmportbou.replit.app/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-white"
@@ -64,7 +64,7 @@ export function CTASection() {
                   className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://sinapsy.jobda.es/" target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     {t('service.sinapsy.button')}
                   </a>
                 </Button>
@@ -99,7 +99,7 @@ export function CTASection() {
                   className="bg-white text-primary hover:bg-white/90 font-sans font-semibold rounded-lg"
                   asChild
                 >
-                  <a href="https://neuronmeg.jobda.es/" target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     {t('neuronmeg.button')}
                   </a>
                 </Button>

@@ -67,7 +67,7 @@ export function ServiceSection() {
       t('service.nflow.feature2'),
       t('service.nflow.feature3')
     ],
-    url: "https://nflow.jobda.es/",
+    url: "https://neuro-consulta-rmportbou.replit.app/",
     onClick: () => setNflowDialogOpen(true),
     badgeText: t('service.nflow.badge'),
     variant: "primary",
@@ -83,7 +83,7 @@ export function ServiceSection() {
       t('service.appia.feature2'),
       t('service.appia.feature3')
     ],
-    url: "https://appia.jobda.es/",
+    url: "https://neuro-consulta-rmportbou.replit.app/",
     onClick: () => setAppiaDialogOpen(true),
     badgeText: t('service.appia.badge'),
     variant: "primary",
@@ -115,7 +115,7 @@ export function ServiceSection() {
       t('service.neuronmeg.feature2'),
       t('service.neuronmeg.feature3')
     ],
-    url: "https://neuronmeg.jobda.es/",
+    url: "https://neuro-consulta-rmportbou.replit.app/",
     onClick: () => setNeuronMegDialogOpen(true),
     badgeText: t('neuronmeg.badge'),
     variant: "secondary",
@@ -148,7 +148,7 @@ export function ServiceSection() {
       t('service.saludalia.feature2'),
       t('service.saludalia.feature3')
     ],
-    url: "https://saludalia.jobda.es/",
+    url: "https://health-connect-rmportbou.replit.app/",
     onClick: () => setSaludaliaDialogOpen(true),
     badgeText: t('service.saludalia.badge'),
     variant: "secondary",
