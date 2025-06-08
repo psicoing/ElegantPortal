@@ -51,20 +51,38 @@ a[href="https://ejobs.jobda.es/"] {
 
 /* Estilos específicos para los badges de anti-edadismo */
 .anti-ageism-badge {
-  background-color: #dc2626 !important;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%) !important;
   color: white !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
   border: 2px solid #b91c1c !important;
-  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4) !important;
   position: relative !important;
-  z-index: 10 !important;
-  min-width: 100px !important;
+  z-index: 100 !important;
+  min-width: 110px !important;
+  height: auto !important;
+  padding: 6px 12px !important;
   text-align: center !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 20px !important;
+  white-space: nowrap !important;
 }
 
 .anti-ageism-badge:hover {
-  background-color: #b91c1c !important;
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%) !important;
   border-color: #991b1b !important;
-  transform: scale(1.05) !important;
-  transition: all 0.2s ease !important;
+  transform: scale(1.08) !important;
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.6) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Forzar visibilidad del badge */
+[data-badge="anti-ageism"] {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: inline-flex !important;
 }

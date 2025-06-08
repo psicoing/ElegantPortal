@@ -32,6 +32,11 @@ export function HorizontalServiceCard({
   const { t } = useLanguage();
   const isPrimary = variant === "primary";
   
+  // Debug log para verificar badges
+  if (badgeText === "Anti-edadismo" || badgeText === "Anti-ageism" || badgeText === "Anti-edatisme") {
+    console.log("Renderizando badge anti-edadismo horizontal:", { title, badgeText });
+  }
+  
   return (
     <motion.div
       whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
