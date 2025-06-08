@@ -227,7 +227,7 @@ const translations: Record<Language, Record<string, string>> = {
     'service.jobda_bolsa.feature2': 'Validación PROM con IA',
     'service.jobda_bolsa.feature3': 'Estados dinámicos',
     'service.jobda_bolsa.feature4': 'Dashboard profesional',
-    'service.jobda_bolsa.badge': 'Bolsa de Talento',
+    'service.jobda_bolsa.badge': 'Anti-edadismo',
     'service.jobda_bolsa.button': 'Explorar Talento',
     'plusalud.dialog.description.title': 'Terapia de psicología avanzada',
     'plusalud.dialog.features.title': 'Tratamientos disponibles',
