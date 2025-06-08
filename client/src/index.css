@@ -48,3 +48,23 @@ a[href="https://ejobs.jobda.es/"] {
 [class*="cta-button-jobda"] * {
   color: white !important;
 }
+
+/* Estilos específicos para los badges de anti-edadismo */
+.anti-ageism-badge {
+  background-color: #dc2626 !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border: 2px solid #b91c1c !important;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2) !important;
+  position: relative !important;
+  z-index: 10 !important;
+  min-width: 100px !important;
+  text-align: center !important;
+}
+
+.anti-ageism-badge:hover {
+  background-color: #b91c1c !important;
+  border-color: #991b1b !important;
+  transform: scale(1.05) !important;
+  transition: all 0.2s ease !important;
+}

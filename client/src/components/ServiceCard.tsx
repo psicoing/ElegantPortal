@@ -53,7 +53,10 @@ export function ServiceCard({
             <div className={`${isPrimary ? 'bg-primary/10' : 'bg-secondary-100'} rounded-lg p-3`}>
               {icon}
             </div>
-            <Badge variant={isPrimary ? "default" : "secondary"} className={`${isPrimary ? 'bg-primary/10 text-primary hover:bg-primary/20' : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'} rounded-full px-3 py-1 text-xs font-semibold`}>
+            <Badge 
+              variant={isPrimary ? "default" : "secondary"} 
+              className={`${isPrimary ? 'bg-primary/10 text-primary hover:bg-primary/20' : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'} rounded-full px-3 py-1 text-xs font-semibold anti-ageism-badge`}
+            >
               {badgeText}
             </Badge>
           </div>
