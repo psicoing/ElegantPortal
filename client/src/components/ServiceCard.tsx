@@ -32,11 +32,6 @@ export function ServiceCard({
   const { t } = useLanguage();
   const isPrimary = variant === "primary";
   
-  // Debug log para verificar badges
-  if (badgeText === "Anti-edadismo" || badgeText === "Anti-ageism" || badgeText === "Anti-edatisme") {
-    console.log("Renderizando badge anti-edadismo:", { title, badgeText });
-  }
-  
   return (
     <motion.div
       whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
@@ -60,7 +55,14 @@ export function ServiceCard({
             </div>
             <Badge 
               variant={isPrimary ? "default" : "secondary"} 
-              className={`${isPrimary ? 'bg-primary/10 text-primary hover:bg-primary/20' : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'} rounded-full px-3 py-1 text-xs font-semibold anti-ageism-badge`}
+              className={`${
+                badgeText === "Anti-edadismo" || badgeText === "Anti-ageism" || badgeText === "Anti-edatisme" 
+                  ? 'anti-ageism-badge' 
+                  : isPrimary 
+                    ? 'bg-primary/10 text-primary hover:bg-primary/20' 
+                    : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'
+              } rounded-full px-3 py-1 text-xs font-semibold`}
+              data-badge={badgeText === "Anti-edadismo" || badgeText === "Anti-ageism" || badgeText === "Anti-edatisme" ? "anti-ageism" : "standard"}
             >
               {badgeText}
             </Badge>
