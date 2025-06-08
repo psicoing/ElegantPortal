@@ -40,7 +40,7 @@ export function FuturisticCTA() {
   const mainServices: Service[] = [
     { 
       name: t('futuristic.nflow'), 
-      onClick: () => setNflowDialogOpen(true), 
+      onClick: () => window.open('https://nflow.biz/', '_blank'), 
       variant: "blue-light",
       icon: "psychological"
     },
