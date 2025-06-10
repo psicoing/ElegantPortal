@@ -61,7 +61,7 @@ export function FuturisticCTA() {
   const jobServices: Service[] = [
     { 
       name: t('futuristic.empordajobs'), 
-      onClick: () => setEmpordaJobsDialogOpen(true), 
+      onClick: () => window.open('https://ejobs.jobda.es/', '_blank'), 
       variant: "dark",
       icon: "jobs"
     },
