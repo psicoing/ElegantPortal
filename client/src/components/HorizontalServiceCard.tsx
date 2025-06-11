@@ -69,14 +69,14 @@ export function HorizontalServiceCard({
             </Badge>
           </div>
           
-          <h3 className="font-sans font-bold text-xl md:text-2xl text-gray-900 mb-5">{title}</h3>
-          <p className="text-gray-600 mb-8 leading-relaxed">{description}</p>
+          <h3 className="font-sans font-bold text-xl md:text-2xl text-foreground mb-5">{title}</h3>
+          <p className="text-muted-foreground mb-8 leading-relaxed">{description}</p>
           
           <div className="grid md:grid-cols-2 gap-4 mb-10 flex-grow">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start">
                 <Check className={`h-5 w-5 ${isPrimary ? 'text-primary' : 'text-secondary-500'} mr-3 mt-1 flex-shrink-0`} />
-                <span className="text-gray-700">{feature}</span>
+                <span className="text-foreground">{feature}</span>
               </div>
             ))}
           </div>
