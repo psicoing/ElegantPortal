@@ -24,6 +24,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
             <img 
               src={faroLogo} 
               alt="Logo Faro" 
+              loading="lazy"
               className="h-10 w-auto"
               style={{filter: "drop-shadow(0 0 2px rgba(0, 156, 255, 0.8))"}}
             />

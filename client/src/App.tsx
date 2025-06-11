@@ -13,6 +13,7 @@ import { CookieBanner } from "@/components/CookieBanner";
 import { WhatsAppBanner } from "@/components/WhatsAppBanner";
 import { PWABanner } from "@/components/PWABanner";
 import { LanguageProvider } from "./lib/language-context";
+import { ThemeProvider } from "./lib/theme-context";
 
 function Router() {
   return (
@@ -30,15 +31,17 @@ function Router() {
 
 function App() {
   return (
-    <LanguageProvider>
-      <QueryClientProvider client={queryClient}>
-        <PWABanner />
-        <Router />
-        <CookieBanner />
-        <WhatsAppBanner />
-        <Toaster />
-      </QueryClientProvider>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <QueryClientProvider client={queryClient}>
+          <PWABanner />
+          <Router />
+          <CookieBanner />
+          <WhatsAppBanner />
+          <Toaster />
+        </QueryClientProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 

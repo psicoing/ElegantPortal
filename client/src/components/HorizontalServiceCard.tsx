@@ -44,6 +44,7 @@ export function HorizontalServiceCard({
             <img 
               src={imageSrc} 
               alt={title} 
+              loading="lazy"
               className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
             />
           </div>
