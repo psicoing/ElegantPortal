@@ -33,17 +33,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
         <div className="flex items-center gap-2">
           {!isMobile && (
             <>
-              <Button
-                variant="ghost"
-                size="icon"
-                asChild
-                className="relative group"
-              >
-                <Link href="/investors">
-                  <Users className="h-5 w-5 text-gray-600 group-hover:text-blue-600 transition-colors" />
-                  <span className="sr-only">{t('nav.investors')}</span>
-                </Link>
-              </Button>
+
               <WorkWithUsModal
                 variant="icon"
                 icon={<User2 className="h-5 w-5" />}
