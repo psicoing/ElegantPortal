@@ -3,6 +3,7 @@ import { Menu, Phone, User2, Users } from "lucide-react";
 import { ContactModal } from "./ContactModal";
 import { WorkWithUsModal } from "./WorkWithUsModal";
 import { LanguageSelector } from "./LanguageSelector";
+import { ThemeToggle } from "./ThemeToggle";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
 import faroLogo from "@/assets/faro-logo.png";
@@ -17,7 +18,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
   const isMobile = useIsMobile();
   
   return (
-    <header className="w-full py-4 bg-white shadow-sm sticky top-0 z-30">
+    <header className="w-full py-4 bg-background border-b border-border shadow-sm sticky top-0 z-30 transition-all duration-300">
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
@@ -47,6 +48,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
               />
             </>
           )}
+          <ThemeToggle />
           <LanguageSelector />
           <Button 
             variant="ghost"
