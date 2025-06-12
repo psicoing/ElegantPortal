@@ -15,6 +15,8 @@ import { SimpleServiceCards } from "@/components/services/SimpleServiceCards";
 import { ImpactStatsSection } from "@/components/ImpactStatsSection";
 import { FloatingActionButton } from "@/components/FloatingActionButton";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
+import { ModernEffects } from "@/components/ModernEffects";
 import { useState } from "react";
 
 export default function Home() {
@@ -29,30 +31,34 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
-      <ScrollProgress />
-      <Header toggleMobileMenu={toggleMobileMenu} />
-      <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
-      <main>
-        <ParallaxHero />
-        <div id="services-section">
-          <SimpleServiceCards />
-        </div>
-        <ImpactStatsSection />
-        <ServiceSection />
-        <CategorySection />
-        <RewardsSection />
-        <AboutSection />
-        <FounderTestimonial />
-        <TestimonialSection />
-        <HobbiesSection />
-        <div id="contact-section">
-          <ContactSection />
-        </div>
-        <FuturisticCTA />
-      </main>
-      <FloatingActionButton />
-      <Footer />
+    <div className="min-h-screen flex flex-col relative overflow-hidden">
+      <AnimatedBackground />
+      <ModernEffects />
+      <div className="relative z-10 bg-background/80 backdrop-blur-sm text-foreground">
+        <ScrollProgress />
+        <Header toggleMobileMenu={toggleMobileMenu} />
+        <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
+        <main>
+          <ParallaxHero />
+          <div id="services-section">
+            <SimpleServiceCards />
+          </div>
+          <ImpactStatsSection />
+          <ServiceSection />
+          <CategorySection />
+          <RewardsSection />
+          <AboutSection />
+          <FounderTestimonial />
+          <TestimonialSection />
+          <HobbiesSection />
+          <div id="contact-section">
+            <ContactSection />
+          </div>
+          <FuturisticCTA />
+        </main>
+        <FloatingActionButton />
+        <Footer />
+      </div>
     </div>
   );
 }

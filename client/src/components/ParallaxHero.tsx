@@ -24,18 +24,11 @@ export function ParallaxHero() {
   return (
     <section 
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 via-background to-blue-50/30 dark:from-primary/20 dark:via-background dark:to-blue-950/20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ position: 'relative' }}
     >
-      {/* Animated background elements */}
-      <motion.div
-        className="absolute inset-0 opacity-20"
-        style={{ y }}
-      >
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
-      </motion.div>
+      {/* Glassmorphism overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-blue-500/5 dark:from-slate-900/20 dark:via-transparent dark:to-blue-900/10 backdrop-blur-sm" />
 
       <motion.div
         className="container mx-auto px-4 md:px-6 text-center z-10"
