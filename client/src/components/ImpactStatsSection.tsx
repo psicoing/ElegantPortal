@@ -7,7 +7,7 @@ export function ImpactStatsSection() {
 
   const stats = [
     {
-      end: 21,
+      end: 499,
       suffix: "",
       label: t('stats.users') || "Usuarios Activos"
     },
