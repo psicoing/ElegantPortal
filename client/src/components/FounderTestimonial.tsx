@@ -5,7 +5,7 @@ export function FounderTestimonial() {
   const { t } = useLanguage();
   
   return (
-    <section className="relative overflow-hidden bg-gradient-to-tr from-blue-700 to-blue-500 py-16">
+    <section className="relative overflow-hidden bg-gradient-to-tr from-blue-700 to-blue-500 py-8">
       {/* Fondo con diseño abstracto */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-10 left-20 w-40 h-40 rounded-full bg-white opacity-10"></div>
@@ -17,12 +17,12 @@ export function FounderTestimonial() {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               {t("founderTitle")}
             </h2>
             <div className="relative">
-              <blockquote className="text-base md:text-lg text-white leading-relaxed mb-6 max-w-2xl">
+              <blockquote className="text-base md:text-lg text-white leading-relaxed mb-4 max-w-2xl">
                 <span className="absolute -top-4 -left-3 text-4xl text-white opacity-20">"</span>
                 {t("founderQuote")}
                 <span className="absolute -bottom-6 -right-3 text-4xl text-white opacity-20">"</span>
@@ -37,7 +37,7 @@ export function FounderTestimonial() {
           
           <div className="w-full md:w-1/3 flex flex-col items-center">
             <div className="relative">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <img 
                   src={profilePhoto} 
                   alt={t("founderAlt")} 
