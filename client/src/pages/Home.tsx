@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
+import { ParallaxHero } from "@/components/ParallaxHero";
 import { AboutSection } from "@/components/AboutSection";
 import { ServiceSection } from "@/components/ServiceSection";
 import { CategorySection } from "@/components/CategorySection";
@@ -12,6 +12,8 @@ import { RewardsSection } from "@/components/RewardsSection";
 import { FounderTestimonial } from "@/components/FounderTestimonial";
 import { HobbiesSection } from "@/components/HobbiesSection";
 import { SimpleServiceCards } from "@/components/services/SimpleServiceCards";
+import { ImpactStatsSection } from "@/components/ImpactStatsSection";
+import { FloatingActionButton } from "@/components/FloatingActionButton";
 import { useState } from "react";
 
 export default function Home() {
@@ -30,8 +32,11 @@ export default function Home() {
       <Header toggleMobileMenu={toggleMobileMenu} />
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
-        <Hero />
-        <SimpleServiceCards />
+        <ParallaxHero />
+        <div id="services-section">
+          <SimpleServiceCards />
+        </div>
+        <ImpactStatsSection />
         <ServiceSection />
         <CategorySection />
         <RewardsSection />
@@ -39,9 +44,12 @@ export default function Home() {
         <FounderTestimonial />
         <TestimonialSection />
         <HobbiesSection />
-        <ContactSection />
+        <div id="contact-section">
+          <ContactSection />
+        </div>
         <FuturisticCTA />
       </main>
+      <FloatingActionButton />
       <Footer />
     </div>
   );
