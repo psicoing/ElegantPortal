@@ -31,10 +31,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden">
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
       <AnimatedBackground />
-      <ModernEffects />
-      <div className="relative z-10 bg-background/80 backdrop-blur-sm text-foreground">
+      <div className="relative z-10">
         <ScrollProgress />
         <Header toggleMobileMenu={toggleMobileMenu} />
         <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
