@@ -18,20 +18,20 @@ export function FounderTestimonial() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold text-white mb-3">
               {t("founderTitle")}
             </h2>
             <div className="relative">
-              <blockquote className="text-base md:text-lg text-white leading-relaxed mb-4 max-w-2xl">
-                <span className="absolute -top-4 -left-3 text-4xl text-white opacity-20">"</span>
+              <blockquote className="text-sm md:text-base text-white leading-snug mb-3 max-w-2xl">
+                <span className="absolute -top-3 -left-2 text-3xl text-white opacity-20">"</span>
                 {t("founderQuote")}
-                <span className="absolute -bottom-6 -right-3 text-4xl text-white opacity-20">"</span>
+                <span className="absolute -bottom-4 -right-2 text-3xl text-white opacity-20">"</span>
               </blockquote>
             </div>
             <div className="text-white">
-              <p className="font-bold text-lg">{t("founderName")}</p>
-              <p className="text-blue-100 text-sm">{t("founderRole")}</p>
-              <p className="text-blue-100 mt-1 italic text-sm">{t("founderProfession")}</p>
+              <p className="font-semibold text-base">{t("founderName")}</p>
+              <p className="text-blue-100 text-xs">{t("founderRole")}</p>
+              <p className="text-blue-100 mt-0.5 italic text-xs">{t("founderProfession")}</p>
             </div>
           </div>
           
