@@ -14,6 +14,7 @@ import { HobbiesSection } from "@/components/HobbiesSection";
 import { SimpleServiceCards } from "@/components/services/SimpleServiceCards";
 import { ImpactStatsSection } from "@/components/ImpactStatsSection";
 import { FloatingActionButton } from "@/components/FloatingActionButton";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { useState } from "react";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <ScrollProgress />
       <Header toggleMobileMenu={toggleMobileMenu} />
       <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
       <main>
