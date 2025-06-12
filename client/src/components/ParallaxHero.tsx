@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
+import { Link } from "wouter";
 
 export function ParallaxHero() {
   const { t } = useLanguage();
@@ -24,6 +25,7 @@ export function ParallaxHero() {
     <section 
       ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 via-background to-blue-50/30 dark:from-primary/20 dark:via-background dark:to-blue-950/20"
+      style={{ position: 'relative' }}
     >
       {/* Animated background elements */}
       <motion.div
@@ -75,13 +77,15 @@ export function ParallaxHero() {
           >
             Explorar Servicios
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="text-lg px-8 py-6 border-2 hover:bg-primary/10 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Conocer Más
-          </Button>
+          <Link href="/investors">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg px-8 py-6 border-2 hover:bg-primary/10 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              Inversores
+            </Button>
+          </Link>
         </motion.div>
 
         <motion.div
