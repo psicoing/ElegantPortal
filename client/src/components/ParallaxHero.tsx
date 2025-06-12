@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
+import heroVideo from "@assets/20250612_1019_Downloading MP4 Format_simple_compose_01jxhkj5paf36bnqa7mwn0ga5j_1749716442127.mp4";
 
 export function ParallaxHero() {
   const { t } = useLanguage();
@@ -24,17 +25,36 @@ export function ParallaxHero() {
   return (
     <section 
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 via-background to-blue-50/30 dark:from-primary/20 dark:via-background dark:to-blue-950/20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ position: 'relative' }}
     >
-      {/* Animated background elements */}
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        
+        {/* Video overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40 dark:bg-black/60" />
+        
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-blue-500/20" />
+      </div>
+
+      {/* Animated floating elements */}
       <motion.div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-30"
         style={{ y }}
       >
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2" />
       </motion.div>
 
       <motion.div
@@ -46,22 +66,24 @@ export function ParallaxHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
-            Transformamos
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-white drop-shadow-2xl leading-tight">
+            <span className="bg-gradient-to-r from-blue-300 via-blue-200 to-white bg-clip-text text-transparent">
+              Transformamos
+            </span>
             <br />
-            <span className="text-foreground">el Futuro Digital</span>
+            <span className="text-white">el Futuro Digital</span>
           </h1>
         </motion.div>
 
         <motion.p
-          className="text-lg md:text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Más de 32 años innovando en tecnología, salud mental y desarrollo humano.
           <br />
-          <span className="text-primary font-semibold">Una plataforma. Infinitas posibilidades.</span>
+          <span className="text-blue-300 font-semibold">Una plataforma. Infinitas posibilidades.</span>
         </motion.p>
 
         <motion.div
