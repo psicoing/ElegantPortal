@@ -137,20 +137,7 @@ const services: Service[] = [
       'Especialidades médicas'
     ]
   },
-  {
-    id: 'jobda',
-    name: 'JOBDA',
-    category: 'Bolsa de Talento',
-    basePrice: 0,
-    priceType: 'custom',
-    description: 'Bolsa de valores para talento humano con IA',
-    features: [
-      'Coeficientes en tiempo real',
-      'Validación PROM con IA',
-      'Estados dinámicos',
-      'Dashboard profesional'
-    ]
-  }
+
 ];
 
 export function DynamicQuoteSystem() {
