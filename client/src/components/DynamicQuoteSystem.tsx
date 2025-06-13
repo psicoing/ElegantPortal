@@ -127,15 +127,21 @@ const services: Service[] = [
     id: 'saludalia',
     name: 'SALUDALIA',
     category: 'Salud Digital',
-    basePrice: 0,
+    basePrice: 9.99,
     priceType: 'custom',
-    description: 'Plataforma que conecta pacientes con profesionales de salud',
+    description: 'Programa para profesionales sanitarios - Únete a la red internacional de especialistas',
     features: [
-      'Primeros 100 perfiles gratuitos',
-      'Conexión paciente-profesional',
-      'Gestión de citas',
-      'Especialidades médicas'
-    ]
+      'Perfil verificado de profesional',
+      'Sistema de citas avanzado',
+      'Gestión de pacientes',
+      'Videoconsultas ilimitadas',
+      'Soporte técnico prioritario'
+    ],
+    multipliers: {
+      'esencial': 1,        // 9.99€ trimestral (3.33€/mes)
+      'profesional': 1.6,   // 15.99€ trimestral (5.33€/mes) - RECOMENDADO
+      'premium': 2.0        // 19.99€ trimestral (6.66€/mes)
+    }
   },
   {
     id: 'neuronmeg',
