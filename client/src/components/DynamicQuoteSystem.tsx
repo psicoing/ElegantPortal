@@ -74,6 +74,25 @@ const services: Service[] = [
     }
   },
   {
+    id: 'ejobs',
+    name: 'eJobs',
+    category: 'Recursos Humanos',
+    basePrice: 1200,
+    priceType: 'one-time',
+    description: 'Planes diseñados para empresas del Empordà que buscan talento de calidad',
+    features: [
+      'Publicación destacada',
+      'Análisis de candidatos por IA',
+      'Difusión en redes sociales',
+      'Soporte prioritario'
+    ],
+    multipliers: {
+      'estandar': 1,        // €1200 - Difusión local garantizada
+      'premium': 1.5,       // €1800 - Máxima visibilidad regional (Recomendado)
+      'elite': 2.08         // €2500 - Servicio exclusivo personalizado (Exclusivo)
+    }
+  },
+  {
     id: 'appia_desarrollo',
     name: 'APPIA - Desarrollo inicial',
     category: 'Desarrollo Tecnológico',
