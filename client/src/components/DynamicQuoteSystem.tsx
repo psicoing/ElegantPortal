@@ -137,6 +137,21 @@ const services: Service[] = [
       'Especialidades médicas'
     ]
   },
+  {
+    id: 'neuronmeg',
+    name: 'NEURONMEG',
+    category: 'Bienestar Digital',
+    basePrice: 0,
+    priceType: 'custom',
+    description: 'Centro especializado en consultas de psicología con más de 32 años de experiencia',
+    features: [
+      'Consultas presenciales y online',
+      'Psicólogos especializados certificados',
+      'Evaluaciones psicológicas completas',
+      'Terapias personalizadas',
+      'Más de 3 décadas de experiencia'
+    ]
+  },
 
 ];
 
