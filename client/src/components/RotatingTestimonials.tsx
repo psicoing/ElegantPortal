@@ -147,6 +147,8 @@ export function RotatingTestimonials() {
   if (filteredTestimonials.length === 0) return null;
 
   const currentTestimonial = filteredTestimonials[currentIndex];
+  
+  if (!currentTestimonial) return null;
 
   return (
     <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950 relative overflow-hidden">

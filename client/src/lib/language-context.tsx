@@ -87,6 +87,11 @@ const translations: Record<Language, Record<string, string>> = {
     'rewards.users': 'usuarios activos',
     'rewards.footer': 'Sigue invitando, creciendo y soñando. Estamos más cerca de los premios gracias a ti.',
     
+    'stats.users': 'Usuarios Activos',
+    'stats.services': 'Servicios Integrados',
+    'stats.experience': 'Años de Experiencia',
+    'stats.satisfaction': 'Satisfacción del Cliente',
+    
     'about.title': '¿Quiénes somos?',
     'about.subtitle': 'Conoce nuestra historia y visión',
     'about.vision.title': 'Nuestra visión',
@@ -468,6 +473,11 @@ const translations: Record<Language, Record<string, string>> = {
     'founderAlt': 'Foto de Ramón Molons de San Román, CEO',
     
     'rewards.users': 'usuaris actius',
+    
+    'stats.users': 'Usuaris Actius',
+    'stats.services': 'Serveis Integrats',
+    'stats.experience': 'Anys d\'Experiència',
+    'stats.satisfaction': 'Satisfacció del Client',
     
     'hero.title': 'Benvinguts a la nostra plataforma de serveis',
     'hero.subtitle': 'Escull aquell que necessitis',
@@ -1073,6 +1083,11 @@ const translations: Record<Language, Record<string, string>> = {
     'founderAlt': 'Photo of Ramón Molons de San Román, CEO',
     
     'rewards.users': 'active users',
+    
+    'stats.users': 'Active Users',
+    'stats.services': 'Integrated Services',
+    'stats.experience': 'Years of Experience',
+    'stats.satisfaction': 'Customer Satisfaction',
     
     'hero.title': 'Welcome to our services platform',
     'hero.subtitle': 'Choose the one you need',
