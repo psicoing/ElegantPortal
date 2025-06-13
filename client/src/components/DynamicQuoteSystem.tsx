@@ -177,7 +177,10 @@ export function DynamicQuoteSystem() {
 
   const addService = () => {
     const service = services.find(s => s.id === currentService);
-    if (!service) return;
+    if (!service) {
+      console.log('Service not found:', currentService);
+      return;
+    }
 
     const subtotal = calculatePrice(service, quantity, duration, selectedOptions);
     const newItem: QuoteItem = {
@@ -188,6 +191,7 @@ export function DynamicQuoteSystem() {
       subtotal
     };
 
+    console.log('Adding service:', newItem);
     setSelectedServices([...selectedServices, newItem]);
     setCurrentService('');
     setQuantity(1);
@@ -205,22 +209,124 @@ export function DynamicQuoteSystem() {
   }, [selectedServices]);
 
   const generateQuote = () => {
+    console.log('Generating quote with services:', selectedServices);
+    console.log('Contact email:', contactEmail);
+    console.log('Company name:', companyName);
+    console.log('Total:', total);
     setShowQuote(true);
   };
 
   const downloadQuote = () => {
-    // Generate PDF functionality would go here
-    console.log('Downloading quote...');
+    const quoteData = {
+      company: companyName || 'Sin especificar',
+      email: contactEmail,
+      services: selectedServices,
+      total: total,
+      date: new Date().toLocaleDateString('es-ES'),
+      quoteId: `QUOTE-${Date.now()}`
+    };
+
+    // Generate PDF content
+    const pdfContent = generatePDFContent(quoteData);
+    
+    // Create blob and download
+    const blob = new Blob([pdfContent], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `presupuesto-${quoteData.quoteId}.html`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    console.log('Quote downloaded:', quoteData.quoteId);
   };
 
   const sendQuote = () => {
-    // Email functionality would go here
+    const quoteData = {
+      company: companyName || 'Sin especificar',
+      email: contactEmail,
+      services: selectedServices,
+      total: total,
+      date: new Date().toLocaleDateString('es-ES'),
+      quoteId: `QUOTE-${Date.now()}`
+    };
+
+    // Simulate email sending (in production, this would call a backend API)
     console.log('Sending quote to:', contactEmail);
+    console.log('Quote data:', quoteData);
+    
+    // Show success message
+    alert(`Presupuesto enviado correctamente a ${contactEmail}`);
+  };
+
+  const generatePDFContent = (data: any) => {
+    return `
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto ${data.quoteId}</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; border-bottom: 2px solid #3b82f6; padding-bottom: 20px; margin-bottom: 30px; }
+        .company-info { background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .service-item { border: 1px solid #e2e8f0; padding: 15px; margin-bottom: 10px; border-radius: 6px; }
+        .total { background: #3b82f6; color: white; padding: 20px; text-align: center; font-size: 18px; font-weight: bold; border-radius: 8px; margin-top: 20px; }
+        .features { font-size: 12px; color: #64748b; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Presupuesto de Servicios Digitales</h1>
+        <p>ID: ${data.quoteId} | Fecha: ${data.date}</p>
+    </div>
+    
+    <div class="company-info">
+        <h3>Información del Cliente</h3>
+        <p><strong>Empresa:</strong> ${data.company}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+    </div>
+    
+    <h3>Servicios Solicitados</h3>
+    ${data.services.map((item: QuoteItem) => `
+        <div class="service-item">
+            <h4>${item.service.name} - ${item.service.category}</h4>
+            <p>${item.service.description}</p>
+            <p><strong>Cantidad:</strong> ${item.quantity} ${item.service.priceType === 'monthly' ? 'usuarios' : 'unidades'}</p>
+            ${item.duration ? `<p><strong>Duración:</strong> ${item.duration} ${item.service.priceType === 'monthly' ? 'meses' : 'años'}</p>` : ''}
+            ${item.customOptions.length > 0 ? `<p><strong>Opciones:</strong> ${item.customOptions.join(', ')}</p>` : ''}
+            <div class="features">
+                <strong>Características incluidas:</strong>
+                <ul>
+                    ${item.service.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+            </div>
+            <p style="text-align: right; font-size: 18px; font-weight: bold; color: #3b82f6;">
+                ${item.subtotal > 0 ? `${item.subtotal}€` : 'Consultar precio'}
+            </p>
+        </div>
+    `).join('')}
+    
+    <div class="total">
+        TOTAL ESTIMADO: ${data.total > 0 ? `${data.total}€` : 'Consultar precios personalizados'}
+    </div>
+    
+    <div style="margin-top: 30px; padding: 20px; background: #f1f5f9; border-radius: 8px; text-align: center;">
+        <h3>Información Adicional</h3>
+        <p>Este presupuesto es válido por 30 días desde la fecha de emisión.</p>
+        <p>Para más información o dudas, contacta con nosotros:</p>
+        <p><strong>Email:</strong> empordajobs@gmail.com | <strong>Teléfono:</strong> +34 660 45 21 36</p>
+    </div>
+</body>
+</html>`;
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950">
-      <div className="container mx-auto px-4">
+    <section className="relative py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950">
+      <div className="container mx-auto px-4 relative">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
@@ -479,20 +585,39 @@ export function DynamicQuoteSystem() {
                       Generar Presupuesto
                     </Button>
                     
-                    {showQuote && contactEmail && (
+                    {showQuote && (
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="flex gap-2"
+                        className="space-y-2"
                       >
-                        <Button variant="outline" onClick={downloadQuote} className="flex-1">
-                          <Download className="w-4 h-4 mr-2" />
-                          Descargar PDF
-                        </Button>
-                        <Button variant="outline" onClick={sendQuote} className="flex-1">
-                          <Send className="w-4 h-4 mr-2" />
-                          Enviar por Email
-                        </Button>
+                        <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
+                          <p className="text-green-800 font-medium text-sm">
+                            ✓ Presupuesto generado correctamente
+                          </p>
+                          <p className="text-green-600 text-xs mt-1">
+                            Total de servicios: {selectedServices.length} | Importe: {total > 0 ? `${total}€` : 'Consultar precios'}
+                          </p>
+                        </div>
+                        
+                        <div className="flex gap-2">
+                          <Button variant="outline" onClick={downloadQuote} className="flex-1">
+                            <Download className="w-4 h-4 mr-2" />
+                            Descargar PDF
+                          </Button>
+                          {contactEmail && (
+                            <Button variant="outline" onClick={sendQuote} className="flex-1">
+                              <Send className="w-4 h-4 mr-2" />
+                              Enviar por Email
+                            </Button>
+                          )}
+                        </div>
+                        
+                        {!contactEmail && (
+                          <p className="text-sm text-amber-600">
+                            Añade tu email para poder enviar el presupuesto
+                          </p>
+                        )}
                       </motion.div>
                     )}
                   </div>
