@@ -55,36 +55,17 @@ const services: Service[] = [
   },
   {
     id: 'empordajobs',
-    name: 'EmpordaJobs',
-    category: 'Recursos Humanos',
-    basePrice: 1200,
-    priceType: 'one-time',
-    description: 'Gestión completa del proceso de selección por oferta de trabajo',
-    features: [
-      'Análisis con IA integrada',
-      'Gestión total de candidatos',
-      'Evaluación de competencias',
-      'Sistema de recomendaciones'
-    ],
-    multipliers: {
-      'ofertas_1_5': 1,
-      'ofertas_6_10': 0.9,
-      'ofertas_11_20': 0.8,
-      'ofertas_20+': 0.75
-    }
-  },
-  {
-    id: 'ejobs',
-    name: 'eJobs',
+    name: 'EmpordaJobs / eJobs',
     category: 'Recursos Humanos',
     basePrice: 1200,
     priceType: 'one-time',
     description: 'Planes diseñados para empresas del Empordà que buscan talento de calidad',
     features: [
-      'Publicación destacada',
-      'Análisis de candidatos por IA',
-      'Difusión en redes sociales',
-      'Soporte prioritario'
+      'Publicación destacada (30-90 días)',
+      'Análisis avanzado de candidatos por IA',
+      'Difusión prioritaria en redes sociales',
+      'Soporte personalizado y VIP',
+      'Plan de difusión completo'
     ],
     multipliers: {
       'estandar': 1,        // €1200 - Difusión local garantizada
