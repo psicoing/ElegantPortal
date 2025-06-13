@@ -35,22 +35,22 @@ interface QuoteItem {
 const services: Service[] = [
   {
     id: 'nflow',
-    name: 'NFLOW',
+    name: 'NFLOW Premium',
     category: 'Bienestar Digital',
     basePrice: 2.99,
     priceType: 'monthly',
-    description: 'Apoyo psicológico mediante IA con profesionales cualificados',
+    description: 'Robot de psicología para padres y sus hijos - Desbloquea acceso completo a recursos exclusivos',
     features: [
-      'Asistente virtual 24/7',
-      'Conexión con psicólogos certificados',
-      'Respaldo científico',
-      'Prueba gratuita 7 días'
+      'Acceso completo a recursos premium',
+      'Consejos personalizados',
+      'Contenido actualizado semanalmente',
+      'Sin publicidad',
+      'Ejercicios prácticos guiados'
     ],
     multipliers: {
-      'usuarios_1_10': 1,
-      'usuarios_11_50': 0.9,
-      'usuarios_51_100': 0.8,
-      'usuarios_100+': 0.7
+      'basico': 1,          // €2.99/mes - Acceso a recursos premium
+      'grupal': 2.0,        // €5.99/mes - Chat grupal quincenal (RECOMENDADO)
+      'individual': 2.67    // €7.99/mes - Chat semanal personalizado
     }
   },
   {
