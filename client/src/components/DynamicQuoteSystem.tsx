@@ -75,41 +75,53 @@ const services: Service[] = [
   },
   {
     id: 'appia_desarrollo',
-    name: 'APPIA - Desarrollo',
+    name: 'APPIA - Desarrollo inicial',
     category: 'Desarrollo Tecnológico',
-    basePrice: 9000,
+    basePrice: 6000,
     priceType: 'one-time',
-    description: 'Desarrollo de aplicaciones web y móviles con IA',
+    description: 'La base de tu aplicación inteligente con todas las funcionalidades necesarias',
     features: [
-      'Aplicación web completa',
-      'Aplicación móvil (iOS/Android)',
-      'Integración con IA',
-      'Diseño UX/UI profesional'
+      'Diseño UX/UI a medida',
+      'Desarrollo frontend y backend',
+      'Integración de IA básica',
+      'Panel de administración'
     ],
     multipliers: {
-      'basica': 0.67, // 6000€
-      'estandar': 1,   // 9000€
-      'premium': 1.33  // 12000€
+      'basico': 1,     // 6000€
+      'premium': 2     // 12000€
+    }
+  },
+  {
+    id: 'appia_infraestructura',
+    name: 'APPIA - Infraestructura',
+    category: 'Desarrollo Tecnológico',
+    basePrice: 1200,
+    priceType: 'yearly',
+    description: 'Servidores, bases de datos y entorno cloud para funcionamiento óptimo',
+    features: [
+      'Servidores en la nube',
+      'Base de datos gestionada',
+      'Almacenamiento de archivos',
+      'Copias de seguridad diarias'
+    ],
+    multipliers: {
+      'estandar': 1,      // 1200€
+      'premium': 1.67     // 2000€
     }
   },
   {
     id: 'appia_mantenimiento',
     name: 'APPIA - Mantenimiento',
     category: 'Desarrollo Tecnológico',
-    basePrice: 1700,
+    basePrice: 1200,
     priceType: 'yearly',
-    description: 'Infraestructura, hosting y soporte técnico anual',
+    description: 'Soporte técnico, actualizaciones y resolución de incidencias',
     features: [
-      'Hosting y BBDD',
-      'Tokens de IA',
       'Soporte técnico',
-      'Actualizaciones de seguridad'
-    ],
-    multipliers: {
-      'basico': 0.7,   // 1200€
-      'estandar': 1,   // 1700€
-      'premium': 1.18  // 2000€
-    }
+      'Actualizaciones de seguridad',
+      'Resolución de incidencias',
+      'Monitorización 24/7'
+    ]
   },
   {
     id: 'saludalia',
