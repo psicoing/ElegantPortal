@@ -141,16 +141,22 @@ const services: Service[] = [
     id: 'neuronmeg',
     name: 'NEURONMEG',
     category: 'Bienestar Digital',
-    basePrice: 0,
-    priceType: 'custom',
+    basePrice: 65,
+    priceType: 'one-time',
     description: 'Centro especializado en consultas de psicología con más de 32 años de experiencia',
     features: [
-      'Consultas presenciales y online',
-      'Psicólogos especializados certificados',
-      'Evaluaciones psicológicas completas',
-      'Terapias personalizadas',
-      'Más de 3 décadas de experiencia'
-    ]
+      'Sesiones de 60 minutos',
+      'Profesionales con 32 años de experiencia',
+      'Col. 7851 COPC',
+      'Metodologías adaptadas según etapa',
+      'Instalaciones diseñadas para tu comodidad'
+    ],
+    multipliers: {
+      'despacho': 1,        // 65€ - Sesiones presenciales 60 min
+      'domicilio': 1.23,    // 80€ - Mayor comodidad y accesibilidad
+      'online': 0.85,       // 55€ - Desde cualquier lugar del mundo
+      'infantil': 0.77      // 50€ - Para niños a partir de 4.5 años
+    }
   },
 
 ];
