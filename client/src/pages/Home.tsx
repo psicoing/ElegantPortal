@@ -17,6 +17,7 @@ import { FloatingActionButton } from "@/components/FloatingActionButton";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { ModernEffects } from "@/components/ModernEffects";
+import { DynamicQuoteSystem } from "@/components/DynamicQuoteSystem";
 
 import { useState } from "react";
 
@@ -46,6 +47,7 @@ export default function Home() {
           <ImpactStatsSection />
           <ServiceSection />
           <CategorySection />
+          <DynamicQuoteSystem />
           <RewardsSection />
           <AboutSection />
           <FounderTestimonial />
