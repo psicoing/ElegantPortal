@@ -17,7 +17,7 @@ import { FloatingActionButton } from "@/components/FloatingActionButton";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { ModernEffects } from "@/components/ModernEffects";
-import { RotatingTestimonials } from "@/components/RotatingTestimonials";
+
 import { useState } from "react";
 
 export default function Home() {
@@ -45,7 +45,6 @@ export default function Home() {
           </div>
           <ImpactStatsSection />
           <ServiceSection />
-          <RotatingTestimonials />
           <CategorySection />
           <RewardsSection />
           <AboutSection />
