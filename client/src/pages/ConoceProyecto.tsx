@@ -156,12 +156,104 @@ export default function ConoceProyecto() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              Una Institución de Vanguardia
+              Portbou: El Lugar Perfecto
             </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed mb-8">
               Una institución de vanguardia dedicada al estudio del cerebro, al acompañamiento emocional, 
               y a la innovación en salud mental y neurofrecuencias, abierta a la ciencia, la ciudadanía y el mar.
             </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold mb-6 text-slate-800 dark:text-slate-200">
+                ¿Por qué Portbou?
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-blue-500 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 dark:text-slate-200">Ubicación Estratégica</p>
+                    <p className="text-slate-600 dark:text-slate-300">Situado al lado del puerto, con acceso directo a las costas del Mediterráneo. Capitanía del Estado nos avala con los permisos para su construcción.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-blue-500 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 dark:text-slate-200">Entre Fronteras</p>
+                    <p className="text-slate-600 dark:text-slate-300">Portbou, pueblo fronterizo entre España y Francia, símbolo de conexión y encuentro entre culturas y conocimientos.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-blue-500 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 dark:text-slate-200">Entorno Natural Único</p>
+                    <p className="text-slate-600 dark:text-slate-300">Los acantilados, el viento marino y la tranquilidad costera crean el ambiente perfecto para la sanación y la investigación.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-blue-500 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 dark:text-slate-200">Comunidad Arraigada</p>
+                    <p className="text-slate-600 dark:text-slate-300">Un pueblo con historia, donde los mayores pueden envejecer en su tierra natal, rodeados del mar que siempre han conocido.</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-2xl p-8"
+            >
+              <div className="text-center">
+                <Building className="h-16 w-16 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">
+                  Portbou en Cifras
+                </h3>
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">Costa</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-300">Mediterráneo como aliado terapéutico</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">Puerto</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-300">Acceso marítimo directo</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">Frontera</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-300">Conexión España-Francia</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">Historia</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-300">Pueblo con tradición marinera</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-center mt-16"
+          >
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 dark:from-blue-900/20 dark:to-slate-800/20 rounded-2xl p-8">
+              <p className="text-lg text-blue-700 dark:text-blue-300 italic leading-relaxed">
+                "En Portbou, donde el Mediterráneo besa los acantilados y la historia abraza el futuro, 
+                construiremos un faro de esperanza para la neurociencia. Con el aval de Capitanía del Estado 
+                para su construcción, este proyecto cuenta con el respaldo oficial necesario para convertirse en realidad."
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
