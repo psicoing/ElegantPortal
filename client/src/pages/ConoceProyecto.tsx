@@ -1,125 +1,84 @@
 import { motion } from "framer-motion";
-import { Brain, Users, Target, CheckCircle, ArrowRight, Building, Microscope, Heart, Globe, Award, TrendingUp } from "lucide-react";
+import { Brain, Users, Target, CheckCircle, ArrowRight, Building, Microscope, Heart, Globe, Award, TrendingUp, Waves, Home, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Link } from "wouter";
-import { useState } from "react";
 
 export default function ConoceProyecto() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const projectPhases = [
+  const buildingFloors = [
     {
-      phase: "Fase I",
-      title: "Diseño y Planificación",
-      duration: "6 meses",
-      budget: "€2M",
-      items: [
-        "Diseño arquitectónico avanzado",
-        "Estudios de viabilidad técnica",
-        "Licencias y permisos",
-        "Planificación tecnológica"
-      ]
-    },
-    {
-      phase: "Fase II", 
-      title: "Construcción e Infraestructura",
-      duration: "18 meses",
-      budget: "€12M",
-      items: [
-        "Construcción del edificio principal",
-        "Laboratorios especializados",
-        "Infraestructura tecnológica",
-        "Sistemas de seguridad avanzados"
-      ]
-    },
-    {
-      phase: "Fase III",
-      title: "Equipamiento y Tecnología",
-      duration: "12 meses", 
-      budget: "€4M",
-      items: [
-        "Equipos de neuroimagen",
-        "Sistemas de IA y computación",
-        "Laboratorios de investigación",
-        "Tecnología de realidad virtual"
-      ]
-    },
-    {
-      phase: "Fase IV",
-      title: "Puesta en Marcha",
-      duration: "6 meses",
-      budget: "€2M",
-      items: [
-        "Contratación de personal especializado",
-        "Programas de formación",
-        "Certificaciones internacionales",
-        "Inicio de operaciones"
-      ]
-    }
-  ];
-
-  const researchAreas = [
-    {
-      icon: Brain,
-      title: "Neurociencia Cognitiva",
-      description: "Investigación avanzada en procesos cognitivos y memoria",
-      impact: "Nuevos tratamientos para demencia y Alzheimer"
-    },
-    {
-      icon: Heart,
-      title: "Salud Mental Digital",
-      description: "Terapias asistidas por IA y realidad virtual",
-      impact: "Acceso universal a tratamientos personalizados"
-    },
-    {
+      floor: "Planta 1",
+      title: "Laboratorios de neurofrecuencia y salud mental",
       icon: Microscope,
-      title: "Neurotecnología",
-      description: "Desarrollo de interfaces cerebro-computadora",
-      impact: "Rehabilitación para lesiones neurológicas"
+      description: "Un espacio vivo donde psicólogos, neuroingenieros y especialistas colaboran en tiempo real",
+      features: [
+        "Laboratorios Hucof de análisis de frecuencias cerebrales",
+        "Cabinas de exploración sensorial",
+        "Espacios de atención psicológica integrativa",
+        "Zonas de formación para nuevos profesionales"
+      ],
+      highlight: "Aquí no habrá batas blancas sin alma: habrá ciencia con ética y emoción"
     },
     {
-      icon: Users,
-      title: "Psicología Social",
-      description: "Impacto de la tecnología en el bienestar social",
-      impact: "Sociedades más resilientes y empáticas"
+      floor: "Planta 2",
+      title: "Residencia para investigadores y visitantes",
+      icon: Home,
+      description: "Portbou no solo recibirá conocimiento, también lo acogerá",
+      features: [
+        "Residencia temporal para personas de la zona en tratamiento intensivo",
+        "Hogar para investigadores invitados y estudiantes en prácticas",
+        "Lugar de encuentro multicultural entre ciencia, salud y comunidad",
+        "Un puente entre el saber y el vivir, con vistas al mar y al futuro"
+      ],
+      highlight: "Donde la hospitalidad se encuentra con la innovación"
+    },
+    {
+      floor: "Planta 3",
+      title: "Gestión, dirección y alma administrativa",
+      icon: Settings,
+      description: "Oficinas pensadas no como un despacho burocrático, sino como el centro de decisiones humanas",
+      features: [
+        "Gestión de fondos con transparencia total",
+        "Diseño de políticas de impacto social",
+        "Relación con entidades filantrópicas, universidades y organizaciones internacionales",
+        "Coordinación de proyectos de investigación"
+      ],
+      highlight: "Donde cada decisión se toma pensando en el impacto humano"
     }
   ];
 
-  const milestones = [
+  const poolTherapies = [
     {
-      year: "2025",
-      title: "Inicio del Proyecto",
-      description: "Confirmación de financiación y inicio de fase I"
+      title: "Terapias acuáticas",
+      description: "Rehabilitación neurológica en ambiente marino",
+      icon: Heart
     },
     {
-      year: "2026",
-      title: "Primera Piedra",
-      description: "Inicio de construcción del centro"
+      title: "Estimulación sensorial",
+      description: "Neurofeedback en entorno salino natural",
+      icon: Brain
     },
     {
-      year: "2027",
-      title: "Equipamiento",
-      description: "Instalación de tecnología avanzada"
-    },
-    {
-      year: "2028",
-      title: "Apertura",
-      description: "Inauguración y primeros programas de investigación"
-    },
-    {
-      year: "2030",
-      title: "Impacto Global",
-      description: "Reconocimiento internacional y expansión"
+      title: "Reflexión y meditación",
+      description: "Neuroplasticidad en calma oceánica",
+      icon: Waves
     }
+  ];
+
+  const projectValues = [
+    { label: "Ética", description: "Cada decisión guiada por principios humanos" },
+    { label: "Sostenible", description: "Respeto por el entorno de Portbou" },
+    { label: "Científica", description: "Rigor en cada investigación" },
+    { label: "Emocional", description: "La ciencia al servicio del corazón" }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
-      <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+      <Header />
       
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
@@ -135,19 +94,19 @@ export default function ConoceProyecto() {
           >
             <Badge className="mb-6 bg-white/20 text-white border-white/30 hover:bg-white/30">
               <Building className="mr-2 h-4 w-4" />
-              Instituto de Neurociencia del Futuro
+              Portbou, Girona
             </Badge>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               INS NEURONMEG
               <span className="block text-2xl md:text-3xl lg:text-4xl font-normal mt-4 opacity-90">
-                Un Centro que Cambiará el Mundo
+                Una catedral moderna para la neurociencia
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed opacity-95">
-              €20 millones de inversión para crear el centro de neurociencia más avanzado de Europa, 
-              donde la tecnología y la humanidad se encuentran para revolucionar la salud mental.
+              En el corazón de Portbou, entre acantilados, arte, viento y frontera, nace un proyecto único. 
+              No será solo un edificio. Será una declaración de principios.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -265,7 +224,7 @@ export default function ConoceProyecto() {
         </div>
       </section>
 
-      {/* Research Areas */}
+      {/* Building Structure */}
       <section className="py-20 bg-white dark:bg-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -276,15 +235,15 @@ export default function ConoceProyecto() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-800 dark:text-slate-200">
-              Áreas de Investigación
+              Estructura del Edificio
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              Cuatro pilares fundamentales que definirán el futuro de la neurociencia aplicada
+              Tres plantas diseñadas para la excelencia científica y el bienestar humano
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {researchAreas.map((area, index) => (
+          <div className="grid lg:grid-cols-3 gap-8">
+            {buildingFloors.map((floor, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -293,15 +252,25 @@ export default function ConoceProyecto() {
                 viewport={{ once: true }}
               >
                 <Card className="h-full hover:shadow-lg transition-all duration-300 border-0 shadow-md">
-                  <CardHeader className="text-center">
-                    <area.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                    <CardTitle className="text-xl mb-2">{area.title}</CardTitle>
-                    <CardDescription className="text-base">{area.description}</CardDescription>
+                  <CardHeader className="text-center bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-t-lg">
+                    <floor.icon className="h-12 w-12 mx-auto mb-4" />
+                    <Badge className="bg-white/20 text-white border-white/30 mb-3">
+                      {floor.floor}
+                    </Badge>
+                    <CardTitle className="text-xl mb-2">{floor.title}</CardTitle>
+                    <CardDescription className="text-blue-100">{floor.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pt-6">
+                    <ul className="space-y-3 mb-4">
+                      {floor.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-slate-600 dark:text-slate-300">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                     <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-                      <p className="text-sm font-semibold text-blue-700 dark:text-blue-300 mb-1">Impacto Esperado:</p>
-                      <p className="text-sm text-slate-600 dark:text-slate-300">{area.impact}</p>
+                      <p className="text-sm text-blue-700 dark:text-blue-300 italic">"{floor.highlight}"</p>
                     </div>
                   </CardContent>
                 </Card>

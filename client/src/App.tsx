@@ -26,6 +26,7 @@ function Router() {
       <Route path="/ai-apps" component={AiApps} />
       <Route path="/investors" component={InvestorsPage} />
       <Route path="/filantropia" component={Filantropia} />
+      <Route path="/conoce-proyecto" component={ConoceProyecto} />
       <Route path="/trabajo-comisiones-calculadora" component={CommissionsCalculator} />
       <Route component={NotFound} />
     </Switch>

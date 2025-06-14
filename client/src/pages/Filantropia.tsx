@@ -116,11 +116,11 @@ export default function Filantropia() {
                 INS NEURONMEG
               </Badge>
               
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h1 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Una apuesta valiente por el futuro de la mente humana
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
                 ¿Y si el futuro de la salud mental no dependiera solo de hospitales, sino de centros vivos, 
                 inteligentes y comprometidos con la neurociencia aplicada?
               </p>
@@ -132,12 +132,12 @@ export default function Filantropia() {
                     Conviértete en Mecenas
                   </Button>
                 </a>
-                <a href="mailto:empordajobs@gmail.com">
+                <Link href="/conoce-proyecto">
                   <Button size="lg" variant="outline" className="text-lg px-8 py-6">
                     <Brain className="mr-2 h-5 w-5" />
                     Conoce el Proyecto
                   </Button>
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
