@@ -61,49 +61,54 @@ export default function Filantropia() {
   const donationLevels = [
     {
       level: "Mecenas Fundador",
-      amount: "€50,000+",
+      amount: "€1M - €5M",
       benefits: [
-        "Naming rights en sala principal",
-        "Reuniones trimestrales con dirección",
-        "Acceso exclusivo a investigaciones",
-        "Invitación a eventos VIP",
-        "Placa conmemorativa permanente"
+        "Parte esencial del proyecto de €20M",
+        "Naming rights del instituto completo",
+        "Miembro del consejo asesor vitalicio",
+        "Acceso prioritario a todas las investigaciones",
+        "Reconocimiento histórico como fundador",
+        "Sala dedicada con su nombre",
+        "Reuniones mensuales con dirección"
       ],
       color: "from-purple-600 to-indigo-600",
       featured: true
     },
     {
       level: "Benefactor Institucional",
-      amount: "€25,000+",
+      amount: "€250K - €999K",
       benefits: [
-        "Reconocimiento en publicaciones",
-        "Acceso a informes de impacto",
-        "Invitación a conferencias anuales",
-        "Certificado de mecenazgo",
-        "Newsletter exclusivo"
+        "Contribución significativa al proyecto",
+        "Naming rights de laboratorio o sala",
+        "Miembro del consejo consultivo",
+        "Acceso a informes de progreso mensual",
+        "Invitación a inauguraciones y eventos VIP",
+        "Placa conmemorativa en el instituto"
       ],
       color: "from-blue-600 to-cyan-600",
       featured: false
     },
     {
       level: "Colaborador Comprometido",
-      amount: "€10,000+",
+      amount: "€50K - €249K",
       benefits: [
-        "Reconocimiento público",
-        "Informes semestrales",
-        "Acceso a eventos especiales",
-        "Certificado de colaboración"
+        "Apoyo esencial para equipamiento",
+        "Reconocimiento en área específica",
+        "Acceso a informes trimestrales",
+        "Invitación a eventos especiales",
+        "Certificado de colaboración fundacional"
       ],
       color: "from-green-600 to-emerald-600",
       featured: false
     },
     {
       level: "Apoyo Solidario",
-      amount: "€1,000+",
+      amount: "€5K - €49K",
       benefits: [
-        "Agradecimiento público",
-        "Informes anuales",
-        "Acceso a webinars",
+        "Contribución al fondo solidario",
+        "Reconocimiento en muro de donantes",
+        "Informes anuales de impacto",
+        "Acceso a webinars exclusivos",
         "Certificado de donación"
       ],
       color: "from-orange-500 to-red-500",
@@ -265,6 +270,14 @@ export default function Filantropia() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Qué proponemos?</h2>
+              <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 dark:from-blue-400/10 dark:to-purple-400/10 rounded-xl p-6 mb-8">
+                <p className="text-xl font-semibold text-center text-blue-800 dark:text-blue-200">
+                  Proyecto integral valorado en <span className="text-2xl font-bold">€20 millones</span>
+                </p>
+                <p className="text-center text-blue-600 dark:text-blue-300 mt-2">
+                  Una inversión transformadora que requiere mecenas visionarios dispuestos a cambiar el futuro de la salud mental
+                </p>
+              </div>
             </motion.div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
