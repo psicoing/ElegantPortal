@@ -179,7 +179,7 @@ export default function ConoceProyecto() {
                   <CheckCircle className="h-6 w-6 text-blue-500 mt-0.5" />
                   <div>
                     <p className="font-semibold text-slate-800 dark:text-slate-200">Ubicación Estratégica</p>
-                    <p className="text-slate-600 dark:text-slate-300">Situado al lado del puerto, con acceso directo a las costas del Mediterráneo. Capitanía del Estado nos avala con los permisos para su construcción.</p>
+                    <p className="text-slate-600 dark:text-slate-300">Situado al lado del puerto, con acceso directo a las costas del Mediterráneo que proporcionan un entorno terapéutico natural único.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -250,8 +250,8 @@ export default function ConoceProyecto() {
             <div className="bg-gradient-to-br from-blue-50 to-slate-50 dark:from-blue-900/20 dark:to-slate-800/20 rounded-2xl p-8">
               <p className="text-lg text-blue-700 dark:text-blue-300 italic leading-relaxed">
                 "En Portbou, donde el Mediterráneo besa los acantilados y la historia abraza el futuro, 
-                construiremos un faro de esperanza para la neurociencia. Con el aval de Capitanía del Estado 
-                para su construcción, este proyecto cuenta con el respaldo oficial necesario para convertirse en realidad."
+                construiremos un faro de esperanza para la neurociencia. Este proyecto transformará 
+                la costa catalana en un referente mundial de sanación e investigación."
               </p>
             </div>
           </motion.div>
