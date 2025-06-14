@@ -16,7 +16,7 @@ export default function ConoceProyecto() {
       icon: Microscope,
       description: "Un espacio vivo donde psicólogos, neuroingenieros y especialistas colaboran en tiempo real",
       features: [
-        "Laboratorios Hucof de análisis de frecuencias cerebrales",
+        "Laboratorios ARCO de análisis de frecuencias cerebrales",
         "Cabinas de exploración sensorial",
         "Espacios de atención psicológica integrativa",
         "Zonas de formación para nuevos profesionales"
