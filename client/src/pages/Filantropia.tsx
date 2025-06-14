@@ -60,59 +60,38 @@ export default function Filantropia() {
 
   const donationLevels = [
     {
-      level: "Mecenas Fundador",
-      amount: "€1M - €5M",
+      level: "Mecenas Principal",
+      amount: "€10 millones",
       benefits: [
-        "Parte esencial del proyecto de €20M",
-        "Naming rights del instituto completo",
-        "Miembro del consejo asesor vitalicio",
-        "Acceso prioritario a todas las investigaciones",
-        "Reconocimiento histórico como fundador",
-        "Sala dedicada con su nombre",
-        "Reuniones mensuales con dirección"
+        "50% del proyecto de construcción",
+        "Naming rights completo del instituto",
+        "Cofundador oficial del INS NEURONMEG",
+        "Presidente del consejo asesor vitalicio",
+        "Acceso exclusivo a todas las investigaciones",
+        "Reconocimiento histórico como mecenas principal",
+        "Edificio principal con su nombre",
+        "Reuniones semanales con dirección ejecutiva",
+        "Derechos de veto en decisiones estratégicas"
       ],
       color: "from-purple-600 to-indigo-600",
       featured: true
     },
     {
-      level: "Benefactor Institucional",
-      amount: "€250K - €999K",
+      level: "Mecenas Fundador",
+      amount: "€5 millones",
       benefits: [
-        "Contribución significativa al proyecto",
-        "Naming rights de laboratorio o sala",
-        "Miembro del consejo consultivo",
-        "Acceso a informes de progreso mensual",
-        "Invitación a inauguraciones y eventos VIP",
-        "Placa conmemorativa en el instituto"
+        "25% del proyecto de construcción",
+        "Naming rights de ala o laboratorio principal",
+        "Cofundador oficial del INS NEURONMEG",
+        "Vicepresidente del consejo asesor vitalicio",
+        "Acceso prioritario a investigaciones",
+        "Reconocimiento histórico como mecenas fundador",
+        "Laboratorio principal con su nombre",
+        "Reuniones quincenales con dirección",
+        "Participación en decisiones estratégicas"
       ],
       color: "from-blue-600 to-cyan-600",
-      featured: false
-    },
-    {
-      level: "Colaborador Comprometido",
-      amount: "€50K - €249K",
-      benefits: [
-        "Apoyo esencial para equipamiento",
-        "Reconocimiento en área específica",
-        "Acceso a informes trimestrales",
-        "Invitación a eventos especiales",
-        "Certificado de colaboración fundacional"
-      ],
-      color: "from-green-600 to-emerald-600",
-      featured: false
-    },
-    {
-      level: "Apoyo Solidario",
-      amount: "€5K - €49K",
-      benefits: [
-        "Contribución al fondo solidario",
-        "Reconocimiento en muro de donantes",
-        "Informes anuales de impacto",
-        "Acceso a webinars exclusivos",
-        "Certificado de donación"
-      ],
-      color: "from-orange-500 to-red-500",
-      featured: false
+      featured: true
     }
   ];
 
@@ -372,11 +351,11 @@ export default function Filantropia() {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Niveles de Colaboración</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Cada contribución marca la diferencia. Elige el nivel que mejor se adapte a tu visión de impacto.
+                Solo dos niveles de mecenazgo para los visionarios que quieren construir el futuro de la salud mental.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {donationLevels.map((level, index) => (
                 <motion.div
                   key={index}
@@ -415,6 +394,31 @@ export default function Filantropia() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Redirect to Investors */}
+            <motion.div
+              className="mt-16 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="bg-gradient-to-r from-slate-50 to-blue-50 dark:from-slate-800 dark:to-blue-900 rounded-xl p-8 border border-slate-200 dark:border-slate-700">
+                <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-slate-100">
+                  ¿Buscas otros niveles de colaboración?
+                </h3>
+                <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 max-w-2xl mx-auto">
+                  Para contribuciones menores o diferentes modalidades de inversión, 
+                  visita nuestra sección de inversores donde encontrarás opciones desde €1,000.
+                </p>
+                <Link href="/investors">
+                  <Button size="lg" variant="outline" className="text-lg px-8 py-4">
+                    <ArrowRight className="mr-2 h-5 w-5" />
+                    Ver Opciones de Inversión
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </section>
 
