@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, CheckCircle, ArrowRight, Building, Microscope, Heart, Waves, Home, Settings, Mail, Users, Scale } from "lucide-react";
+import { Brain, CheckCircle, ArrowRight, Building, Microscope, Heart, Waves, Home, Settings, Mail, Users, Scale, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -78,7 +78,7 @@ export default function ConoceProyecto() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
-      <Header />
+      <Header toggleMobileMenu={() => {}} />
       
       {/* Project Image */}
       <section className="pt-40 pb-8">
@@ -542,6 +542,302 @@ export default function ConoceProyecto() {
               </Card>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Required Professional Staff */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+              Plantilla de Profesionales Requerida
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed mb-4">
+              Equipo multidisciplinar especializado para la operación del INS NEURONMEG
+            </p>
+            <Badge className="bg-green-100 text-green-800 text-lg px-4 py-2">
+              Residencia de 30 plazas
+            </Badge>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Scientific and Clinical Area */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader className="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Brain className="h-8 w-8" />
+                    <Badge className="bg-white/20 text-white border-white/30">
+                      🧪 Área Científico-Clínica
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-xl">Laboratorios ARCO y Neurociencia</CardTitle>
+                  <CardDescription className="text-blue-100">
+                    Equipo especializado en neurofrecuencias y tecnología avanzada
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center p-2 bg-blue-50 rounded">
+                      <span className="text-sm font-medium">Director/a científico-clínico/a</span>
+                      <Badge variant="secondary">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded">
+                      <span className="text-sm">Neurofisiólogos/as clínicos</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-blue-50 rounded">
+                      <span className="text-sm">Neuropsicólogos/as</span>
+                      <Badge variant="secondary">3</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded">
+                      <span className="text-sm">Médicos neurólogos</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-blue-50 rounded">
+                      <span className="text-sm">Psiquiatras clínicos</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded">
+                      <span className="text-sm">Bioingenieros/as neurofrecuencias</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-blue-50 rounded">
+                      <span className="text-sm">Ingenieros/as telecomunicaciones</span>
+                      <Badge variant="secondary">3</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Medical and Therapeutic Area */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader className="bg-gradient-to-br from-green-500 to-green-600 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Heart className="h-8 w-8" />
+                    <Badge className="bg-white/20 text-white border-white/30">
+                      🧬 Área Médica y Terapéutica
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-xl">Atención Médica Integral</CardTitle>
+                  <CardDescription className="text-green-100">
+                    Equipo médico especializado en gerontología y neurorehabilitación
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center p-2 bg-green-50 rounded">
+                      <span className="text-sm font-medium">Médico gerontólogo</span>
+                      <Badge variant="secondary">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded">
+                      <span className="text-sm">Médico atención general</span>
+                      <Badge variant="secondary">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-green-50 rounded">
+                      <span className="text-sm">Fisioterapeutas especializados</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded">
+                      <span className="text-sm">Terapeuta ocupacional</span>
+                      <Badge variant="secondary">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-green-50 rounded">
+                      <span className="text-sm">Logopeda</span>
+                      <Badge variant="secondary">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded">
+                      <span className="text-sm">Enfermeros/as clínicos</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-green-50 rounded">
+                      <span className="text-sm">Auxiliares de enfermería</span>
+                      <Badge variant="secondary">2</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Residential Area */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader className="bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Home className="h-6 w-6" />
+                    <Badge className="bg-white/20 text-white border-white/30 text-sm">
+                      🏠 Residencial
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-lg">30 Plazas</CardTitle>
+                  <CardDescription className="text-orange-100 text-sm">
+                    Atención 24/7 especializada
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-center p-2 bg-orange-50 rounded text-sm">
+                      <span>Coordinador/a residencia</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
+                      <span>Cuidadores/as (24/7)</span>
+                      <Badge variant="secondary" className="text-xs">4</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-orange-50 rounded text-sm">
+                      <span>Terapeuta familiar</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
+                      <span>Personal limpieza</span>
+                      <Badge variant="secondary" className="text-xs">2</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Research and Development */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader className="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Microscope className="h-6 w-6" />
+                    <Badge className="bg-white/20 text-white border-white/30 text-sm">
+                      🧬 I+D
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-lg">Investigación</CardTitle>
+                  <CardDescription className="text-purple-100 text-sm">
+                    Desarrollo científico y ética
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-center p-2 bg-purple-50 rounded text-sm">
+                      <span>Coordinador/a investigación</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
+                      <span>Analista de datos</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-purple-50 rounded text-sm">
+                      <span>Bioestadístico/a</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
+                      <span>Técnico/a protección datos</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Management and Support */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                <CardHeader className="bg-gradient-to-br from-slate-500 to-slate-600 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Settings className="h-6 w-6" />
+                    <Badge className="bg-white/20 text-white border-white/30 text-sm">
+                      🧾 Gestión
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-lg">Administración</CardTitle>
+                  <CardDescription className="text-slate-100 text-sm">
+                    Dirección y soporte técnico
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-4">
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
+                      <span>Director/a general</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-100 rounded text-sm">
+                      <span>Administrativos/as</span>
+                      <Badge variant="secondary" className="text-xs">2</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-50 rounded text-sm">
+                      <span>Responsable financiero</span>
+                      <Badge variant="secondary" className="text-xs">1</Badge>
+                    </div>
+                    <div className="flex justify-between items-center p-2 bg-slate-100 rounded text-sm">
+                      <span>Personal hostelería</span>
+                      <Badge variant="secondary" className="text-xs">6</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+
+          {/* Total Staff Summary */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-blue-50 to-green-50">
+              <CardContent className="pt-8">
+                <div className="text-center">
+                  <div className="flex items-center justify-center space-x-4 mb-4">
+                    <UserCheck className="h-12 w-12 text-blue-600" />
+                    <div>
+                      <h3 className="text-3xl font-bold text-blue-800">55-65 Profesionales</h3>
+                      <p className="text-lg text-slate-600">Plantilla total estimada</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-6 shadow-sm">
+                    <p className="text-slate-700 leading-relaxed">
+                      <strong>Estructura organizativa completa</strong> diseñada para una residencia de 30 plazas, 
+                      incluyendo personal científico, médico, administrativo y de apoyo. 
+                      La plantilla contempla rotaciones, turnos de 24/7 y estructura inicial de operación.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </section>
 
