@@ -92,7 +92,7 @@ export default function ConoceProyecto() {
             <img 
               src={projectImage} 
               alt="INS NEURONMEG - Vista del proyecto en Portbou"
-              className="w-full h-[280px] md:h-[350px] object-cover"
+              className="w-full h-auto object-contain"
             />
           </motion.div>
         </div>
