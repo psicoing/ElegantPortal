@@ -81,7 +81,7 @@ export default function ConoceProyecto() {
       <Header />
       
       {/* Project Image */}
-      <section className="pt-32 pb-8">
+      <section className="pt-40 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -92,7 +92,7 @@ export default function ConoceProyecto() {
             <img 
               src={projectImage} 
               alt="INS NEURONMEG - Vista del proyecto en Portbou"
-              className="w-full h-[300px] md:h-[400px] object-cover"
+              className="w-full h-[280px] md:h-[350px] object-cover"
             />
           </motion.div>
         </div>
