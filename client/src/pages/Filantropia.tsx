@@ -126,14 +126,18 @@ export default function Filantropia() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="text-lg px-8 py-6">
-                  <Heart className="mr-2 h-5 w-5" />
-                  Conviértete en Mecenas
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6">
-                  <Brain className="mr-2 h-5 w-5" />
-                  Conoce el Proyecto
-                </Button>
+                <a href="mailto:empordajobs@gmail.com">
+                  <Button size="lg" className="text-lg px-8 py-6">
+                    <Heart className="mr-2 h-5 w-5" />
+                    Conviértete en Mecenas
+                  </Button>
+                </a>
+                <a href="mailto:empordajobs@gmail.com">
+                  <Button size="lg" variant="outline" className="text-lg px-8 py-6">
+                    <Brain className="mr-2 h-5 w-5" />
+                    Conoce el Proyecto
+                  </Button>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -387,9 +391,11 @@ export default function Filantropia() {
                           </li>
                         ))}
                       </ul>
-                      <Button className={`w-full mt-6 bg-gradient-to-r ${level.color} hover:opacity-90`}>
-                        Colaborar
-                      </Button>
+                      <a href="mailto:empordajobs@gmail.com" className="w-full">
+                        <Button className={`w-full mt-6 bg-gradient-to-r ${level.color} hover:opacity-90`}>
+                          Colaborar
+                        </Button>
+                      </a>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -442,14 +448,18 @@ export default function Filantropia() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-                  <Mail className="mr-2 h-5 w-5" />
-                  empordajobs@gmail.com
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-blue-600">
-                  <Phone className="mr-2 h-5 w-5" />
-                  +34 660 45 21 36
-                </Button>
+                <a href="mailto:empordajobs@gmail.com">
+                  <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+                    <Mail className="mr-2 h-5 w-5" />
+                    empordajobs@gmail.com
+                  </Button>
+                </a>
+                <a href="tel:+34660452136">
+                  <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-blue-600">
+                    <Phone className="mr-2 h-5 w-5" />
+                    +34 660 45 21 36
+                  </Button>
+                </a>
               </div>
               
               <p className="mt-8 text-lg opacity-75">
