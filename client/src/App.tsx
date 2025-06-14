@@ -10,6 +10,7 @@ import AiApps from "@/pages/AiApps";
 import CommissionsCalculator from "@/pages/CommissionsCalculator";
 import { InvestorsPage } from "@/pages/Investors";
 import Filantropia from "@/pages/Filantropia";
+import ConoceProyecto from "@/pages/ConoceProyecto";
 import { CookieBanner } from "@/components/CookieBanner";
 import { WhatsAppBanner } from "@/components/WhatsAppBanner";
 import { PWABanner } from "@/components/PWABanner";
