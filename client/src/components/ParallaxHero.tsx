@@ -63,13 +63,14 @@ export function ParallaxHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Button 
-            size="lg" 
-            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-            onClick={scrollToServices}
-          >
-            Explorar Servicios
-          </Button>
+          <Link href="/filantropia">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            >
+              Filantropía
+            </Button>
+          </Link>
           <Link href="/investors">
             <Button 
               size="lg" 

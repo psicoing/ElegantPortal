@@ -9,6 +9,7 @@ import Projects from "@/pages/Projects";
 import AiApps from "@/pages/AiApps";
 import CommissionsCalculator from "@/pages/CommissionsCalculator";
 import { InvestorsPage } from "@/pages/Investors";
+import Filantropia from "@/pages/Filantropia";
 import { CookieBanner } from "@/components/CookieBanner";
 import { WhatsAppBanner } from "@/components/WhatsAppBanner";
 import { PWABanner } from "@/components/PWABanner";
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/projects" component={Projects} />
       <Route path="/ai-apps" component={AiApps} />
       <Route path="/investors" component={InvestorsPage} />
+      <Route path="/filantropia" component={Filantropia} />
       <Route path="/trabajo-comisiones-calculadora" component={CommissionsCalculator} />
       <Route component={NotFound} />
     </Switch>
