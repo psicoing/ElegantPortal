@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, CheckCircle, ArrowRight, Building, Microscope, Heart, Waves, Home, Settings, Mail } from "lucide-react";
+import { Brain, CheckCircle, ArrowRight, Building, Microscope, Heart, Waves, Home, Settings, Mail, Users, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -404,6 +404,143 @@ export default function ConoceProyecto() {
                 </Card>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Professional Team */}
+      <section className="py-20 bg-white dark:bg-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-800 dark:text-slate-200">
+              🏛️ Dirección Arquitectónica y Asesoría Jurídica
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              El INS NEURONMEG se sustenta en un equipo profesional altamente cualificado, que garantiza 
+              tanto la excelencia en el diseño del espacio como la solidez legal del proyecto.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Architectural Design */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg">
+                <CardHeader className="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <Building className="h-8 w-8" />
+                    <Badge className="bg-white/20 text-white border-white/30">
+                      🏗️ Diseño Arquitectónico
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-2xl mb-3">FLO – TARRUELLA Arquitectes</CardTitle>
+                  <CardDescription className="text-blue-100">
+                    Reconocido por su enfoque integrador entre naturaleza, salud y arquitectura
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Accesibilidad universal:</strong> Diseño adaptado para todas las personas
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Sostenibilidad ambiental:</strong> Respeto por el entorno de Portbou
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Bienestar psicosensorial:</strong> Espacios diseñados para la sanación
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Tecnología ARCO:</strong> Adaptación específica para entorno clínico innovador
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 mt-6">
+                    <p className="text-sm text-blue-700 dark:text-blue-300 italic">
+                      "El emplazamiento en Portbou será respetado como un valor paisajístico y terapéutico, 
+                      integrando luz, mar y silencio como elementos arquitectónicos activos."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Legal Advisory */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Card className="h-full border-0 shadow-lg">
+                <CardHeader className="bg-gradient-to-br from-slate-600 to-slate-700 text-white rounded-t-lg">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <Scale className="h-8 w-8" />
+                    <Badge className="bg-white/20 text-white border-white/30">
+                      ⚖️ Asesoría Jurídica
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-2xl mb-3">Hernández – Hospital Abogados</CardTitle>
+                  <CardDescription className="text-slate-100">
+                    Especialistas en derecho sanitario, propiedad horizontal y regulación de centros asistenciales
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Estructura jurídica transparente:</strong> Marco legal claro y estable
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Seguridad del proyecto:</strong> Fase de construcción y operativa diaria
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Cumplimiento normativo:</strong> Regulación integral de centros asistenciales
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <p className="text-slate-600 dark:text-slate-300">
+                        <strong>Viabilidad institucional:</strong> Respaldo jurídico para innovación clínica
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-slate-50 dark:bg-slate-900/20 rounded-lg p-4 mt-6">
+                    <p className="text-sm text-slate-700 dark:text-slate-300 italic">
+                      "Esta colaboración legal asegura el cumplimiento normativo integral y la viabilidad 
+                      institucional del INS NEURONMEG como modelo de innovación clínica con respaldo jurídico."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
