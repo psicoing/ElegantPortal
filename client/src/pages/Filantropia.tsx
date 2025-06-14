@@ -275,30 +275,30 @@ export default function Filantropia() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <Card className="bg-white/80 backdrop-blur-sm">
+                <Card className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-white/20 dark:border-slate-700">
                   <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Target className="mr-3 h-6 w-6 text-purple-600" />
+                    <CardTitle className="flex items-center text-slate-900 dark:text-slate-100">
+                      <Target className="mr-3 h-6 w-6 text-purple-600 dark:text-purple-400" />
                       Centro de Referencia
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-slate-600 dark:text-slate-300">
                       La construcción física de un centro de referencia, diseñado para estimular no solo el trabajo clínico, 
                       sino la investigación real sobre frecuencia neuronal, neuroglía y modulación de estados emocionales.
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-white/80 backdrop-blur-sm">
+                <Card className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-white/20 dark:border-slate-700">
                   <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Heart className="mr-3 h-6 w-6 text-red-600" />
+                    <CardTitle className="flex items-center text-slate-900 dark:text-slate-100">
+                      <Heart className="mr-3 h-6 w-6 text-red-600 dark:text-red-400" />
                       Sistema Autosostenible
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-slate-600 dark:text-slate-300">
                       Un sistema donde los pacientes pagan según sus posibilidades y el resto se equilibra 
                       con un fondo solidario financiado por donaciones.
                     </p>
@@ -313,30 +313,30 @@ export default function Filantropia() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                <Card className="bg-white/80 backdrop-blur-sm">
+                <Card className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-white/20 dark:border-slate-700">
                   <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Brain className="mr-3 h-6 w-6 text-blue-600" />
+                    <CardTitle className="flex items-center text-slate-900 dark:text-slate-100">
+                      <Brain className="mr-3 h-6 w-6 text-blue-600 dark:text-blue-400" />
                       Implementación Tecnológica
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-slate-600 dark:text-slate-300">
                       El chatbot de ayuda emocional, la plataforma NFlow, los algoritmos Hucof, 
                       y la red de intervención domiciliaria.
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-white/80 backdrop-blur-sm">
+                <Card className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-white/20 dark:border-slate-700">
                   <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Globe className="mr-3 h-6 w-6 text-green-600" />
+                    <CardTitle className="flex items-center text-slate-900 dark:text-slate-100">
+                      <Globe className="mr-3 h-6 w-6 text-green-600 dark:text-green-400" />
                       Observatorio Internacional
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-slate-600 dark:text-slate-300">
                       Formación de nuevos profesionales en el uso ético y humano de la inteligencia artificial 
                       aplicada a la salud.
                     </p>
