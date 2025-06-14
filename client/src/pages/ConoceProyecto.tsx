@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Link } from "wouter";
-import projectImage from "@assets/WhatsApp Image 2025-06-13 at 14.28.54_1749891631475.jpeg";
+import projectImage from "@assets/WhatsApp Image 2025-06-13 at 14.28.54_1749892038710.jpeg";
 
 export default function ConoceProyecto() {
   const buildingFloors = [
