@@ -92,6 +92,7 @@ JOBDA is a comprehensive full-stack web application that serves as a multi-servi
 
 Changelog:
 - June 14, 2025. Initial setup
+- June 14, 2025. Created comprehensive "Conoce el Proyecto" page for INS NEURONMEG with detailed project information, building structure, professional team details, and Portbou location significance
 
 ## User Preferences
 
