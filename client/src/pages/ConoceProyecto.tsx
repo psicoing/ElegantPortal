@@ -25,16 +25,16 @@ export default function ConoceProyecto() {
     },
     {
       floor: "Planta 2",
-      title: "Residencia para investigadores y visitantes",
+      title: "Residencia para la gente mayor de Portbou",
       icon: Home,
-      description: "Portbou no solo recibirá conocimiento, también lo acogerá",
+      description: "Un hogar digno para que los mayores del pueblo puedan pasar sus últimos años de vida en su tierra",
       features: [
-        "Residencia temporal para personas de la zona en tratamiento intensivo",
-        "Hogar para investigadores invitados y estudiantes en prácticas",
-        "Lugar de encuentro multicultural entre ciencia, salud y comunidad",
-        "Un puente entre el saber y el vivir, con vistas al mar y al futuro"
+        "Residencia exclusiva para personas mayores de Portbou",
+        "Cuidados especializados en un entorno familiar",
+        "Conexión con la comunidad local y sus tradiciones",
+        "Vistas al mar y cercanía a sus lugares de toda la vida"
       ],
-      highlight: "Donde la hospitalidad se encuentra con la innovación"
+      highlight: "Envejecer con dignidad en el pueblo de siempre"
     },
     {
       floor: "Planta 3",
