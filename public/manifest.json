@@ -1,0 +1,16 @@
+{
+  "name": "JOBDA",
+  "short_name": "JOBDA",
+  "description": "Plataforma Multiservicios",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1E40AF",
+  "theme_color": "#1E40AF",
+  "icons": [
+    {
+      "src": "/generated-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
