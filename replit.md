@@ -94,6 +94,7 @@ Changelog:
 - June 14, 2025. Initial setup
 - June 14, 2025. Created comprehensive "Conoce el Proyecto" page for INS NEURONMEG with detailed project information, building structure, professional team details, and Portbou location significance
 - June 14, 2025. Added detailed professional staff requirements card with complete staffing template for 30-bed residence, including scientific-clinical, medical, residential, R&D and management areas (55-65 professionals total)
+- June 14, 2025. Created elegant custom app icon with brain/neural network design and PWA configuration for iPhone/Android installation. App successfully installed and tested on iPhone
 
 ## User Preferences
 
