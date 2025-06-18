@@ -149,6 +149,14 @@ export function Footer() {
           <p className="text-gray-500 text-sm mb-6 md:mb-0">
             &copy; {new Date().getFullYear()} EMPORDAJOBS SL. Todos los derechos reservados.
           </p>
+          <a 
+            href="https://replit.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-400 text-xs transition-colors duration-200"
+          >
+            Powered by Replit
+          </a>
           
           <div className="flex space-x-4">
             <a href="#" className="bg-gray-800/70 p-2 rounded-full hover:bg-blue-600/20 transition-colors hover:text-blue-400 text-gray-400 border border-gray-700/50">
