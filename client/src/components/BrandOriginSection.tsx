@@ -15,12 +15,48 @@ export function BrandOriginSection() {
             El Origen de <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">JOBDA</span>
           </h2>
           
+          {/* Timeline */}
+          <motion.div 
+            className="mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+              <div className="text-center">
+                <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mb-3 mx-auto">
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">2016</span>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Inicio como autónomo</p>
+              </div>
+              
+              <div className="hidden md:block text-gray-400">→</div>
+              
+              <div className="text-center">
+                <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mb-3 mx-auto">
+                  <span className="text-2xl font-bold text-green-600 dark:text-green-400">2020</span>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300">EMPORDAJOBS<br/>se convierte en empresa</p>
+              </div>
+              
+              <div className="hidden md:block text-gray-400">→</div>
+              
+              <div className="text-center">
+                <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mb-3 mx-auto">
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">2025</span>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Evolución hacia<br/>matriz JOBDA</p>
+              </div>
+            </div>
+          </motion.div>
+          
           <motion.div 
             className="mb-12"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
               La marca JOBDA nace de la evolución creativa de nuestra empresa matriz:
