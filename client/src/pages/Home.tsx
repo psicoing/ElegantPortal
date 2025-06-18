@@ -18,6 +18,7 @@ import { ScrollProgress } from "@/components/ScrollProgress";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { ModernEffects } from "@/components/ModernEffects";
 import { DynamicQuoteSystem } from "@/components/DynamicQuoteSystem";
+import { BrandOriginSection } from "@/components/BrandOriginSection";
 
 import { useState } from "react";
 
@@ -56,6 +57,7 @@ export default function Home() {
           <div id="contact-section">
             <ContactSection />
           </div>
+          <BrandOriginSection />
         </main>
         <FloatingActionButton />
         <Footer />
