@@ -98,6 +98,7 @@ Changelog:
 - June 18, 2025. Added professional Replit recognition badge in bottom-left corner with "Desarrollado en Replit" text and official logo, positioned to avoid conflicts with WhatsApp button and without external links to maintain traffic on company site
 - June 18, 2025. Prominently featured JOBDA as the main corporate brand throughout the platform - added large JOBDA branding in hero section and header navigation with "Plataforma Multiservicios" subtitle to establish clear matrix company identity
 - June 18, 2025. Simplified hero section by removing descriptive text about company history and capabilities, keeping only essential JOBDA branding and "Transformamos el Futuro Digital" message for cleaner, more direct presentation
+- June 18, 2025. Added compact brand origin section explaining JOBDA evolution: 2016 autonomous start → 2020 EMPORDAJOBS company formation → 2025 JOBDA matrix brand, with visual breakdown of how "JOB" + "DA" (from EmporDA) created the JOBDA name
 
 ## User Preferences
 
