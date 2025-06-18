@@ -1,10 +1,10 @@
 export function ReplitBadge() {
   return (
     <div className="fixed bottom-4 left-4 z-50">
-      <div className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-900 to-black text-white px-3 py-2 rounded-lg text-sm font-medium shadow-lg border border-gray-600 backdrop-blur-sm">
+      <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-gray-900 to-black text-white px-2 py-1 rounded-md text-xs font-medium shadow-lg border border-gray-600 backdrop-blur-sm">
         <svg
-          width="16"
-          height="16"
+          width="12"
+          height="12"
           viewBox="0 0 32 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +23,8 @@ export function ReplitBadge() {
             fill="#F26207"
           />
         </svg>
-        <span className="text-gray-300">Desarrollado en</span>
-        <span className="text-white font-semibold">Replit</span>
+        <span className="text-gray-300 text-xs">Desarrollado en</span>
+        <span className="text-white font-semibold text-xs">Replit</span>
       </div>
     </div>
   );
