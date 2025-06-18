@@ -144,21 +144,23 @@ export function Footer() {
           <AntifraudeCommitment />
         </div>
         
+        {/* Powered by Replit - Visible section */}
+        <div className="w-full mx-auto max-w-3xl text-center py-3">
+          <a 
+            href="https://replit.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-gray-800 to-gray-700 hover:from-blue-600 hover:to-blue-500 text-gray-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 border border-gray-600/50 hover:border-blue-400/50"
+          >
+            ⚡ Powered by Replit
+          </a>
+        </div>
+        
         {/* Footer bottom */}
         <div className="mt-4 pt-6 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
-            <p className="text-gray-500 text-sm mb-2">
-              &copy; {new Date().getFullYear()} EMPORDAJOBS SL. Todos los derechos reservados.
-            </p>
-            <a 
-              href="https://replit.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-blue-400 text-xs transition-colors duration-200"
-            >
-              Powered by Replit
-            </a>
-          </div>
+          <p className="text-gray-500 text-sm mb-6 md:mb-0">
+            &copy; {new Date().getFullYear()} EMPORDAJOBS SL. Todos los derechos reservados.
+          </p>
           
           <div className="flex space-x-4">
             <a href="#" className="bg-gray-800/70 p-2 rounded-full hover:bg-blue-600/20 transition-colors hover:text-blue-400 text-gray-400 border border-gray-700/50">
