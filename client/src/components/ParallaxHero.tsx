@@ -39,11 +39,17 @@ export function ParallaxHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
-            Transformamos
-            <br />
-            <span className="text-foreground">el Futuro Digital</span>
-          </h1>
+          <div className="mb-4">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight tracking-wide">
+              JOBDA
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mt-2 font-medium">
+              Plataforma Multiservicios
+            </p>
+          </div>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-foreground leading-tight">
+            Transformamos el Futuro Digital
+          </h2>
         </motion.div>
 
         <motion.p

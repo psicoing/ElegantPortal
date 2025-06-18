@@ -21,7 +21,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
     <header className="w-full py-4 bg-background border-b border-border shadow-sm sticky top-0 z-30 transition-all duration-300">
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
               src={faroLogo} 
               alt="Logo Faro" 
@@ -29,6 +29,14 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
               className="h-10 w-auto"
               style={{filter: "drop-shadow(0 0 2px rgba(0, 156, 255, 0.8))"}}
             />
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent leading-tight">
+                JOBDA
+              </span>
+              <span className="text-xs text-muted-foreground -mt-1">
+                Plataforma Multiservicios
+              </span>
+            </div>
           </Link>
         </div>
         
