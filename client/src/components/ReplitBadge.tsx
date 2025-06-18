@@ -1,12 +1,7 @@
 export function ReplitBadge() {
   return (
     <div className="fixed bottom-4 right-4 z-50">
-      <a
-        href="https://replit.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-black hover:bg-gray-800 text-white px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-600"
-      >
+      <div className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-900 to-black text-white px-3 py-2 rounded-lg text-sm font-medium shadow-lg border border-gray-600 backdrop-blur-sm">
         <svg
           width="16"
           height="16"
@@ -28,8 +23,9 @@ export function ReplitBadge() {
             fill="#F26207"
           />
         </svg>
-        Replit
-      </a>
+        <span className="text-gray-300">Desarrollado en</span>
+        <span className="text-white font-semibold">Replit</span>
+      </div>
     </div>
   );
 }
