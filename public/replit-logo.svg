@@ -1,0 +1,12 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Replit logo recreation -->
+  <g transform="translate(8, 8)">
+    <!-- Orange squares -->
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#FF8C42"/>
+    <rect x="0" y="10" width="8" height="8" rx="2" fill="#FF8C42"/>
+    <rect x="10" y="0" width="8" height="8" rx="2" fill="#FF8C42"/>
+    
+    <!-- Text -->
+    <text x="25" y="16" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#333333">replit</text>
+  </g>
+</svg>

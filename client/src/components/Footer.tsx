@@ -2,6 +2,7 @@ import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { ContactModal } from "./ContactModal";
 import { WorkWithUsModal } from "./WorkWithUsModal";
 import { AntifraudeCommitment } from "./AntifraudeCommitment";
+import { PoweredByReplit } from "./PoweredByReplit";
 
 export function Footer() {
   return (
@@ -142,6 +143,11 @@ export function Footer() {
         {/* Antifraud Commitment - Visible standalone section */}
         <div className="w-full mx-auto max-w-3xl py-4">
           <AntifraudeCommitment />
+        </div>
+        
+        {/* Powered by Replit */}
+        <div className="w-full mx-auto max-w-3xl">
+          <PoweredByReplit />
         </div>
         
         {/* Footer bottom */}
