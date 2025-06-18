@@ -144,18 +144,7 @@ export function Footer() {
           <AntifraudeCommitment />
         </div>
         
-        {/* Powered by Replit - Visible section */}
-        <div className="w-full mx-auto max-w-3xl text-center py-3">
-          <a 
-            href="https://replit.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-gray-800 to-gray-700 hover:from-blue-600 hover:to-blue-500 text-gray-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 border border-gray-600/50 hover:border-blue-400/50"
-          >
-            ⚡ Powered by Replit
-          </a>
-        </div>
-        
+
         {/* Footer bottom */}
         <div className="mt-4 pt-6 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-6 md:mb-0">
