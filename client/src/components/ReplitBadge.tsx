@@ -1,6 +1,6 @@
 export function ReplitBadge() {
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-4 left-4 z-50">
       <div className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-900 to-black text-white px-3 py-2 rounded-lg text-sm font-medium shadow-lg border border-gray-600 backdrop-blur-sm">
         <svg
           width="16"
