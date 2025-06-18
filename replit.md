@@ -97,6 +97,7 @@ Changelog:
 - June 14, 2025. Created elegant custom app icon with brain/neural network design and PWA configuration for iPhone/Android installation. App successfully installed and tested on iPhone
 - June 18, 2025. Added professional Replit recognition badge in bottom-left corner with "Desarrollado en Replit" text and official logo, positioned to avoid conflicts with WhatsApp button and without external links to maintain traffic on company site
 - June 18, 2025. Prominently featured JOBDA as the main corporate brand throughout the platform - added large JOBDA branding in hero section and header navigation with "Plataforma Multiservicios" subtitle to establish clear matrix company identity
+- June 18, 2025. Simplified hero section by removing descriptive text about company history and capabilities, keeping only essential JOBDA branding and "Transformamos el Futuro Digital" message for cleaner, more direct presentation
 
 ## User Preferences
 
