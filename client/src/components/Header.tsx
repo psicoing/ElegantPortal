@@ -36,6 +36,15 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
               <span className="text-xs text-muted-foreground -mt-1">
                 Plataforma Multiservicios
               </span>
+              <div className="flex items-center gap-1 -mt-0.5">
+                <span className="text-[10px] text-gray-400">Desarrollado en</span>
+                <div className="flex items-center gap-1">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#4F46E5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="text-[10px] font-medium text-indigo-600">Replit</span>
+                </div>
+              </div>
             </div>
           </Link>
         </div>

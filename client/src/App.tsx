@@ -14,7 +14,7 @@ import ConoceProyecto from "@/pages/ConoceProyecto";
 import { CookieBanner } from "@/components/CookieBanner";
 import { WhatsAppBanner } from "@/components/WhatsAppBanner";
 import { PWABanner } from "@/components/PWABanner";
-import { ReplitBadge } from "@/components/ReplitBadge";
+
 import { LanguageProvider } from "./lib/language-context";
 import { ThemeProvider } from "./lib/theme-context";
 
@@ -43,7 +43,6 @@ function App() {
           <Router />
           <CookieBanner />
           <WhatsAppBanner />
-          <ReplitBadge />
           <Toaster />
         </QueryClientProvider>
       </LanguageProvider>
