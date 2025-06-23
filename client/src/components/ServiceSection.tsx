@@ -239,7 +239,7 @@ export function ServiceSection() {
     ],
     url: "#talentpool-tech",
     onClick: () => setJobdaBolsaDialogOpen(true),
-    badgeText: "Tecnología",
+    badgeText: "Anti-edadismo",
     variant: "primary",
     imageSrc: ptalent01
   };
@@ -256,7 +256,7 @@ export function ServiceSection() {
     ],
     url: "#talentpool-med",
     onClick: () => setJobdaBolsaDialogOpen(true),
-    badgeText: "Medicina",
+    badgeText: "Anti-edadismo",
     variant: "secondary",
     imageSrc: ptalent01
   };
@@ -273,7 +273,7 @@ export function ServiceSection() {
     ],
     url: "#talentpool-build",
     onClick: () => setJobdaBolsaDialogOpen(true),
-    badgeText: "Construcción",
+    badgeText: "Anti-edadismo",
     variant: "primary",
     imageSrc: ptalent01
   };
@@ -290,7 +290,7 @@ export function ServiceSection() {
     ],
     url: "#talentpool-marketing",
     onClick: () => setJobdaBolsaDialogOpen(true),
-    badgeText: "Marketing",
+    badgeText: "Anti-edadismo",
     variant: "secondary",
     imageSrc: ptalent01
   };
@@ -307,7 +307,7 @@ export function ServiceSection() {
     ],
     url: "#talentpool-finance",
     onClick: () => setJobdaBolsaDialogOpen(true),
-    badgeText: "Finanzas",
+    badgeText: "Anti-edadismo",
     variant: "primary",
     imageSrc: ptalent01
   };
