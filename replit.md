@@ -102,6 +102,7 @@ Changelog:
 - June 20, 2025. Moved Replit badge from bottom-left corner to header integration below "Plataforma Multiservicios" to prevent overlap with WhatsApp button, changed text from "Desarrollado en" to "Powered by" for international appeal
 - June 23, 2025. Fixed TALENTPOOL dialog by removing duplicate button and maintaining single "Acceder a TALENTPOOL" button that connects directly to https://talentpool.com.es/
 - June 23, 2025. Divided TALENTPOOL into 5 vertical sector-specific service cards: Tech (technology professionals), Med (healthcare), Build (construction), Marketing (digital marketing), and Finance (financial professionals), each with specific icons, features and color schemes matching the rest of the platform's service card format
+- June 23, 2025. Applied "Anti-edadismo" red badge to all 5 TALENTPOOL service cards to emphasize the anti-ageism commitment across all talent sectors
 
 ## User Preferences
 
