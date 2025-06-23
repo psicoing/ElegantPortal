@@ -1,7 +1,7 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { HorizontalServiceCard } from "@/components/HorizontalServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal, TrendingUp } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal, TrendingUp, Monitor, Stethoscope, HardHat, Megaphone, DollarSign } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
@@ -33,6 +33,7 @@ import tecnoappImage from "../assets/tecnoapp.svg";
 import telecosImage from "../assets/telecos.svg";
 import cplusplusImage from "../assets/cplusplus.svg";
 import ptalent01 from "@assets/PTALENT01.png";
+import ptalent02 from "@assets/PTALENT02.png";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -225,24 +226,93 @@ export function ServiceSection() {
     imageSrc: cplusplusImage
   };
 
-  const jobdaBolsa: ServiceItem = {
-    icon: <TrendingUp className="h-8 w-8 text-orange-600" />,
-    title: t('service.jobda_bolsa.title'),
-    description: t('service.jobda_bolsa.description'),
+  // TALENTPOOL por sectores
+  const talentpoolTech: ServiceItem = {
+    icon: <Monitor className="h-8 w-8 text-blue-600" />,
+    title: "TALENTPOOL Tech",
+    description: "Bolsa especializada en profesionales de tecnología y desarrollo",
     features: [
-      t('service.jobda_bolsa.feature1'),
-      t('service.jobda_bolsa.feature2'),
-      t('service.jobda_bolsa.feature3'),
-      t('service.jobda_bolsa.feature4')
+      "Desarrolladores Full-Stack",
+      "Especialistas en IA y ML",
+      "DevOps y Cloud Engineers",
+      "UI/UX Designers"
     ],
-    url: "#jobda-bolsa",
+    url: "#talentpool-tech",
     onClick: () => setJobdaBolsaDialogOpen(true),
-    badgeText: t('service.jobda_bolsa.badge'),
+    badgeText: "Tecnología",
     variant: "primary",
     imageSrc: ptalent01
   };
 
-  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus];
+  const talentpoolMed: ServiceItem = {
+    icon: <Stethoscope className="h-8 w-8 text-green-600" />,
+    title: "TALENTPOOL Med",
+    description: "Red de profesionales sanitarios y médicos especialistas",
+    features: [
+      "Médicos especialistas",
+      "Enfermería cualificada",
+      "Terapeutas y fisios",
+      "Personal sanitario"
+    ],
+    url: "#talentpool-med",
+    onClick: () => setJobdaBolsaDialogOpen(true),
+    badgeText: "Medicina",
+    variant: "secondary",
+    imageSrc: ptalent02
+  };
+
+  const talentpoolBuild: ServiceItem = {
+    icon: <HardHat className="h-8 w-8 text-orange-600" />,
+    title: "TALENTPOOL Build",
+    description: "Profesionales de construcción e ingeniería civil",
+    features: [
+      "Ingenieros civiles",
+      "Arquitectos y aparejadores",
+      "Oficios especializados",
+      "Project Managers"
+    ],
+    url: "#talentpool-build",
+    onClick: () => setJobdaBolsaDialogOpen(true),
+    badgeText: "Construcción",
+    variant: "primary",
+    imageSrc: ptalent01
+  };
+
+  const talentpoolMarketing: ServiceItem = {
+    icon: <Megaphone className="h-8 w-8 text-purple-600" />,
+    title: "TALENTPOOL Marketing",
+    description: "Expertos en marketing digital y comunicación",
+    features: [
+      "Marketing digital",
+      "Social media managers",
+      "Content creators",
+      "Growth hackers"
+    ],
+    url: "#talentpool-marketing",
+    onClick: () => setJobdaBolsaDialogOpen(true),
+    badgeText: "Marketing",
+    variant: "secondary",
+    imageSrc: ptalent02
+  };
+
+  const talentpoolFinance: ServiceItem = {
+    icon: <DollarSign className="h-8 w-8 text-emerald-600" />,
+    title: "TALENTPOOL Finance",
+    description: "Profesionales financieros y de gestión empresarial",
+    features: [
+      "Analistas financieros",
+      "Controllers y CFOs",
+      "Asesores fiscales",
+      "Risk managers"
+    ],
+    url: "#talentpool-finance",
+    onClick: () => setJobdaBolsaDialogOpen(true),
+    badgeText: "Finanzas",
+    variant: "primary",
+    imageSrc: ptalent01
+  };
+
+  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus, talentpoolTech, talentpoolMed, talentpoolBuild, talentpoolMarketing, talentpoolFinance];
 
   return (
     <>
@@ -288,26 +358,7 @@ export function ServiceSection() {
             ))}
           </div>
           
-          {/* Tarjeta horizontal para JOBDA - Bolsa de Talento */}
-          <motion.div 
-            className="mt-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <HorizontalServiceCard 
-              icon={jobdaBolsa.icon}
-              title={jobdaBolsa.title}
-              description={jobdaBolsa.description}
-              features={jobdaBolsa.features}
-              url={jobdaBolsa.url}
-              badgeText={jobdaBolsa.badgeText}
-              variant={jobdaBolsa.variant}
-              imageSrc={jobdaBolsa.imageSrc}
-              onClick={jobdaBolsa.onClick}
-            />
-          </motion.div>
+
 
         </div>
       </section>
