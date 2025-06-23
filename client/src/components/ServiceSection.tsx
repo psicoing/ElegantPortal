@@ -258,7 +258,7 @@ export function ServiceSection() {
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Medicina",
     variant: "secondary",
-    imageSrc: ptalent02
+    imageSrc: ptalent01
   };
 
   const talentpoolBuild: ServiceItem = {
@@ -292,7 +292,7 @@ export function ServiceSection() {
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Marketing",
     variant: "secondary",
-    imageSrc: ptalent02
+    imageSrc: ptalent01
   };
 
   const talentpoolFinance: ServiceItem = {
