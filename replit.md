@@ -100,6 +100,7 @@ Changelog:
 - June 18, 2025. Simplified hero section by removing descriptive text about company history and capabilities, keeping only essential JOBDA branding and "Transformamos el Futuro Digital" message for cleaner, more direct presentation
 - June 18, 2025. Added compact brand origin section explaining JOBDA evolution: 2016 autonomous start → 2020 EMPORDAJOBS company formation → 2025 JOBDA matrix brand, with visual breakdown of how "JOB" + "DA" (from EmporDA) created the JOBDA name
 - June 20, 2025. Moved Replit badge from bottom-left corner to header integration below "Plataforma Multiservicios" to prevent overlap with WhatsApp button, changed text from "Desarrollado en" to "Powered by" for international appeal
+- June 23, 2025. Fixed TALENTPOOL dialog by removing duplicate button and maintaining single "Acceder a TALENTPOOL" button that connects directly to https://talentpool.com.es/
 
 ## User Preferences
 
