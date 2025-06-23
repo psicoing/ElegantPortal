@@ -197,10 +197,10 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
               {currentContent.description}
             </p>
             
-            {/* Botones para acceder a TALENTPOOL */}
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+            {/* Botón para acceder a TALENTPOOL */}
+            <div className="flex justify-center mt-6">
               <Button 
-                className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
+                className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a 
@@ -210,22 +210,7 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
                   className="flex items-center gap-2"
                 >
                   <ExternalLink className="w-5 h-5" />
-                  Acceder a TALENTPOOL Web
-                </a>
-              </Button>
-              
-              <Button 
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105"
-                asChild
-              >
-                <a 
-                  href="https://pooltalent.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  Ver App POOLTALENT
+                  Acceder a TALENTPOOL
                 </a>
               </Button>
             </div>
