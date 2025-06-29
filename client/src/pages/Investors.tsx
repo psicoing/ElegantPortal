@@ -2,9 +2,12 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/language-context";
 import { Globe, TrendingUp, LineChart, BarChart3, Users, CheckCircle2, ArrowUpCircle, BarChart, Briefcase, PieChart, Shield, Database } from "lucide-react";
+import { useState } from "react";
+import ContactInfoModal from "@/components/ContactInfoModal";
 
 export function InvestorsPage() {
   const { t } = useLanguage();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   return (
     <>
@@ -378,12 +381,12 @@ export function InvestorsPage() {
                     </li>
                   </ul>
                   
-                  <a 
-                    href="mailto:empordajobs@gmail.com?subject=SAFE Investment Interest"
-                    className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                  <button 
+                    onClick={() => setIsContactModalOpen(true)}
+                    className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
                   >
                     {t('investors.portal.contact_for_info')}
-                  </a>
+                  </button>
                 </div>
               </motion.div>
               
@@ -425,12 +428,12 @@ export function InvestorsPage() {
                     </li>
                   </ul>
                   
-                  <a
-                    href="mailto:empordajobs@gmail.com?subject=Notarial Investment Interest"
-                    className="block text-center border border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-medium py-2 px-4 rounded-lg transition-colors"
+                  <button
+                    onClick={() => setIsContactModalOpen(true)}
+                    className="block w-full text-center border border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-medium py-2 px-4 rounded-lg transition-colors"
                   >
                     {t('investors.portal.contact_for_info')}
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             </div>
@@ -452,12 +455,12 @@ export function InvestorsPage() {
                   </p>
                 </div>
                 <div>
-                  <a
-                    href="mailto:empordajobs@gmail.com?subject=Investor Dossier Request"
+                  <button
+                    onClick={() => setIsContactModalOpen(true)}
                     className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition-all"
                   >
                     {t('investors.portal.request_dossier')}
-                  </a>
+                  </button>
                 </div>
               </div>
             </motion.div>
