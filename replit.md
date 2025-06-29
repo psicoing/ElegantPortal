@@ -103,6 +103,7 @@ Changelog:
 - June 23, 2025. Fixed TALENTPOOL dialog by removing duplicate button and maintaining single "Acceder a TALENTPOOL" button that connects directly to https://talentpool.com.es/
 - June 23, 2025. Divided TALENTPOOL into 5 vertical sector-specific service cards: Tech (technology professionals), Med (healthcare), Build (construction), Marketing (digital marketing), and Finance (financial professionals), each with specific icons, features and color schemes matching the rest of the platform's service card format
 - June 23, 2025. Applied "Anti-edadismo" red badge to all 5 TALENTPOOL service cards to emphasize the anti-ageism commitment across all talent sectors
+- June 29, 2025. Updated investor section values: SAFE contracts from €4,000 (minimum 1 share), Notarial from €5,000 (minimum 3 shares) - applied across all languages
 
 ## User Preferences
 
