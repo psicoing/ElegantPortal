@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/language-context";
-import { Globe, TrendingUp, LineChart, BarChart3, Users, CheckCircle2, ArrowUpCircle, BarChart, Briefcase, PieChart, Shield, Database } from "lucide-react";
+import { Globe, TrendingUp, LineChart, BarChart3, Users, CheckCircle2, ArrowUpCircle, BarChart, Briefcase, PieChart, Shield, Database, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import ContactInfoModal from "@/components/ContactInfoModal";
+import { Link } from "wouter";
 
 export function InvestorsPage() {
   const { t } = useLanguage();
@@ -16,8 +17,23 @@ export function InvestorsPage() {
       </Helmet>
       
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+        {/* Back Button */}
+        <div className="container mx-auto px-4 pt-20">
+          <Link href="/">
+            <motion.button
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mb-4 transition-colors"
+            >
+              <ArrowLeft size={20} />
+              {t('nav.back_home')}
+            </motion.button>
+          </Link>
+        </div>
+        
         {/* Hero section */}
-        <section className="relative pt-24 pb-16 overflow-hidden">
+        <section className="relative pt-8 pb-16 overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -834,6 +834,18 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.portal.resources_description': 'Sol·licita el nostre dossier per a inversors amb projeccions financeres detallades i pla de negoci complet.',
     'investors.portal.request_dossier': 'Sol·licitar dossier',
     
+    // Contact Modal
+    'contact.modal.title': 'Informació de Contacte',
+    'contact.modal.subtitle': 'Som aquí per respondre les seves consultes i oferir-li assistència.',
+    'contact.modal.location': 'Ubicació',
+    'contact.modal.phone': 'Telèfon',
+    'contact.modal.email': 'Email',
+    'contact.modal.schedule': 'Horari',
+    'contact.modal.schedule_hours': 'Dilluns a Divendres: 9:00 - 18:00',
+    'contact.modal.call': 'Trucar',
+    'contact.modal.send_email': 'Enviar email',
+    'nav.back_home': 'Tornar',
+    
     // Enhanced Services Section
     'enhanced.title': 'Solucions Digitals per a Professionals',
     'enhanced.subtitle': 'EmpordaJobs SL ofereix plataformes digitals especialitzades per a diferents sectors professionals, connectant especialistes amb clients i optimitzant la gestió de serveis.',
