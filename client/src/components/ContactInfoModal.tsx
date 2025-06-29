@@ -16,7 +16,7 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
   };
 
   const handleEmail = () => {
-    window.open("mailto:empordajobs@gmail.com?subject=Consulta de Inversión", "_self");
+    window.open("mailto:jobda@jobda.es?subject=Consulta de Inversión", "_self");
   };
 
   return (
@@ -26,7 +26,7 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b">
             <DialogTitle className="text-xl font-semibold text-blue-600">
-              Información de Contacto
+              {t('contact.modal.title')}
             </DialogTitle>
             <button
               onClick={onClose}
@@ -39,7 +39,7 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
           {/* Content */}
           <div className="p-6">
             <p className="text-gray-600 text-center mb-6">
-              Estamos aquí para responder a sus consultas y brindarle asistencia.
+              {t('contact.modal.subtitle')}
             </p>
 
             {/* Company Info */}
@@ -54,7 +54,7 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
               <div className="flex items-start gap-3">
                 <MapPin className="text-blue-600 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <h4 className="font-medium text-gray-900">Ubicación</h4>
+                  <h4 className="font-medium text-gray-900">{t('contact.modal.location')}</h4>
                   <p className="text-gray-600">Portbou, Girona, España</p>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
               <div className="flex items-start gap-3">
                 <Phone className="text-blue-600 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <h4 className="font-medium text-gray-900">Teléfono</h4>
+                  <h4 className="font-medium text-gray-900">{t('contact.modal.phone')}</h4>
                   <p className="text-blue-600 cursor-pointer hover:underline" onClick={handleCall}>
                     +34 660 45 21 36
                   </p>
@@ -72,9 +72,9 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
               <div className="flex items-start gap-3">
                 <Mail className="text-blue-600 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <h4 className="font-medium text-gray-900">Email</h4>
+                  <h4 className="font-medium text-gray-900">{t('contact.modal.email')}</h4>
                   <p className="text-blue-600 cursor-pointer hover:underline" onClick={handleEmail}>
-                    empordajobs@gmail.com
+                    jobda@jobda.es
                   </p>
                 </div>
               </div>
@@ -82,8 +82,8 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
               <div className="flex items-start gap-3">
                 <Clock className="text-blue-600 mt-1 flex-shrink-0" size={20} />
                 <div>
-                  <h4 className="font-medium text-gray-900">Horario</h4>
-                  <p className="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
+                  <h4 className="font-medium text-gray-900">{t('contact.modal.schedule')}</h4>
+                  <p className="text-gray-600">{t('contact.modal.schedule_hours')}</p>
                 </div>
               </div>
             </div>
@@ -96,14 +96,14 @@ export default function ContactInfoModal({ isOpen, onClose }: ContactInfoModalPr
                 onClick={handleCall}
               >
                 <Phone size={16} className="mr-2" />
-                Llamar
+                {t('contact.modal.call')}
               </Button>
               <Button
                 className="flex-1 bg-blue-600 hover:bg-blue-700"
                 onClick={handleEmail}
               >
                 <Mail size={16} className="mr-2" />
-                Enviar email
+                {t('contact.modal.send_email')}
               </Button>
             </div>
           </div>

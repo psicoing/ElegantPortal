@@ -393,6 +393,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.modal.schedule_hours': 'Lunes a Viernes: 9:00 - 18:00',
     'contact.modal.call': 'Llamar',
     'contact.modal.send_email': 'Enviar email',
+    'nav.back_home': 'Volver',
     
     // Enhanced Services Section
     'enhanced.title': 'Soluciones Digitales para Profesionales',
@@ -1026,6 +1027,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.modal.schedule_hours': 'Monday to Friday: 9:00 - 18:00',
     'contact.modal.call': 'Call',
     'contact.modal.send_email': 'Send email',
+    'nav.back_home': 'Back',
     
     // Enhanced Services Section
     'enhanced.title': 'Digital Solutions for Professionals',
