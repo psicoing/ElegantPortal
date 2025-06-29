@@ -80,23 +80,22 @@ export default function ConoceProyecto() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       <Header toggleMobileMenu={() => {}} />
       
-      {/* Back Button */}
-      <div className="fixed top-20 left-4 z-50 pt-4">
-        <Link href="/">
-          <motion.button
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-2 bg-white/90 backdrop-blur-sm shadow-lg px-4 py-2 rounded-lg text-blue-600 hover:text-blue-700 hover:bg-white font-medium transition-all border border-blue-200"
-          >
-            <ArrowLeft size={20} />
-            Volver
-          </motion.button>
-        </Link>
-      </div>
-      
       {/* Project Image */}
-      <section className="pt-8 pb-8">
+      <section className="pt-24 pb-8">
+        {/* Back Button */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+          <Link href="/">
+            <motion.button
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
+            >
+              <ArrowLeft size={20} />
+              Volver
+            </motion.button>
+          </Link>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
