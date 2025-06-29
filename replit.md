@@ -105,6 +105,7 @@ Changelog:
 - June 23, 2025. Applied "Anti-edadismo" red badge to all 5 TALENTPOOL service cards to emphasize the anti-ageism commitment across all talent sectors
 - June 29, 2025. Updated investor section values: SAFE contracts from €4,000 (minimum 1 share), Notarial from €5,000 (minimum 3 shares) - applied across all languages
 - June 29, 2025. Enhanced investor page with contact modal replacing direct email links, updated contact email to jobda@jobda.es, added "Volver" navigation button to return to homepage, implemented multilingual contact information modal
+- June 29, 2025. Fixed "Volver" button implementation on philanthropy page (/filantropia) with simplified HTML button structure, white background, shadow and border for better visibility, positioned directly after header
 
 ## User Preferences
 
