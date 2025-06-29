@@ -81,13 +81,13 @@ export default function ConoceProyecto() {
       <Header toggleMobileMenu={() => {}} />
       
       {/* Back Button */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
+      <div className="fixed top-20 left-4 z-50 pt-4">
         <Link href="/">
           <motion.button
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mb-4 transition-colors"
+            className="flex items-center gap-2 bg-white/90 backdrop-blur-sm shadow-lg px-4 py-2 rounded-lg text-blue-600 hover:text-blue-700 hover:bg-white font-medium transition-all border border-blue-200"
           >
             <ArrowLeft size={20} />
             Volver
