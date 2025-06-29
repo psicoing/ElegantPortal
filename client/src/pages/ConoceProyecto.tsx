@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, CheckCircle, ArrowRight, Building, Microscope, Heart, Waves, Home, Settings, Mail, Users, Scale, UserCheck } from "lucide-react";
+import { Brain, CheckCircle, ArrowRight, Building, Microscope, Heart, Waves, Home, Settings, Mail, Users, Scale, UserCheck, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -80,8 +80,23 @@ export default function ConoceProyecto() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       <Header toggleMobileMenu={() => {}} />
       
+      {/* Back Button */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
+        <Link href="/">
+          <motion.button
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mb-4 transition-colors"
+          >
+            <ArrowLeft size={20} />
+            Volver
+          </motion.button>
+        </Link>
+      </div>
+      
       {/* Project Image */}
-      <section className="pt-40 pb-8">
+      <section className="pt-8 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
