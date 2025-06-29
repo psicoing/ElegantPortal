@@ -383,6 +383,17 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.portal.resources_description': 'Solicita nuestro dossier para inversores con proyecciones financieras detalladas y plan de negocio completo.',
     'investors.portal.request_dossier': 'Solicitar dossier',
     
+    // Contact Modal
+    'contact.modal.title': 'Información de Contacto',
+    'contact.modal.subtitle': 'Estamos aquí para responder a sus consultas y brindarle asistencia.',
+    'contact.modal.location': 'Ubicación',
+    'contact.modal.phone': 'Teléfono',
+    'contact.modal.email': 'Email',
+    'contact.modal.schedule': 'Horario',
+    'contact.modal.schedule_hours': 'Lunes a Viernes: 9:00 - 18:00',
+    'contact.modal.call': 'Llamar',
+    'contact.modal.send_email': 'Enviar email',
+    
     // Enhanced Services Section
     'enhanced.title': 'Soluciones Digitales para Profesionales',
     'enhanced.subtitle': 'EmpordaJobs SL ofrece plataformas digitales especializadas para diferentes sectores profesionales, conectando a especialistas con clientes y optimizando la gestión de servicios.',
@@ -1004,6 +1015,17 @@ const translations: Record<Language, Record<string, string>> = {
     'investors.portal.investor_resources': 'Investor Resources',
     'investors.portal.resources_description': 'Request our investor dossier with detailed financial projections and complete business plan.',
     'investors.portal.request_dossier': 'Request dossier',
+    
+    // Contact Modal
+    'contact.modal.title': 'Contact Information',
+    'contact.modal.subtitle': 'We are here to answer your questions and provide assistance.',
+    'contact.modal.location': 'Location',
+    'contact.modal.phone': 'Phone',
+    'contact.modal.email': 'Email',
+    'contact.modal.schedule': 'Schedule',
+    'contact.modal.schedule_hours': 'Monday to Friday: 9:00 - 18:00',
+    'contact.modal.call': 'Call',
+    'contact.modal.send_email': 'Send email',
     
     // Enhanced Services Section
     'enhanced.title': 'Digital Solutions for Professionals',

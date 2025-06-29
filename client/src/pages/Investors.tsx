@@ -467,6 +467,12 @@ export function InvestorsPage() {
           </div>
         </section>
       </div>
+      
+      {/* Contact Info Modal */}
+      <ContactInfoModal 
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+      />
     </>
   );
 }
