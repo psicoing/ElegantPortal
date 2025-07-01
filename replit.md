@@ -106,6 +106,7 @@ Changelog:
 - June 29, 2025. Updated investor section values: SAFE contracts from €4,000 (minimum 1 share), Notarial from €5,000 (minimum 3 shares) - applied across all languages
 - June 29, 2025. Enhanced investor page with contact modal replacing direct email links, updated contact email to jobda@jobda.es, added "Volver" navigation button to return to homepage, implemented multilingual contact information modal
 - June 29, 2025. Fixed "Volver" button implementation on philanthropy page (/filantropia) with simplified HTML button structure, white background, shadow and border for better visibility, positioned directly after header
+- June 30, 2025. Added comprehensive Partners page (/partners) accessible from mobile hamburger menu featuring anti-ageism commitment, partner program details, commission structure (40% of all plans), investment policy requiring €8,000-€10,000 commitment, professional profiles, and complete information about Saludalia partner collaboration program
 
 ## User Preferences
 

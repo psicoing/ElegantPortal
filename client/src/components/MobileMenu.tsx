@@ -7,7 +7,8 @@ import {
   FolderKanban,
   Users,
   HandHelping,
-  Mail
+  Mail,
+  Handshake
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { InvestorsModal } from "./InvestorsModal";
@@ -107,6 +108,13 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
             >
               <Users className="h-5 w-5 text-primary" />
               {t('nav.investors')}
+            </Link>
+            <Link href="/partners" 
+              className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
+              onClick={() => closeMobileMenu()}
+            >
+              <Handshake className="h-5 w-5 text-primary" />
+              Partners
             </Link>
             <div className="flex items-center gap-3 py-2 border-b border-gray-100">
               <HandHelping className="h-5 w-5 text-primary" />
