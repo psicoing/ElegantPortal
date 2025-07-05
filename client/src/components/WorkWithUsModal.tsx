@@ -281,7 +281,7 @@ export function WorkWithUsModal({
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 italic mt-2">
-                    Nota: Del salario bruto se aplicarán las deducciones correspondientes (IRPF, Seguridad Social, etc.) según la legislación vigente.
+                    Nota: Del salario bruto se aplicarán las deducciones correspondientes (IRPF, Seguridad Social, etc.) según la legislación vigente. El salario base mostrado corresponde a jornada completa; en media jornada sería proporcional, pero las comisiones del 20% se mantienen íntegras.
                   </p>
                 </div>
                 
@@ -295,7 +295,9 @@ export function WorkWithUsModal({
                   <ul className="text-sm text-gray-600 space-y-2 list-disc pl-5 mt-2">
                     <li>Contrato laboral fijo con todos los derechos y protecciones de la legislación española.</li>
                     <li>Salario base: SMI (Salario Mínimo Interprofesional) garantizado.</li>
-                    <li>Las comisiones se abonan como complemento salarial en tu nómina.</li>
+                    <li>Posibilidad de inicio con media jornada, evolucionando a jornada completa según valoración del desempeño.</li>
+                    <li>Las comisiones del 20% se mantienen independientemente del tipo de jornada.</li>
+                    <li>Comisiones abonadas como complemento salarial en tu nómina.</li>
                     <li>Seguridad Social, vacaciones, pagas extras y demás beneficios laborales incluidos.</li>
                     <li>No necesitas darte de alta como autónomo ni gestionar facturas.</li>
                   </ul>
