@@ -107,6 +107,7 @@ Changelog:
 - June 29, 2025. Enhanced investor page with contact modal replacing direct email links, updated contact email to jobda@jobda.es, added "Volver" navigation button to return to homepage, implemented multilingual contact information modal
 - June 29, 2025. Fixed "Volver" button implementation on philanthropy page (/filantropia) with simplified HTML button structure, white background, shadow and border for better visibility, positioned directly after header
 - June 30, 2025. Added comprehensive Partners page (/partners) accessible from mobile hamburger menu featuring anti-ageism commitment, partner program details, commission structure (40% of all plans), investment policy requiring €8,000-€10,000 commitment, professional profiles, and complete information about Saludalia partner collaboration program
+- January 3, 2025. Updated "Trabaja con nosotros" modal to reflect new employment model: fixed labor contracts with guaranteed SMI (Salario Mínimo Interprofesional) plus 20% commission supplements, eliminating freelance/autonomous worker references, including Social Security benefits and labor protections
 
 ## User Preferences
 

@@ -124,13 +124,14 @@ export function WorkWithUsModal({
                 </p>
                 
                 <div className="bg-blue-50 p-4 rounded-lg mb-6 border border-blue-100">
-                  <h4 className="font-medium text-blue-800 mb-2">Modelo de colaboración freelance</h4>
+                  <h4 className="font-medium text-blue-800 mb-2">Modelo de Contrato Fijo + Comisiones</h4>
                   <p className="text-gray-700 mb-4">
-                    Trabajamos con un modelo de colaboración freelance basado en comisiones del 20% sobre las ventas generadas.
+                    Ofrecemos contratos laborales fijos con Salario Mínimo Interprofesional (SMI) más comisiones del 20% sobre las ventas generadas como complemento salarial.
                   </p>
                   <ul className="space-y-2 list-disc pl-6 text-gray-700">
-                    <li>Sin horarios fijos ni exclusividad</li>
-                    <li>Comisiones directas del 20% por cada venta</li>
+                    <li>Contrato laboral fijo con SMI garantizado</li>
+                    <li>Comisiones del 20% como complemento salarial</li>
+                    <li>Seguridad Social y beneficios laborales incluidos</li>
                     <li>Apoyo técnico y comercial completo</li>
                     <li>Formación en nuestras soluciones tecnológicas</li>
                   </ul>
@@ -192,7 +193,7 @@ export function WorkWithUsModal({
                     <div>
                       <h5 className="font-medium text-gray-800 mb-2">Objeto del contrato</h5>
                       <p className="text-gray-600">
-                        El Comercial Autónomo, en el marco de un contrato mercantil, tendrá como objetivo principal la promoción y comercialización de los servicios del portal de ofertas laborales JOBDA, dedicado a conectar empresas con candidatos en las comarcas del Alt Empordà y Baix Empordà.
+                        El Comercial, en el marco de un contrato laboral fijo, tendrá como objetivo principal la promoción y comercialización de los servicios del portal de ofertas laborales JOBDA, dedicado a conectar empresas con candidatos en las comarcas del Alt Empordà y Baix Empordà.
                       </p>
                     </div>
                     
@@ -232,9 +233,9 @@ export function WorkWithUsModal({
                     </div>
                     
                     <div>
-                      <h5 className="font-medium text-gray-800 mb-2">Independencia</h5>
+                      <h5 className="font-medium text-gray-800 mb-2">Flexibilidad laboral</h5>
                       <p className="text-gray-600">
-                        El comercial operará con total autonomía, utilizando sus propios medios (teléfono, transporte, etc.) y sin sujeción a horarios, pudiendo trabajar para otras empresas no competidoras.
+                        El comercial trabajará con flexibilidad horaria, utilizando sus propios medios de transporte y comunicación, con objetivos orientados a resultados más que a presencia física en oficina.
                       </p>
                     </div>
                   </div>
@@ -254,46 +255,49 @@ export function WorkWithUsModal({
                 </div>
                 
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
-                  <h4 className="font-medium text-gray-900 mb-3">Ejemplo de comisiones</h4>
-                  <p className="text-gray-600 mb-4">Venta de un servicio de EMPORDÀ JOBS por 1.800€ (IVA incluido):</p>
+                  <h4 className="font-medium text-gray-900 mb-3">Ejemplo de salario + comisiones</h4>
+                  <p className="text-gray-600 mb-4">Mes con una venta de un servicio de EMPORDÀ JOBS por 1.800€ (IVA incluido):</p>
+                  <div className="flex justify-between items-center border-b border-gray-200 pb-3 mb-3">
+                    <span className="text-gray-700">Salario base (SMI)</span>
+                    <span className="font-semibold text-primary">~1.134€</span>
+                  </div>
                   <div className="flex justify-between items-center border-b border-gray-200 pb-3 mb-3">
                     <span className="text-gray-700">Venta al cliente</span>
-                    <span className="font-semibold text-primary">1.800€</span>
+                    <span className="font-semibold text-gray-600">1.800€</span>
                   </div>
                   <div className="flex justify-between items-center mb-3 pb-3 border-b border-gray-200">
-                    <span className="text-gray-700">Tu comisión (20%)</span>
-                    <span className="font-semibold text-green-600">360€</span>
+                    <span className="text-gray-700">Comisión (20%)</span>
+                    <span className="font-semibold text-green-600">+360€</span>
                   </div>
                   <div className="bg-blue-50 p-3 rounded-md mb-3">
-                    <h5 className="font-medium text-blue-800 text-sm mb-2">Factura del colaborador (lo que recibes)</h5>
+                    <h5 className="font-medium text-blue-800 text-sm mb-2">Salario bruto total del mes</h5>
                     <div className="grid grid-cols-2 gap-2 text-sm">
-                      <span className="text-gray-700">Base imponible:</span>
-                      <span className="text-right font-medium">360€</span>
-                      <span className="text-gray-700">IVA (21%):</span>
-                      <span className="text-right font-medium">+75,60€</span>
-                      <span className="text-gray-700">IRPF (15%):</span>
-                      <span className="text-right font-medium">-54€</span>
-                      <span className="text-gray-700 font-medium">Total a recibir:</span>
-                      <span className="text-right font-semibold text-green-600">381,60€</span>
+                      <span className="text-gray-700">Salario base:</span>
+                      <span className="text-right font-medium">1.134€</span>
+                      <span className="text-gray-700">Comisiones:</span>
+                      <span className="text-right font-medium">+360€</span>
+                      <span className="text-gray-700 font-medium border-t pt-2">Total bruto:</span>
+                      <span className="text-right font-semibold text-green-600 border-t pt-2">1.494€</span>
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 italic mt-2">
-                    Nota: Las cantidades son aproximadas y pueden variar según tu situación fiscal. Consulta con un asesor para casos específicos.
+                    Nota: Del salario bruto se aplicarán las deducciones correspondientes (IRPF, Seguridad Social, etc.) según la legislación vigente.
                   </p>
                 </div>
                 
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-200 mb-6">
                   <h4 className="font-medium text-gray-900 mb-2 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    Información fiscal importante
+                    Información sobre contrato laboral
                   </h4>
                   <ul className="text-sm text-gray-600 space-y-2 list-disc pl-5 mt-2">
-                    <li>Necesitarás estar dado de alta como autónomo para facturar.</li>
-                    <li>Deberás emitir facturas con tu NIF, incluyendo base, IVA e IRPF.</li>
-                    <li>Recuerda presentar tus modelos trimestrales (303 para IVA, 130 para IRPF).</li>
-                    <li>La empresa ingresará en Hacienda las retenciones de IRPF realizadas.</li>
+                    <li>Contrato laboral fijo con todos los derechos y protecciones de la legislación española.</li>
+                    <li>Salario base: SMI (Salario Mínimo Interprofesional) garantizado.</li>
+                    <li>Las comisiones se abonan como complemento salarial en tu nómina.</li>
+                    <li>Seguridad Social, vacaciones, pagas extras y demás beneficios laborales incluidos.</li>
+                    <li>No necesitas darte de alta como autónomo ni gestionar facturas.</li>
                   </ul>
                 </div>
                 
