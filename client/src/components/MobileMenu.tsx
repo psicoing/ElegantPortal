@@ -14,7 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { InvestorsModal } from "./InvestorsModal";
 import { ContactModal } from "./ContactModal";
 import { WorkWithUsModal } from "./WorkWithUsModal";
-import { LanguageSelector } from "./LanguageSelector";
+import { GoogleTranslateWidget } from "./GoogleTranslateWidget";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
 import faroLogo from "@/assets/faro-logo.png";
@@ -123,6 +123,9 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
             <div className="flex items-center gap-3 py-2 border-b border-gray-100">
               <Mail className="h-5 w-5 text-primary" />
               <ContactModal text={t('nav.contact')} />
+            </div>
+            <div className="flex items-center gap-3 py-2">
+              <GoogleTranslateWidget />
             </div>
           </nav>
         </motion.div>
