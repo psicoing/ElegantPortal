@@ -1,0 +1,70 @@
+Te voy a buscar el código del traductor que implementé en NFLOW:
+
+
+Searched for "Find translator implementation code, Google Translate integration, language selector components"
+Te muestro el código del traductor que implementé en NFLOW. El sistema utiliza Google Translate del navegador para evitar problemas de performance:
+
+1. Diálogo de Google Translate (google-translate-dialog.tsx):
+
+Opened client/src/components/ui/google-translate-dialog.tsx
+2. Selector de idioma para chat (chat-language-selector.tsx):
+
+Opened client/src/components/ui/chat-language-selector.tsx
+3. Banner informativo en chat (chat-language-banner.tsx):
+
+Opened client/src/components/ui/chat-language-banner.tsx
+Código del Traductor NFLOW
+El sistema de traducción que implementé usa Google Translate integrado del navegador en lugar de APIs para evitar problemas de rendimiento. Aquí están los componentes principales:
+
+1. GoogleTranslateDialog - Componente principal
+// Archivo: client/src/components/ui/google-translate-dialog.tsx
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Globe, Chrome, Smartphone, X } from "lucide-react";
+export function GoogleTranslateDialog({ trigger, buttonText = "Idiomas", size = "default" }) {
+  const [open, setOpen] = useState(false);
+  // Modal que enseña a los usuarios cómo activar Google Translate
+  // Incluye instrucciones para Chrome/Edge y dispositivos móviles
+  // Ventajas: traducción instantánea, conserva diseño, más de 100 idiomas
+}
+2. ChatLanguageSelector - Botón para el chat
+// Archivo: client/src/components/ui/chat-language-selector.tsx
+import { GoogleTranslateDialog } from "@/components/ui/google-translate-dialog";
+export default function ChatLanguageSelector() {
+  return (
+    <div className="flex items-center space-x-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20">
+      <GoogleTranslateDialog 
+        trigger={
+          <button className="flex items-center space-x-2 px-3 py-1">
+            <span>🌐</span>
+            <span>Traducir</span>
+          </button>
+        }
+      />
+    </div>
+  );
+}
+3. ChatLanguageBanner - Banner informativo
+// Archivo: client/src/components/ui/chat-language-banner.tsx
+export default function ChatLanguageBanner() {
+  return (
+    <div className="bg-gradient-to-r from-indigo-600/30 via-purple-600/30 to-blue-600/30">
+      <p>Usa Google Translate de tu navegador para ver esta conversación en tu idioma. 
+         Las respuestas de NEUROPSI-AI se adaptarán automáticamente.</p>
+      <ChatLanguageSelector />
+    </div>
+  );
+}
+4. Integración en Header
+// Archivo: client/src/components/layout/header.tsx
+import { GoogleTranslateDialog } from "@/components/ui/google-translate-dialog";
+// En el header desktop:
+<GoogleTranslateDialog buttonText="Idiomas" size="sm" />
+Ventajas de esta implementación:
+Sin APIs externas - Usa Google Translate nativo del navegador
+Conserva diseño - No rompe la estructura de la página
+Instantáneo - Traducción en tiempo real
+150+ idiomas - Soporte completo de Google Translate
+Mobile-friendly - Instrucciones específicas para móviles
+Responsive - Funciona en todos los dispositivos
+¿Te interesa algún componente específico o quieres que te explique cómo implementarlo en otro proyecto?
