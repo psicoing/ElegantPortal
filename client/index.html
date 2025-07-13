@@ -74,12 +74,44 @@
     <!-- Google Translate Widget -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'es',
-          includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        }, 'google_translate_element');
+        // Buscar todos los elementos con la clase translate-widget
+        var elements = document.getElementsByClassName('google-translate-widget');
+        for (var i = 0; i < elements.length; i++) {
+          if (!elements[i].hasChildNodes()) {
+            new google.translate.TranslateElement({
+              pageLanguage: 'es',
+              includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false
+            }, elements[i]);
+          }
+        }
+      }
+      
+      // Reinicializar cuando se añadan nuevos elementos
+      if (window.MutationObserver) {
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList') {
+              mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType === 1 && node.getElementsByClassName) {
+                  var widgets = node.getElementsByClassName('google-translate-widget');
+                  for (var i = 0; i < widgets.length; i++) {
+                    if (!widgets[i].hasChildNodes() && window.google && window.google.translate) {
+                      new google.translate.TranslateElement({
+                        pageLanguage: 'es',
+                        includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                        autoDisplay: false
+                      }, widgets[i]);
+                    }
+                  }
+                }
+              });
+            }
+          });
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
       }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
