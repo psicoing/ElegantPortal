@@ -42,54 +42,52 @@ export function LanguageSelector() {
       }
     }
     
-    // Traducción básica usando Google Translate URL (fallback)
+    // Implementar traducción automática usando diferentes métodos
     if (language.code !== 'es') {
-      const translateUrl = `https://translate.google.com/translate?sl=es&tl=${language.code}&u=${encodeURIComponent(window.location.href)}`;
-      
-      // Solo mostrar la opción al usuario en lugar de redirigir automáticamente
-      console.log(`Para traducir a ${language.nativeName}, visite: ${translateUrl}`);
-      
-      // Mostrar notificación al usuario
-      const notification = document.createElement('div');
-      notification.innerHTML = `
-        <div style="
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          background: #1E40AF;
-          color: white;
-          padding: 12px 16px;
-          border-radius: 8px;
-          z-index: 10000;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-          font-family: Inter, sans-serif;
-          font-size: 14px;
-          max-width: 300px;
-        ">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span>🌐</span>
-            <div>
-              <div style="font-weight: 600;">Traducción a ${language.nativeName}</div>
-              <div style="opacity: 0.9; font-size: 12px;">Haga clic aquí para traducir la página</div>
-            </div>
-          </div>
-        </div>
-      `;
-      
-      notification.style.cursor = 'pointer';
-      notification.onclick = () => {
-        window.open(translateUrl, '_blank');
-        document.body.removeChild(notification);
-      };
-      
-      document.body.appendChild(notification);
-      
-      // Auto-eliminar después de 5 segundos
-      setTimeout(() => {
-        if (notification.parentNode) {
-          document.body.removeChild(notification);
+      // Método 1: Intentar usar Google Translate elemento si está disponible
+      if (window.google?.translate) {
+        try {
+          // Crear el elemento de traducción dinámicamente
+          const translateDiv = document.createElement('div');
+          translateDiv.id = 'google_translate_element_temp';
+          translateDiv.style.display = 'none';
+          document.body.appendChild(translateDiv);
+          
+          new window.google.translate.TranslateElement({
+            pageLanguage: 'es',
+            includedLanguages: language.code,
+            autoDisplay: false,
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'google_translate_element_temp');
+          
+          // Activar la traducción automáticamente
+          setTimeout(() => {
+            const select = translateDiv.querySelector('select') as HTMLSelectElement;
+            if (select) {
+              select.value = language.code;
+              select.dispatchEvent(new Event('change', { bubbles: true }));
+              console.log(`Traduciendo página a ${language.nativeName}`);
+            }
+          }, 500);
+          
+          return;
+        } catch (error) {
+          console.log('Error con Google Translate widget, usando método alternativo');
         }
-      }, 5000);
+      }
+      
+      // Método 2: Usar la URL de Google Translate en la misma ventana
+      const currentUrl = window.location.href;
+      const translateUrl = `https://translate.google.com/translate?sl=es&tl=${language.code}&u=${encodeURIComponent(currentUrl)}`;
+      
+      // Preguntar al usuario si quiere traducir
+      const confirmed = confirm(`¿Desea traducir esta página a ${language.nativeName}?`);
+      if (confirmed) {
+        window.location.href = translateUrl;
+      } else {
+        // Resetear al idioma español si cancela
+        setCurrentLanguage(languages[0]);
+      }
     }
   };
 
