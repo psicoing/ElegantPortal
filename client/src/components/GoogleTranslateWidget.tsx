@@ -84,11 +84,40 @@ export function GoogleTranslateWidget() {
     `;
     document.head.appendChild(style);
 
-    // Limpiar cualquier instancia previa del widget
-    const existingWidget = document.getElementById('google_translate_element');
-    if (existingWidget) {
-      existingWidget.innerHTML = '';
-    }
+    // Función para inicializar Google Translate cuando esté disponible
+    const initGoogleTranslate = () => {
+      console.log('Intentando inicializar Google Translate...');
+      console.log('window.google existe:', !!window.google);
+      console.log('window.google.translate existe:', !!(window.google && window.google.translate));
+      
+      if (window.google && window.google.translate) {
+        try {
+          const existingWidget = document.getElementById('google_translate_element');
+          console.log('Elemento widget encontrado:', !!existingWidget);
+          console.log('Widget tiene hijos:', existingWidget?.hasChildNodes());
+          
+          if (existingWidget && !existingWidget.hasChildNodes()) {
+            console.log('Creando TranslateElement...');
+            new window.google.translate.TranslateElement({
+              pageLanguage: 'es',
+              includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false
+            }, 'google_translate_element');
+            console.log('TranslateElement creado exitosamente');
+          }
+        } catch (error) {
+          console.error('Error inicializando Google Translate:', error);
+        }
+      } else {
+        console.log('Google Translate no está listo, reintentando...');
+        // Reintentar en 100ms si Google Translate no está listo
+        setTimeout(initGoogleTranslate, 100);
+      }
+    };
+
+    // Inicializar después de un pequeño delay para asegurar que el DOM esté listo
+    setTimeout(initGoogleTranslate, 1000);
 
     return () => {
       if (document.head.contains(style)) {
