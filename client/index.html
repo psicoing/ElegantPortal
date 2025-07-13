@@ -71,84 +71,103 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Google Translate Widget -->
+
     <script type="text/javascript">
-      window.googleTranslateElementInit = function() {
-        console.log('googleTranslateElementInit llamada');
-        // Función para inicializar widgets existentes
-        function initializeWidgets() {
-          var elements = document.getElementsByClassName('google-translate-widget');
-          console.log('Elementos encontrados:', elements.length);
-          for (var i = 0; i < elements.length; i++) {
-            if (!elements[i].hasChildNodes()) {
-              console.log('Inicializando widget', i);
+      // Función para cargar Google Translate de forma más robusta
+      function loadGoogleTranslate() {
+        console.log('Iniciando carga de Google Translate...');
+        
+        // Crear el script dinámicamente
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateReady';
+        script.async = true;
+        
+        script.onload = function() {
+          console.log('Script de Google Translate cargado');
+        };
+        
+        script.onerror = function() {
+          console.error('Error cargando Google Translate');
+        };
+        
+        document.head.appendChild(script);
+      }
+      
+      // Función que será llamada cuando Google Translate esté listo
+      window.googleTranslateReady = function() {
+        console.log('Google Translate API lista');
+        console.log('window.google existe:', !!window.google);
+        console.log('window.google.translate existe:', !!(window.google && window.google.translate));
+        
+        // Inicializar widgets existentes
+        initializeAllWidgets();
+        
+        // Configurar observador para widgets futuros
+        setupWidgetObserver();
+      };
+      
+      function initializeAllWidgets() {
+        var elements = document.getElementsByClassName('google-translate-widget');
+        console.log('Inicializando widgets, encontrados:', elements.length);
+        
+        for (var i = 0; i < elements.length; i++) {
+          if (!elements[i].hasChildNodes() && window.google && window.google.translate) {
+            console.log('Creando widget', i);
+            try {
               new google.translate.TranslateElement({
                 pageLanguage: 'es',
                 includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false
               }, elements[i]);
+            } catch (error) {
+              console.error('Error creando widget:', error);
             }
           }
         }
-        
-        // Inicializar inmediatamente
-        initializeWidgets();
-        
-        // Reintentar cada 500ms hasta encontrar widgets
-        var retryCount = 0;
-        var maxRetries = 20; // 10 segundos máximo
-        var retryInterval = setInterval(function() {
-          retryCount++;
-          var elements = document.getElementsByClassName('google-translate-widget');
-          if (elements.length > 0) {
-            initializeWidgets();
-            clearInterval(retryInterval);
-          } else if (retryCount >= maxRetries) {
-            console.log('No se encontraron widgets después de 10 segundos');
-            clearInterval(retryInterval);
-          }
-        }, 500);
-      };
+      }
       
-      // También observar cambios en el DOM
-      if (window.MutationObserver) {
-        var observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mutation) {
-            if (mutation.type === 'childList') {
-              mutation.addedNodes.forEach(function(node) {
-                if (node.nodeType === 1 && node.getElementsByClassName) {
-                  var widgets = node.getElementsByClassName('google-translate-widget');
-                  for (var i = 0; i < widgets.length; i++) {
-                    if (!widgets[i].hasChildNodes() && window.google && window.google.translate) {
-                      console.log('Inicializando widget desde MutationObserver');
-                      new google.translate.TranslateElement({
-                        pageLanguage: 'es',
-                        includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
-                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                        autoDisplay: false
-                      }, widgets[i]);
+      function setupWidgetObserver() {
+        if (window.MutationObserver) {
+          var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+              if (mutation.type === 'childList') {
+                mutation.addedNodes.forEach(function(node) {
+                  if (node.nodeType === 1 && node.getElementsByClassName) {
+                    var widgets = node.getElementsByClassName('google-translate-widget');
+                    for (var i = 0; i < widgets.length; i++) {
+                      if (!widgets[i].hasChildNodes() && window.google && window.google.translate) {
+                        console.log('Inicializando widget nuevo desde observer');
+                        try {
+                          new google.translate.TranslateElement({
+                            pageLanguage: 'es',
+                            includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                            autoDisplay: false
+                          }, widgets[i]);
+                        } catch (error) {
+                          console.error('Error creando widget desde observer:', error);
+                        }
+                      }
                     }
                   }
-                }
-              });
-            }
+                });
+              }
+            });
           });
-        });
-        
-        // Esperar a que el DOM esté listo antes de observar
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', function() {
-            observer.observe(document.body, { childList: true, subtree: true });
-          });
-        } else {
+          
           observer.observe(document.body, { childList: true, subtree: true });
         }
       }
+      
+      // Cargar cuando el DOM esté listo
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadGoogleTranslate);
+      } else {
+        loadGoogleTranslate();
+      }
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" 
-            onload="console.log('Google Translate script cargado exitosamente')"
-            onerror="console.error('Error cargando Google Translate script')"></script>
     
     <!-- This script injects a replit badge into the page, please feel free to remove this line -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-badge-v3.js"></script>
