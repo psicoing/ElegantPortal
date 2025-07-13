@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Globe, Chrome, Smartphone, X } from "lucide-react";
 
@@ -7,6 +7,141 @@ interface GoogleTranslateDialogProps {
   buttonText?: string;
   size?: "default" | "sm" | "lg";
 }
+
+const translations = {
+  es: {
+    title: "Traducir página",
+    subtitle: "Usa Google Translate integrado en tu navegador",
+    whyTitle: "¿Por qué usar Google Translate del navegador?",
+    advantages: [
+      "Traducción instantánea sin recargar",
+      "Conserva el diseño original", 
+      "Más de 100 idiomas disponibles",
+      "Funciona en todos los sitios web"
+    ],
+    desktopTitle: "En Chrome, Edge o Brave",
+    desktopSteps: [
+      {
+        title: "Clic derecho en cualquier parte de la página",
+        subtitle: "Aparecerá un menú contextual"
+      },
+      {
+        title: "Selecciona \"Traducir a [tu idioma]\"",
+        subtitle: "O busca la opción \"Translate to...\""
+      },
+      {
+        title: "¡Listo! La página se traduce automáticamente",
+        subtitle: "Puedes cambiar el idioma desde la barra de traducción"
+      }
+    ],
+    mobileTitle: "En dispositivos móviles",
+    mobileSteps: [
+      {
+        title: "Toca los tres puntos (⋮) en tu navegador",
+        subtitle: "Usualmente en la esquina superior derecha"
+      },
+      {
+        title: "Busca \"Traducir\" en el menú",
+        subtitle: "Puede aparecer como \"Translate\" o un ícono 🌐"
+      },
+      {
+        title: "Selecciona tu idioma preferido",
+        subtitle: "La página se traducirá al instante"
+      }
+    ],
+    tipTitle: "Tip profesional",
+    tipText: "Una vez activado, Google Translate recordará tu preferencia y traducirá automáticamente todas las páginas en español a tu idioma.",
+    buttonText: "Entendido, activar traducción"
+  },
+  en: {
+    title: "Translate page",
+    subtitle: "Use Google Translate built into your browser",
+    whyTitle: "Why use browser's Google Translate?",
+    advantages: [
+      "Instant translation without reload",
+      "Preserves original design",
+      "100+ languages available", 
+      "Works on all websites"
+    ],
+    desktopTitle: "In Chrome, Edge or Brave",
+    desktopSteps: [
+      {
+        title: "Right-click anywhere on the page",
+        subtitle: "A context menu will appear"
+      },
+      {
+        title: "Select \"Translate to [your language]\"",
+        subtitle: "Or look for \"Translate to...\" option"
+      },
+      {
+        title: "Done! The page translates automatically",
+        subtitle: "You can change language from the translation bar"
+      }
+    ],
+    mobileTitle: "On mobile devices",
+    mobileSteps: [
+      {
+        title: "Tap the three dots (⋮) in your browser",
+        subtitle: "Usually in the top right corner"
+      },
+      {
+        title: "Look for \"Translate\" in the menu",
+        subtitle: "May appear as \"Translate\" or a 🌐 icon"
+      },
+      {
+        title: "Select your preferred language",
+        subtitle: "The page will translate instantly"
+      }
+    ],
+    tipTitle: "Pro tip",
+    tipText: "Once activated, Google Translate will remember your preference and automatically translate all Spanish pages to your language.",
+    buttonText: "Got it, activate translation"
+  },
+  fr: {
+    title: "Traduire la page",
+    subtitle: "Utilisez Google Translate intégré à votre navigateur",
+    whyTitle: "Pourquoi utiliser Google Translate du navigateur?",
+    advantages: [
+      "Traduction instantanée sans rechargement",
+      "Conserve le design original",
+      "Plus de 100 langues disponibles",
+      "Fonctionne sur tous les sites web"
+    ],
+    desktopTitle: "Dans Chrome, Edge ou Brave",
+    desktopSteps: [
+      {
+        title: "Clic droit n'importe où sur la page",
+        subtitle: "Un menu contextuel apparaîtra"
+      },
+      {
+        title: "Sélectionnez \"Traduire vers [votre langue]\"",
+        subtitle: "Ou cherchez l'option \"Translate to...\""
+      },
+      {
+        title: "Terminé! La page se traduit automatiquement",
+        subtitle: "Vous pouvez changer la langue depuis la barre de traduction"
+      }
+    ],
+    mobileTitle: "Sur appareils mobiles",
+    mobileSteps: [
+      {
+        title: "Touchez les trois points (⋮) dans votre navigateur",
+        subtitle: "Habituellement dans le coin supérieur droit"
+      },
+      {
+        title: "Cherchez \"Traduire\" dans le menu",
+        subtitle: "Peut apparaître comme \"Translate\" ou une icône 🌐"
+      },
+      {
+        title: "Sélectionnez votre langue préférée",
+        subtitle: "La page se traduira instantanément"
+      }
+    ],
+    tipTitle: "Conseil professionnel",
+    tipText: "Une fois activé, Google Translate se souviendra de votre préférence et traduira automatiquement toutes les pages en espagnol vers votre langue.",
+    buttonText: "Compris, activer la traduction"
+  }
+};
 
 export function GoogleTranslateDialog({ 
   trigger, 
