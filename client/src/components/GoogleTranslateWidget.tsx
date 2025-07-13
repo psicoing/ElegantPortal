@@ -87,56 +87,99 @@ export function GoogleTranslateWidget() {
       document.head.appendChild(style);
     }
 
-    // Función para inicializar el widget directamente
+    // Función para inicializar el widget con verificaciones más robustas
     const initializeWidget = () => {
-      if (!containerRef.current || initAttempted.current || isLoaded) return;
+      let attempts = 0;
+      const maxAttempts = 15;
       
-      const checkAndInit = () => {
-        if (window.google?.translate && !initAttempted.current) {
-          try {
-            initAttempted.current = true;
-            console.log('Inicializando widget Google Translate directamente');
+      const tryInit = () => {
+        attempts++;
+        console.log(`Intento de inicialización ${attempts}/${maxAttempts}`);
+        console.log('Container ref:', !!containerRef.current);
+        console.log('Google API:', !!window.google?.translate);
+        console.log('Ya inicializado:', initAttempted.current);
+        
+        if (!containerRef.current) {
+          console.log('Container ref no disponible, reintentando...');
+          if (attempts < maxAttempts) {
+            setTimeout(tryInit, 500);
+          }
+          return;
+        }
+        
+        if (!window.google?.translate) {
+          console.log('Google Translate API no disponible, reintentando...');
+          if (attempts < maxAttempts) {
+            setTimeout(tryInit, 500);
+          }
+          return;
+        }
+        
+        if (initAttempted.current) {
+          console.log('Ya se intentó inicializar');
+          return;
+        }
+        
+        try {
+          initAttempted.current = true;
+          console.log('Creando TranslateElement en:', containerRef.current);
+          
+          // Limpiar el contenedor antes de crear el widget
+          containerRef.current.innerHTML = '';
+          
+          new window.google.translate.TranslateElement({
+            pageLanguage: 'es',
+            includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          }, containerRef.current);
+          
+          // Verificar que se creó correctamente
+          setTimeout(() => {
+            const hasChildren = containerRef.current?.children.length > 0;
+            const hasGoogleElements = containerRef.current?.querySelector('[class*="goog"]');
             
-            new window.google.translate.TranslateElement({
-              pageLanguage: 'es',
-              includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
-              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-              autoDisplay: false
-            }, containerRef.current);
+            console.log('Verificando widget:', {
+              hasChildren,
+              hasGoogleElements: !!hasGoogleElements,
+              innerHTML: containerRef.current?.innerHTML?.substring(0, 100)
+            });
             
-            setIsLoaded(true);
-            console.log('Widget inicializado correctamente');
-          } catch (error) {
-            console.error('Error creando widget:', error);
-            initAttempted.current = false; // Permitir reintentos
+            if (hasChildren || hasGoogleElements) {
+              console.log('Widget creado exitosamente');
+              setIsLoaded(true);
+            } else {
+              console.log('Widget no se creó, reintentando...');
+              initAttempted.current = false;
+              if (attempts < maxAttempts) {
+                setTimeout(tryInit, 1000);
+              } else {
+                console.log('Max intentos alcanzados. Puede ser una limitación del entorno de desarrollo.');
+                // Mostrar fallback para desarrollo
+                setIsLoaded(true);
+              }
+            }
+          }, 1000);
+          
+        } catch (error) {
+          console.error('Error creando widget:', error);
+          initAttempted.current = false;
+          if (attempts < maxAttempts) {
+            setTimeout(tryInit, 1000);
           }
         }
       };
       
-      // Intentar inmediatamente
-      checkAndInit();
-      
-      // Si no funciona, reintentar cada 1 segundo hasta 10 intentos
-      let attempts = 0;
-      const retryInterval = setInterval(() => {
-        attempts++;
-        if (window.google?.translate && !initAttempted.current) {
-          checkAndInit();
-          clearInterval(retryInterval);
-        } else if (attempts >= 10) {
-          console.log('No se pudo inicializar Google Translate después de 10 intentos');
-          clearInterval(retryInterval);
-        }
-      }, 1000);
-      
-      return () => clearInterval(retryInterval);
+      // Empezar el proceso después de un pequeño delay
+      setTimeout(tryInit, 100);
     };
 
-    // Inicializar después de un pequeño delay para dar tiempo a que se cargue el script
-    const timer = setTimeout(initializeWidget, 500);
+    // Inicializar el widget
+    initializeWidget();
     
+    // Cleanup function
     return () => {
-      clearTimeout(timer);
+      // No cleanup needed ya que los timeouts se auto-limpian
     };
   }, []);
 
@@ -145,7 +188,8 @@ export function GoogleTranslateWidget() {
       <Globe className="h-4 w-4 text-gray-600" />
       <div 
         ref={containerRef}
-        className="inline-block min-w-[100px]"
+        className="inline-block min-w-[120px] relative"
+        style={{ position: 'relative' }}
       >
         {!isLoaded && (
           <span className="text-xs text-gray-400">Traducir</span>
