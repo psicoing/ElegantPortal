@@ -150,6 +150,15 @@ export function GoogleTranslateDialog({
 }: GoogleTranslateDialogProps) {
   const [open, setOpen] = useState(false);
 
+  const currentLang = useMemo(() => {
+    const browserLang = navigator.language.toLowerCase();
+    if (browserLang.startsWith('en')) return 'en';
+    if (browserLang.startsWith('fr')) return 'fr';
+    return 'es'; // default to Spanish
+  }, []);
+
+  const t = translations[currentLang as keyof typeof translations];
+
   const defaultTrigger = (
     <Button
       variant="outline"
@@ -181,10 +190,10 @@ export function GoogleTranslateDialog({
             </div>
             <div>
               <h2 className="text-xl font-semibold text-gray-900">
-                Traducir página
+                {t.title}
               </h2>
               <p className="text-sm text-gray-600">
-                Usa Google Translate integrado en tu navegador
+                {t.subtitle}
               </p>
             </div>
           </div>
@@ -200,24 +209,14 @@ export function GoogleTranslateDialog({
         <div className="p-6 space-y-6">
           {/* Ventajas */}
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg">
-            <h3 className="font-semibold text-gray-900 mb-3">¿Por qué usar Google Translate del navegador?</h3>
+            <h3 className="font-semibold text-gray-900 mb-3">{t.whyTitle}</h3>
             <div className="grid md:grid-cols-2 gap-3 text-sm">
-              <div className="flex items-start gap-2">
-                <span className="text-green-500">✓</span>
-                <span>Traducción instantánea sin recargar</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-green-500">✓</span>
-                <span>Conserva el diseño original</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-green-500">✓</span>
-                <span>Más de 100 idiomas disponibles</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-green-500">✓</span>
-                <span>Funciona en todos los sitios web</span>
-              </div>
+              {t.advantages.map((advantage, index) => (
+                <div key={index} className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span>{advantage}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -225,33 +224,19 @@ export function GoogleTranslateDialog({
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Chrome className="h-6 w-6 text-blue-600" />
-              <h3 className="text-lg font-semibold">En Chrome, Edge o Brave</h3>
+              <h3 className="text-lg font-semibold">{t.desktopTitle}</h3>
             </div>
             
             <div className="bg-gray-50 p-4 rounded-lg space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">1</span>
-                <div>
-                  <p className="font-medium">Clic derecho en cualquier parte de la página</p>
-                  <p className="text-sm text-gray-600">Aparecerá un menú contextual</p>
+              {t.desktopSteps.map((step, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">{index + 1}</span>
+                  <div>
+                    <p className="font-medium">{step.title}</p>
+                    <p className="text-sm text-gray-600">{step.subtitle}</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">2</span>
-                <div>
-                  <p className="font-medium">Selecciona "Traducir a [tu idioma]"</p>
-                  <p className="text-sm text-gray-600">O busca la opción "Translate to..."</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">3</span>
-                <div>
-                  <p className="font-medium">¡Listo! La página se traduce automáticamente</p>
-                  <p className="text-sm text-gray-600">Puedes cambiar el idioma desde la barra de traducción</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -259,33 +244,19 @@ export function GoogleTranslateDialog({
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Smartphone className="h-6 w-6 text-green-600" />
-              <h3 className="text-lg font-semibold">En dispositivos móviles</h3>
+              <h3 className="text-lg font-semibold">{t.mobileTitle}</h3>
             </div>
             
             <div className="bg-green-50 p-4 rounded-lg space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">1</span>
-                <div>
-                  <p className="font-medium">Toca los tres puntos (⋮) en tu navegador</p>
-                  <p className="text-sm text-gray-600">Usualmente en la esquina superior derecha</p>
+              {t.mobileSteps.map((step, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">{index + 1}</span>
+                  <div>
+                    <p className="font-medium">{step.title}</p>
+                    <p className="text-sm text-gray-600">{step.subtitle}</p>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">2</span>
-                <div>
-                  <p className="font-medium">Busca "Traducir" en el menú</p>
-                  <p className="text-sm text-gray-600">Puede aparecer como "Translate" o un ícono 🌐</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold">3</span>
-                <div>
-                  <p className="font-medium">Selecciona tu idioma preferido</p>
-                  <p className="text-sm text-gray-600">La página se traducirá al instante</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -294,10 +265,9 @@ export function GoogleTranslateDialog({
             <div className="flex items-start gap-3">
               <span className="text-amber-600">💡</span>
               <div>
-                <p className="font-medium text-amber-800">Tip profesional</p>
+                <p className="font-medium text-amber-800">{t.tipTitle}</p>
                 <p className="text-sm text-amber-700">
-                  Una vez activado, Google Translate recordará tu preferencia y traducirá 
-                  automáticamente todas las páginas en español a tu idioma.
+                  {t.tipText}
                 </p>
               </div>
             </div>
@@ -310,7 +280,7 @@ export function GoogleTranslateDialog({
             onClick={() => setOpen(false)}
             className="w-full bg-blue-600 hover:bg-blue-700"
           >
-            Entendido, activar traducción
+            {t.buttonText}
           </Button>
         </div>
       </div>
