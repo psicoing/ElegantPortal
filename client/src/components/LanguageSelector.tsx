@@ -29,64 +29,28 @@ export function LanguageSelector() {
     setCurrentLanguage(language);
     setIsOpen(false);
     
-    // Intentar usar Google Translate si está disponible
-    if (window.google?.translate) {
-      try {
-        const frame = document.querySelector('.goog-te-menu-frame') as HTMLIFrameElement;
-        if (frame && frame.contentDocument) {
-          const languageOption = frame.contentDocument.querySelector(`[value="${language.code}"]`) as HTMLElement;
-          languageOption?.click();
-        }
-      } catch (error) {
-        console.log('Google Translate no disponible, usando selector personalizado');
-      }
-    }
-    
-    // Implementar traducción automática usando diferentes métodos
     if (language.code !== 'es') {
-      // Método 1: Intentar usar Google Translate elemento si está disponible
-      if (window.google?.translate) {
-        try {
-          // Crear el elemento de traducción dinámicamente
-          const translateDiv = document.createElement('div');
-          translateDiv.id = 'google_translate_element_temp';
-          translateDiv.style.display = 'none';
-          document.body.appendChild(translateDiv);
-          
-          new window.google.translate.TranslateElement({
-            pageLanguage: 'es',
-            includedLanguages: language.code,
-            autoDisplay: false,
-            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
-          }, 'google_translate_element_temp');
-          
-          // Activar la traducción automáticamente
-          setTimeout(() => {
-            const select = translateDiv.querySelector('select') as HTMLSelectElement;
-            if (select) {
-              select.value = language.code;
-              select.dispatchEvent(new Event('change', { bubbles: true }));
-              console.log(`Traduciendo página a ${language.nativeName}`);
-            }
-          }, 500);
-          
-          return;
-        } catch (error) {
-          console.log('Error con Google Translate widget, usando método alternativo');
-        }
-      }
-      
-      // Método 2: Usar la URL de Google Translate en la misma ventana
+      // Método directo: usar Google Translate URL con parámetros optimizados
       const currentUrl = window.location.href;
-      const translateUrl = `https://translate.google.com/translate?sl=es&tl=${language.code}&u=${encodeURIComponent(currentUrl)}`;
       
-      // Preguntar al usuario si quiere traducir
-      const confirmed = confirm(`¿Desea traducir esta página a ${language.nativeName}?`);
-      if (confirmed) {
-        window.location.href = translateUrl;
-      } else {
-        // Resetear al idioma español si cancela
-        setCurrentLanguage(languages[0]);
+      // Si ya estamos en una página traducida, mantener la estructura
+      const baseUrl = currentUrl.includes('translate.google.com') 
+        ? currentUrl.split('&u=')[1] ? decodeURIComponent(currentUrl.split('&u=')[1]) : window.location.origin
+        : currentUrl;
+      
+      const translateUrl = `https://translate.google.com/translate?sl=es&tl=${language.code}&hl=${language.code}&u=${encodeURIComponent(baseUrl)}`;
+      
+      console.log(`Traduciendo a ${language.nativeName}...`);
+      
+      // Redirigir directamente - esto es lo más confiable
+      window.location.href = translateUrl;
+    } else {
+      // Si selecciona español, volver a la página original si estamos en traducción
+      if (window.location.href.includes('translate.google.com')) {
+        const originalUrl = window.location.href.split('&u=')[1];
+        if (originalUrl) {
+          window.location.href = decodeURIComponent(originalUrl);
+        }
       }
     }
   };
