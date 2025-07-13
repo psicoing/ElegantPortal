@@ -109,6 +109,7 @@ Changelog:
 - June 30, 2025. Added comprehensive Partners page (/partners) accessible from mobile hamburger menu featuring anti-ageism commitment, partner program details, commission structure (40% of all plans), investment policy requiring €8,000-€10,000 commitment, professional profiles, and complete information about Saludalia partner collaboration program
 - January 3, 2025. Updated "Trabaja con nosotros" modal to reflect new employment model: fixed labor contracts with guaranteed SMI (Salario Mínimo Interprofesional) plus 20% commission supplements, eliminating freelance/autonomous worker references, including Social Security benefits and labor protections
 - January 3, 2025. Added flexibility clause to employment terms: possibility of starting with part-time hours, evolving to full-time based on performance evaluation, while maintaining 20% commission rate regardless of working hours
+- January 13, 2025. Replaced Google Translate widget with custom LanguageSelector component due to development environment limitations. New selector supports 11 languages (Spanish, Catalan, English, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Arabic) with elegant notification system that opens Google Translate in new tab for full page translation
 
 ## User Preferences
 
