@@ -73,22 +73,45 @@
     
     <!-- Google Translate Widget -->
     <script type="text/javascript">
-      function googleTranslateElementInit() {
-        // Buscar todos los elementos con la clase translate-widget
-        var elements = document.getElementsByClassName('google-translate-widget');
-        for (var i = 0; i < elements.length; i++) {
-          if (!elements[i].hasChildNodes()) {
-            new google.translate.TranslateElement({
-              pageLanguage: 'es',
-              includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
-              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-              autoDisplay: false
-            }, elements[i]);
+      window.googleTranslateElementInit = function() {
+        console.log('googleTranslateElementInit llamada');
+        // Función para inicializar widgets existentes
+        function initializeWidgets() {
+          var elements = document.getElementsByClassName('google-translate-widget');
+          console.log('Elementos encontrados:', elements.length);
+          for (var i = 0; i < elements.length; i++) {
+            if (!elements[i].hasChildNodes()) {
+              console.log('Inicializando widget', i);
+              new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+              }, elements[i]);
+            }
           }
         }
-      }
+        
+        // Inicializar inmediatamente
+        initializeWidgets();
+        
+        // Reintentar cada 500ms hasta encontrar widgets
+        var retryCount = 0;
+        var maxRetries = 20; // 10 segundos máximo
+        var retryInterval = setInterval(function() {
+          retryCount++;
+          var elements = document.getElementsByClassName('google-translate-widget');
+          if (elements.length > 0) {
+            initializeWidgets();
+            clearInterval(retryInterval);
+          } else if (retryCount >= maxRetries) {
+            console.log('No se encontraron widgets después de 10 segundos');
+            clearInterval(retryInterval);
+          }
+        }, 500);
+      };
       
-      // Reinicializar cuando se añadan nuevos elementos
+      // También observar cambios en el DOM
       if (window.MutationObserver) {
         var observer = new MutationObserver(function(mutations) {
           mutations.forEach(function(mutation) {
@@ -98,6 +121,7 @@
                   var widgets = node.getElementsByClassName('google-translate-widget');
                   for (var i = 0; i < widgets.length; i++) {
                     if (!widgets[i].hasChildNodes() && window.google && window.google.translate) {
+                      console.log('Inicializando widget desde MutationObserver');
                       new google.translate.TranslateElement({
                         pageLanguage: 'es',
                         includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
@@ -111,7 +135,15 @@
             }
           });
         });
-        observer.observe(document.body, { childList: true, subtree: true });
+        
+        // Esperar a que el DOM esté listo antes de observar
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function() {
+            observer.observe(document.body, { childList: true, subtree: true });
+          });
+        } else {
+          observer.observe(document.body, { childList: true, subtree: true });
+        }
       }
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" 
