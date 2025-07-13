@@ -1,8 +1,26 @@
 import { Globe } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+// Declaración de tipos para window.google
+declare global {
+  interface Window {
+    google?: {
+      translate: {
+        TranslateElement: {
+          new(options: any, element: HTMLElement): void;
+          InlineLayout: {
+            SIMPLE: number;
+          };
+        };
+      };
+    };
+  }
+}
 
 export function GoogleTranslateWidget() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const initAttempted = useRef(false);
 
   useEffect(() => {
     // Añadir estilos personalizados solo una vez
@@ -69,38 +87,68 @@ export function GoogleTranslateWidget() {
       document.head.appendChild(style);
     }
 
-    // Verificar si el widget se carga
-    const checkWidget = setInterval(() => {
-      const widgets = document.getElementsByClassName('google-translate-widget');
-      const googWidgets = document.getElementsByClassName('goog-te-gadget');
+    // Función para inicializar el widget directamente
+    const initializeWidget = () => {
+      if (!containerRef.current || initAttempted.current || isLoaded) return;
       
-      if (widgets.length > 0 && (widgets[0].hasChildNodes() || googWidgets.length > 0)) {
-        console.log('Google Translate widget detectado');
-        setIsLoaded(true);
-        clearInterval(checkWidget);
-      }
-    }, 500);
+      const checkAndInit = () => {
+        if (window.google?.translate && !initAttempted.current) {
+          try {
+            initAttempted.current = true;
+            console.log('Inicializando widget Google Translate directamente');
+            
+            new window.google.translate.TranslateElement({
+              pageLanguage: 'es',
+              includedLanguages: 'es,ca,en,fr,de,it,pt,ru,zh,ja,ar',
+              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false
+            }, containerRef.current);
+            
+            setIsLoaded(true);
+            console.log('Widget inicializado correctamente');
+          } catch (error) {
+            console.error('Error creando widget:', error);
+            initAttempted.current = false; // Permitir reintentos
+          }
+        }
+      };
+      
+      // Intentar inmediatamente
+      checkAndInit();
+      
+      // Si no funciona, reintentar cada 1 segundo hasta 10 intentos
+      let attempts = 0;
+      const retryInterval = setInterval(() => {
+        attempts++;
+        if (window.google?.translate && !initAttempted.current) {
+          checkAndInit();
+          clearInterval(retryInterval);
+        } else if (attempts >= 10) {
+          console.log('No se pudo inicializar Google Translate después de 10 intentos');
+          clearInterval(retryInterval);
+        }
+      }, 1000);
+      
+      return () => clearInterval(retryInterval);
+    };
 
-    // Limpiar interval después de 10 segundos
-    const timeout = setTimeout(() => {
-      clearInterval(checkWidget);
-      const googWidgets = document.getElementsByClassName('goog-te-gadget');
-      if (googWidgets.length === 0) {
-        console.log('Google Translate no se cargó - verificar red');
-      }
-    }, 10000);
-
+    // Inicializar después de un pequeño delay para dar tiempo a que se cargue el script
+    const timer = setTimeout(initializeWidget, 500);
+    
     return () => {
-      clearInterval(checkWidget);
+      clearTimeout(timer);
     };
   }, []);
 
   return (
     <div className="flex items-center gap-2">
       <Globe className="h-4 w-4 text-gray-600" />
-      <div className="google-translate-widget inline-block">
+      <div 
+        ref={containerRef}
+        className="inline-block min-w-[100px]"
+      >
         {!isLoaded && (
-          <span className="text-xs text-gray-400">Cargando...</span>
+          <span className="text-xs text-gray-400">Traducir</span>
         )}
       </div>
     </div>
