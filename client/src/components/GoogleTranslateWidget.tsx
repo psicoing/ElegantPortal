@@ -72,21 +72,21 @@ export function GoogleTranslateWidget() {
     // Verificar si el widget se carga
     const checkWidget = setInterval(() => {
       const widgets = document.getElementsByClassName('google-translate-widget');
-      for (let i = 0; i < widgets.length; i++) {
-        if (widgets[i].hasChildNodes()) {
-          console.log('Google Translate widget cargado exitosamente');
-          setIsLoaded(true);
-          clearInterval(checkWidget);
-          break;
-        }
+      const googWidgets = document.getElementsByClassName('goog-te-gadget');
+      
+      if (widgets.length > 0 && (widgets[0].hasChildNodes() || googWidgets.length > 0)) {
+        console.log('Google Translate widget detectado');
+        setIsLoaded(true);
+        clearInterval(checkWidget);
       }
     }, 500);
 
     // Limpiar interval después de 10 segundos
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       clearInterval(checkWidget);
-      if (!isLoaded) {
-        console.log('Google Translate no se cargó en 10 segundos');
+      const googWidgets = document.getElementsByClassName('goog-te-gadget');
+      if (googWidgets.length === 0) {
+        console.log('Google Translate no se cargó - verificar red');
       }
     }, 10000);
 
