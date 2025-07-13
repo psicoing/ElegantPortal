@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, Phone, User2, Users } from "lucide-react";
 import { ContactModal } from "./ContactModal";
 import { WorkWithUsModal } from "./WorkWithUsModal";
-import { LanguageSelector } from "./LanguageSelector";
+import { SimpleLanguageSelector } from "./SimpleLanguageSelector";
 import { ThemeToggle } from "./ThemeToggle";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
@@ -66,7 +66,7 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
             </>
           )}
           <ThemeToggle />
-          <LanguageSelector />
+          <SimpleLanguageSelector />
           <Button 
             variant="ghost"
             size="icon"
