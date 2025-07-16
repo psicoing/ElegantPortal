@@ -8,12 +8,14 @@ import {
   Users,
   HandHelping,
   Mail,
-  Handshake
+  Handshake,
+  User
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { InvestorsModal } from "./InvestorsModal";
 import { ContactModal } from "./ContactModal";
 import { WorkWithUsModal } from "./WorkWithUsModal";
+import { AboutUsModal } from "./AboutUsModal";
 import { GoogleTranslateWidget } from "./GoogleTranslateWidget";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
@@ -102,6 +104,10 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
               <FolderKanban className="h-5 w-5 text-primary" />
               {t('nav.projects')}
             </Link>
+            <div className="flex items-center gap-3 py-2 border-b border-gray-100">
+              <User className="h-5 w-5 text-primary" />
+              <AboutUsModal />
+            </div>
             <Link href="/investors" 
               className="font-sans font-medium text-gray-800 hover:text-primary transition py-2 border-b border-gray-100 flex items-center gap-3"
               onClick={() => closeMobileMenu()}

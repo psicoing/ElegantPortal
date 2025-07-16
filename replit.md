@@ -114,6 +114,7 @@ Changelog:
 - January 13, 2025. Enhanced multilingual support with automatic language detection in translation modal - supports Spanish, English, and French with fallback to Spanish. All content (titles, instructions, tips) adapts to user's browser language preference
 - January 14, 2025. Added Google Search Console verification meta tag (google-site-verification) for SEO optimization and search engine indexing
 - January 14, 2025. Added additional Google Search Console verification meta tags for multiple property configurations and enhanced SEO management
+- January 14, 2025. Created comprehensive "Nosotros" section in mobile menu featuring detailed professional profile of Ramón Molons de San Román (Colegiado Nº 7851), including academic credentials (UAB Psychology, UOC Telecommunications, UB Biomathematics), 30+ years experience, current projects (NFLOW, NEURON MEG, Tickets Plusalud), and complete contact information to enhance service credibility
 
 ## User Preferences
 
