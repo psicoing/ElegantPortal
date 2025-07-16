@@ -111,6 +111,8 @@ Changelog:
 - January 3, 2025. Added flexibility clause to employment terms: possibility of starting with part-time hours, evolving to full-time based on performance evaluation, while maintaining 20% commission rate regardless of working hours
 - January 13, 2025. Replaced Google Translate widget with custom LanguageSelector component due to development environment limitations. New selector supports 11 languages (Spanish, Catalan, English, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Arabic) with elegant notification system that opens Google Translate in new tab for full page translation
 - January 13, 2025. Implemented NFLOW-style Google Translate system: replaced problematic external widgets with educational modal that teaches users to activate Google Translate natively in their browser. Provides instructions for desktop (Chrome/Edge) and mobile devices, ensuring 100+ language support without CORS issues or performance problems
+- January 13, 2025. Enhanced multilingual support with automatic language detection in translation modal - supports Spanish, English, and French with fallback to Spanish. All content (titles, instructions, tips) adapts to user's browser language preference
+- January 14, 2025. Added Google Search Console verification meta tag (google-site-verification) for SEO optimization and search engine indexing
 
 ## User Preferences
 
