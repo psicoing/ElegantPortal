@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
+import { ServicesModal } from "@/components/ServicesModal";
 
 export function ParallaxHero() {
   const { t } = useLanguage();
@@ -60,6 +61,14 @@ export function ParallaxHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
+          <ServicesModal>
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            >
+              Servicios
+            </Button>
+          </ServicesModal>
           <Link href="/filantropia">
             <Button 
               size="lg" 
