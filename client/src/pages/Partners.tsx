@@ -138,40 +138,82 @@ export default function Partners() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-gradient-to-br from-primary/5 to-blue-500/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-blue-50 to-indigo-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12"
+            className="text-center"
           >
-            <Card className="max-w-2xl mx-auto border-2 border-primary bg-gradient-to-br from-white to-primary/5">
-              <CardHeader className="text-center">
-                <div className="flex items-center justify-center mb-4">
-                  <Euro className="h-12 w-12 text-primary" />
-                </div>
-                <CardTitle className="text-3xl md:text-4xl font-bold text-primary">
-                  Precio Único: 2.500 € / anual
-                </CardTitle>
-                <CardDescription className="text-lg">
-                  Inversión completa que incluye todo lo necesario
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <benefit.icon className={`h-6 w-6 ${benefit.color} flex-shrink-0 mt-1`} />
-                      <div>
-                        <h4 className="font-semibold text-gray-900">{benefit.title}</h4>
-                        <p className="text-gray-600">{benefit.description}</p>
-                      </div>
+            {/* Main Pricing Card */}
+            <div className="relative bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden mb-12">
+              {/* Gradient Header */}
+              <div className="bg-gradient-to-r from-primary via-blue-600 to-indigo-600 px-8 py-12 text-white relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
+                      <Euro className="h-16 w-16 text-white" />
                     </div>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                    Precio Único: 2.500 €
+                  </h2>
+                  <div className="text-xl md:text-2xl font-medium text-blue-100 mb-2">
+                    / anual
+                  </div>
+                  <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+                    Inversión completa que incluye todo lo necesario
+                  </p>
+                </div>
+              </div>
+
+              {/* Benefits Grid */}
+              <div className="px-8 py-12">
+                <div className="grid md:grid-cols-2 gap-8">
+                  {benefits.map((benefit, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300"
+                    >
+                      <div className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br ${
+                        index === 0 ? 'from-blue-500 to-blue-600' :
+                        index === 1 ? 'from-green-500 to-green-600' :
+                        index === 2 ? 'from-purple-500 to-purple-600' :
+                        index === 3 ? 'from-orange-500 to-orange-600' :
+                        'from-teal-500 to-teal-600'
+                      } flex items-center justify-center shadow-lg`}>
+                        <benefit.icon className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-lg font-bold text-gray-900 mb-2">
+                          {benefit.title}
+                        </h4>
+                        <p className="text-gray-600 leading-relaxed">
+                          {benefit.description}
+                        </p>
+                      </div>
+                    </motion.div>
                   ))}
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="px-8 pb-8">
+                <div className="bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-2xl p-6 text-center border border-primary/20">
+                  <p className="text-lg font-semibold text-gray-900 mb-2">
+                    ¿Todo incluido sin sorpresas?
+                  </p>
+                  <p className="text-gray-600">
+                    Sí, una sola inversión anual que cubre licencia, herramientas, formación y soporte completo
+                  </p>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
