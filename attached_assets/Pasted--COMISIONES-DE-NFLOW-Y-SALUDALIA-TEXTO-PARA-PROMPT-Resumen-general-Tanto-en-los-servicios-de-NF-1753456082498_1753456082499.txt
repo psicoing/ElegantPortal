@@ -1,0 +1,46 @@
+🧾 COMISIONES DE NFLOW Y SALUDALIA (TEXTO PARA PROMPT)
+Resumen general:
+Tanto en los servicios de NFLOW como en los de SALUDALIA se aplica una comisión fija del 40% sobre todos los planes contratados por los usuarios. El profesional, creador o titular del servicio recibe automáticamente el 60% restante del importe pagado. Esta estructura es sencilla, transparente y se aplica de forma automática en todos los niveles de suscripción.
+
+🔹 ¿Por qué se aplica esta comisión del 40%?
+La comisión del 40% se destina a cubrir todos los costes asociados al funcionamiento y crecimiento de la plataforma. Esto incluye:
+
+Infraestructura técnica (servidores, mantenimiento, escalabilidad)
+
+Procesamiento de pagos mediante Stripe o PayPal
+
+Mantenimiento del sistema de suscripciones
+
+Desarrollo de nuevas funcionalidades
+
+Costes legales y de cumplimiento normativo
+
+Campañas de marketing y captación de usuarios
+
+Soporte técnico general
+
+Este modelo de comisiones permite ofrecer un entorno automatizado, sin personal administrativo, y mantener precios accesibles para los usuarios finales.
+
+🟣 EJEMPLOS DE GANANCIAS EN NFLOW (A 12 MESES)
+Si un usuario contrata el Plan Básico de NFLOW, paga 2,99 euros al mes. El creador recibe 1,79 euros al mes. En un año completo, eso supone 21,48 euros netos por usuario.
+
+Si el usuario contrata el Plan Pro, que cuesta 5,99 euros al mes, el profesional gana 3,59 euros al mes, lo que suma 43,08 euros netos al año.
+
+En el caso del Plan Premium, el usuario paga 7,99 euros mensuales. El ingreso neto para el profesional es de 4,79 euros al mes, alcanzando 57,48 euros netos al año.
+
+Si el usuario opta por el Plan Anual Total, paga 49 euros una sola vez. El 60% neto es 29,40 euros. Este ingreso se cobra una sola vez, pero cubre 12 meses completos de servicio.
+
+🟢 EJEMPLOS DE GANANCIAS EN SALUDALIA (A 12 MESES)
+El Plan Básico cuesta 9,99 euros cada trimestre. El profesional recibe 5,99 euros por cada periodo de tres meses. A lo largo del año (cuatro trimestres), eso suma 23,96 euros netos por usuario.
+
+El Plan Avanzado cuesta 15,99 euros por trimestre. El ingreso neto trimestral es de 9,59 euros, lo que da un total anual de 38,36 euros.
+
+El Plan Premium cuesta 19,99 euros por trimestre. El profesional recibe 11,99 euros cada vez. Eso da 47,96 euros netos al año por usuario.
+
+El Plan Pro APP cuesta 75 euros al mes. El ingreso neto mensual es de 45 euros. En 12 meses, el profesional obtiene 540 euros netos por usuario que mantiene ese plan activo durante todo el año.
+
+✅ CONCLUSIÓN
+Todos los planes de NFLOW y SALUDALIA están sujetos a una comisión automática del 40%. El 60% restante del importe pagado por el usuario se transfiere al profesional responsable del servicio. Esto permite un modelo escalable, automatizado y sostenible, sin complicaciones ni estructuras administrativas pesadas.
+
+Este sistema también garantiza que el profesional se beneficie directamente del uso real de su servicio por parte de los usuarios, sin necesidad de gestiones intermedias, sin facturación manual ni atención al cliente directa. Todo funciona de manera eficiente, profesional y sin postureo.
+
