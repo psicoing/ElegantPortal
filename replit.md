@@ -116,7 +116,8 @@ Changelog:
 - January 14, 2025. Added additional Google Search Console verification meta tags for multiple property configurations and enhanced SEO management
 - January 14, 2025. Created comprehensive "Nosotros" section in mobile menu featuring detailed professional profile of Ramón Molons de San Román (Colegiado Nº 7851), including academic credentials (UAB Psychology, UOC Telecommunications, UB Biomathematics), 30+ years experience, current projects (NFLOW, NEURON MEG, Tickets Plusalud), and complete contact information to enhance service credibility
 - January 21, 2025. Added "Servicios" button to main hero section alongside "Filantropía" and "Inversores" buttons. Created comprehensive ServicesModal component showcasing all 11 Grupo JOBDA services (APPIA, NFLOW, SINAPSY, NEURONMEG, EJOBS, SALUDALIA, TICKETS PLUSALUD, TECNOAPP, TELECOS, C++, TALENTPOOL) with detailed descriptions, icons, and professional presentation in an elegant modal interface
-- January 21, 2025. Completely redesigned Partners page (/partners) with new "Política de Partners" content featuring 2,500€ annual licensing model for autonomous professionals. Updated content includes commercial exploitation license details, professional profiles (psychologists, coaches, HR professionals, educators), benefits breakdown, and automatic renewal conditions based on performance results
+- January 21, 2025. Completely redesigned Partners page (/partners) with new "Política de Partners" content featuring 2,500€ annual licensing model for autonomous professionals. Updated content includes commercial exploitation license details, benefits breakdown, and automatic renewal conditions based on performance results
+- January 21, 2025. Simplified Partners page content by removing professional profiles section and "integrating into daily work" text, keeping only the core partner definition for autonomous professionals without exclusive dedication
 
 ## User Preferences
 

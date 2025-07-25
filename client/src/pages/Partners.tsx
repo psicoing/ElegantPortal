@@ -63,15 +63,7 @@ export default function Partners() {
     }
   ];
 
-  const professionalProfiles = [
-    "Psicólogo",
-    "Coach", 
-    "Orientador laboral",
-    "Técnico de RRHH",
-    "Docente",
-    "Profesional del sector salud",
-    "Profesional del sector educación"
-  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
@@ -135,24 +127,10 @@ export default function Partners() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p className="text-lg text-gray-700 leading-relaxed">
                   Un partner es un <strong>profesional autónomo</strong> que adquiere el derecho a explotar comercialmente 
                   JOBDA, NFlow o Saludalia como parte de su actividad habitual, <strong>sin dedicación exclusiva</strong>.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Puedes integrarlo en tu día a día como:
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4">
-                  {professionalProfiles.map((profile, index) => (
-                    <Badge 
-                      key={index} 
-                      variant="outline" 
-                      className="justify-center py-2 text-sm"
-                    >
-                      {profile}
-                    </Badge>
-                  ))}
-                </div>
               </CardContent>
             </Card>
           </motion.div>
