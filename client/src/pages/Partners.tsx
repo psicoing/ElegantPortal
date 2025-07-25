@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake } from "lucide-react";
+import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Link } from "wouter";
 import { useState } from "react";
+import { ContactModal } from "@/components/ContactModal";
 
 export default function Partners() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -263,6 +264,206 @@ export default function Partners() {
         </div>
       </section>
 
+      {/* Commission Structure Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Estructura de Comisiones
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Sistema transparente y automático para NFLOW y SALUDALIA
+            </p>
+          </motion.div>
+
+          {/* Commission Overview */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"
+            >
+              <div className="flex items-center mb-6">
+                <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-3">
+                  <TrendingUp className="h-8 w-8 text-white" />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-2xl font-bold text-gray-900">60% para ti</h3>
+                  <p className="text-gray-600">Ingresos directos automáticos</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Recibes automáticamente el <strong>60% de todos los pagos</strong> realizados por 
+                usuarios en tus servicios NFLOW y SALUDALIA, sin gestiones adicionales.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"
+            >
+              <div className="flex items-center mb-6">
+                <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-3">
+                  <Settings className="h-8 w-8 text-white" />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-2xl font-bold text-gray-900">40% plataforma</h3>
+                  <p className="text-gray-600">Infraestructura y soporte</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                El <strong>40% restante</strong> cubre infraestructura técnica, procesamiento de pagos, 
+                desarrollo, marketing y soporte completo del sistema.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Revenue Examples */}
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* NFLOW Examples */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"
+            >
+              <div className="flex items-center mb-6">
+                <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-3">
+                  <Brain className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 ml-4">NFLOW - Ingresos Anuales</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Básico</span>
+                    <p className="text-sm text-gray-600">2,99€/mes × 60%</p>
+                  </div>
+                  <span className="text-lg font-bold text-purple-600">21,48€/año</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Pro</span>
+                    <p className="text-sm text-gray-600">5,99€/mes × 60%</p>
+                  </div>
+                  <span className="text-lg font-bold text-purple-600">43,08€/año</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Premium</span>
+                    <p className="text-sm text-gray-600">7,99€/mes × 60%</p>
+                  </div>
+                  <span className="text-lg font-bold text-purple-600">57,48€/año</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-purple-100 to-purple-200 rounded-xl border-2 border-purple-300">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Anual Total</span>
+                    <p className="text-sm text-gray-600">49€/año × 60%</p>
+                  </div>
+                  <span className="text-xl font-bold text-purple-700">29,40€/año</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* SALUDALIA Examples */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"
+            >
+              <div className="flex items-center mb-6">
+                <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-3">
+                  <Heart className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 ml-4">SALUDALIA - Ingresos Anuales</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-xl">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Básico</span>
+                    <p className="text-sm text-gray-600">9,99€/trimestre × 60%</p>
+                  </div>
+                  <span className="text-lg font-bold text-green-600">23,96€/año</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-xl">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Avanzado</span>
+                    <p className="text-sm text-gray-600">15,99€/trimestre × 60%</p>
+                  </div>
+                  <span className="text-lg font-bold text-green-600">38,36€/año</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-xl">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Premium</span>
+                    <p className="text-sm text-gray-600">19,99€/trimestre × 60%</p>
+                  </div>
+                  <span className="text-lg font-bold text-green-600">47,96€/año</span>
+                </div>
+                
+                <div className="flex justify-between items-center p-4 bg-gradient-to-r from-green-100 to-green-200 rounded-xl border-2 border-green-300">
+                  <div>
+                    <span className="font-semibold text-gray-900">Plan Pro APP</span>
+                    <p className="text-sm text-gray-600">75€/mes × 60%</p>
+                  </div>
+                  <span className="text-xl font-bold text-green-700">540€/año</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Key Benefits */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.0 }}
+            className="mt-16"
+          >
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-6 text-center">Ventajas del Sistema Automático</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Zap className="h-8 w-8" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Sin Gestiones</h4>
+                  <p className="text-blue-100 text-sm">Todo automático, sin facturación manual ni atención directa</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <DollarSign className="h-8 w-8" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Pagos Directos</h4>
+                  <p className="text-blue-100 text-sm">Transferencias automáticas del 60% de cada suscripción</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <BarChart3 className="h-8 w-8" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Escalable</h4>
+                  <p className="text-blue-100 text-sm">Ingresos proporcionales al uso real de tus servicios</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-primary to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -278,12 +479,16 @@ export default function Partners() {
               Únete a nuestra red de profesionales y comienza tu camino hacia la independencia comercial
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-6 text-lg">
-                Solicitar Información
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
-                Descargar Condiciones
-              </Button>
+              <ContactModal variant="button" text="Solicitar Información">
+                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-6 text-lg">
+                  Solicitar Información
+                </Button>
+              </ContactModal>
+              <ContactModal variant="button" text="Descargar Condiciones">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
+                  Descargar Condiciones
+                </Button>
+              </ContactModal>
             </div>
           </motion.div>
         </div>
