@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3 } from "lucide-react";
+import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +11,7 @@ import { ContactModal } from "@/components/ContactModal";
 
 export default function Partners() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showCommercialModal, setShowCommercialModal] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -494,7 +495,186 @@ export default function Partners() {
         </div>
       </section>
 
+      {/* Commercial Contract Section */}
+      <section className="py-16 bg-white border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl p-3">
+                <Shield className="h-8 w-8 text-white" />
+              </div>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Modalidad: Contrato Mercantil
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Colaboración profesional independiente entre iguales, sin relación laboral tradicional
+            </p>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg"
+              onClick={() => setShowCommercialModal(true)}
+            >
+              Ver detalles del contrato mercantil
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
       <Footer />
+
+      {/* Commercial Contract Modal */}
+      {showCommercialModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+          >
+            <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between rounded-t-2xl">
+              <h2 className="text-2xl font-bold text-gray-900">Contrato Mercantil - JOBDA</h2>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowCommercialModal(false)}
+              >
+                <X className="h-5 w-5" />
+              </Button>
+            </div>
+            
+            <div className="p-6 space-y-8">
+              {/* Introduction */}
+              <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                  <Briefcase className="h-6 w-6 text-blue-600" />
+                  ¿Qué implica trabajar con contrato mercantil?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Trabajar con contrato mercantil significa que no existe relación laboral tradicional (empleado-empresa), 
+                  sino una relación entre profesionales independientes. El profesional presta servicios por cuenta propia, 
+                  sin vínculo de subordinación ni dependencia jerárquica directa con el grupo JOBDA.
+                </p>
+                <p className="text-gray-700 leading-relaxed mt-4">
+                  Es un acuerdo de igual a igual, entre partes que colaboran para desarrollar una actividad concreta, 
+                  y donde ambas asumen responsabilidades independientes.
+                </p>
+              </div>
+
+              {/* Key Differences */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                  <Shield className="h-6 w-6 text-orange-600" />
+                  Diferencias clave respecto a un contrato laboral
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {[
+                    "No se genera antigüedad, vacaciones pagadas ni indemnización por fin de contrato",
+                    "No se cotiza en el régimen general de la Seguridad Social, sino como autónomo",
+                    "El profesional emite factura por sus servicios, no recibe una nómina",
+                    "No existe jornada fija ni obligación de cumplimiento horario, pero sí de resultados pactados",
+                    "El profesional asume riesgos y beneficios de su actividad"
+                  ].map((difference, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-orange-50 rounded-lg border border-orange-200">
+                      <CheckCircle className="h-5 w-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700 text-sm">{difference}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Professional Obligations */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                  <Users className="h-6 w-6 text-red-600" />
+                  Obligaciones del profesional con JOBDA
+                </h3>
+                <div className="space-y-4">
+                  {[
+                    {
+                      title: "Alta como autónomo o empresa",
+                      description: "El profesional debe estar dado de alta en el régimen correspondiente (RETA u otra forma jurídica válida) y cumplir con sus obligaciones fiscales y tributarias."
+                    },
+                    {
+                      title: "Facturación mensual o periódica",
+                      description: "El profesional deberá emitir factura a JOBDA o a través de las plataformas asociadas por los importes generados, incluyendo el IVA si corresponde."
+                    },
+                    {
+                      title: "Cumplimiento de servicios",
+                      description: "El profesional se compromete a cumplir los servicios o productos acordados en tiempo y forma, según los estándares definidos en el contrato."
+                    },
+                    {
+                      title: "Confidencialidad",
+                      description: "Debe mantener la confidencialidad sobre todos los datos, procesos, usuarios o estrategias internas de JOBDA y de sus productos (como NFLOW o SALUDALIA)."
+                    },
+                    {
+                      title: "Responsabilidad directa sobre su actividad",
+                      description: "Cualquier error, incumplimiento o mala praxis recae directamente sobre el profesional. JOBDA no asume responsabilidad sobre su gestión como autónomo."
+                    },
+                    {
+                      title: "Respeto a la imagen de marca",
+                      description: "No puede utilizar el nombre, imagen, logos o plataformas del grupo JOBDA con fines distintos a los acordados, ni actuar en nombre del grupo sin autorización expresa."
+                    },
+                    {
+                      title: "Obligación de comunicar incidencias",
+                      description: "En caso de baja como autónomo, problemas legales o incumplimiento de normativa, debe comunicarse de inmediato a JOBDA para revisar el acuerdo."
+                    }
+                  ].map((obligation, index) => (
+                    <div key={index} className="bg-red-50 rounded-lg p-4 border border-red-200">
+                      <h4 className="font-semibold text-gray-900 mb-2">{obligation.title}</h4>
+                      <p className="text-gray-700 text-sm leading-relaxed">{obligation.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Benefits */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                  <TrendingUp className="h-6 w-6 text-green-600" />
+                  ¿Qué obtiene el profesional?
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {[
+                    "Acceso a plataformas tecnológicas de primer nivel sin inversión inicial",
+                    "Soporte técnico y estructural",
+                    "Participación directa en los ingresos generados",
+                    "Libertad total para organizar su trabajo, sin control horario ni dependencia jerárquica",
+                    "Escalabilidad: sus ingresos pueden crecer en función del rendimiento y los usuarios captados"
+                  ].map((benefit, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-green-50 rounded-lg border border-green-200">
+                      <Star className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700 text-sm">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Summary */}
+              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-6 text-white">
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-3">
+                  <CheckCircle className="h-6 w-6" />
+                  Resumen claro
+                </h3>
+                <p className="leading-relaxed mb-4">
+                  Firmar un contrato mercantil con JOBDA significa actuar como <strong>colaborador externo, no como empleado</strong>. 
+                  Tú marcas tu ritmo, pero también asumes tus obligaciones. JOBDA pone la estructura, tú pones tu talento. 
+                  Si lo haces bien, ganas más. Si no cumples, el contrato se rescinde sin indemnización.
+                </p>
+                <p className="leading-relaxed font-semibold">
+                  Esto no es una nómina: es un trato entre profesionales. Si estás dispuesto a jugar como profesional libre, 
+                  con compromiso y cabeza, el sistema está diseñado para que ambos ganen.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 }
