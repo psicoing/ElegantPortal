@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3, X } from "lucide-react";
+import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3, X, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -299,10 +299,20 @@ export default function Partners() {
                   <p className="text-gray-600">Ingresos directos automáticos</p>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed">
-                Recibes automáticamente el <strong>60% de todos los pagos</strong> realizados por 
-                usuarios en tus servicios NFLOW y SALUDALIA, sin gestiones adicionales.
-              </p>
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Recibes automáticamente el <strong>60% de todos los pagos</strong> realizados por 
+                  usuarios en tus servicios NFLOW y SALUDALIA, sin gestiones adicionales.
+                </p>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-blue-900 mb-2">¿Qué significa "por usuario alcanzado"?</h4>
+                  <p className="text-blue-800 text-sm">
+                    Cada persona que se registra y utiliza tus servicios NFLOW o SALUDALIA genera 
+                    ingresos recurrentes. Tu comisión del 60% se aplica automáticamente a cada 
+                    suscripción activa que consigas.
+                  </p>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div
@@ -428,12 +438,118 @@ export default function Partners() {
             </motion.div>
           </div>
 
-          {/* Key Benefits */}
+          {/* User Scale Examples */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.0 }}
             className="mt-16"
+          >
+            <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+                Ejemplos de Ingresos por Escala de Usuarios
+              </h3>
+              <p className="text-center text-indigo-100 mb-8 max-w-3xl mx-auto">
+                Calcula tus ingresos anuales según el número de usuarios que consigas para cada plataforma
+              </p>
+              
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* NFLOW Scale Examples */}
+                <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                  <div className="flex items-center mb-6">
+                    <div className="bg-purple-500 rounded-lg p-2">
+                      <Brain className="h-6 w-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold ml-3">NFLOW - Escalas de Crecimiento</h4>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white/10 rounded-lg p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-lg">50 usuarios Plan Pro</span>
+                        <span className="text-2xl font-bold text-yellow-300">2.154€/año</span>
+                      </div>
+                      <p className="text-sm text-purple-100">50 × 43,08€ = 2.154€ anuales</p>
+                    </div>
+                    
+                    <div className="bg-white/10 rounded-lg p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-lg">100 usuarios Plan Pro</span>
+                        <span className="text-2xl font-bold text-yellow-300">4.308€/año</span>
+                      </div>
+                      <p className="text-sm text-purple-100">100 × 43,08€ = 4.308€ anuales</p>
+                    </div>
+                    
+                    <div className="bg-white/10 rounded-lg p-4 border-2 border-yellow-400">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-lg">300 usuarios Plan Pro</span>
+                        <span className="text-3xl font-bold text-yellow-300">12.924€/año</span>
+                      </div>
+                      <p className="text-sm text-purple-100">300 × 43,08€ = 12.924€ anuales</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* SALUDALIA Scale Examples */}
+                <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                  <div className="flex items-center mb-6">
+                    <div className="bg-green-500 rounded-lg p-2">
+                      <Heart className="h-6 w-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold ml-3">SALUDALIA - Escalas de Crecimiento</h4>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white/10 rounded-lg p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-lg">50 usuarios Plan Avanzado</span>
+                        <span className="text-2xl font-bold text-green-300">1.918€/año</span>
+                      </div>
+                      <p className="text-sm text-green-100">50 × 38,36€ = 1.918€ anuales</p>
+                    </div>
+                    
+                    <div className="bg-white/10 rounded-lg p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-lg">100 usuarios Plan Avanzado</span>
+                        <span className="text-2xl font-bold text-green-300">3.836€/año</span>
+                      </div>
+                      <p className="text-sm text-green-100">100 × 38,36€ = 3.836€ anuales</p>
+                    </div>
+                    
+                    <div className="bg-white/10 rounded-lg p-4 border-2 border-green-400">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-semibold text-lg">300 usuarios Plan Avanzado</span>
+                        <span className="text-3xl font-bold text-green-300">11.508€/año</span>
+                      </div>
+                      <p className="text-sm text-green-100">300 × 38,36€ = 11.508€ anuales</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 bg-white/10 rounded-xl p-6 text-center">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-3">
+                    <Calculator className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+                <h4 className="text-xl font-bold mb-2">Ingresos Combinados Potenciales</h4>
+                <p className="text-indigo-100 mb-4">
+                  Con 300 usuarios en ambas plataformas: <span className="text-2xl font-bold text-yellow-300">24.432€/año</span>
+                </p>
+                <p className="text-sm text-indigo-200">
+                  Estos cálculos son aproximados y dependen de la retención de usuarios y planes elegidos
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Key Benefits */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2 }}
+            className="mt-12"
           >
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6 text-center">Ventajas del Sistema Automático</h3>
