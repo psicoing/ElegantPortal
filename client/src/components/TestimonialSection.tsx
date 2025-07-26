@@ -25,6 +25,30 @@ const testimonials = [
     comment: "Siempre dispuestos hasta encontrar el candidato ideal. Su persistencia y profesionalidad en el proceso de selección es admirable.",
     rating: 5,
     color: "accent"
+  },
+  {
+    initials: "ME",
+    name: "Molí de l'Escala",
+    role: "Empresa Cliente",
+    comment: "Nos encontró a un cocinero que vivía al lado del hotel, increíble. Muy dedicado a su trabajo y con gran atención al detalle.",
+    rating: 5,
+    color: "primary"
+  },
+  {
+    initials: "PG",
+    name: "Piscinas Gemil",
+    role: "Empresa Cliente",
+    comment: "Nos encontró el personal que faltaba y con unas condiciones justas. Buen profesional con gran capacidad de gestión.",
+    rating: 5,
+    color: "secondary"
+  },
+  {
+    initials: "AT",
+    name: "Airtem",
+    role: "Empresa Cliente",
+    comment: "Profesional desde un principio, no acaba el trabajo hasta encontrar el perfil que se le solicitó. Muy perseverante.",
+    rating: 5,
+    color: "accent"
   }
 ];
 
@@ -47,7 +71,7 @@ export function TestimonialSection() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div 
               key={index}
