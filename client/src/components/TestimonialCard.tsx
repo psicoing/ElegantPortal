@@ -23,23 +23,27 @@ export function TestimonialCard({
     switch (color) {
       case 'primary':
         return {
-          bg: 'bg-primary/10',
-          text: 'text-primary'
+          bg: 'bg-blue-600',
+          text: 'text-white',
+          star: 'text-blue-600'
         };
       case 'secondary':
         return {
-          bg: 'bg-secondary-100',
-          text: 'text-secondary-600'
+          bg: 'bg-green-600',
+          text: 'text-white',
+          star: 'text-green-600'
         };
       case 'accent':
         return {
-          bg: 'bg-accent/20',
-          text: 'text-accent'
+          bg: 'bg-purple-600',
+          text: 'text-white',
+          star: 'text-purple-600'
         };
       default:
         return {
-          bg: 'bg-primary/10',
-          text: 'text-primary'
+          bg: 'bg-blue-600',
+          text: 'text-white',
+          star: 'text-blue-600'
         };
     }
   };
@@ -47,7 +51,7 @@ export function TestimonialCard({
   const colors = getColorClass();
 
   const stars = Array.from({ length: rating }, (_, i) => (
-    <Star key={i} className={`h-5 w-5 ${colors.text} fill-current`} />
+    <Star key={i} className={`h-6 w-6 ${colors.star} fill-current`} />
   ));
 
   return (
@@ -58,8 +62,8 @@ export function TestimonialCard({
       <Card className="bg-white">
         <CardContent className="p-6">
           <div className="flex items-center mb-4">
-            <div className={`h-10 w-10 rounded-full ${colors.bg} flex items-center justify-center mr-3`}>
-              <span className={`${colors.text} font-semibold`}>{initials}</span>
+            <div className={`h-14 w-14 rounded-full ${colors.bg} flex items-center justify-center mr-4 shadow-lg`}>
+              <span className={`${colors.text} font-bold text-lg`}>{initials}</span>
             </div>
             <div>
               <h4 className="font-sans font-semibold text-gray-900">{name}</h4>

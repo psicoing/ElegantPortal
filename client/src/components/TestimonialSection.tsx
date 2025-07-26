@@ -62,7 +62,7 @@ export function TestimonialSection() {
                 role={testimonial.role}
                 comment={testimonial.comment}
                 rating={testimonial.rating}
-                color={testimonial.color}
+                color={testimonial.color as "primary" | "secondary" | "accent"}
               />
             </motion.div>
           ))}
