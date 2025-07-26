@@ -9,6 +9,7 @@ interface TestimonialCardProps {
   comment: string;
   rating: number;
   color: "primary" | "secondary" | "accent";
+  year: string;
 }
 
 export function TestimonialCard({ 
@@ -17,7 +18,8 @@ export function TestimonialCard({
   role, 
   comment, 
   rating, 
-  color 
+  color,
+  year 
 }: TestimonialCardProps) {
   const getColorClass = () => {
     switch (color) {
@@ -67,7 +69,7 @@ export function TestimonialCard({
             </div>
             <div>
               <h4 className="font-sans font-semibold text-gray-900">{name}</h4>
-              <p className="text-sm text-gray-500">{role}</p>
+              <p className="text-sm text-gray-500">{role} • {year}</p>
             </div>
           </div>
           <p className="text-gray-600 text-sm">{comment}</p>

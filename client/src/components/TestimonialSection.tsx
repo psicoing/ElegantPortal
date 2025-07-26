@@ -8,7 +8,8 @@ const testimonials = [
     role: "Empresa Cliente",
     comment: "Siempre han seleccionado con mucha profesionalidad de EJOBS. Su dedicación y calidad en la búsqueda de candidatos es excepcional.",
     rating: 5,
-    color: "primary"
+    color: "primary",
+    year: "2026"
   },
   {
     initials: "GP",
@@ -16,15 +17,17 @@ const testimonials = [
     role: "Empresa Cliente",
     comment: "Nos impresionó su manera de trabajar y dedicación en la búsqueda de perfiles. El nivel de compromiso y profesionalidad es destacable.",
     rating: 5,
-    color: "secondary"
+    color: "secondary",
+    year: "2016"
   },
   {
-    initials: "GP",
+    initials: "MB",
     name: "Mercedes Benz",
     role: "Empresa Cliente",
     comment: "Siempre dispuestos hasta encontrar el candidato ideal. Su persistencia y profesionalidad en el proceso de selección es admirable.",
     rating: 5,
-    color: "accent"
+    color: "accent",
+    year: "2016"
   },
   {
     initials: "ME",
@@ -32,7 +35,8 @@ const testimonials = [
     role: "Empresa Cliente",
     comment: "Nos encontró a un cocinero que vivía al lado del hotel, increíble. Muy dedicado a su trabajo y con gran atención al detalle.",
     rating: 5,
-    color: "primary"
+    color: "primary",
+    year: "2016"
   },
   {
     initials: "PG",
@@ -40,7 +44,8 @@ const testimonials = [
     role: "Empresa Cliente",
     comment: "Nos encontró el personal que faltaba y con unas condiciones justas. Buen profesional con gran capacidad de gestión.",
     rating: 5,
-    color: "secondary"
+    color: "secondary",
+    year: "2020"
   },
   {
     initials: "AT",
@@ -48,7 +53,8 @@ const testimonials = [
     role: "Empresa Cliente",
     comment: "Profesional desde un principio, no acaba el trabajo hasta encontrar el perfil que se le solicitó. Muy perseverante.",
     rating: 5,
-    color: "accent"
+    color: "accent",
+    year: "2021"
   }
 ];
 
@@ -87,6 +93,7 @@ export function TestimonialSection() {
                 comment={testimonial.comment}
                 rating={testimonial.rating}
                 color={testimonial.color as "primary" | "secondary" | "accent"}
+                year={testimonial.year}
               />
             </motion.div>
           ))}
