@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, User2, Users } from "lucide-react";
 import { ContactModal } from "./ContactModal";
-import { WorkWithUsModal } from "./WorkWithUsModal";
+
 import { GoogleTranslateDialog } from "./ui/google-translate-dialog";
 import { ThemeToggle } from "./ThemeToggle";
 import { useLanguage } from "@/lib/language-context";
@@ -53,11 +53,11 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
           {!isMobile && (
             <>
 
-              <WorkWithUsModal
-                variant="icon"
-                icon={<User2 className="h-5 w-5" />}
-                text="Trabaja con nosotros"
-              />
+              <Link href="/partners">
+                <Button variant="ghost" size="icon" className="hover:bg-primary/10">
+                  <User2 className="h-5 w-5" />
+                </Button>
+              </Link>
               <ContactModal
                 variant="icon"
                 icon={<Phone className="h-5 w-5" />}

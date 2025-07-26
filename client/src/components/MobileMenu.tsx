@@ -6,7 +6,6 @@ import {
   Gift, 
   FolderKanban,
   Users,
-  HandHelping,
   Mail,
   Handshake,
   User
@@ -14,7 +13,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { InvestorsModal } from "./InvestorsModal";
 import { ContactModal } from "./ContactModal";
-import { WorkWithUsModal } from "./WorkWithUsModal";
+
 import { AboutUsModal } from "./AboutUsModal";
 import { GoogleTranslateWidget } from "./GoogleTranslateWidget";
 import { useLanguage } from "@/lib/language-context";
@@ -122,10 +121,7 @@ export function MobileMenu({ isOpen, closeMobileMenu }: MobileMenuProps) {
               <Handshake className="h-5 w-5 text-primary" />
               Partners
             </Link>
-            <div className="flex items-center gap-3 py-2 border-b border-gray-100">
-              <HandHelping className="h-5 w-5 text-primary" />
-              <WorkWithUsModal text="Trabaja con nosotros" />
-            </div>
+
             <div className="flex items-center gap-3 py-2 border-b border-gray-100">
               <Mail className="h-5 w-5 text-primary" />
               <ContactModal text={t('nav.contact')} />
