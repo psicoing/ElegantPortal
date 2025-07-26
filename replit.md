@@ -121,6 +121,8 @@ Changelog:
 - January 21, 2025. Enhanced Partners page pricing section with premium design: larger gradient header with centered Euro icon, improved benefits grid layout with individual gradient cards, animated benefit icons, and added bottom CTA section for better visual hierarchy and user engagement
 - January 21, 2025. Added comprehensive commission structure section to Partners page featuring detailed breakdown of NFLOW and SALUDALIA revenue models with 60%/40% split, specific plan pricing examples, annual earnings calculations, and automated payment system benefits explanation
 - January 21, 2025. Implemented commercial contract section on Partners page with modal displaying complete mercantile contract details including professional obligations, key differences from employment, benefits structure, and clear terms for autonomous collaboration without traditional employer-employee relationship
+- January 26, 2025. Enhanced Partners page commission structure with detailed explanation of "per user reached" concept and comprehensive user scale examples (50, 100, 300 users) for both NFLOW and SALUDALIA platforms, showing potential annual earnings from 2,154€ to 24,432€ combined
+- January 26, 2025. Added Partners service to main Services modal showcasing it covers three main applications: NFLOW (psychological support), SALUDALIA (integral health), and EJOBS (local employment) with 60% commission structure and exclusive licensing model
 
 ## User Preferences
 

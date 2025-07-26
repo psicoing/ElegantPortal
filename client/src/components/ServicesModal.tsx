@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, Globe, Brain, Newspaper, Home, Briefcase, Heart, Gamepad2, Laptop, Radio, Code, Users } from "lucide-react";
+import { X, Globe, Brain, Newspaper, Home, Briefcase, Heart, Gamepad2, Laptop, Radio, Code, Users, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -96,6 +96,13 @@ export function ServicesModal({ children }: ServicesModalProps) {
       title: "Red de Talento para cada sector",
       description: "Tech, Med, Build, Marketing, Finance: desarrolladores, médicos, ingenieros, marketers, analistas financieros...",
       color: "from-indigo-500 to-purple-500"
+    },
+    {
+      name: "PARTNERS",
+      icon: <Handshake className="h-6 w-6" />,
+      title: "Programa de Partners JOBDA",
+      description: "Este servicio abarca tres aplicaciones principales: NFLOW (apoyo psicológico), SALUDALIA (salud integral) y EJOBS (empleo local). Colaboración comercial con licencias exclusivas y comisiones del 60%",
+      color: "from-emerald-500 to-teal-500"
     }
   ];
 
