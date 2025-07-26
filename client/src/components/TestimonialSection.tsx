@@ -19,8 +19,8 @@ const testimonials = [
     color: "secondary"
   },
   {
-    initials: "MB",
-    name: "Mercedes Benz - Garaje Planas",
+    initials: "GP",
+    name: "Mercedes Benz",
     role: "Empresa Cliente",
     comment: "Siempre dispuestos hasta encontrar el candidato ideal. Su persistencia y profesionalidad en el proceso de selección es admirable.",
     rating: 5,
