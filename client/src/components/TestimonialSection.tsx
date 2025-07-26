@@ -3,26 +3,26 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    initials: "AL",
-    name: "Ana López",
-    role: "Usuario de NFLOW",
-    comment: "NFLOW me ha ayudado a gestionar mejor mis emociones. Las conversaciones son sorprendentemente naturales y me siento escuchada.",
+    initials: "OG",
+    name: "Olympia Group",
+    role: "Empresa Cliente",
+    comment: "Siempre han seleccionado con mucha profesionalidad de EJOBS. Su dedicación y calidad en la búsqueda de candidatos es excepcional.",
     rating: 5,
     color: "primary"
   },
   {
-    initials: "MR",
-    name: "Miguel Rodríguez",
-    role: "Usuario de APPIA",
-    comment: "Gracias a APPIA hemos desarrollado soluciones de IA personalizadas para nuestra empresa. La plataforma es intuitiva y los resultados han superado nuestras expectativas.",
+    initials: "GP",
+    name: "García de Pou",
+    role: "Empresa Cliente",
+    comment: "Nos impresionó su manera de trabajar y dedicación en la búsqueda de perfiles. El nivel de compromiso y profesionalidad es destacable.",
     rating: 5,
     color: "secondary"
   },
   {
-    initials: "CG",
-    name: "Carmen García",
-    role: "Usuaria de ambos servicios",
-    comment: "He utilizado tanto NFLOW como APPIA. Ambas plataformas son excelentes, con interfaces limpias y funciones que realmente facilitan mi día a día.",
+    initials: "MB",
+    name: "Mercedes Benz - Garaje Planas",
+    role: "Empresa Cliente",
+    comment: "Siempre dispuestos hasta encontrar el candidato ideal. Su persistencia y profesionalidad en el proceso de selección es admirable.",
     rating: 5,
     color: "accent"
   }
@@ -40,10 +40,10 @@ export function TestimonialSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-sans text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Lo que dicen nuestros usuarios
+            Casos Reales de Éxito
           </h2>
           <p className="text-gray-600">
-            Descubra las experiencias de quienes ya utilizan nuestros servicios.
+            Empresas que confían en EJOBS para encontrar el talento que necesitan.
           </p>
         </motion.div>
         
