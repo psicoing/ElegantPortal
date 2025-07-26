@@ -9,7 +9,7 @@ const testimonials = [
     comment: "Siempre han seleccionado con mucha profesionalidad de EJOBS. Su dedicación y calidad en la búsqueda de candidatos es excepcional.",
     rating: 5,
     color: "primary",
-    year: "2026"
+    year: "2016"
   },
   {
     initials: "GP",
