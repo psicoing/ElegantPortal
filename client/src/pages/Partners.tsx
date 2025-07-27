@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3, X, Calculator } from "lucide-react";
+import { ArrowLeft, Users, Shield, TrendingUp, CheckCircle, Euro, Calendar, Briefcase, Star, Zap, RefreshCw, Target, Award, Handshake, Settings, Brain, Heart, DollarSign, BarChart3, X, Calculator, FileText, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -576,6 +576,100 @@ export default function Partners() {
                   <p className="text-blue-100 text-sm">Ingresos proporcionales al uso real de tus servicios</p>
                 </div>
               </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Selection Process Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <div className="flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-3">
+                <FileText className="h-8 w-8 text-white" />
+              </div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Proceso Selectivo
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Para ser Partner debes superar nuestro proceso de selección
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200"
+          >
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                  <span className="text-blue-600 font-bold">1</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Accede a la plataforma EJOBS
+                  </h3>
+                  <p className="text-gray-600 mb-3">
+                    Dirígete a <strong>ejobs.jobda.es</strong> y busca la oferta específica para Partners.
+                  </p>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <p className="text-blue-800 text-sm font-medium">
+                      📍 Instrucción: Clica directamente sobre la oferta "Partners" en ejobs.jobda.es
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                  <span className="text-green-600 font-bold">2</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Completa el proceso selectivo
+                  </h3>
+                  <p className="text-gray-600">
+                    Sigue las instrucciones del formulario de candidatura y completa todos los pasos requeridos. 
+                    Nuestro equipo evaluará tu perfil profesional y experiencia.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                  <span className="text-purple-600 font-bold">3</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Aprobación y activación
+                  </h3>
+                  <p className="text-gray-600">
+                    Una vez aprobado tu perfil, recibirás las credenciales y acceso completo a todas las 
+                    herramientas y plataformas de Partners.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <a 
+                href="https://ejobs.jobda.es" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 text-lg"
+              >
+                <ExternalLink className="h-5 w-5" />
+                Ir a ejobs.jobda.es
+              </a>
             </div>
           </motion.div>
         </div>
