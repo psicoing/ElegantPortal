@@ -126,6 +126,8 @@ Changelog:
 - January 26, 2025. Replaced generic testimonials with real business cases: Olympia Group, García de Pou, and Mercedes Benz highlighting their positive experiences with EJOBS professional recruitment services. Updated section title to "Casos Reales de Éxito" to emphasize authentic client relationships
 - January 26, 2025. Enhanced testimonial cards with improved visibility: larger logos (14x14px), bold text, solid background colors with white text, bigger stars (h-6 w-6), and shadow effects for better contrast and readability
 - January 26, 2025. Expanded testimonials section to 6 companies adding three new real cases: Molí de l'Escala (chef recruitment), Piscinas Gemil (staff with fair conditions), and Airtem (persistent professional service), displayed in 3x2 grid layout showcasing comprehensive EJOBS client success stories
+- January 28, 2025. Updated impact statistics section: removed "Usuarios Activos", keeping only 3 core metrics (Servicios Integrados: 15, Años de Experiencia: 32, Satisfacción del Cliente: 95%) plus added "Empresa Fundada: 2016"
+- January 28, 2025. Clarified JOBDA brand positioning in origin section: changed description from "especialidad en empleo" to "experiencia tecnológica" and "plataforma de tecnología y multiservicios digitales" to prevent confusion with employment portals
 
 ## User Preferences
 

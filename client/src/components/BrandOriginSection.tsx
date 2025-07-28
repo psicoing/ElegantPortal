@@ -62,8 +62,8 @@ export function BrandOriginSection() {
             </div>
             
             <p className="text-sm text-gray-600 dark:text-gray-300 max-w-lg mx-auto mt-4">
-              De la especialidad en empleo (JOB) y nuestra identidad del Empordà (DA), 
-              nació JOBDA: innovación, trabajo y territorio unidos.
+              De nuestra experiencia tecnológica (JOB) y nuestra identidad del Empordà (DA), 
+              nació JOBDA: plataforma de tecnología y multiservicios digitales.
             </p>
           </div>
         </motion.div>
