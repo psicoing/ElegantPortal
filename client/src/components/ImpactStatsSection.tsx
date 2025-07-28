@@ -18,6 +18,10 @@ export function ImpactStatsSection() {
       end: 95,
       suffix: "%",
       label: t('stats.satisfaction') || "Satisfacción del Cliente"
+    },
+    {
+      end: 2016,
+      label: t('stats.founded') || "Empresa Fundada"
     }
   ];
 
