@@ -7,11 +7,6 @@ export function ImpactStatsSection() {
 
   const stats = [
     {
-      end: 499,
-      suffix: "",
-      label: t('stats.projects') || "Proyectos Desarrollados"
-    },
-    {
       end: 15,
       label: t('stats.services') || "Servicios Integrados"
     },
@@ -20,7 +15,7 @@ export function ImpactStatsSection() {
       label: t('stats.experience') || "Años de Experiencia"
     },
     {
-      end: 99,
+      end: 95,
       suffix: "%",
       label: t('stats.satisfaction') || "Satisfacción del Cliente"
     }
