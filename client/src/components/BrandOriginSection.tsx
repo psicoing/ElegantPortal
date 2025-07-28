@@ -12,7 +12,7 @@ export function BrandOriginSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
-            El Origen de <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">JOBDA</span>
+            Grupo <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">JOBDA</span>
           </h2>
           
           {/* Compact Timeline */}
@@ -66,6 +66,30 @@ export function BrandOriginSection() {
               nació JOBDA: plataforma de tecnología y multiservicios digitales.
             </p>
           </div>
+          
+          {/* Evolution Box */}
+          <motion.div 
+            className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-lg border border-blue-200 dark:border-blue-700"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <div className="flex items-center justify-center mb-4">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                15
+              </div>
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 text-center">
+              Evolución Tecnológica
+            </h3>
+            <p className="text-sm text-gray-700 dark:text-gray-300 text-center leading-relaxed">
+              JOBDA recoge los inicios de EMPORDAJOBS pero ha evolucionado hacia una 
+              <span className="font-semibold text-blue-600 dark:text-blue-400"> plataforma integral</span> que 
+              ofrece <span className="font-semibold text-purple-600 dark:text-purple-400">15 servicios tecnológicos</span> 
+              especializados en salud mental, inteligencia artificial, desarrollo de aplicaciones y soluciones digitales innovadoras.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </section>
