@@ -21,7 +21,7 @@ export function ImpactStatsSection() {
     },
     {
       end: 2016,
-      label: t('stats.founded') || "Empresa Fundada"
+      label: "Empresa Fundada"
     }
   ];
 
