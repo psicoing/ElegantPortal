@@ -9,10 +9,10 @@ export function ImpactStatsSection() {
     {
       end: 499,
       suffix: "",
-      label: t('stats.users') || "Usuarios Activos"
+      label: t('stats.projects') || "Proyectos Desarrollados"
     },
     {
-      end: 12,
+      end: 15,
       label: t('stats.services') || "Servicios Integrados"
     },
     {
