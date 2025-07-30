@@ -149,7 +149,7 @@ export function ServiceSection() {
       t('service.saludalia.feature2'),
       t('service.saludalia.feature3')
     ],
-    url: "https://health-connect-rmportbou.replit.app/",
+    url: "https://saludalia.jobda.es/",
     onClick: () => setSaludaliaDialogOpen(true),
     badgeText: t('service.saludalia.badge'),
     variant: "secondary",

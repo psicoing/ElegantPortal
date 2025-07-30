@@ -90,7 +90,7 @@ export function SaludaliaDialog({ open, setOpen }: SaludaliaDialogProps) {
               asChild
             >
               <a
-                href="https://health-connect-rmportbou.replit.app/"
+                href="https://saludalia.jobda.es/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
