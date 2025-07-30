@@ -45,7 +45,7 @@ export function CTASection() {
                   asChild
                 >
                   <a 
-                    href="https://neuro-consulta-rmportbou.replit.app/" 
+                    href="https://appia.jobda.es/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-white"

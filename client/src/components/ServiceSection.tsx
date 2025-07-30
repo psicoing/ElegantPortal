@@ -84,7 +84,7 @@ export function ServiceSection() {
       t('service.appia.feature2'),
       t('service.appia.feature3')
     ],
-    url: "https://neuro-consulta-rmportbou.replit.app/",
+    url: "https://appia.jobda.es/",
     onClick: () => setAppiaDialogOpen(true),
     badgeText: t('service.appia.badge'),
     variant: "primary",
