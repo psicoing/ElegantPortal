@@ -108,7 +108,7 @@ export function SinapsyDialog({ open, setOpen }: SinapsyDialogProps) {
         
         <DialogFooter className="mt-6">
           <div className="flex flex-col sm:flex-row gap-2 w-full justify-between items-center">
-            <a href="https://neuro-consulta-rmportbou.replit.app/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://sinapsy.jobda.es/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button type="button" variant="default" className="w-full">
                 {t('sinapsy.dialog.visit_website')}
               </Button>

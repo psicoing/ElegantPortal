@@ -100,7 +100,7 @@ export function ServiceSection() {
       t('service.sinapsy.feature2'),
       t('service.sinapsy.feature3')
     ],
-    url: "https://neuro-consulta-rmportbou.replit.app/",
+    url: "https://sinapsy.jobda.es/",
     onClick: () => setSinapsyDialogOpen(true),
     badgeText: t('service.sinapsy.badge'),
     variant: "secondary",
