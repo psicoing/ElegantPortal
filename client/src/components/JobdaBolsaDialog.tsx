@@ -204,7 +204,7 @@ export function JobdaBolsaDialog({ open, onOpenChange }: JobdaBolsaDialogProps) 
                 asChild
               >
                 <a 
-                  href="https://talentpool.com.es/" 
+                  href="https://jobda-employee-portal-rmportbou.replit.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

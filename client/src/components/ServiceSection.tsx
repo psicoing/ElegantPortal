@@ -237,7 +237,7 @@ export function ServiceSection() {
       "DevOps y Cloud Engineers",
       "UI/UX Designers"
     ],
-    url: "#talentpool-tech",
+    url: "https://jobda-employee-portal-rmportbou.replit.app/",
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Anti-edadismo",
     variant: "primary",
@@ -254,7 +254,7 @@ export function ServiceSection() {
       "Terapeutas y fisios",
       "Personal sanitario"
     ],
-    url: "#talentpool-med",
+    url: "https://jobda-employee-portal-rmportbou.replit.app/",
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Anti-edadismo",
     variant: "secondary",
@@ -271,7 +271,7 @@ export function ServiceSection() {
       "Oficios especializados",
       "Project Managers"
     ],
-    url: "#talentpool-build",
+    url: "https://jobda-employee-portal-rmportbou.replit.app/",
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Anti-edadismo",
     variant: "primary",
@@ -288,7 +288,7 @@ export function ServiceSection() {
       "Content creators",
       "Growth hackers"
     ],
-    url: "#talentpool-marketing",
+    url: "https://jobda-employee-portal-rmportbou.replit.app/",
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Anti-edadismo",
     variant: "secondary",
@@ -305,7 +305,7 @@ export function ServiceSection() {
       "Asesores fiscales",
       "Risk managers"
     ],
-    url: "#talentpool-finance",
+    url: "https://jobda-employee-portal-rmportbou.replit.app/",
     onClick: () => setJobdaBolsaDialogOpen(true),
     badgeText: "Anti-edadismo",
     variant: "primary",
