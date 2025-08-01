@@ -88,6 +88,23 @@ export function ParallaxHero() {
           </Link>
         </motion.div>
 
+        {/* Elegant handwritten text */}
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <p className="text-3xl md:text-4xl font-light text-foreground/80 tracking-wide leading-relaxed"
+             style={{ 
+               fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
+               fontWeight: 600,
+               textShadow: '0 2px 4px rgba(0,0,0,0.1)'
+             }}>
+            Tecnología y salud
+          </p>
+        </motion.div>
+
         <motion.div
           className="flex justify-center"
           initial={{ opacity: 0 }}
