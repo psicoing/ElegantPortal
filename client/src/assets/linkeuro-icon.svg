@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Globe icon -->
+  <circle cx="30" cy="30" r="25" fill="#22c55e" stroke="#16a34a" stroke-width="2"/>
+  
+  <!-- Globe grid lines -->
+  <path d="M 5 30 Q 30 10, 55 30 Q 30 50, 5 30" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M 30 5 L 30 55" stroke="white" stroke-width="2"/>
+  <path d="M 10 20 L 50 20" stroke="white" stroke-width="2"/>
+  <path d="M 10 40 L 50 40" stroke="white" stroke-width="2"/>
+  <path d="M 5 30 L 55 30" stroke="white" stroke-width="3"/>
+  
+  <!-- LINKEURO text -->
+  <text x="70" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">LINKEURO</text>
+  <text x="70" y="45" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">European Network</text>
+</svg>

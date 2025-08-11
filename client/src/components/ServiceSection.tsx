@@ -35,6 +35,7 @@ import telecosImage from "../assets/telecos.svg";
 import cplusplusImage from "../assets/cplusplus.svg";
 import ptalent01 from "@assets/PTALENT01.png";
 import ptalent02 from "@assets/PTALENT02.png";
+import linkEuroIcon from "../assets/linkeuro-icon.svg";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -334,7 +335,7 @@ export function ServiceSection() {
     onClick: () => setRedProfesionalDialogOpen(true),
     badgeText: "Europa",
     variant: "primary",
-    imageSrc: aiAppsIconImage
+    imageSrc: linkEuroIcon
   };
 
   const ofertasEmpleoUE: ServiceItem = {
@@ -352,7 +353,7 @@ export function ServiceSection() {
     onClick: () => setOfertasEmpleoDialogOpen(true),
     badgeText: "Vacantes",
     variant: "secondary",
-    imageSrc: empordaJobsImage
+    imageSrc: linkEuroIcon
   };
 
   const movilidadLaboralUE: ServiceItem = {
@@ -370,7 +371,7 @@ export function ServiceSection() {
     onClick: () => setMovilidadLaboralDialogOpen(true),
     badgeText: "Movilidad",
     variant: "primary",
-    imageSrc: neuronMegImage
+    imageSrc: linkEuroIcon
   };
 
   const comunidadesSectoriales: ServiceItem = {
@@ -388,7 +389,7 @@ export function ServiceSection() {
     onClick: () => setComunidadesSectorialesDialogOpen(true),
     badgeText: "Comunidades",
     variant: "secondary",
-    imageSrc: sinapsyLogoImage
+    imageSrc: linkEuroIcon
   };
 
   const inteligenciaMercadoLaboral: ServiceItem = {
@@ -406,7 +407,7 @@ export function ServiceSection() {
     onClick: () => setInteligenciaMercadoDialogOpen(true),
     badgeText: "Inteligencia",
     variant: "primary",
-    imageSrc: tecnoappImage
+    imageSrc: linkEuroIcon
   };
 
   const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus, talentpoolTech, talentpoolMed, talentpoolBuild, talentpoolMarketing, talentpoolFinance, redProfesionalPaneuropea, ofertasEmpleoUE, movilidadLaboralUE, comunidadesSectoriales, inteligenciaMercadoLaboral];
