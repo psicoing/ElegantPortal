@@ -1,7 +1,7 @@
 import { ServiceCard } from "@/components/ServiceCard";
 import { HorizontalServiceCard } from "@/components/HorizontalServiceCard";
 import { motion } from "framer-motion";
-import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal, TrendingUp, Monitor, Stethoscope, HardHat, Megaphone, DollarSign } from "lucide-react";
+import { MessageCircle, Briefcase, Code, Sparkles, Brain, Home, Search, Building2, Heart, Headphones, Laptop, Radio, Terminal, TrendingUp, Monitor, Stethoscope, HardHat, Megaphone, DollarSign, Globe2, MapPin, Hash } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { useState, ReactNode } from "react";
 import { JobdaDialog } from "./JobdaDialog";
@@ -16,6 +16,7 @@ import { TecnoAppDialog } from "./TecnoAppDialog";
 import { TelecosDialog } from "./TelecosDialog";
 import { CPlusPlusDialog } from "./CPlusPlusDialog";
 import { JobdaBolsaDialog } from "./JobdaBolsaDialog";
+import { NewServiceDialog } from "./NewServiceDialog";
 
 // Importar las imágenes
 import nflowTeensImage from "../assets/nflow_adolescentes.png";
@@ -57,6 +58,11 @@ export function ServiceSection() {
   const [appiaDialogOpen, setAppiaDialogOpen] = useState(false);
   const [nflowDialogOpen, setNflowDialogOpen] = useState(false);
   const [saludaliaDialogOpen, setSaludaliaDialogOpen] = useState(false);
+  const [redProfesionalDialogOpen, setRedProfesionalDialogOpen] = useState(false);
+  const [ofertasEmpleoDialogOpen, setOfertasEmpleoDialogOpen] = useState(false);
+  const [movilidadLaboralDialogOpen, setMovilidadLaboralDialogOpen] = useState(false);
+  const [comunidadesSectorialesDialogOpen, setComunidadesSectorialesDialogOpen] = useState(false);
+  const [inteligenciaMercadoDialogOpen, setInteligenciaMercadoDialogOpen] = useState(false);
   
   // Definir los servicios con sus traducciones
   const nflow: ServiceItem = {
@@ -312,7 +318,98 @@ export function ServiceSection() {
     imageSrc: ptalent01
   };
 
-  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus, talentpoolTech, talentpoolMed, talentpoolBuild, talentpoolMarketing, talentpoolFinance];
+  // Nuevos servicios europeos
+  const redProfesionalPaneuropea: ServiceItem = {
+    icon: <Globe2 className="h-8 w-8 text-blue-600" />,
+    title: "Red Profesional Paneuropea",
+    description: "Conexiones cualificadas por país, ciudad y sector en toda Europa",
+    features: [
+      "Directorio profesional por países europeos",
+      "Filtros avanzados por sector",
+      "Sistema de recomendaciones basado en experiencia",
+      "Mensajería directa entre profesionales",
+      "Eventos de networking locales"
+    ],
+    url: "/contacto",
+    onClick: () => setRedProfesionalDialogOpen(true),
+    badgeText: "Europa",
+    variant: "primary",
+    imageSrc: aiAppsIconImage
+  };
+
+  const ofertasEmpleoUE: ServiceItem = {
+    icon: <Briefcase className="h-8 w-8 text-green-600" />,
+    title: "Ofertas y Publicación de Empleo UE",
+    description: "Agregador de vacantes locales y remotas con alertas inteligentes",
+    features: [
+      "Agregación de ofertas de 27 países UE",
+      "Publicación directa para empresas",
+      "Alertas personalizadas por criterios",
+      "Matching automático candidato-vacante",
+      "Filtros por modalidad trabajo"
+    ],
+    url: "/contacto",
+    onClick: () => setOfertasEmpleoDialogOpen(true),
+    badgeText: "Vacantes",
+    variant: "secondary",
+    imageSrc: empordaJobsImage
+  };
+
+  const movilidadLaboralUE: ServiceItem = {
+    icon: <MapPin className="h-8 w-8 text-orange-600" />,
+    title: "Movilidad Laboral en la UE",
+    description: "Recursos y visibilidad para profesionales con disponibilidad transnacional",
+    features: [
+      "Badges de disponibilidad por países",
+      "Guías de relocación y trámites",
+      "Calculadora de salarios por ciudades",
+      "Red de empresas con relocación",
+      "Asesoría fiscal internacional"
+    ],
+    url: "/contacto",
+    onClick: () => setMovilidadLaboralDialogOpen(true),
+    badgeText: "Movilidad",
+    variant: "primary",
+    imageSrc: neuronMegImage
+  };
+
+  const comunidadesSectoriales: ServiceItem = {
+    icon: <Hash className="h-8 w-8 text-purple-600" />,
+    title: "Tendencias y Comunidades Sectoriales",
+    description: "Hashtags y grupos especializados para engagement sectorial",
+    features: [
+      "Comunidades por hashtags sectoriales",
+      "Feed de noticias por industria",
+      "Eventos y webinars temáticos",
+      "Rankings de influencers por sector",
+      "Contenido curado por expertos"
+    ],
+    url: "/contacto",
+    onClick: () => setComunidadesSectorialesDialogOpen(true),
+    badgeText: "Comunidades",
+    variant: "secondary",
+    imageSrc: sinapsyLogoImage
+  };
+
+  const inteligenciaMercadoLaboral: ServiceItem = {
+    icon: <TrendingUp className="h-8 w-8 text-cyan-600" />,
+    title: "Inteligencia del Mercado Laboral Europeo",
+    description: "Panel con datos de demanda, modalidades híbridas y flujos de talento",
+    features: [
+      "Dashboard interactivo con métricas",
+      "Análisis de demanda por skills",
+      "Tendencias modalidades híbridas",
+      "Mapas de flujos talento",
+      "Informes sectoriales descargables"
+    ],
+    url: "/contacto",
+    onClick: () => setInteligenciaMercadoDialogOpen(true),
+    badgeText: "Inteligencia",
+    variant: "primary",
+    imageSrc: tecnoappImage
+  };
+
+  const services = [jobda, nflow, sinapsy, neuronMeg, empordaJobs, saludalia, ticketsPlusalud, tecnoapp, telecos, cplusplus, talentpoolTech, talentpoolMed, talentpoolBuild, talentpoolMarketing, talentpoolFinance, redProfesionalPaneuropea, ofertasEmpleoUE, movilidadLaboralUE, comunidadesSectoriales, inteligenciaMercadoLaboral];
 
   return (
     <>
@@ -375,6 +472,102 @@ export function ServiceSection() {
       <TelecosDialog open={telecosDialogOpen} setOpen={setTelecosDialogOpen} />
       <CPlusPlusDialog open={cplusplusDialogOpen} setOpen={setCplusplusDialogOpen} />
       <JobdaBolsaDialog open={jobdaBolsaDialogOpen} onOpenChange={setJobdaBolsaDialogOpen} />
+      
+      {/* Nuevos servicios europeos */}
+      <NewServiceDialog 
+        open={redProfesionalDialogOpen}
+        setOpen={setRedProfesionalDialogOpen}
+        title="Red Profesional Paneuropea"
+        description="Conexiones cualificadas por país, ciudad y sector en toda Europa"
+        features={[
+          "Directorio profesional por países europeos",
+          "Filtros avanzados por sector", 
+          "Sistema de recomendaciones basado en experiencia",
+          "Mensajería directa entre profesionales",
+          "Eventos de networking locales"
+        ]}
+        badgeText="Europa"
+        icon={<Globe2 className="h-8 w-8 text-blue-600" />}
+        targetUser="Profesional senior tech, consultor internacional, HR manager europeo"
+        kpis={["Conexiones generadas por mes", "Tasa de respuesta a mensajes", "Profesionales activos por país"]}
+        slug="red-profesional-paneuropea"
+      />
+      
+      <NewServiceDialog 
+        open={ofertasEmpleoDialogOpen}
+        setOpen={setOfertasEmpleoDialogOpen}
+        title="Ofertas y Publicación de Empleo UE"
+        description="Agregador de vacantes locales y remotas con alertas inteligentes"
+        features={[
+          "Agregación de ofertas de 27 países UE",
+          "Publicación directa para empresas",
+          "Alertas personalizadas por criterios",
+          "Matching automático candidato-vacante",
+          "Filtros por modalidad trabajo"
+        ]}
+        badgeText="Vacantes"
+        icon={<Briefcase className="h-8 w-8 text-green-600" />}
+        targetUser="Candidato junior/senior, PYME europea, departamento RRHH multinacional"
+        kpis={["Ofertas publicadas semanalmente", "Tiempo medio hasta primera respuesta", "Tasa de éxito en matching"]}
+        slug="ofertas-empleo-union-europea"
+      />
+      
+      <NewServiceDialog 
+        open={movilidadLaboralDialogOpen}
+        setOpen={setMovilidadLaboralDialogOpen}
+        title="Movilidad Laboral en la UE"
+        description="Recursos y visibilidad para profesionales con disponibilidad transnacional"
+        features={[
+          "Badges de disponibilidad por países",
+          "Guías de relocación y trámites",
+          "Calculadora de salarios por ciudades",
+          "Red de empresas con relocación",
+          "Asesoría fiscal internacional"
+        ]}
+        badgeText="Movilidad"
+        icon={<MapPin className="h-8 w-8 text-orange-600" />}
+        targetUser="Desarrollador remoto, consultor internacional, profesional healthcare móvil"
+        kpis={["Relocaciones exitosas completadas", "Tiempo medio proceso relocación", "Satisfacción candidatos reubicados"]}
+        slug="movilidad-laboral-europea"
+      />
+      
+      <NewServiceDialog 
+        open={comunidadesSectorialesDialogOpen}
+        setOpen={setComunidadesSectorialesDialogOpen}
+        title="Tendencias y Comunidades Sectoriales"
+        description="Hashtags y grupos especializados para engagement sectorial"
+        features={[
+          "Comunidades por hashtags sectoriales",
+          "Feed de noticias por industria",
+          "Eventos y webinars temáticos",
+          "Rankings de influencers por sector",
+          "Contenido curado por expertos"
+        ]}
+        badgeText="Comunidades"
+        icon={<Hash className="h-8 w-8 text-purple-600" />}
+        targetUser="Profesional tech Barcelona, experto sostenibilidad, freelancer digital europeo"
+        kpis={["Engagement mensual por comunidad", "Crecimiento de miembros activos", "Contenido compartido semanalmente"]}
+        slug="comunidades-sectoriales-europa"
+      />
+      
+      <NewServiceDialog 
+        open={inteligenciaMercadoDialogOpen}
+        setOpen={setInteligenciaMercadoDialogOpen}
+        title="Inteligencia del Mercado Laboral Europeo"
+        description="Panel con datos de demanda, modalidades híbridas y flujos de talento"
+        features={[
+          "Dashboard interactivo con métricas",
+          "Análisis de demanda por skills",
+          "Tendencias modalidades híbridas",
+          "Mapas de flujos talento",
+          "Informes sectoriales descargables"
+        ]}
+        badgeText="Inteligencia"
+        icon={<TrendingUp className="h-8 w-8 text-cyan-600" />}
+        targetUser="Director RRHH multinacional, head hunter europeo, consultor estratégico"
+        kpis={["Precisión predicciones mercado laboral", "Usuarios activos dashboard mensual", "Descargas informes sectoriales"]}
+        slug="inteligencia-mercado-laboral-europeo"
+      />
     </>
   );
 }
