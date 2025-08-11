@@ -174,10 +174,19 @@ export function NewServiceDialog({
               <p className="text-gray-600 mb-4">
                 Contacta con nuestro equipo para más información sobre {title}
               </p>
-              <Button className="gap-2">
-                <Mail className="w-4 h-4" />
-                Contactar ahora
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button className="gap-2">
+                  <Mail className="w-4 h-4" />
+                  Contactar ahora
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="gap-2"
+                  onClick={() => window.open('https://ejobs.jobda.es/linkeuro', '_blank')}
+                >
+                  Acceder a LINKEURO
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>
