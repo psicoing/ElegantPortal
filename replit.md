@@ -48,3 +48,9 @@ Preferred communication style: Simple, everyday language.
 ### Development Dependencies
 - **Build Tools**: Vite, ESBuild
 - **Type Checking**: TypeScript compiler
+
+## Recent Changes
+
+### January 28, 2025
+- Added 5 new European labor market services expanding JOBDA ecosystem: Red Profesional Paneuropea (networking across EU countries), Ofertas y Publicación de Empleo UE (job aggregation from 27 EU countries), Movilidad Laboral en la UE (international relocation resources), Tendencias y Comunidades Sectoriales (hashtag-based professional communities), and Inteligencia del Mercado Laboral Europeo (real-time labor market analytics dashboard). Each service features detailed modals with KPIs, target users, benefits, and professional contact integration
+- Updated European services with custom LINKEURO branding: replaced generic icons with custom LINKEURO SVG logo based on provided image, featuring green globe with white grid lines and "LINKEURO European Network" text. Added "Acceder a LINKEURO" button in all 5 service modals linking directly to https://ejobs.jobda.es/linkeuro for immediate access to the platform
