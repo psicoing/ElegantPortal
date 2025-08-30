@@ -12,6 +12,7 @@ import { InvestorsPage } from "@/pages/Investors";
 import Filantropia from "@/pages/Filantropia";
 import ConoceProyecto from "@/pages/ConoceProyecto";
 import Partners from "@/pages/Partners";
+import QRPage from "@/pages/QRPage";
 import { CookieBanner } from "@/components/CookieBanner";
 import { WhatsAppBanner } from "@/components/WhatsAppBanner";
 import { PWABanner } from "@/components/PWABanner";
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/filantropia" component={Filantropia} />
       <Route path="/conoce-proyecto" component={ConoceProyecto} />
       <Route path="/trabajo-comisiones-calculadora" component={CommissionsCalculator} />
+      <Route path="/qr" component={QRPage} />
       <Route component={NotFound} />
     </Switch>
   );

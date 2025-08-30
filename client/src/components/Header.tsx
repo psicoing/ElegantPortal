@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, Phone, Handshake, Users } from "lucide-react";
+import { Menu, Phone, Handshake, Users, QrCode } from "lucide-react";
 import { ContactModal } from "./ContactModal";
 
 import { GoogleTranslateDialog } from "./ui/google-translate-dialog";
@@ -56,6 +56,11 @@ export function Header({ toggleMobileMenu }: HeaderProps) {
               <Link href="/partners">
                 <Button variant="ghost" size="icon" className="hover:bg-primary/10" title="Partners">
                   <Handshake className="h-5 w-5" />
+                </Button>
+              </Link>
+              <Link href="/qr">
+                <Button variant="ghost" size="icon" className="hover:bg-primary/10" title="Código QR">
+                  <QrCode className="h-5 w-5" />
                 </Button>
               </Link>
               <ContactModal

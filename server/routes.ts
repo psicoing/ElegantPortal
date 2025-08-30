@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import QRCode from 'qrcode';
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Health check endpoint for deployment
@@ -30,6 +31,35 @@ export async function registerRoutes(app: Express): Promise<Server> {
     console.log(`Contact form submission: ${name}, ${email}, ${message}`);
     
     return res.status(200).json({ message: 'Mensaje recibido correctamente' });
+  });
+
+  // QR Code generation endpoint
+  app.post('/api/generate-qr', async (req, res) => {
+    try {
+      const { url } = req.body;
+      
+      if (!url) {
+        return res.status(400).json({ message: 'URL es requerida' });
+      }
+
+      // Generate QR code as data URL
+      const qrCodeDataUrl = await QRCode.toDataURL(url, {
+        margin: 1,
+        color: {
+          dark: '#000000',
+          light: '#FFFFFF'
+        },
+        width: 256
+      });
+
+      return res.status(200).json({ 
+        qrCode: qrCodeDataUrl,
+        url: url 
+      });
+    } catch (error) {
+      console.error('Error generating QR code:', error);
+      return res.status(500).json({ message: 'Error al generar código QR' });
+    }
   });
 
   const httpServer = createServer(app);
