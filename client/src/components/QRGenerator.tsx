@@ -125,14 +125,7 @@ export function QRGenerator() {
       <CardContent className="space-y-6">
         {/* QR Code Display */}
         <div className="flex justify-center">
-          {isGenerating ? (
-            <div className="flex items-center justify-center w-64 h-64 border-2 border-dashed border-gray-300 rounded-lg">
-              <div className="text-center">
-                <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-2"></div>
-                <p className="text-gray-500">Generando QR...</p>
-              </div>
-            </div>
-          ) : qrCodeDataUrl ? (
+          {qrCodeDataUrl ? (
             <div className="bg-white p-4 rounded-lg shadow-md">
               <img 
                 src={qrCodeDataUrl} 
@@ -142,7 +135,7 @@ export function QRGenerator() {
             </div>
           ) : (
             <div className="flex items-center justify-center w-64 h-64 border-2 border-dashed border-gray-300 rounded-lg">
-              <p className="text-gray-500">No hay QR generado</p>
+              <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto"></div>
             </div>
           )}
         </div>
