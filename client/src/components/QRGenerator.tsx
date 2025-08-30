@@ -148,38 +148,26 @@ export function QRGenerator() {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-2">
-          <Button 
-            onClick={generateQR} 
-            disabled={isGenerating}
-            className="flex-1"
-            variant="outline"
-          >
-            <QrCode className="w-4 h-4 mr-2" />
-            {isGenerating ? 'Generando...' : 'Regenerar QR'}
-          </Button>
-          
-          {qrCodeDataUrl && (
-            <>
-              <Button 
-                onClick={downloadQR}
-                className="flex-1"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Descargar
-              </Button>
-              
-              <Button 
-                onClick={shareQR}
-                variant="outline"
-                className="flex-1"
-              >
-                <Share2 className="w-4 h-4 mr-2" />
-                Compartir
-              </Button>
-            </>
-          )}
-        </div>
+        {qrCodeDataUrl && (
+          <div className="flex flex-col sm:flex-row gap-2">
+            <Button 
+              onClick={downloadQR}
+              className="flex-1"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Descargar
+            </Button>
+            
+            <Button 
+              onClick={shareQR}
+              variant="outline"
+              className="flex-1"
+            >
+              <Share2 className="w-4 h-4 mr-2" />
+              Compartir
+            </Button>
+          </div>
+        )}
 
         {/* Instructions */}
         <div className="text-center text-sm text-gray-600 space-y-2">
