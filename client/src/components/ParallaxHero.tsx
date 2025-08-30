@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
 import { Link } from "wouter";
@@ -84,6 +84,25 @@ export function ParallaxHero() {
               className="text-lg px-8 py-6 border-2 hover:bg-primary/10 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Inversores
+            </Button>
+          </Link>
+        </motion.div>
+
+        {/* QR Code Button */}
+        <motion.div
+          className="flex justify-center mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+        >
+          <Link href="/qr">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="text-lg px-8 py-6 border-2 border-primary hover:bg-primary hover:text-primary-foreground shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 gap-3"
+            >
+              <QrCode className="h-6 w-6" />
+              Código QR JOBDA.org
             </Button>
           </Link>
         </motion.div>
