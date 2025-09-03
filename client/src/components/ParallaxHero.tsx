@@ -102,7 +102,7 @@ export function ParallaxHero() {
               className="text-lg px-8 py-6 border-2 border-primary hover:bg-primary hover:text-primary-foreground shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 gap-3"
             >
               <QrCode className="h-6 w-6" />
-              Código QR JOBDA.org
+              QR JOBDA
             </Button>
           </Link>
         </motion.div>
