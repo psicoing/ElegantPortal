@@ -34,8 +34,6 @@ export function ServiceCard({
   const { t } = useLanguage();
   const isPrimary = variant === "primary";
   
-  console.log('ServiceCard render:', { title, videoSrc, imageSrc });
-  
   if (videoSrc) {
     // Layout con video a la izquierda
     return (
