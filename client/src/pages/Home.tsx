@@ -21,6 +21,9 @@ import { DynamicQuoteSystem } from "@/components/DynamicQuoteSystem";
 import { BrandOriginSection } from "@/components/BrandOriginSection";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
+import jobdaVideo from "../assets/jobda-video.mp4";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,6 +45,59 @@ export default function Home() {
         <MobileMenu isOpen={mobileMenuOpen} closeMobileMenu={closeMobileMenu} />
         <main>
           <ParallaxHero />
+          
+          {/* Tarjeta con video JOBDA - Debajo del hero */}
+          <section className="py-8 bg-gray-50">
+            <motion.div 
+              className="container mx-auto px-4 md:px-6 max-w-4xl"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden">
+                <div className="flex h-full">
+                  <div className="w-56 md:w-72 overflow-hidden">
+                    <video 
+                      src={jobdaVideo} 
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="auto"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+                    <div className="flex items-center mb-4">
+                      <Sparkles className="h-8 w-8 text-primary mr-3" />
+                      <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground">
+                        JOBDA Innovation & Connection
+                      </h3>
+                    </div>
+                    <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
+                      Descubre cómo JOBDA está revolucionando el ecosistema digital con soluciones innovadoras que conectan talento, tecnología y oportunidades en una plataforma multiservicios única.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                        <span className="text-foreground">Plataforma multiservicios integrada</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                        <span className="text-foreground">Tecnología de vanguardia con IA</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                        <span className="text-foreground">Conexión global de profesionales</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+          
           <div id="services-section">
             <SimpleServiceCards />
           </div>
