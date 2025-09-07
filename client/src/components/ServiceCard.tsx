@@ -50,10 +50,9 @@ export function ServiceCard({
               loop
               playsInline
               controls={false}
+              preload="auto"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               className="w-full h-full object-cover object-center"
-              onError={() => console.error('Error loading video:', videoSrc)}
-              onLoadStart={() => console.log('Video loading started:', videoSrc)}
-              onCanPlay={() => console.log('Video can play:', videoSrc)}
             />
             {/* Backup image */}
             <img 
