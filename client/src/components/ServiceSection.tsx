@@ -97,8 +97,7 @@ export function ServiceSection() {
     onClick: () => setAppiaDialogOpen(true),
     badgeText: t('service.appia.badge'),
     variant: "primary",
-    imageSrc: aiAppsIconImage,
-    videoSrc: jobdaVideo
+    imageSrc: aiAppsIconImage
   };
   
   const sinapsy: ServiceItem = {
@@ -459,6 +458,56 @@ export function ServiceSection() {
               </motion.div>
             ))}
           </div>
+          
+          {/* Nueva tarjeta con video JOBDA */}
+          <motion.div 
+            className="mt-8 max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden">
+              <div className="flex">
+                <div className="w-48 md:w-64 h-48 md:h-64 overflow-hidden">
+                  <video 
+                    src={jobdaVideo} 
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex-1 p-6 md:p-8">
+                  <div className="flex items-center mb-4">
+                    <Sparkles className="h-8 w-8 text-primary mr-3" />
+                    <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground">
+                      JOBDA Innovation & Connection
+                    </h3>
+                  </div>
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
+                    Descubre cómo JOBDA está revolucionando el ecosistema digital con soluciones innovadoras que conectan talento, tecnología y oportunidades en una plataforma multiservicios única.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                      <span className="text-foreground">Plataforma multiservicios integrada</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                      <span className="text-foreground">Tecnología de vanguardia con IA</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                      <span className="text-foreground">Conexión global de profesionales</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
           
 
 
