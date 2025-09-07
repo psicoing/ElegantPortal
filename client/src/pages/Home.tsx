@@ -70,8 +70,8 @@ export default function Home() {
                   </div>
                   <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
                     <div className="flex items-center mb-4">
-                      <Sparkles className="h-8 w-8 text-primary mr-3" />
-                      <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground">
+                      <Sparkles className="h-6 w-6 text-primary mr-3" />
+                      <h3 className="font-sans font-bold text-xl md:text-2xl text-foreground">
                         JOBDA Innovation & Connection
                       </h3>
                     </div>
