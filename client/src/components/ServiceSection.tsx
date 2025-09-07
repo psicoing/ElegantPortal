@@ -433,43 +433,17 @@ export function ServiceSection() {
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
-            {services.map((service, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                id={service.title === t('service.appia.title') ? 'appia-section' : ''}
-              >
-                <ServiceCard 
-                  icon={service.icon}
-                  title={service.title}
-                  description={service.description}
-                  features={service.features}
-                  url={service.url}
-                  badgeText={service.badgeText}
-                  variant={service.variant}
-                  imageSrc={service.imageSrc}
-                  videoSrc={service.videoSrc}
-                  onClick={service.onClick}
-                />
-              </motion.div>
-            ))}
-          </div>
-          
-          {/* Nueva tarjeta con video JOBDA */}
+          {/* Nueva tarjeta con video JOBDA - Segundo lugar */}
           <motion.div 
-            className="mt-8 max-w-4xl mx-auto"
+            className="mb-8 max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
             <div className="bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden">
-              <div className="flex">
-                <div className="w-48 md:w-64 h-48 md:h-64 overflow-hidden">
+              <div className="flex h-full">
+                <div className="w-56 md:w-72 overflow-hidden">
                   <video 
                     src={jobdaVideo} 
                     autoPlay
@@ -480,7 +454,7 @@ export function ServiceSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="flex-1 p-6 md:p-8">
+                <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
                   <div className="flex items-center mb-4">
                     <Sparkles className="h-8 w-8 text-primary mr-3" />
                     <h3 className="font-sans font-bold text-2xl md:text-3xl text-foreground">
@@ -508,6 +482,32 @@ export function ServiceSection() {
               </div>
             </div>
           </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            {services.map((service, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+                id={service.title === t('service.appia.title') ? 'appia-section' : ''}
+              >
+                <ServiceCard 
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  features={service.features}
+                  url={service.url}
+                  badgeText={service.badgeText}
+                  variant={service.variant}
+                  imageSrc={service.imageSrc}
+                  videoSrc={service.videoSrc}
+                  onClick={service.onClick}
+                />
+              </motion.div>
+            ))}
+          </div>
           
 
 
