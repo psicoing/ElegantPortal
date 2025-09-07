@@ -47,62 +47,10 @@ export default function Home() {
         <main>
           <ParallaxHero />
           
-          {/* Tarjeta con video NFLOW */}
+          {/* Tarjeta con video JOBDA - Debajo del hero */}
           <section className="py-8 bg-gray-50">
             <motion.div 
               className="container mx-auto px-4 md:px-6 max-w-4xl mb-8"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="bg-black rounded-lg shadow-xl border border-gray-800 overflow-hidden">
-                <div className="flex h-full">
-                  <div className="w-56 md:w-72 overflow-hidden">
-                    <video 
-                      src={nflowVideo} 
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="auto"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
-                    <div className="flex items-center mb-4">
-                      <Brain className="h-6 w-6 text-orange-400 mr-3" />
-                      <h3 className="font-sans font-bold text-xl md:text-2xl text-orange-300">
-                        NFLOW - Un Psicólogo en tu Bolsillo
-                      </h3>
-                    </div>
-                    <p className="text-orange-200 mb-6 leading-relaxed text-lg">
-                      Nuestras soluciones están diseñadas para atender las necesidades específicas de diferentes grupos, ofreciendo herramientas y recursos adaptados a cada situación psicológica.
-                    </p>
-                    <div className="space-y-3">
-                      <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                        <span className="text-orange-100">Terapia digital personalizada</span>
-                      </div>
-                      <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-400 rounded-full mr-3"></div>
-                        <span className="text-orange-100">Apoyo psicológico 24/7</span>
-                      </div>
-                      <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                        <span className="text-orange-100">Herramientas adaptadas por grupos</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </section>
-          
-          {/* Tarjeta con video JOBDA - Debajo del hero */}
-          <section className="py-0 bg-gray-50">
-            <motion.div 
-              className="container mx-auto px-4 md:px-6 max-w-4xl"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -143,6 +91,58 @@ export default function Home() {
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
                         <span className="text-orange-100">Conexión global de profesionales</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+          
+          {/* Tarjeta con video NFLOW */}
+          <section className="py-0 bg-gray-50">
+            <motion.div 
+              className="container mx-auto px-4 md:px-6 max-w-4xl"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="bg-black rounded-lg shadow-xl border border-gray-800 overflow-hidden">
+                <div className="flex h-full">
+                  <div className="w-56 md:w-72 overflow-hidden">
+                    <video 
+                      src={nflowVideo} 
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="auto"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+                    <div className="flex items-center mb-4">
+                      <Brain className="h-6 w-6 text-orange-400 mr-3" />
+                      <h3 className="font-sans font-bold text-xl md:text-2xl text-orange-300">
+                        NFLOW - Un Psicólogo en tu Bolsillo
+                      </h3>
+                    </div>
+                    <p className="text-orange-200 mb-6 leading-relaxed text-lg">
+                      Nuestras soluciones están diseñadas para atender las necesidades específicas de diferentes grupos, ofreciendo herramientas y recursos adaptados a cada situación psicológica.
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                        <span className="text-orange-100">Terapia digital personalizada</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mr-3"></div>
+                        <span className="text-orange-100">Apoyo psicológico 24/7</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
+                        <span className="text-orange-100">Herramientas adaptadas por grupos</span>
                       </div>
                     </div>
                   </div>
