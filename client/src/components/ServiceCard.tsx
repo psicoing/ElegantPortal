@@ -15,6 +15,7 @@ interface ServiceCardProps {
   badgeText: string;
   variant: "primary" | "secondary";
   imageSrc?: string;
+  videoSrc?: string;
   onClick?: () => void;
 }
 
@@ -27,6 +28,7 @@ export function ServiceCard({
   badgeText,
   variant,
   imageSrc,
+  videoSrc,
   onClick
 }: ServiceCardProps) {
   const { t } = useLanguage();
@@ -39,7 +41,19 @@ export function ServiceCard({
       className="h-full"
     >
       <Card className={`overflow-hidden shadow-lg border border-gray-100 h-full flex flex-col ${isPrimary ? 'card-gradient-1' : 'card-gradient-2'}`}>
-        {imageSrc && (
+        {videoSrc && (
+          <div className="w-full h-64 overflow-hidden">
+            <video 
+              src={videoSrc} 
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+        )}
+        {imageSrc && !videoSrc && (
           <div className="w-full h-64 overflow-hidden">
             <img 
               src={imageSrc} 

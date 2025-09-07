@@ -36,6 +36,7 @@ import cplusplusImage from "../assets/cplusplus.svg";
 import ptalent01 from "@assets/PTALENT01.png";
 import ptalent02 from "@assets/PTALENT02.png";
 import linkEuroIcon from "../assets/linkeuro-icon.svg";
+import jobdaVideo from "@assets/20250907_1130_JOBDA_ Innovation and Connection_simple_compose_01k4hr6xeyf1b95kwagryg3jnp_1757237582065.mp4";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -47,6 +48,7 @@ interface ServiceItem {
   badgeText: string;
   variant: "primary" | "secondary";
   imageSrc: string;
+  videoSrc?: string;
   onClick?: () => void;
 }
 
@@ -95,7 +97,8 @@ export function ServiceSection() {
     onClick: () => setAppiaDialogOpen(true),
     badgeText: t('service.appia.badge'),
     variant: "primary",
-    imageSrc: aiAppsIconImage
+    imageSrc: aiAppsIconImage,
+    videoSrc: jobdaVideo
   };
   
   const sinapsy: ServiceItem = {
@@ -450,6 +453,7 @@ export function ServiceSection() {
                   badgeText={service.badgeText}
                   variant={service.variant}
                   imageSrc={service.imageSrc}
+                  videoSrc={service.videoSrc}
                   onClick={service.onClick}
                 />
               </motion.div>
