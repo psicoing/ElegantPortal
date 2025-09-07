@@ -36,6 +36,7 @@ import cplusplusImage from "../assets/cplusplus.svg";
 import ptalent01 from "@assets/PTALENT01.png";
 import ptalent02 from "@assets/PTALENT02.png";
 import linkEuroIcon from "../assets/linkeuro-icon.svg";
+import jobdaVideo from "../assets/jobda-video.mp4";
 
 // Definir la interfaz para los servicios
 interface ServiceItem {
@@ -97,7 +98,7 @@ export function ServiceSection() {
     badgeText: t('service.appia.badge'),
     variant: "primary",
     imageSrc: aiAppsIconImage,
-    videoSrc: "/attached_assets/20250907_1130_JOBDA_ Innovation and Connection_simple_compose_01k4hr6xeyf1b95kwagryg3jnp_1757237582065.mp4"
+    videoSrc: jobdaVideo
   };
   
   const sinapsy: ServiceItem = {
