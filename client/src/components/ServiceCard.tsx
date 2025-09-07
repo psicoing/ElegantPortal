@@ -42,14 +42,25 @@ export function ServiceCard({
     >
       <Card className={`overflow-hidden shadow-lg border border-gray-100 h-full flex flex-col ${isPrimary ? 'card-gradient-1' : 'card-gradient-2'}`}>
         {videoSrc && (
-          <div className="w-full h-64 overflow-hidden">
+          <div className="w-full h-64 overflow-hidden relative">
             <video 
               src={videoSrc} 
               autoPlay
               muted
               loop
               playsInline
+              controls={false}
               className="w-full h-full object-cover object-center"
+              onError={() => console.error('Error loading video:', videoSrc)}
+              onLoadStart={() => console.log('Video loading started:', videoSrc)}
+              onCanPlay={() => console.log('Video can play:', videoSrc)}
+            />
+            {/* Backup image */}
+            <img 
+              src={imageSrc} 
+              alt={title} 
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover object-center opacity-0 hover:opacity-20 transition-opacity duration-300"
             />
           </div>
         )}
