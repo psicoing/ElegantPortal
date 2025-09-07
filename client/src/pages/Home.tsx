@@ -70,26 +70,26 @@ export default function Home() {
                   </div>
                   <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
                     <div className="flex items-center mb-4">
-                      <Sparkles className="h-6 w-6 text-blue-400 mr-3" />
-                      <h3 className="font-sans font-bold text-xl md:text-2xl text-white">
+                      <Sparkles className="h-6 w-6 text-orange-400 mr-3" />
+                      <h3 className="font-sans font-bold text-xl md:text-2xl text-orange-300">
                         JOBDA Innovation & Connection
                       </h3>
                     </div>
-                    <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+                    <p className="text-orange-200 mb-6 leading-relaxed text-lg">
                       Descubre cómo JOBDA está revolucionando el ecosistema digital con soluciones innovadoras que conectan talento, tecnología y oportunidades en una plataforma multiservicios única.
                     </p>
                     <div className="space-y-3">
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                        <span className="text-white">Plataforma multiservicios integrada</span>
+                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                        <span className="text-orange-100">Plataforma multiservicios integrada</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                        <span className="text-white">Tecnología de vanguardia con IA</span>
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mr-3"></div>
+                        <span className="text-orange-100">Tecnología de vanguardia con IA</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                        <span className="text-white">Conexión global de profesionales</span>
+                        <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
+                        <span className="text-orange-100">Conexión global de profesionales</span>
                       </div>
                     </div>
                   </div>
