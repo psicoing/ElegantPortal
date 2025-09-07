@@ -34,6 +34,8 @@ export function ServiceCard({
   const { t } = useLanguage();
   const isPrimary = variant === "primary";
   
+  console.log('ServiceCard render:', { title, videoSrc, imageSrc });
+  
   if (videoSrc) {
     // Layout con video a la izquierda
     return (
@@ -43,7 +45,7 @@ export function ServiceCard({
         className="h-full"
       >
         <Card className={`overflow-hidden shadow-lg border border-gray-100 h-full flex ${isPrimary ? 'card-gradient-1' : 'card-gradient-2'}`}>
-          <div className="w-24 md:w-32 h-full overflow-hidden">
+          <div className="w-32 md:w-40 h-full overflow-hidden">
             <video 
               src={videoSrc} 
               autoPlay
@@ -52,6 +54,8 @@ export function ServiceCard({
               playsInline
               preload="auto"
               className="w-full h-full object-cover"
+              onError={(e) => console.error('Video error:', e)}
+              onLoadStart={() => console.log('Video loading:', videoSrc)}
             />
           </div>
           <div className="flex-1">
@@ -75,8 +79,8 @@ export function ServiceCard({
                 </Badge>
               </div>
               
-              <h3 className="font-sans font-bold text-lg md:text-xl text-foreground mb-3">{title}</h3>
-              <p className="text-muted-foreground mb-4 leading-relaxed text-sm">{description}</p>
+              <h3 className="font-sans font-bold text-base md:text-lg text-foreground mb-2">{title}</h3>
+              <p className="text-muted-foreground mb-3 leading-relaxed text-xs">{description}</p>
               
               <div className="space-y-2 mb-4 flex-grow">
                 {features.slice(0, 3).map((feature, index) => (
